@@ -26,6 +26,7 @@ export default function Home() {
                         alt="tree"
                     />
                 </div>
+                <div className="block-div"></div>
             </div>
         </section>
     );
