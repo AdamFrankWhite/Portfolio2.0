@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
     {
         name: "KDP Royalty Converter",
         tech: "React, Node, Express, CSS",
@@ -48,3 +48,5 @@ export const projects = [
         ]
     }
 ];
+
+export default projects;

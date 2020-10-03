@@ -301,12 +301,16 @@ header {
     // border: white 2px solid;
 }
 
+// .hide {
+//     display: block;
+//     width: 100%;
+//     height: 80vh;
+//     border: white 2px solid;
+//     animation: slide-down 0.8s 0.1s forwards;
+// }
+
 .hide {
-    display: block;
-    width: 100%;
-    height: 80vh;
-    border: white 2px solid;
-    animation: slide-down 0.8s 0.1s forwards;
+    display: none;
 }
 
 .frame-content {

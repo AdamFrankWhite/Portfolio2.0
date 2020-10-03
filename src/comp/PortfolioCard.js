@@ -1,32 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function PortfolioCard(props) {
+    const [isFlipped, setIsFlipped] = useState(false);
+    const cardClasses = "card " + (isFlipped ? "is-flipped" : "");
+    const cardContent = props.card.text.map(para => <p>{para}</p>);
+
     return (
-        <div class="website-card">
-            <div class="card">
+        <div className="website-card">
+            <div
+                className={cardClasses}
+                onClick={() => setIsFlipped(!isFlipped)}
+            >
                 <div class="card__face card__face--back">
                     <div>
-                        <a target="_blank" href={props.website.link}>
+                        <a target="_blank" href={props.card.link}>
                             View Site
                         </a>
                         |
-                        <a target="_blank" href={props.website.code}>
+                        <a target="_blank" href={props.card.code}>
                             View Code
                         </a>
                     </div>
-                    <h4>{props.website.tech}</h4>
+                    <h4>{props.card.tech}</h4>
                     <hr />
-                    {props.website.text.map(para => <p>{para}</p>).join("")}
+                    {cardContent}
                 </div>
                 <div
                     class="card__face card__face--front"
                     style={{
-                        backgroundImage: "url(" + props.website.img + ")"
+                        backgroundImage: "url(" + props.card.img + ")"
                     }}
                 >
-                    <h3>{props.website.name}</h3>
+                    <h3>{props.card.name}</h3>
                     <hr />
-                    <p>{props.website.desc}</p>
+                    <p>{props.card.desc}</p>
                 </div>
             </div>
         </div>

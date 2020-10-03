@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Blog() {
     return (
-        <div className="blog">
+        <div className="blog slide-in">
             <div className="frame-content">
                 <h2>Blog</h2>
                 <p>

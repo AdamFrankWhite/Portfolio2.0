@@ -4,10 +4,12 @@ import { NavLink } from "react-router-dom";
 export default function NavBar() {
     return (
         <header className="header-1">
-            <div className="title-name home-link">
-                <h1>Adam White</h1>
-                <h2>UX/UI Designer and Web Developer</h2>
-            </div>
+            <NavLink to="/">
+                <div className="title-name home-link">
+                    <h1>Adam White</h1>
+                    <h2>UX/UI Designer and Web Developer</h2>
+                </div>
+            </NavLink>
 
             <nav>
                 <ul>
