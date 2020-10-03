@@ -310,6 +310,15 @@ header nav li:hover {
   display: none;
 }
 
+.blog-post {
+  width: 80%;
+  margin: auto;
+}
+.blog-post p,
+.blog-post h1 {
+  color: white;
+}
+
 .slide-in {
   animation: slide-left 0.8s forwards;
   display: block;

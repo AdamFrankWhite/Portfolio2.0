@@ -1,16 +1,20 @@
 import React from "react";
-
+import posts from "../content/posts";
+import { Link } from "react-router-dom";
 export default function Blog() {
     return (
         <div className="blog slide-in">
             <div className="frame-content">
                 <h2>Blog</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Dolorum quisquam neque magnam tempora aliquid? Quia nobis
-                    vero incidunt asperiores, perspiciatis fugiat blanditiis
-                    animi officiis ipsam nostrum culpa, aliquam vel consectetur.
-                </p>
+                <ul>
+                    {posts.map(post => {
+                        return (
+                            <Link to={`/blog/${post.path}`}>
+                                <li>{post.title}</li>
+                            </Link>
+                        );
+                    })}
+                </ul>
             </div>
         </div>
     );

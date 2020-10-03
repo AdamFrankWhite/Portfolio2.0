@@ -318,6 +318,15 @@ header {
     display: none;
 }
 
+.blog-post {
+    width: 80%;
+    margin: auto;
+    p,
+    h1 {
+        color: white;
+    }
+}
+
 .slide-in {
     animation: slide-left 0.8s forwards;
     display: block;
