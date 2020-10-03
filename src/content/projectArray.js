@@ -4,7 +4,7 @@ const projects = [
         tech: "React, Node, Express, CSS",
         desc:
             "Simple SPA converting uploaded Kindle Author royalty .xlsx files into various currencies ",
-        img: "assets/kdp.png",
+        img: "assets/kdp-min.jpg",
         link: "http://kdp-royalty-converter.com",
         code: "https://github.com/AdamFrankWhite/KDP-Sales-Converter-Client",
         text: [
@@ -16,7 +16,7 @@ const projects = [
         name: "BeerBookmark",
         tech: "React, Redux, CSS, Node, MongoDB",
         desc: "Lorem ipsum bla bla bla",
-        img: "assets/beerme.png",
+        img: "assets/beerme-min.jpg",
         link: "http://quittingweedthebook.com",
         code: "https://github.com/AdamFrankWhite/Landing-Page-1",
         text: [
@@ -28,7 +28,7 @@ const projects = [
         name: "Kakuro",
         tech: "React, CSS",
         desc: "Logic puzzle built using React",
-        img: "assets/kakuro.jpg",
+        img: "assets/kakuro-min.jpg",
         link: "http://quittingweedthebook.com",
         code: "https://github.com/AdamFrankWhite/Kakuro",
         text: [
@@ -40,7 +40,7 @@ const projects = [
         tech: "React, CSS",
         desc:
             "Mesmerised by the beauty of nebulae, another early React project saw me use the NASA API to create a simple image search app.",
-        img: "assets/nasa-app.jpg",
+        img: "assets/nasa-app-min.jpg",
         link: "http://quittingweedthebook.com",
         code: "https://github.com/AdamFrankWhite/Nasa-Nebulae-Search",
         text: [

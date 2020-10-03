@@ -11,18 +11,18 @@ export default function Home() {
                 <div className="icon-cont">
                     <img
                         className="tablet-mobile"
-                        src="assets/icons/icons8-smartphone-tablet.svg"
+                        src="assets/icons/icons8-smartphone-tablet-256.png"
                         alt="tree"
                     />
                     <img
                         className="laptop"
-                        src="assets/icons/icons8-laptop.svg"
+                        src="assets/icons/icons8-laptop-400.png"
                         alt="tree"
                     />
 
                     <img
                         className="monitor"
-                        src="assets/icons/icons8-monitor.svg"
+                        src="assets/icons/icons8-monitor-400.png"
                         alt="tree"
                     />
                 </div>

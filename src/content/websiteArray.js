@@ -4,7 +4,7 @@ const websites = [
         tech: "Wordpress, HTML, SASS, PHP",
         desc:
             "Responsive custom Wordpress Theme written with HTML, JavaScript, PHP and SASS",
-        img: "assets/heatons.png",
+        img: "assets/heatons-min.png",
         link: "http://heatonscats.org.uk",
         code: "https://github.com/AdamFrankWhite/Heatons-Cats",
         text: [
@@ -16,7 +16,7 @@ const websites = [
         name: "Ebook Landing Page",
         tech: "Wordpress, HTML, CSS, jQuery",
         desc: "Lorem ipsum bla bla bla",
-        img: "assets/ebook.png",
+        img: "assets/ebook-min.jpg",
         link: "http://quittingweedthebook.com",
         code: "https://github.com/AdamFrankWhite/Landing-Page-1",
         text: [

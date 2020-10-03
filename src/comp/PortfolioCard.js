@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 export default function PortfolioCard(props) {
     const [isFlipped, setIsFlipped] = useState(false);
     const cardClasses = "card " + (isFlipped ? "is-flipped" : "");
