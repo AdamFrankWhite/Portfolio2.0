@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 export default function PortfolioCard(props) {
     const [isFlipped, setIsFlipped] = useState(false);
-    const [didLoad, setDidLoad] = useState(false);
     const cardClasses = "card " + (isFlipped ? "is-flipped" : "");
     const cardContent = props.card.text.map(para => <p>{para}</p>);
-    const style = didLoad ? {} : { visibility: "hidden" };
     return (
-        <div style={style} className="website-card">
+        <div className="website-card">
             <div
                 className={cardClasses}
                 onClick={() => setIsFlipped(!isFlipped)}
@@ -26,7 +24,6 @@ export default function PortfolioCard(props) {
                     {cardContent}
                 </div>
                 <div
-                    onLoad={() => setDidLoad(true)}
                     className="card__face card__face--front"
                     style={{
                         backgroundImage: "url(" + props.card.img + ")"
