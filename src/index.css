@@ -21,10 +21,7 @@ body,
 }
 
 .App {
-  display: flex;
   position: relative;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 /* width */
@@ -479,11 +476,6 @@ header nav li:hover {
   width: 20%;
   height: auto;
   padding: 1em;
-}
-
-.card-animate {
-  animation: card-slide-in 0.3s 0.2s forwards;
-  opacity: 1;
 }
 
 @keyframes card-slide-in {
