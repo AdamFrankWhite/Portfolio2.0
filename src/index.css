@@ -323,17 +323,9 @@ header nav li:hover {
   color: white;
   display: block;
   white-space: pre-wrap;
-  padding: 2em;
+  padding: 2em 1em;
   border-radius: 5px;
-}
-.blog-post .tab-1 {
-  padding-left: 1em;
-}
-.blog-post .tab-2 {
-  padding-left: 2em;
-}
-.blog-post .tab-3 {
-  padding-left: 3em;
+  font-size: 1.1em;
 }
 
 .slide-in {

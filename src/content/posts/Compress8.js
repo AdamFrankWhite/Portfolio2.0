@@ -1,6 +1,6 @@
 import React from "react";
 import Highlight from "react-highlight.js";
-export default function Compress() {
+export default function Compress8() {
     return (
         <div class="blog-post">
             <p>
@@ -17,8 +17,7 @@ export default function Compress() {
                 luctus magna.",
             </p>
             <Highlight language={"javascript"}>
-               
-            {`
+                {`
             import React from "react";
             import Compress from "./posts/Compress";
             const posts = [
@@ -34,8 +33,6 @@ export default function Compress() {
                 }
             ];
             `}
-          
-
             </Highlight>
 
             <p>
