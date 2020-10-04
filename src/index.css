@@ -318,6 +318,23 @@ header nav li:hover {
 .blog-post h1 {
   color: white;
 }
+.blog-post code {
+  background: black;
+  color: white;
+  display: block;
+  white-space: pre-wrap;
+  padding: 2em;
+  border-radius: 5px;
+}
+.blog-post .tab-1 {
+  padding-left: 1em;
+}
+.blog-post .tab-2 {
+  padding-left: 2em;
+}
+.blog-post .tab-3 {
+  padding-left: 3em;
+}
 
 .slide-in {
   animation: slide-left 0.8s forwards;

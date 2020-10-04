@@ -325,6 +325,23 @@ header {
     h1 {
         color: white;
     }
+    code {
+        background: black;
+        color: white;
+        display: block;
+        white-space: pre-wrap;
+        padding: 2em;
+        border-radius: 5px;
+    }
+    .tab-1 {
+        padding-left: 1em;
+    }
+    .tab-2 {
+        padding-left: 2em;
+    }
+    .tab-3 {
+        padding-left: 3em;
+    }
 }
 
 .slide-in {

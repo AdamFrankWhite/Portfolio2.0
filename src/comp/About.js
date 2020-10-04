@@ -5,11 +5,25 @@ export default function About() {
         <section className="about slide-in">
             <div className="frame-content">
                 <h2>About</h2>
+                <ul>
+                    Core Skills
+                    <li>HTMl</li>
+                    <li>CSS/SASS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Wordpress</li>
+                </ul>
+                <ul>Secondary Skills</ul>
+
+                <li>MongoDB</li>
+                <li>Node/Express</li>
+                <li>jQuery</li>
+
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Dolorum quisquam neque magnam tempora aliquid? Quia nobis
-                    vero incidunt asperiores, perspiciatis fugiat blanditiis
-                    animi officiis ipsam nostrum culpa, aliquam vel consectetur.
+                    I am passionating about programming, and loves nothing more
+                    than learning new tools, frameworks and dabbling with other
+                    languages. My main skills lie with JavaScript and React. I
+                    love making SPAs, although I do enjoy a good website.
                 </p>
             </div>
         </section>

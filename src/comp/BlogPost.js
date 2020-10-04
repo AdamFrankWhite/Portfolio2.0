@@ -5,9 +5,7 @@ export default function BlogPost(props) {
     return (
         <div className="blog-post">
             <h1>{props.post.title}</h1>
-            {props.post.content.map(para => (
-                <p>{para}</p>
-            ))}
+            {props.post.content}
         </div>
     );
 }
