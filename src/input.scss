@@ -5,17 +5,23 @@ html {
     overflow-x: hidden;
     min-height: 100vh;
 }
-
+a {
+    color: rgb(224, 224, 224);
+    &:hover {
+        color: rbga(201, 201, 201, 0.5);
+    }
+}
 html,
 body,
 #root,
 .App {
     min-height: 100vh;
+    overflow-y: overlay;
 }
 .App {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -317,7 +323,38 @@ header {
     min-height: 80vh;
     display: none;
 }
-
+.blog {
+    ul {
+        justify-content: center;
+        display: flex;
+        list-style-type: none;
+    }
+    li {
+        padding: 0.5em;
+        color: white;
+        font-style: bold;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .post-card {
+        width: 80%;
+        margin: auto;
+        border-radius: 10px;
+        border: white 1px solid;
+        margin-bottom: 2em;
+        .post-card-content {
+            padding: 2em;
+            p {
+                color: white;
+            }
+        }
+    }
+    .selected {
+        text-decoration: underline;
+        color: blue;
+    }
+}
 .blog-post {
     width: 80%;
     margin: auto;

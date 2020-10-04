@@ -5,17 +5,25 @@ html {
   min-height: 100vh;
 }
 
+a {
+  color: #e0e0e0;
+}
+a:hover {
+  color: rbga(201, 201, 201, 0.5);
+}
+
 html,
 body,
 #root,
 .App {
   min-height: 100vh;
+  overflow-y: overlay;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 /* width */
@@ -308,6 +316,37 @@ header nav li:hover {
   height: 100%;
   min-height: 80vh;
   display: none;
+}
+
+.blog ul {
+  justify-content: center;
+  display: flex;
+  list-style-type: none;
+}
+.blog li {
+  padding: 0.5em;
+  color: white;
+  font-style: bold;
+}
+.blog li:hover {
+  cursor: pointer;
+}
+.blog .post-card {
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  border: white 1px solid;
+  margin-bottom: 2em;
+}
+.blog .post-card .post-card-content {
+  padding: 2em;
+}
+.blog .post-card .post-card-content p {
+  color: white;
+}
+.blog .selected {
+  text-decoration: underline;
+  color: blue;
 }
 
 .blog-post {
