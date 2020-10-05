@@ -214,9 +214,9 @@ header nav li:hover {
   border-bottom: white 3px solid;
 }
 .portfolio-tabs h2 {
+  font-size: 1.1em;
   position: relative;
-  text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0.3em 0.5em;
   border-radius: 5px 5px 0 0;
 }
@@ -323,7 +323,6 @@ header nav li:hover {
 }
 .blog-menu li {
   padding: 0.5em;
-  color: white;
   font-style: bold;
 }
 .blog-menu li:hover {
@@ -335,15 +334,14 @@ header nav li:hover {
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 5%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .post-card {
   width: 100%;
   margin: auto;
-  height: 250px;
+  min-height: 250px;
   border-radius: 10px;
   border: #e64c3c 2px solid;
   margin-bottom: 2em;
@@ -354,10 +352,13 @@ header nav li:hover {
 .post-card .post-card-content p {
   color: #dbdbdb;
 }
-
-.post-cat {
+.post-card .post-card-content h3 {
+  font-size: 1.25em;
+}
+.post-card .post-card-content .post-cat {
   text-transform: uppercase;
   color: red;
+  font-size: 1em;
 }
 
 .selected {
@@ -383,6 +384,14 @@ header nav li:hover {
   font-size: 1.1em;
 }
 
+.contact {
+  color: white;
+}
+.contact .frame-content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
 .contact-form {
   width: 50%;
   margin: auto;
@@ -395,10 +404,33 @@ header nav li:hover {
 .contact-form span {
   width: 100%;
 }
-.contact-form label:hover,
-.contact-form span:hover,
-.contact-form input:hover,
-.contact-form textarea:hover {
+.contact-form label {
+  color: white;
+  padding: 0.5em 0;
+}
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  color: white;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  transition: border 0.1s;
+}
+.contact-form textarea {
+  height: 300px;
+  margin-bottom: 2em;
+}
+.contact-form input[type=submit] {
+  background: red;
+  color: white;
+}
+.contact-form input[type=submit]:hover {
   cursor: pointer;
 }
 
@@ -438,8 +470,9 @@ header nav li:hover {
 
 .highlight {
   background: white;
+  border-radius: 5px 5px 0 0;
   color: #4d0d0d;
-  transition: 0.2s;
+  transition: background 0.2s;
 }
 
 @keyframes slide-left {

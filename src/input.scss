@@ -211,9 +211,9 @@ header {
     color: white;
     border-bottom: white 3px solid;
     h2 {
+        font-size: 1.1em;
         position: relative;
-        text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 400;
         padding: 0.3em 0.5em;
         border-radius: 5px 5px 0 0;
         &:hover {
@@ -318,7 +318,6 @@ header {
     list-style-type: none;
     li {
         padding: 0.5em;
-        color: white;
         font-style: bold;
         &:hover {
             cursor: pointer;
@@ -329,29 +328,36 @@ header {
     margin-bottom: 1em;
 }
 .card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 5%;
-    // justify-content: flex-start;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-column-gap: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .post-card {
     width: 100%;
     margin: auto;
-    height: 250px;
+    min-height: 250px;
     border-radius: 10px;
     border: $secondary 2px solid;
     margin-bottom: 2em;
+
     .post-card-content {
         padding: 2em;
         p {
             color: rgb(219, 219, 219);
         }
+        h3 {
+            font-size: 1.25em;
+        }
+        .post-cat {
+            text-transform: uppercase;
+            color: red;
+            font-size: 1em;
+        }
     }
 }
-.post-cat {
-    text-transform: uppercase;
-    color: red;
-}
+
 .selected {
     text-decoration: underline;
     color: blue;
@@ -373,7 +379,16 @@ header {
         font-size: 1.1em;
     }
 }
-
+.contact {
+    color: white;
+    .frame-content {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        .contact-content {
+        }
+    }
+}
 .contact-form {
     width: 50%;
     margin: auto;
@@ -385,11 +400,33 @@ header {
     span {
         width: 100%;
     }
-    label:hover,
-    span:hover,
-    input:hover,
-    textarea:hover {
-        cursor: pointer;
+    label {
+        color: white;
+        padding: 0.5em 0;
+    }
+    input,
+    textarea {
+        background: transparent;
+        border: 1px solid red;
+        border-radius: 5px;
+        font-size: 1em;
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        color: white;
+        &:focus {
+            transition: border 0.1s;
+        }
+    }
+    textarea {
+        height: 300px;
+        margin-bottom: 2em;
+    }
+    input[type="submit"] {
+        background: red;
+        color: white;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -431,8 +468,9 @@ header {
 }
 .highlight {
     background: white;
+    border-radius: 5px 5px 0 0;
     color: $primary;
-    transition: 0.2s;
+    transition: background 0.2s;
 }
 
 @keyframes slide-left {

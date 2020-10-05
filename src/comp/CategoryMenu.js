@@ -13,7 +13,9 @@ export default function CategoryMenu(props) {
                     return (
                         <Link to={linkPath}>
                             <li
-                                className={active == category ? "selected" : ""}
+                                className={
+                                    active == category ? "highlight" : ""
+                                }
                                 key={category}
                                 onClick={() => {
                                     setActive(category);
