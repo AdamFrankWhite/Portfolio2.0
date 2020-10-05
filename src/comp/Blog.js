@@ -1,43 +1,51 @@
 import React, { useState, useEffect } from "react";
 import posts from "../content/posts";
+import PostsList from "./PostsList";
 import { Link } from "react-router-dom";
 export default function Blog() {
     const [postList, setPostList] = useState();
     const [selectedCategory, setSelectedCategory] = useState("All");
     const categories = ["All", "React", "CSS/SASS", "Wordpress", "Performance"];
     useEffect(() => {
-        const filterPosts =
-            selectedCategory !== "All"
-                ? posts.filter(post => post.category === selectedCategory)
-                : posts;
-        setPostList(filterPosts);
+        if (selectedCategory !== "All") {
+            const filterPosts = posts.filter(
+                post => post.category === selectedCategory
+            );
+            setPostList(filterPosts);
+        }
     }, [selectedCategory]);
-
+    const CategoryMenu = () => {
+        return (
+            <ul>
+                {categories.map(category => {
+                    return (
+                        <li
+                            key={category}
+                            className={
+                                category == selectedCategory ? "selected" : ""
+                            }
+                            onClick={() => {
+                                setSelectedCategory(category);
+                            }}
+                        >
+                            {category}
+                        </li>
+                    );
+                })}
+            </ul>
+        );
+    };
     return (
         <div className="blog slide-in">
             <div className="frame-content">
                 <h2>Blog</h2>
-                <ul>
-                    {categories.map(category => {
-                        return (
-                            <li
-                                key={category}
-                                className={
-                                    category == selectedCategory
-                                        ? "selected"
-                                        : ""
-                                }
-                                onClick={() => {
-                                    setSelectedCategory(category);
-                                }}
-                            >
-                                {category}
-                            </li>
-                        );
-                    })}
-                </ul>
+                <CategoryMenu />
+                {/* Need to create duplicate postcards, to force rerender for uniform animation */}
+                {selectedCategory == "All" && <PostsList />}
+
                 <div className="card-container">
                     {postList &&
+                        selectedCategory !== "All" &&
                         postList.map(post => {
                             return (
                                 <div
