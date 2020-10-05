@@ -15,35 +15,35 @@ export default function Blog() {
             setPostList(filterPosts);
         }
     }, [selectedCategory]);
-    const CategoryMenu = () => {
-        return (
-            <ul>
-                {categories.map(category => {
-                    const linkPath =
-                        category !== "All"
-                            ? `/blog/${category.toLowerCase()}`
-                            : "/blog";
-                    return (
-                        <Link to={linkPath}>
-                            <li
-                                key={category}
-                                className={
-                                    category == selectedCategory
-                                        ? "selected"
-                                        : ""
-                                }
-                                onClick={() => {
-                                    setSelectedCategory(category);
-                                }}
-                            >
-                                {category}
-                            </li>
-                        </Link>
-                    );
-                })}
-            </ul>
-        );
-    };
+    // const CategoryMenu = () => {
+    //     return (
+    //         <ul>
+    //             {categories.map(category => {
+    //                 const linkPath =
+    //                     category !== "All"
+    //                         ? `/blog/${category.toLowerCase()}`
+    //                         : "/blog";
+    //                 return (
+    //                     <Link to={linkPath}>
+    //                         <li
+    //                             key={category}
+    //                             className={
+    //                                 category == selectedCategory
+    //                                     ? "selected"
+    //                                     : ""
+    //                             }
+    //                             onClick={() => {
+    //                                 setSelectedCategory(category);
+    //                             }}
+    //                         >
+    //                             {category}
+    //                         </li>
+    //                     </Link>
+    //                 );
+    //             })}
+    //         </ul>
+    //     );
+    // };
     const setCategoryCallBack = category => {
         setSelectedCategory(category);
     };

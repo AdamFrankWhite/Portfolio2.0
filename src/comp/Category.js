@@ -9,6 +9,7 @@ export default function Category(props) {
             <CategoryMenu
                 categories={props.categories}
                 callback={props.callback}
+                category={props.category}
             />
             <div className="card-container">
                 {filterPosts.map(post => {
