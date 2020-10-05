@@ -38,7 +38,11 @@ function App() {
                                 key={category}
                                 path={`/blog/${category}`}
                                 render={props => (
-                                    <Category {...props} category={category} />
+                                    <Category
+                                        {...props}
+                                        categories={categories}
+                                        category={category}
+                                    />
                                 )}
                             />
                         ))}
