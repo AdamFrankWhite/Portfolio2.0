@@ -327,29 +327,29 @@ header {
             cursor: pointer;
         }
     }
-    .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        // justify-content: flex-start;
-    }
-    .post-card {
-        width: 45%;
-        margin: auto;
-        height: 250px;
-        border-radius: 10px;
-        border: $secondary 2px solid;
-        margin-bottom: 2em;
-        .post-card-content {
-            padding: 2em;
-            p {
-                color: rgb(219, 219, 219);
-            }
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: flex-start;
+}
+.post-card {
+    width: 45%;
+    margin: auto;
+    height: 250px;
+    border-radius: 10px;
+    border: $secondary 2px solid;
+    margin-bottom: 2em;
+    .post-card-content {
+        padding: 2em;
+        p {
+            color: rgb(219, 219, 219);
         }
     }
-    .selected {
-        text-decoration: underline;
-        color: blue;
-    }
+}
+.selected {
+    text-decoration: underline;
+    color: blue;
 }
 .blog-post {
     width: 80%;

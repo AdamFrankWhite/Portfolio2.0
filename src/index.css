@@ -330,11 +330,13 @@ header nav li:hover {
 .blog li:hover {
   cursor: pointer;
 }
-.blog .card-container {
+
+.card-container {
   display: flex;
   flex-wrap: wrap;
 }
-.blog .post-card {
+
+.post-card {
   width: 45%;
   margin: auto;
   height: 250px;
@@ -342,13 +344,14 @@ header nav li:hover {
   border: #e64c3c 2px solid;
   margin-bottom: 2em;
 }
-.blog .post-card .post-card-content {
+.post-card .post-card-content {
   padding: 2em;
 }
-.blog .post-card .post-card-content p {
+.post-card .post-card-content p {
   color: #dbdbdb;
 }
-.blog .selected {
+
+.selected {
   text-decoration: underline;
   color: blue;
 }

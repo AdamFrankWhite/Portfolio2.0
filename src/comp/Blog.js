@@ -18,8 +18,12 @@ export default function Blog() {
         return (
             <ul>
                 {categories.map(category => {
+                    const linkPath =
+                        category !== "All"
+                            ? `/blog/${category.toLowerCase()}`
+                            : "/blog";
                     return (
-                        <Link to={`/blog/${category}`}>
+                        <Link to={linkPath}>
                             <li
                                 key={category}
                                 className={
@@ -39,11 +43,14 @@ export default function Blog() {
             </ul>
         );
     };
+    const setCategoryCallBack = category => {
+        setSelectedCategory(category);
+    };
     return (
         <div className="blog slide-in">
             <div className="frame-content">
                 <h2>Blog</h2>
-                <CategoryMenu />
+                <CategoryMenu callback={setCategoryCallBack} />
                 {/* Need to create duplicate postcards, to force rerender for uniform animation */}
                 {selectedCategory == "All" && <PostsList />}
 

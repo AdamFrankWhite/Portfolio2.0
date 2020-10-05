@@ -31,15 +31,17 @@ function App() {
                             )}
                         />
                     ))}
-                    {categories.map(category => (
-                        <Route
-                            key={category}
-                            path={`/blog/${category}`}
-                            render={props => (
-                                <Category {...props} category={category} />
-                            )}
-                        />
-                    ))}
+                    {categories
+                        .filter(category => category !== "All")
+                        .map(category => (
+                            <Route
+                                key={category}
+                                path={`/blog/${category}`}
+                                render={props => (
+                                    <Category {...props} category={category} />
+                                )}
+                            />
+                        ))}
 
                     {/* <Route path="/blog/:post" component={BlogPost} /> */}
                     {/* </div> */}

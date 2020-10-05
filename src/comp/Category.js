@@ -1,11 +1,16 @@
 import React from "react";
 import posts from "../content/posts";
+import CategoryMenu from "./CategoryMenu";
 import { Link } from "react-router-dom";
 export default function Category(props) {
     const filterPosts = posts.filter(post => post.category === props.category);
     return (
-        <div className="frame-content">
-            <div className="card-container slide-in">
+        <div className="frame-content slide-in">
+            <div className="card-container">
+                <CategoryMenu
+                    categories={props.categories}
+                    callback={props.callback}
+                />
                 {filterPosts.map(post => {
                     return (
                         <div key={post.title} className="post-card slide-in">
