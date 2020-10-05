@@ -24,7 +24,7 @@ export default function NavBar() {
                     menu
                 </span>
                 <SlideDown className={"my-dropdown-slidedown"}>
-                    <ul className={!showMobileMenu ? "hide" : ""}>
+                    <ul className={!showMobileMenu ? "" : "hide"}>
                         <NavLink to="/">
                             <li className="tab-link">Home</li>
                         </NavLink>

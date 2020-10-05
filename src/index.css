@@ -2,7 +2,6 @@
 html {
   font-family: "Segoe UI", Cochin, Georgia, Times, "Times New Roman", serif;
   overflow-x: hidden;
-  min-height: 100vh;
 }
 
 a {
@@ -16,8 +15,15 @@ html,
 body,
 #root,
 .App {
-  min-height: 100vh;
   overflow-y: overlay;
+}
+@media (min-width: 950px) {
+  html,
+body,
+#root,
+.App {
+    min-height: 100vh;
+  }
 }
 @media (max-width: 949px) {
   html,
@@ -213,7 +219,7 @@ header nav li:hover {
     width: 90%;
   }
 }
-@media (min-width: 950px) {
+@media (min-width: 1050px) {
   .main h2 {
     font-size: 1.5em;
     width: 35%;
@@ -234,12 +240,12 @@ header nav li:hover {
   width: 27%;
   height: auto;
 }
-@media (min-width: 951px) and (max-width: 1249px) {
+@media (min-width: 951px) and (max-width: 1349px) {
   .main .icon-cont .monitor {
     width: 22vw;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1350px) {
   .main .icon-cont .monitor {
     width: 17vw;
   }
@@ -249,12 +255,12 @@ header nav li:hover {
   margin-left: 4%;
   height: auto;
 }
-@media (min-width: 951px) and (max-width: 1249px) {
+@media (min-width: 951px) and (max-width: 1349px) {
   .main .icon-cont .laptop {
     width: 15vw;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1350px) {
   .main .icon-cont .laptop {
     width: 12vw;
   }
@@ -263,12 +269,12 @@ header nav li:hover {
   width: 8%;
   height: auto;
 }
-@media (min-width: 951px) and (max-width: 1249px) {
+@media (min-width: 951px) and (max-width: 1349px) {
   .main .icon-cont .tablet-mobile {
     width: 6vw;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1350px) {
   .main .icon-cont .tablet-mobile {
     width: 4vw;
   }

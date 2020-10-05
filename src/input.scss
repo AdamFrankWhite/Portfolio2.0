@@ -4,7 +4,7 @@ $secondary: #e64c3c;
 html {
     font-family: "Segoe UI", Cochin, Georgia, Times, "Times New Roman", serif;
     overflow-x: hidden;
-    min-height: 100vh;
+    // min-height: 100vh;
 }
 a {
     color: rgb(224, 224, 224);
@@ -16,9 +16,9 @@ html,
 body,
 #root,
 .App {
-    // @media (min-width: 950px) {
-    min-height: 100vh;
-    // }
+    @media (min-width: 950px) {
+        min-height: 100vh;
+    }
     @media (max-width: 949px) {
         display: flex;
         flex-direction: column;
@@ -191,7 +191,7 @@ nav .toggle-menu {
         }
         text-align: center;
         margin: auto;
-        @media (min-width: 950px) {
+        @media (min-width: 1050px) {
             font-size: 1.5em;
             width: 35%;
         }
@@ -206,20 +206,20 @@ nav .toggle-menu {
         justify-content: center;
         align-items: flex-end;
         .monitor {
-            @media (min-width: 951px) and (max-width: 1249px) {
+            @media (min-width: 951px) and (max-width: 1349px) {
                 width: 22vw;
             }
-            @media (min-width: 1250px) {
+            @media (min-width: 1350px) {
                 width: 17vw;
             }
             width: 27%;
             height: auto;
         }
         .laptop {
-            @media (min-width: 951px) and (max-width: 1249px) {
+            @media (min-width: 951px) and (max-width: 1349px) {
                 width: 15vw;
             }
-            @media (min-width: 1250px) {
+            @media (min-width: 1350px) {
                 width: 12vw;
             }
             width: 19%;
@@ -227,10 +227,10 @@ nav .toggle-menu {
             height: auto;
         }
         .tablet-mobile {
-            @media (min-width: 951px) and (max-width: 1249px) {
+            @media (min-width: 951px) and (max-width: 1349px) {
                 width: 6vw;
             }
-            @media (min-width: 1250px) {
+            @media (min-width: 1350px) {
                 width: 4vw;
             }
             width: 8%;
