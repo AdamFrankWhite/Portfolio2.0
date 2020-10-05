@@ -19,7 +19,7 @@ export default function PortfolioCard(props) {
                             View Code
                         </a>
                     </div>
-                    <h4>{props.card.tech}</h4>
+                    <h4>Built with {props.card.tech}</h4>
                     <hr />
                     {cardContent}
                 </div>

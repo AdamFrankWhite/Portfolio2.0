@@ -27,7 +27,6 @@ export default function CategoryMenu(props) {
                     );
                 })}
             </ul>
-            <hr class="menu-hr" />
         </div>
     );
 }

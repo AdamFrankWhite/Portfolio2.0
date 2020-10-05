@@ -69,7 +69,7 @@ header {
   align-items: center;
   background-color: transparent;
   color: white;
-  padding: 1em 2em 2em 2em;
+  padding: 1em 2em;
 }
 @media (max-width: 728px) {
   header {
@@ -211,7 +211,6 @@ header nav li:hover {
   align-items: center;
   margin: auto;
   color: white;
-  border-bottom: white 3px solid;
 }
 .portfolio-tabs h2 {
   font-size: 1.1em;
@@ -219,6 +218,7 @@ header nav li:hover {
   font-weight: 400;
   padding: 0.3em 0.5em;
   border-radius: 5px 5px 0 0;
+  border-bottom: white solid 1px;
 }
 .portfolio-tabs h2:hover {
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.4);
@@ -229,17 +229,13 @@ header nav li:hover {
   color: white;
 }
 
-.websites,
-.projects {
-  display: none;
-}
-
 .website-card {
   width: 80%;
   height: 400px;
   perspective: 600px;
   position: relative;
-  margin: 2em auto;
+  margin: auto;
+  padding-top: 2em;
 }
 .website-card .card {
   width: 100%;
@@ -271,8 +267,10 @@ header nav li:hover {
   width: 30%;
 }
 .website-card .card__face--back a {
-  color: white;
+  color: whitesmoke;
+  font-weight: 500;
   display: inline;
+  padding: 0.25em;
   text-transform: uppercase;
 }
 .website-card .card__face--back a:hover {
@@ -320,17 +318,17 @@ header nav li:hover {
   justify-content: center;
   display: flex;
   list-style-type: none;
+  margin-bottom: 1em;
 }
 .blog-menu li {
   padding: 0.5em;
   font-style: bold;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid white;
 }
 .blog-menu li:hover {
   cursor: pointer;
-}
-
-.menu-hr {
-  margin-bottom: 1em;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.4);
 }
 
 .card-container {
@@ -370,9 +368,21 @@ header nav li:hover {
   width: 80%;
   margin: auto;
 }
+.blog-post hr {
+  width: 50%;
+  margin: 1em auto;
+}
 .blog-post p,
 .blog-post h1 {
   color: white;
+}
+.blog-post h1 {
+  text-align: center;
+  margin: 0.5em auto 0.25em auto;
+}
+.blog-post p {
+  margin: 1em 0;
+  text-align: justify;
 }
 .blog-post code {
   background: #222222;
@@ -380,6 +390,7 @@ header nav li:hover {
   display: block;
   white-space: pre-wrap;
   padding: 2em 1em;
+  margin: 1em;
   border-radius: 5px;
   font-size: 1.1em;
 }
@@ -392,6 +403,15 @@ header nav li:hover {
   display: flex;
   justify-content: space-between;
 }
+.contact .frame-content .contact-content p {
+  margin: 1em 0;
+  width: 80%;
+}
+.contact .frame-content .contact-content hr {
+  margin-top: 0.5em;
+  width: 4em;
+}
+
 .contact-form {
   width: 50%;
   margin: auto;
@@ -403,6 +423,7 @@ header nav li:hover {
 .contact-form textarea,
 .contact-form span {
   width: 100%;
+  font-family: "Segoe UI", Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .contact-form label {
   color: white;
@@ -424,7 +445,7 @@ header nav li:hover {
 }
 .contact-form textarea {
   height: 300px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .contact-form input[type=submit] {
   background: red;
@@ -432,6 +453,11 @@ header nav li:hover {
 }
 .contact-form input[type=submit]:hover {
   cursor: pointer;
+}
+.contact-form .email-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide-in {

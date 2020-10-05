@@ -1,7 +1,7 @@
 const websites = [
     {
         name: "Heatons Cats Website",
-        tech: "Wordpress, HTML, SASS, PHP",
+        tech: "Wordpress, HTML, SASS, JavaScript",
         desc:
             "Responsive custom Wordpress Theme written with HTML, JavaScript, PHP and SASS",
         img: "assets/heatons-min.png",
