@@ -357,13 +357,32 @@ header nav li:hover {
   color: white;
 }
 .blog-post code {
-  background: black;
+  background: #222222;
   color: white;
   display: block;
   white-space: pre-wrap;
   padding: 2em 1em;
   border-radius: 5px;
   font-size: 1.1em;
+}
+
+.contact-form {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form span {
+  width: 100%;
+}
+.contact-form label:hover,
+.contact-form span:hover,
+.contact-form input:hover,
+.contact-form textarea:hover {
+  cursor: pointer;
 }
 
 .slide-in {
@@ -378,6 +397,26 @@ header nav li:hover {
 .frame-content {
   width: 70%;
   margin: auto;
+}
+
+.about p,
+.about li,
+.about h2 {
+  color: white;
+}
+.about ul {
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.about ul li {
+  padding: 0.5em;
+  background-color: royalblue;
+  border: white 1px solid;
+  border-radius: 5px;
+  margin: 0.25em;
 }
 
 .highlight {

@@ -13,9 +13,9 @@ const websites = [
         ]
     },
     {
-        name: "Ebook Landing Page",
+        name: "E-book landing page",
         tech: "Wordpress, HTML, CSS, jQuery",
-        desc: "Lorem ipsum bla bla bla",
+        desc: "Ebook Sales Landing page with Wordpress blog",
         img: "assets/ebook-min.jpg",
         link: "http://quittingweedthebook.com",
         code: "https://github.com/AdamFrankWhite/Landing-Page-1",

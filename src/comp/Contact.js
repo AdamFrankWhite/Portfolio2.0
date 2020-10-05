@@ -1,16 +1,15 @@
 import React from "react";
-
+import ContactForm from "./ContactForm";
 export default function Contact() {
     return (
         <div className="contact slide-in">
             <div className="frame-content">
                 <h2>Contact</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Dolorum quisquam neque magnam tempora aliquid? Quia nobis
-                    vero incidunt asperiores, perspiciatis fugiat blanditiis
-                    animi officiis ipsam nostrum culpa, aliquam vel consectetur.
+                    If you have a project you'd like me to help out with, please
+                    do get in touch.
                 </p>
+                <ContactForm />
             </div>
         </div>
     );
