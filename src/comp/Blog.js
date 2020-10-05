@@ -58,7 +58,7 @@ export default function Blog() {
                 />
             )}
 
-            {postList &&
+            {/* {postList &&
                 selectedCategory !== "All" &&
                 postList.map(post => {
                     return (
@@ -67,13 +67,16 @@ export default function Blog() {
                                 <Link to={`/blog/${post.path}`}>
                                     <h3>{post.title}</h3>
                                 </Link>
+                                <Link to={`/blog/${post.category}`}>
+                                    <h3 class="post-cat">{post.category}</h3>
+                                </Link>
                                 {post.snippet.map(para => (
                                     <p key={para}>{para}</p>
                                 ))}
                             </div>
                         </div>
                     );
-                })}
+                })} */}
             {/* {categories
                         .filter(category => category !== "All")
                         .map(category => (

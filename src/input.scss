@@ -325,13 +325,17 @@ header {
         }
     }
 }
+.menu-hr {
+    margin-bottom: 1em;
+}
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5%;
     // justify-content: flex-start;
 }
 .post-card {
-    width: 45%;
+    width: 100%;
     margin: auto;
     height: 250px;
     border-radius: 10px;
@@ -343,6 +347,10 @@ header {
             color: rgb(219, 219, 219);
         }
     }
+}
+.post-cat {
+    text-transform: uppercase;
+    color: red;
 }
 .selected {
     text-decoration: underline;

@@ -18,6 +18,9 @@ export default function PostsList(props) {
                                 <Link to={`/blog/${post.path}`}>
                                     <h3>{post.title}</h3>
                                 </Link>
+                                <Link to={`/blog/${post.category}`}>
+                                    <h3 class="post-cat">{post.category}</h3>
+                                </Link>
                                 {post.snippet.map(para => (
                                     <p key={para}>{para}</p>
                                 ))}
