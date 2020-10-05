@@ -155,6 +155,24 @@ header nav li:hover {
   color: white;
 }
 
+@media (max-width: 727px) {
+  nav .toggle-menu {
+    color: #e64c3c;
+    font-size: 0.9em;
+    padding: 0.25em;
+    border: solid 1px red;
+    border-radius: 10px;
+  }
+  nav .toggle-menu:hover {
+    cursor: pointer;
+  }
+}
+@media (min-width: 728px) {
+  nav .toggle-menu {
+    display: none;
+  }
+}
+
 .home {
   width: 100%;
   flex-direction: column;

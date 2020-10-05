@@ -143,6 +143,22 @@ header {
         }
     }
 }
+
+nav .toggle-menu {
+    @media (max-width: 727px) {
+        color: $secondary;
+        font-size: 0.9em;
+        padding: 0.25em;
+        border: solid 1px red;
+        border-radius: 10px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    @media (min-width: 728px) {
+        display: none;
+    }
+}
 .home {
     width: 100%;
     flex-direction: column;
