@@ -16,7 +16,14 @@ html,
 body,
 #root,
 .App {
+    // @media (min-width: 950px) {
     min-height: 100vh;
+    // }
+    @media (max-width: 949px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     overflow-y: overlay;
 }
 .App {
@@ -64,11 +71,18 @@ body {
     justify-content: space-between;
 }
 header {
-    @media (max-width: 728px) {
+    @media (max-width: 950px) {
         display: block;
         text-align: center;
     }
+    @media (max-width: 1149px) {
+        font-size: 0.85em;
+    }
     display: flex;
+    flex-direction: column;
+    @media (min-width: 950px) {
+        flex-direction: row;
+    }
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
@@ -80,17 +94,24 @@ header {
         font-size: 32px;
     }
     nav {
-        @media (max-width: 728px) {
+        @media (max-width: 950px) {
             display: flex;
             flex-direction: column;
             align-items: center;
+            font-size: 1.5em;
         }
         text-transform: uppercase;
         text-align: right;
         font-size: 1.5em;
         padding: 1em;
         ul {
+            padding-left: 0;
             list-style-type: none;
+            display: flex;
+            @media (max-width: 728px) {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         li {
             display: inline-block;
@@ -127,7 +148,9 @@ header {
     flex-direction: column;
     justify-content: space-between;
     display: flex;
-    position: absolute;
+    @media (min-width: 950px) {
+        position: absolute;
+    }
     bottom: 0;
 }
 
@@ -146,10 +169,20 @@ header {
     justify-content: space-between;
     align-items: center;
     h2 {
-        width: 35%;
+        width: 60%;
+        @media (max-width: 500px) {
+            width: 90%;
+        }
         text-align: center;
         margin: auto;
-        font-size: 2vw;
+        @media (min-width: 950px) {
+            font-size: 1.5em;
+            width: 35%;
+        }
+        @media (min-width: 1450px) {
+            font-size: 1.8em;
+            width: 35%;
+        }
         color: gray;
     }
     .icon-cont {
@@ -157,15 +190,34 @@ header {
         justify-content: center;
         align-items: flex-end;
         .monitor {
-            width: 17vw;
+            @media (min-width: 951px) and (max-width: 1249px) {
+                width: 22vw;
+            }
+            @media (min-width: 1250px) {
+                width: 17vw;
+            }
+            width: 27%;
             height: auto;
         }
         .laptop {
-            width: 12vw;
+            @media (min-width: 951px) and (max-width: 1249px) {
+                width: 15vw;
+            }
+            @media (min-width: 1250px) {
+                width: 12vw;
+            }
+            width: 19%;
+            margin-left: 4%;
             height: auto;
         }
         .tablet-mobile {
-            width: 4vw;
+            @media (min-width: 951px) and (max-width: 1249px) {
+                width: 6vw;
+            }
+            @media (min-width: 1250px) {
+                width: 4vw;
+            }
+            width: 8%;
             height: auto;
         }
     }

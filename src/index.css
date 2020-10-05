@@ -19,6 +19,16 @@ body,
   min-height: 100vh;
   overflow-y: overlay;
 }
+@media (max-width: 949px) {
+  html,
+body,
+#root,
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 
 .App {
   position: relative;
@@ -65,16 +75,27 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
   color: white;
   padding: 1em 2em;
 }
-@media (max-width: 728px) {
+@media (max-width: 950px) {
   header {
     display: block;
     text-align: center;
+  }
+}
+@media (max-width: 1149px) {
+  header {
+    font-size: 0.85em;
+  }
+}
+@media (min-width: 950px) {
+  header {
+    flex-direction: row;
   }
 }
 header h1 {
@@ -87,15 +108,24 @@ header nav {
   font-size: 1.5em;
   padding: 1em;
 }
-@media (max-width: 728px) {
+@media (max-width: 950px) {
   header nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.5em;
   }
 }
 header nav ul {
+  padding-left: 0;
   list-style-type: none;
+  display: flex;
+}
+@media (max-width: 728px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 header nav li {
   display: inline-block;
@@ -130,8 +160,12 @@ header nav li:hover {
   flex-direction: column;
   justify-content: space-between;
   display: flex;
-  position: absolute;
   bottom: 0;
+}
+@media (min-width: 950px) {
+  .home {
+    position: absolute;
+  }
 }
 
 .block-div {
@@ -151,11 +185,27 @@ header nav li:hover {
   align-items: center;
 }
 .main h2 {
-  width: 35%;
+  width: 60%;
   text-align: center;
   margin: auto;
-  font-size: 2vw;
   color: gray;
+}
+@media (max-width: 500px) {
+  .main h2 {
+    width: 90%;
+  }
+}
+@media (min-width: 950px) {
+  .main h2 {
+    font-size: 1.5em;
+    width: 35%;
+  }
+}
+@media (min-width: 1450px) {
+  .main h2 {
+    font-size: 1.8em;
+    width: 35%;
+  }
 }
 .main .icon-cont {
   display: flex;
@@ -163,16 +213,47 @@ header nav li:hover {
   align-items: flex-end;
 }
 .main .icon-cont .monitor {
-  width: 17vw;
+  width: 27%;
   height: auto;
+}
+@media (min-width: 951px) and (max-width: 1249px) {
+  .main .icon-cont .monitor {
+    width: 22vw;
+  }
+}
+@media (min-width: 1250px) {
+  .main .icon-cont .monitor {
+    width: 17vw;
+  }
 }
 .main .icon-cont .laptop {
-  width: 12vw;
+  width: 19%;
+  margin-left: 4%;
   height: auto;
 }
+@media (min-width: 951px) and (max-width: 1249px) {
+  .main .icon-cont .laptop {
+    width: 15vw;
+  }
+}
+@media (min-width: 1250px) {
+  .main .icon-cont .laptop {
+    width: 12vw;
+  }
+}
 .main .icon-cont .tablet-mobile {
-  width: 4vw;
+  width: 8%;
   height: auto;
+}
+@media (min-width: 951px) and (max-width: 1249px) {
+  .main .icon-cont .tablet-mobile {
+    width: 6vw;
+  }
+}
+@media (min-width: 1250px) {
+  .main .icon-cont .tablet-mobile {
+    width: 4vw;
+  }
 }
 
 .animation-1 {
