@@ -101,6 +101,15 @@ const posts = [
             "Here we have a menu that we wish to do a few things with. Note how the code is repeated. We can fix this using the ever-handy .map() method."
         ],
         category: "React"
+    },
+    {
+        title: "Some CSS Thing",
+        content: <Refactoring />,
+        path: "react-components",
+        snippet: [
+            "Here we have a menu that we wish to do a few things with. Note how the code is repeated. We can fix this using the ever-handy .map() method."
+        ],
+        category: "CSS/SASS"
     }
 ];
 

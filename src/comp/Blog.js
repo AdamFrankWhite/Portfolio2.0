@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import posts from "../content/posts";
 import { Link } from "react-router-dom";
 export default function Blog() {
-    const [postList, setPostList] = useState(posts);
+    const [postList, setPostList] = useState();
     const [selectedCategory, setSelectedCategory] = useState("All");
     const categories = ["All", "React", "CSS/SASS", "Wordpress", "Performance"];
     useEffect(() => {
@@ -12,6 +12,7 @@ export default function Blog() {
                 : posts;
         setPostList(filterPosts);
     }, [selectedCategory]);
+
     return (
         <div className="blog slide-in">
             <div className="frame-content">
@@ -20,8 +21,11 @@ export default function Blog() {
                     {categories.map(category => {
                         return (
                             <li
+                                key={category}
                                 className={
-                                    category == selectedCategory && "selected"
+                                    category == selectedCategory
+                                        ? "selected"
+                                        : ""
                                 }
                                 onClick={() => {
                                     setSelectedCategory(category);
@@ -32,21 +36,25 @@ export default function Blog() {
                         );
                     })}
                 </ul>
-                <div>
-                    {postList.map(post => {
-                        return (
-                            <div className="post-card">
-                                <div className="post-card-content">
-                                    <Link to={`/blog/${post.path}`}>
-                                        <h3>{post.title}</h3>
-                                    </Link>
-                                    {post.snippet.map(para => (
-                                        <p>{para}</p>
-                                    ))}
+                <div className="card-container">
+                    {postList &&
+                        postList.map(post => {
+                            return (
+                                <div
+                                    key={post.title}
+                                    className="post-card slide-in"
+                                >
+                                    <div className="post-card-content">
+                                        <Link to={`/blog/${post.path}`}>
+                                            <h3>{post.title}</h3>
+                                        </Link>
+                                        {post.snippet.map(para => (
+                                            <p key={para}>{para}</p>
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
                 </div>
             </div>
         </div>

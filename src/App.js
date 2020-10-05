@@ -22,6 +22,7 @@ function App() {
                     <Route exact path="/blog" component={Blog} />
                     {posts.map(post => (
                         <Route
+                            key={post.title}
                             path={`/blog/${post.path}`}
                             render={props => (
                                 <BlogPost {...props} post={post} />
