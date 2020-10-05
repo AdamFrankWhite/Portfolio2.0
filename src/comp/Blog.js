@@ -19,17 +19,21 @@ export default function Blog() {
             <ul>
                 {categories.map(category => {
                     return (
-                        <li
-                            key={category}
-                            className={
-                                category == selectedCategory ? "selected" : ""
-                            }
-                            onClick={() => {
-                                setSelectedCategory(category);
-                            }}
-                        >
-                            {category}
-                        </li>
+                        <Link to={`/blog/${category}`}>
+                            <li
+                                key={category}
+                                className={
+                                    category == selectedCategory
+                                        ? "selected"
+                                        : ""
+                                }
+                                onClick={() => {
+                                    setSelectedCategory(category);
+                                }}
+                            >
+                                {category}
+                            </li>
+                        </Link>
                     );
                 })}
             </ul>

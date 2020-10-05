@@ -7,8 +7,10 @@ import Blog from "./comp/Blog";
 import BlogPost from "./comp/BlogPost";
 import Contact from "./comp/Contact";
 import About from "./comp/About";
+import Category from "./comp/Category";
 import posts from "./content/posts";
 function App() {
+    const categories = ["All", "React", "CSS/SASS", "Wordpress", "Performance"];
     return (
         <div className="App">
             <Router>
@@ -29,7 +31,17 @@ function App() {
                             )}
                         />
                     ))}
-                    <Route path="/blog/:post" component={BlogPost} />
+                    {categories.map(category => (
+                        <Route
+                            key={category}
+                            path={`/blog/${category}`}
+                            render={props => (
+                                <Category {...props} category={category} />
+                            )}
+                        />
+                    ))}
+
+                    {/* <Route path="/blog/:post" component={BlogPost} /> */}
                     {/* </div> */}
                 </Switch>
             </Router>
