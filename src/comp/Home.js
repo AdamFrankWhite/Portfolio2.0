@@ -16,11 +16,11 @@ export default class Home extends React.Component {
         const style = this.state.didLoad ? {} : { visibility: "hidden" };
         return (
             <section
-                style={style}
-                className="home slide-in"
-                onLoad={this.onLoad}
+            // style={style}
+            // className="home slide-in"
+            // onLoad={this.onLoad}
             >
-                <div className="main">
+                <div className="main slide-in">
                     <h2 className="headline">
                         I create minimalist, functional, responsive,
                         cross-browser web sites and apps
@@ -43,7 +43,7 @@ export default class Home extends React.Component {
                             alt="tree"
                         />
                     </div>
-                    <div className="block-div"></div>
+                    {/* <div className="block-div"></div> */}
                 </div>
             </section>
         );

@@ -174,16 +174,16 @@ nav .toggle-menu {
         display: none;
     }
 }
-.home {
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    display: flex;
-    @media (min-width: 950px) {
-        position: absolute;
-    }
-    bottom: 0;
-}
+// .home {
+//     width: 100%;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     display: flex;
+// @media (min-width: 950px) {
+//     position: absolute;
+// }
+// bottom: 0;
+// }
 
 .block-div {
     height: 150px;
@@ -195,6 +195,7 @@ nav .toggle-menu {
 }
 
 .main {
+    padding-top: 10em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -283,7 +284,8 @@ nav .toggle-menu {
 .portfolio {
     width: 100%;
     height: 100%;
-    display: none;
+    background: $secondary;
+    padding-top: 8em;
 }
 .portfolio-tabs {
     display: flex;
@@ -309,14 +311,20 @@ nav .toggle-menu {
         color: white;
     }
 }
-
+.websites,
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .website-card {
-    width: 80%;
+    width: 45%;
     height: 400px;
     perspective: 600px;
-    position: relative;
+    // position: relative;
     margin: auto;
-    padding-top: 2em;
+    // padding-top: 2em;
     // border-top: 2px solid white;
     @media (max-width: 649px) {
         width: 95%;
@@ -413,10 +421,10 @@ nav .toggle-menu {
     }
 }
 
-.website-card:last-of-type,
-.project-card:last-of-type {
-    margin-bottom: 2em;
-}
+// .website-card:last-of-type,
+// .project-card:last-of-type {
+//     margin-bottom: 2em;
+// }
 
 .about,
 .contact,
@@ -599,7 +607,7 @@ nav .toggle-menu {
 
 .slide-in {
     animation: slide-left 0.8s forwards;
-    display: block;
+    // display: block;
 }
 
 .hide {

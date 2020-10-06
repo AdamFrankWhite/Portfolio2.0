@@ -17,42 +17,46 @@ function App() {
         <div className="App">
             <Router>
                 <NavBar />
-                <Switch>
-                    {/* <div className="main-cont"> */}
-                    <Route exact path="/" component={Home} />
-                    <Route path="/portfolio" component={Portfolio} />
-                    <Route path="/hire-me" component={HireMe} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/about" component={About} />
-                    <Route exact path="/blog" component={Blog} />
-                    {posts.map(post => (
+                <Home />
+                <Portfolio />
+                <HireMe />
+                <Contact />
+                <About />
+                <Footer />
+                {/* <Switch> */}
+                {/* <div className="main-cont"> */}
+                {/* <Route exact path="/" component={Home} />
+                <Route path="/portfolio" component={Portfolio} />
+                <Route path="/hire-me" component={HireMe} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/about" component={About} />
+                <Route exact path="/blog" component={Blog} /> */}
+                {posts.map(post => (
+                    <Route
+                        key={post.title}
+                        path={`/blog/${post.path}`}
+                        render={props => <BlogPost {...props} post={post} />}
+                    />
+                ))}
+                {categories
+                    .filter(category => category !== "All")
+                    .map(category => (
                         <Route
-                            key={post.title}
-                            path={`/blog/${post.path}`}
+                            key={category}
+                            path={`/blog/${category}`}
                             render={props => (
-                                <BlogPost {...props} post={post} />
+                                <Category
+                                    {...props}
+                                    categories={categories}
+                                    category={category}
+                                />
                             )}
                         />
                     ))}
-                    {categories
-                        .filter(category => category !== "All")
-                        .map(category => (
-                            <Route
-                                key={category}
-                                path={`/blog/${category}`}
-                                render={props => (
-                                    <Category
-                                        {...props}
-                                        categories={categories}
-                                        category={category}
-                                    />
-                                )}
-                            />
-                        ))}
 
-                    {/* <Route path="/blog/:post" component={BlogPost} /> */}
-                    {/* </div> */}
-                </Switch>
+                {/* <Route path="/blog/:post" component={BlogPost} /> */}
+                {/* </div> */}
+                {/* </Switch> */}
             </Router>
         </div>
     );
