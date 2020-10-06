@@ -4,16 +4,7 @@ import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 import { useMediaQuery } from "react-responsive";
 export default function NavBar() {
-    const isDesktopOrLaptop = useMediaQuery({
-        query: "(min-device-width: 728px)"
-    });
-    const isBigScreen = useMediaQuery({
-        query: "(min-device-width: 1824px)"
-    });
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 727px)" });
-    const isTabletOrMobileDevice = useMediaQuery({
-        query: "(max-device-width: 1224px)"
-    });
 
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     return (
@@ -36,15 +27,15 @@ export default function NavBar() {
                 </span>
                 {isTabletOrMobile ? (
                     <SlideDown className={"my-dropdown-slidedown"}>
-                        <ul className={!showMobileMenu ? "" : "hide"}>
-                            <NavLink to="/">
-                                <li className="tab-link">Home</li>
-                            </NavLink>
+                        <ul className={showMobileMenu ? "" : "hide"}>
                             <NavLink to="/portfolio">
                                 <li className="tab-link">Portfolio</li>
                             </NavLink>
                             <NavLink to="/blog">
                                 <li className="tab-link">Blog</li>
+                            </NavLink>
+                            <NavLink to="/hire-me">
+                                <li className="tab-link">Hire Me</li>
                             </NavLink>
                             <NavLink to="/about">
                                 <li className="tab-link">About</li>
@@ -56,14 +47,14 @@ export default function NavBar() {
                     </SlideDown>
                 ) : (
                     <ul>
-                        <NavLink to="/">
-                            <li className="tab-link">Home</li>
-                        </NavLink>
                         <NavLink to="/portfolio">
                             <li className="tab-link">Portfolio</li>
                         </NavLink>
                         <NavLink to="/blog">
                             <li className="tab-link">Blog</li>
+                        </NavLink>
+                        <NavLink to="/hire-me">
+                            <li className="tab-link">Hire Me</li>
                         </NavLink>
                         <NavLink to="/about">
                             <li className="tab-link">About</li>

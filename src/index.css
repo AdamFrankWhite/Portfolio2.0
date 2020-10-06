@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 html {
-  font-family: "Segoe UI", Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Open Sans", "Franklin Gothic Light", "Roboto", Georgia, Times, "Times New Roman", serif;
   overflow-x: hidden;
 }
 
@@ -9,6 +9,10 @@ a {
 }
 a:hover {
   color: rbga(201, 201, 201, 0.5);
+}
+
+p {
+  font-family: "Open Sans";
 }
 
 html,
@@ -72,14 +76,21 @@ a {
 
 body {
   background: #4d0d0d;
+  margin: auto;
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+@media (min-width: 2000px) {
+  body {
+    font-size: 1.5em;
+  }
+}
 
 header {
+  font-family: "Open Sans";
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -106,7 +117,11 @@ header {
 }
 header h1 {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+}
+header h2 {
+  letter-spacing: 0.04em;
 }
 header nav {
   text-transform: uppercase;
@@ -136,7 +151,7 @@ header nav ul {
 header nav li {
   display: inline-block;
   color: #e33030;
-  padding: 0.5em 0.5em 0.25em 0.5em;
+  padding: 0.5em 0.75em 0.25em 0.75em;
   position: relative;
 }
 header nav li:after {
@@ -309,19 +324,6 @@ header nav li:hover {
   height: 100%;
   display: none;
 }
-.portfolio .frame-content {
-  width: 100%;
-}
-@media (min-width: 800px) {
-  .portfolio .frame-content {
-    width: 80%;
-  }
-}
-@media (min-width: 1200px) {
-  .portfolio .frame-content {
-    width: 60%;
-  }
-}
 
 .portfolio-tabs {
   display: flex;
@@ -330,7 +332,7 @@ header nav li:hover {
   margin: auto;
   color: white;
 }
-.portfolio-tabs h2 {
+.portfolio-tabs h4 {
   font-size: 1.1em;
   position: relative;
   font-weight: 400;
@@ -338,7 +340,7 @@ header nav li:hover {
   border-radius: 5px 5px 0 0;
   border-bottom: white solid 1px;
 }
-.portfolio-tabs h2:hover {
+.portfolio-tabs h4:hover {
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
@@ -417,6 +419,7 @@ header nav li:hover {
 }
 .website-card .card__face--back p {
   width: 80%;
+  font-size: 0.95em;
   padding: 1em 2em 0em 2em;
 }
 .website-card .card__face--front {
@@ -432,17 +435,26 @@ header nav li:hover {
 }
 .website-card .card__face--front h3 {
   font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.03em;
 }
 .website-card .card__face--front p {
-  font-size: 1.2em;
+  font-family: "Open Sans";
+  font-size: 1.1em;
   width: 50%;
   text-align: center;
+  font-weight: 300;
 }
 .website-card .card__face--front hr {
   width: 30%;
 }
 .website-card .card.is-flipped {
   transform: rotateX(180deg);
+}
+
+.website-card:last-of-type,
+.project-card:last-of-type {
+  margin-bottom: 2em;
 }
 
 .about,
@@ -453,17 +465,33 @@ header nav li:hover {
   min-height: 80vh;
 }
 
+.frame-content {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+}
+@media (max-width: 727px) {
+  .frame-content {
+    width: 95%;
+  }
+}
+
 .blog-menu {
   justify-content: center;
   display: flex;
   list-style-type: none;
   margin-bottom: 1em;
+  padding-left: 0;
 }
 .blog-menu li {
   padding: 0.5em;
-  font-style: bold;
   border-radius: 5px 5px 0 0;
   border-bottom: 1px solid white;
+}
+@media (max-width: 400px) {
+  .blog-menu li {
+    font-size: 0.8em;
+  }
 }
 .blog-menu li:hover {
   cursor: pointer;
@@ -490,7 +518,7 @@ header nav li:hover {
   color: #dbdbdb;
 }
 .post-card .post-card-content h3 {
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 .post-card .post-card-content .post-cat {
   text-transform: uppercase;
@@ -541,14 +569,15 @@ header nav li:hover {
   width: 90%;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
+.contact .frame-content .contact-content {
+  margin: auto;
+  text-align: center;
 }
 .contact .frame-content .contact-content p {
-  margin: 1em 0;
+  margin: 1em auto;
   width: 80%;
-}
-.contact .frame-content .contact-content hr {
-  margin-top: 0.5em;
-  width: 4em;
 }
 
 .contact-form {
@@ -557,12 +586,17 @@ header nav li:hover {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 727px) {
+  .contact-form {
+    width: 95%;
+  }
+}
 .contact-form label,
 .contact-form input,
 .contact-form textarea,
 .contact-form span {
   width: 100%;
-  font-family: "Segoe UI", Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Franklin Gothic Medium", Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .contact-form label {
   color: white;
@@ -608,29 +642,28 @@ header nav li:hover {
   display: none;
 }
 
-.frame-content {
-  width: 70%;
-  margin: auto;
+.portfolio-title,
+.about h2:first-of-type,
+.blog h2:first-of-type {
+  color: white;
+  text-align: center;
 }
 
 .about p,
 .about li,
+.about h1,
 .about h2 {
   color: white;
 }
-.about ul {
-  margin: auto;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
+.about hr {
+  width: 10%;
+  background-color: white;
 }
-.about ul li {
-  padding: 0.5em;
-  background-color: royalblue;
-  border: white 1px solid;
-  border-radius: 5px;
-  margin: 0.25em;
+.about .full-width {
+  width: 100%;
+}
+.about p {
+  margin: 1em auto;
 }
 
 .highlight {
@@ -772,6 +805,33 @@ header nav li:hover {
   flex: 60%;
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  font-size: 1.1em;
+  padding: 2em;
+  background: #e64c3c;
+  color: white;
+  font-family: "Open Sans";
+  width: 100%;
+}
+footer hr {
+  width: 80%;
+  margin: auto;
+  background-color: #e64c3c;
+}
+footer .footer-content {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+footer .footer-content .link-cont {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=index.css.map */

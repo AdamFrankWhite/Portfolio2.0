@@ -4,6 +4,9 @@ export default function CategoryMenu(props) {
     const [active, setActive] = useState(props.category);
     return (
         <div>
+            <h2>Blog</h2>
+            <hr className="full-width" />
+            <br />
             <ul class="blog-menu">
                 {props.categories.map(category => {
                     const linkPath =

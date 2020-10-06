@@ -7,8 +7,10 @@ import Blog from "./comp/Blog";
 import BlogPost from "./comp/BlogPost";
 import Contact from "./comp/Contact";
 import About from "./comp/About";
+import HireMe from "./comp/HireMe";
 import Category from "./comp/Category";
 import posts from "./content/posts";
+import Footer from "./comp/Footer";
 function App() {
     const categories = ["All", "React", "CSS/SASS", "Wordpress", "Performance"];
     return (
@@ -19,8 +21,9 @@ function App() {
                     {/* <div className="main-cont"> */}
                     <Route exact path="/" component={Home} />
                     <Route path="/portfolio" component={Portfolio} />
-                    <Route path="/about" component={About} />
+                    <Route path="/hire-me" component={HireMe} />
                     <Route path="/contact" component={Contact} />
+                    <Route path="/about" component={About} />
                     <Route exact path="/blog" component={Blog} />
                     {posts.map(post => (
                         <Route

@@ -8,8 +8,12 @@ export default function Portfolio() {
     return (
         <section className="portfolio slide-in">
             <div className="frame-content">
+                <h2 class="portfolio-title">Portfolio</h2>
+
+                <hr className="full-width" />
+                <br />
                 <div className="portfolio-tabs">
-                    <h2
+                    <h4
                         className={showWebsites && "highlight"}
                         onClick={() => {
                             setShowWebsites(true);
@@ -17,8 +21,8 @@ export default function Portfolio() {
                         }}
                     >
                         Websites
-                    </h2>
-                    <h2
+                    </h4>
+                    <h4
                         className={showProjects && "highlight"}
                         onClick={() => {
                             setShowWebsites(false);
@@ -26,7 +30,7 @@ export default function Portfolio() {
                         }}
                     >
                         Projects
-                    </h2>
+                    </h4>
                 </div>
 
                 <div className={showWebsites ? "websites slide-in" : "hide"}>

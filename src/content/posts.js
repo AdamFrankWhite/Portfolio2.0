@@ -103,13 +103,14 @@ const posts = [
         category: "React"
     },
     {
-        title: "Some CSS Thing",
+        title: "Useful React packages",
         content: <Refactoring />,
-        path: "react-components",
+        path: "useful-react-packages",
         snippet: [
+            "react-highlight.js react-loader-spinner react-responsive",
             "Here we have a menu that we wish to do a few things with. Note how the code is repeated. We can fix this using the ever-handy .map() method."
         ],
-        category: "CSS/SASS"
+        category: "React"
     }
 ];
 
