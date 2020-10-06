@@ -2,8 +2,19 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
-
+import { useMediaQuery } from "react-responsive";
 export default function NavBar() {
+    const isDesktopOrLaptop = useMediaQuery({
+        query: "(min-device-width: 728px)"
+    });
+    const isBigScreen = useMediaQuery({
+        query: "(min-device-width: 1824px)"
+    });
+    const isTabletOrMobile = useMediaQuery({ query: "(max-width: 727px)" });
+    const isTabletOrMobileDevice = useMediaQuery({
+        query: "(max-device-width: 1224px)"
+    });
+
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     return (
         <header className="header-1">
@@ -23,8 +34,28 @@ export default function NavBar() {
                 >
                     menu
                 </span>
-                <SlideDown className={"my-dropdown-slidedown"}>
-                    <ul className={!showMobileMenu ? "" : "hide"}>
+                {isTabletOrMobile ? (
+                    <SlideDown className={"my-dropdown-slidedown"}>
+                        <ul className={!showMobileMenu ? "" : "hide"}>
+                            <NavLink to="/">
+                                <li className="tab-link">Home</li>
+                            </NavLink>
+                            <NavLink to="/portfolio">
+                                <li className="tab-link">Portfolio</li>
+                            </NavLink>
+                            <NavLink to="/blog">
+                                <li className="tab-link">Blog</li>
+                            </NavLink>
+                            <NavLink to="/about">
+                                <li className="tab-link">About</li>
+                            </NavLink>
+                            <NavLink to="/contact">
+                                <li className="tab-link">Contact</li>
+                            </NavLink>
+                        </ul>
+                    </SlideDown>
+                ) : (
+                    <ul>
                         <NavLink to="/">
                             <li className="tab-link">Home</li>
                         </NavLink>
@@ -41,7 +72,7 @@ export default function NavBar() {
                             <li className="tab-link">Contact</li>
                         </NavLink>
                     </ul>
-                </SlideDown>
+                )}
             </nav>
         </header>
     );
