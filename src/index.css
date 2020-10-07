@@ -40,6 +40,10 @@ body,
   }
 }
 
+h2 {
+  font-size: 1.75em;
+}
+
 .App {
   position: relative;
 }
@@ -475,7 +479,7 @@ header nav li:hover {
 }
 
 .frame-content {
-  width: 90%;
+  width: 80%;
   max-width: 1600px;
   margin: auto;
 }
@@ -652,8 +656,7 @@ header nav li:hover {
 }
 
 .portfolio-title,
-.about h2:first-of-type,
-.blog h2:first-of-type {
+.about h2 .blog h2:first-of-type {
   color: white;
   text-align: center;
 }
@@ -663,6 +666,25 @@ header nav li:hover {
   text-transform: uppercase;
 }
 
+.about {
+  padding-top: 100px;
+}
+.about .hire-title-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 2em;
+  justify-content: flex-end;
+}
+.about .hire-title-cont h2 {
+  margin-bottom: 0.25em !important;
+  text-transform: uppercase;
+}
+.about .hire-title-cont hr {
+  background-color: white;
+  width: 10%;
+  margin-top: 0.25em;
+}
 .about p,
 .about li,
 .about h1,
@@ -685,6 +707,54 @@ header nav li:hover {
   border-radius: 5px 5px 0 0;
   color: #4d0d0d;
   transition: background 0.2s;
+}
+
+.hire-card-cont {
+  display: flex;
+  width: 80%;
+  margin: 3em auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hire-card-cont h2 {
+  text-align: left;
+}
+.hire-card-cont img {
+  width: 40%;
+  height: auto;
+  padding: 1.5em;
+}
+.hire-card-cont .hire-card {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  transform: translateY(1em);
+  transition: transform 0.2s;
+}
+.hire-card-cont .hire-card:hover {
+  transform: translateY(-1em);
+  transition: transform 0.2s ease-in-out;
+}
+.hire-card-cont .hire-card h3 {
+  color: #ce0000;
+  font-weight: bold;
+}
+.hire-card-cont .hire-card ul {
+  list-style-type: none;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.hire-card-cont .hire-card ul li {
+  color: #5f5f5f;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px gray solid;
 }
 
 @keyframes slide-left {

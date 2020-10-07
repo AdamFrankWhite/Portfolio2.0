@@ -30,7 +30,9 @@ body,
     }
     overflow-y: overlay;
 }
-
+h2 {
+    font-size: 1.75em;
+}
 .App {
     // display: flex;
     position: relative;
@@ -462,7 +464,7 @@ nav .toggle-menu {
 }
 
 .frame-content {
-    width: 90%;
+    width: 80%;
     max-width: 1600px;
     margin: auto;
     @media (max-width: 727px) {
@@ -643,10 +645,10 @@ nav .toggle-menu {
 }
 
 .portfolio-title,
-.about h2:first-of-type,
-.blog h2:first-of-type {
+.about h2 .blog h2:first-of-type {
     color: white;
     text-align: center;
+    // font-size: 1.75em;
 }
 .portfolio-title {
     text-align: right;
@@ -654,6 +656,24 @@ nav .toggle-menu {
 }
 
 .about {
+    padding-top: 100px;
+    .hire-title-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 2em;
+        justify-content: flex-end;
+        h2 {
+            margin-bottom: 0.25em !important;
+            text-transform: uppercase;
+            // font-size: 1.75em;
+        }
+        hr {
+            background-color: white;
+            width: 10%;
+            margin-top: 0.25em;
+        }
+    }
     p,
     li,
     h1,
@@ -690,6 +710,61 @@ nav .toggle-menu {
     border-radius: 5px 5px 0 0;
     color: $primary;
     transition: background 0.2s;
+}
+
+.hire-card-cont {
+    display: flex;
+    width: 80%;
+    margin: 3em auto;
+    justify-content: space-evenly;
+    align-items: center;
+    h2 {
+        text-align: left;
+    }
+
+    img {
+        width: 40%;
+        height: auto;
+        padding: 1.5em;
+    }
+    .hire-card {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 5px;
+        transform: translateY(1em);
+        transition: transform 0.2s;
+        &:hover {
+            // transform: scale(1.05);
+            transform: translateY(-1em);
+            transition: transform 0.2s ease-in-out;
+        }
+        h3 {
+            color: rgb(206, 0, 0);
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            li {
+                color: rgb(95, 95, 95);
+                // background: rgb(78, 78, 78);
+                padding: 0.5em;
+                // margin-bottom: 0.1em;
+                text-align: center;
+                // border-top: 1px gray solid;
+                border-bottom: 1px gray solid;
+                // border: 1px gray solid;
+                // border-radius: 5px;
+            }
+        }
+    }
 }
 
 @keyframes slide-left {

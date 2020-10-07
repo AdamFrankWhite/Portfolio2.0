@@ -11,6 +11,7 @@ import HireMe from "./comp/HireMe";
 import Category from "./comp/Category";
 import posts from "./content/posts";
 import Footer from "./comp/Footer";
+
 function App() {
     const categories = ["All", "React", "CSS/SASS", "Wordpress", "Performance"];
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Home />
                 <Portfolio />
                 <HireMe />
+                <Blog />
                 <Contact />
                 <About />
                 <Footer />
@@ -29,8 +31,8 @@ function App() {
                 <Route path="/portfolio" component={Portfolio} />
                 <Route path="/hire-me" component={HireMe} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/about" component={About} />
-                <Route exact path="/blog" component={Blog} /> */}
+                <Route path="/about" component={About} />*/}
+                <Route exact path="/blog" component={Blog} />
                 {posts.map(post => (
                     <Route
                         key={post.title}

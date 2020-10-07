@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import websites from "../content/websiteArray";
-import projects from "../content/projectArray";
 import PortfolioCard from "./PortfolioCard";
-
 import ScrollAnimation from "react-animate-on-scroll";
-
-import Carousel from "react-bootstrap/Carousel";
 export default function Portfolio() {
     return (
         <section className="portfolio slide-in">
