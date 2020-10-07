@@ -76,9 +76,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media (min-width: 2000px) {
-        font-size: 1.5em;
-    }
+    // @media (min-width: 2000px) {
+    font-size: 1em;
+    // }
 }
 header {
     font-family: "Open Sans";
@@ -186,7 +186,7 @@ nav .toggle-menu {
 // }
 
 .block-div {
-    height: 150px;
+    height: 100px;
     width: 100%;
     background: $secondary;
 }
@@ -285,7 +285,22 @@ nav .toggle-menu {
     width: 100%;
     height: 100%;
     background: $secondary;
-    padding-top: 8em;
+    padding-top: 100px;
+    .portfolio-title-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        // padding-right: 2%;
+        justify-content: flex-end;
+        .portfolio-title {
+            margin-bottom: 0.25em !important;
+        }
+        hr {
+            background-color: white;
+            width: 10%;
+            margin-top: 0.25em;
+        }
+    }
 }
 .portfolio-tabs {
     display: flex;
@@ -318,12 +333,17 @@ nav .toggle-menu {
     justify-content: center;
     align-items: center;
 }
+
 .website-card {
-    width: 45%;
+    width: 100%;
+    @media (min-width: 1050px) {
+        width: 47%;
+    }
+
     height: 400px;
     perspective: 600px;
     // position: relative;
-    margin: auto;
+    margin-bottom: 3em;
     // padding-top: 2em;
     // border-top: 2px solid white;
     @media (max-width: 649px) {
@@ -335,6 +355,7 @@ nav .toggle-menu {
         position: relative;
         transition: transform 0.75s;
         transform-style: preserve-3d;
+
         .card__face {
             @media (max-width: 650px) {
                 a {
@@ -370,9 +391,13 @@ nav .toggle-menu {
         color: white;
         justify-content: center;
         align-items: center;
-
+        font-size: 0.95em;
+        .title-cont {
+            // padding-top: 2em;
+        }
         hr {
             width: 30%;
+            margin-top: 1em;
         }
         a {
             color: whitesmoke;
@@ -385,7 +410,7 @@ nav .toggle-menu {
             }
         }
         p {
-            width: 80%;
+            width: 95%;
             font-size: 0.95em;
             padding: 1em 2em 0em 2em;
         }
@@ -401,19 +426,21 @@ nav .toggle-menu {
         justify-content: center;
         align-items: center;
         h3 {
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-weight: bold;
             letter-spacing: 0.03em;
         }
         p {
             font-family: "Open Sans";
-            font-size: 1.1em;
+            font-size: 1em;
             width: 50%;
             text-align: center;
             font-weight: 300;
         }
         hr {
             width: 30%;
+            background-color: white;
+            margin: 0.25em auto;
         }
     }
     .card.is-flipped {
@@ -435,8 +462,8 @@ nav .toggle-menu {
 }
 
 .frame-content {
-    width: 70%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1600px;
     margin: auto;
     @media (max-width: 727px) {
         width: 95%;
@@ -475,6 +502,7 @@ nav .toggle-menu {
     // grid-column-gap: 5%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .post-card {
     width: 100%;
@@ -613,12 +641,18 @@ nav .toggle-menu {
 .hide {
     display: none;
 }
+
 .portfolio-title,
 .about h2:first-of-type,
 .blog h2:first-of-type {
     color: white;
     text-align: center;
 }
+.portfolio-title {
+    text-align: right;
+    text-transform: uppercase;
+}
+
 .about {
     p,
     li,

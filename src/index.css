@@ -82,11 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-@media (min-width: 2000px) {
-  body {
-    font-size: 1.5em;
-  }
+  font-size: 1em;
 }
 
 header {
@@ -195,7 +191,7 @@ header nav li:hover {
 }
 
 .block-div {
-  height: 150px;
+  height: 100px;
   width: 100%;
   background: #e64c3c;
 }
@@ -311,7 +307,21 @@ header nav li:hover {
   width: 100%;
   height: 100%;
   background: #e64c3c;
-  padding-top: 8em;
+  padding-top: 100px;
+}
+.portfolio .portfolio-title-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.portfolio .portfolio-title-cont .portfolio-title {
+  margin-bottom: 0.25em !important;
+}
+.portfolio .portfolio-title-cont hr {
+  background-color: white;
+  width: 10%;
+  margin-top: 0.25em;
 }
 
 .portfolio-tabs {
@@ -347,10 +357,15 @@ header nav li:hover {
 }
 
 .website-card {
-  width: 45%;
+  width: 100%;
   height: 400px;
   perspective: 600px;
-  margin: auto;
+  margin-bottom: 3em;
+}
+@media (min-width: 1050px) {
+  .website-card {
+    width: 47%;
+  }
 }
 @media (max-width: 649px) {
   .website-card {
@@ -398,9 +413,11 @@ header nav li:hover {
   color: white;
   justify-content: center;
   align-items: center;
+  font-size: 0.95em;
 }
 .website-card .card__face--back hr {
   width: 30%;
+  margin-top: 1em;
 }
 .website-card .card__face--back a {
   color: whitesmoke;
@@ -413,7 +430,7 @@ header nav li:hover {
   text-decoration: underline;
 }
 .website-card .card__face--back p {
-  width: 80%;
+  width: 95%;
   font-size: 0.95em;
   padding: 1em 2em 0em 2em;
 }
@@ -429,19 +446,21 @@ header nav li:hover {
   align-items: center;
 }
 .website-card .card__face--front h3 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   letter-spacing: 0.03em;
 }
 .website-card .card__face--front p {
   font-family: "Open Sans";
-  font-size: 1.1em;
+  font-size: 1em;
   width: 50%;
   text-align: center;
   font-weight: 300;
 }
 .website-card .card__face--front hr {
   width: 30%;
+  background-color: white;
+  margin: 0.25em auto;
 }
 .website-card .card.is-flipped {
   transform: rotateX(180deg);
@@ -456,8 +475,8 @@ header nav li:hover {
 }
 
 .frame-content {
-  width: 70%;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1600px;
   margin: auto;
 }
 @media (max-width: 727px) {
@@ -491,6 +510,7 @@ header nav li:hover {
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .post-card {
@@ -636,6 +656,11 @@ header nav li:hover {
 .blog h2:first-of-type {
   color: white;
   text-align: center;
+}
+
+.portfolio-title {
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .about p,

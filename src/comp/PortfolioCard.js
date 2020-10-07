@@ -10,7 +10,7 @@ export default function PortfolioCard(props) {
                 onClick={() => setIsFlipped(!isFlipped)}
             >
                 <div className="card__face card__face--back">
-                    <div>
+                    <div className="title-cont">
                         <a target="_blank" href={props.card.link}>
                             View Site
                         </a>
@@ -26,7 +26,11 @@ export default function PortfolioCard(props) {
                 <div
                     className="card__face card__face--front"
                     style={{
-                        backgroundImage: "url(" + props.card.img + ")"
+                        background:
+                            "url(" +
+                            props.card.img +
+                            ") no-repeat center center",
+                        backgroundSize: "cover"
                     }}
                 >
                     <h3>{props.card.name}</h3>
