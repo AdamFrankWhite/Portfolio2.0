@@ -284,18 +284,22 @@ header nav li:hover {
 }
 
 .animation-1 {
+  -webkit-animation: card-slide-in 0.4s 1.2s forwards;
   animation: card-slide-in 0.4s 1.2s forwards;
 }
 
 .animation-2 {
+  -webkit-animation: card-slide-in 0.4s 0.9s forwards;
   animation: card-slide-in 0.4s 0.9s forwards;
 }
 
 .animation-3 {
+  -webkit-animation: card-slide-in 0.4s 0.6s forwards;
   animation: card-slide-in 0.4s 0.6s forwards;
 }
 
 .headline-animation {
+  -webkit-animation: card-slide-in 0.4s 0.3s forwards;
   animation: card-slide-in 0.4s 0.3s forwards;
 }
 
@@ -406,6 +410,7 @@ header nav li:hover {
   width: 100%;
   height: 100%;
   position: absolute;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 5px;
 }
@@ -648,6 +653,7 @@ header nav li:hover {
 }
 
 .slide-in {
+  -webkit-animation: slide-left 0.8s forwards;
   animation: slide-left 0.8s forwards;
 }
 
@@ -757,6 +763,16 @@ header nav li:hover {
   border-bottom: 1px gray solid;
 }
 
+@-webkit-keyframes slide-left {
+  0% {
+    opacity: 0;
+    right: 5vw;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
 @keyframes slide-left {
   0% {
     opacity: 0;
@@ -767,6 +783,16 @@ header nav li:hover {
     opacity: 1;
   }
 }
+@-webkit-keyframes slide-down {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 30vh;
+    opacity: 0;
+  }
+}
 @keyframes slide-down {
   0% {
     top: 0;
@@ -775,6 +801,17 @@ header nav li:hover {
   100% {
     top: 30vh;
     opacity: 0;
+  }
+}
+@-webkit-keyframes card-bob-up {
+  0% {
+    transform: translateY(-2em);
+  }
+  70% {
+    transform: translateY(-1em);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 @keyframes card-bob-up {
@@ -792,10 +829,22 @@ header nav li:hover {
   border-radius: 10px;
 }
 .title-name:hover {
+  -webkit-animation: pulse 0.3s;
   animation: pulse 0.3s;
   cursor: pointer;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -849,6 +898,15 @@ header nav li:hover {
   padding: 1em;
 }
 
+@-webkit-keyframes card-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes card-slide-in {
   from {
     opacity: 0;
@@ -874,6 +932,7 @@ header nav li:hover {
   flex: 40%;
 }
 .p-card a img {
+  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: 200px;

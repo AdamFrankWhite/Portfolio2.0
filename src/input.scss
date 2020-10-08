@@ -258,15 +258,19 @@ nav .toggle-menu {
 }
 
 .animation-1 {
+    -webkit-animation: card-slide-in 0.4s 1.2s forwards;
     animation: card-slide-in 0.4s 1.2s forwards;
 }
 .animation-2 {
+    -webkit-animation: card-slide-in 0.4s 0.9s forwards;
     animation: card-slide-in 0.4s 0.9s forwards;
 }
 .animation-3 {
+    -webkit-animation: card-slide-in 0.4s 0.6s forwards;
     animation: card-slide-in 0.4s 0.6s forwards;
 }
 .headline-animation {
+    -webkit-animation: card-slide-in 0.4s 0.3s forwards;
     animation: card-slide-in 0.4s 0.3s forwards;
 }
 // .light-bg {
@@ -382,6 +386,7 @@ nav .toggle-menu {
         width: 100%;
         height: 100%;
         position: absolute;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 5px;
     }
@@ -636,6 +641,7 @@ nav .toggle-menu {
 }
 
 .slide-in {
+    -webkit-animation: slide-left 0.8s forwards;
     animation: slide-left 0.8s forwards;
     // display: block;
 }
@@ -767,6 +773,18 @@ nav .toggle-menu {
     }
 }
 
+@-webkit-keyframes slide-left {
+    0% {
+        opacity: 0;
+        right: 5vw;
+    }
+
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
 @keyframes slide-left {
     0% {
         opacity: 0;
@@ -778,6 +796,17 @@ nav .toggle-menu {
         opacity: 1;
     }
 }
+@-webkit-keyframes slide-down {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 30vh;
+        opacity: 0;
+    }
+}
 @keyframes slide-down {
     0% {
         top: 0;
@@ -787,6 +816,18 @@ nav .toggle-menu {
     100% {
         top: 30vh;
         opacity: 0;
+    }
+}
+
+@-webkit-keyframes card-bob-up {
+    0% {
+        transform: translateY(-2em);
+    }
+    70% {
+        transform: translateY(-1em);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -804,8 +845,21 @@ nav .toggle-menu {
 .title-name {
     border-radius: 10px;
     &:hover {
+        -webkit-animation: pulse 0.3s;
         animation: pulse 0.3s;
         cursor: pointer;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
@@ -864,6 +918,16 @@ nav .toggle-menu {
     }
 }
 
+@-webkit-keyframes card-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes card-slide-in {
     from {
         opacity: 0;
@@ -889,6 +953,7 @@ nav .toggle-menu {
     a {
         flex: 40%;
         img {
+            -o-object-fit: cover;
             object-fit: cover;
             width: 100%;
             height: 200px;
@@ -939,14 +1004,8 @@ footer {
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
 @mixin transform($value) {
-    -webkit-transform: ($value);
-    -moz-transform: ($value);
-    -ms-transform: ($value);
     transform: ($value);
 }
 @mixin transition($value) {
-    -webkit-transition: ($value);
-    -moz-transition: ($value);
-    -ms-transition: ($value);
     transition: ($value);
 }

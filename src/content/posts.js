@@ -21,6 +21,13 @@ const posts = [
         category: "Performance"
     },
     {
+        title: "Browser Compatibility",
+        content: <Compress />,
+        path: "browser-compatibility",
+        snippet: ["CanIUse.com, autoprefixer, testing"],
+        category: "Performance"
+    },
+    {
         title: "Keeping multiple images uniform - handy CSS tips",
         content: <Compress2 />,
         path: "keeping-multiple-images-uniform",
