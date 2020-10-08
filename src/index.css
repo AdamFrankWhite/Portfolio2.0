@@ -610,6 +610,10 @@ header nav li:hover {
   padding-top: 100px;
   color: white;
 }
+.contact hr {
+  width: 5%;
+  margin: auto;
+}
 .contact .frame-content {
   width: 90%;
   display: flex;
@@ -703,10 +707,13 @@ header nav li:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 100px;
 }
 .blog-preview-post-cont .post-card {
-  margin: 1em;
-  width: 45%;
+  margin: 0;
+  margin-top: 3vw;
+  width: 48%;
   border-radius: 5px;
   background: white;
 }

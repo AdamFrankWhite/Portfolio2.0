@@ -593,6 +593,10 @@ nav .toggle-menu {
 .contact {
     padding-top: 100px;
     color: white;
+    hr {
+        width: 5%;
+        margin: auto;
+    }
     .frame-content {
         width: 90%;
         display: flex;
@@ -687,9 +691,12 @@ nav .toggle-menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 100px;
     .post-card {
-        margin: 1em;
-        width: 45%;
+        margin: 0;
+        margin-top: 3vw;
+        width: 48%;
         // border: $primary solid 2px;
         border-radius: 5px;
         background: white;
