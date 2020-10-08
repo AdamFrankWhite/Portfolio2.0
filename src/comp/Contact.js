@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 import ScrollAnimation from "react-animate-on-scroll";
 export default function Contact() {
     return (
-        <div className="contact slide-in">
+        <div id="contact" className="contact slide-in">
             <div className="frame-content">
                 <ScrollAnimation
                     animateIn="fadeIn"

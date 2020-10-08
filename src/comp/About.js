@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HireMe() {
     return (
-        <section className="about slide-in">
+        <section id="about" className="about slide-in">
             <div className="frame-content">
                 <h2>About</h2>
 

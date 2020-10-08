@@ -15,6 +15,10 @@ export default function Blog() {
             setPostList(filterPosts);
         }
     }, [selectedCategory]);
+    useEffect(() => {
+        document.documentElement.style = "scroll-behavior: auto";
+        document.documentElement.scrollTo({ top: 0, behavior: "auto" }); // or just leave it window.scrollTo(...), doens't matter. I just like it this way ;)
+    }, []);
     // const CategoryMenu = () => {
     //     return (
     //         <ul>

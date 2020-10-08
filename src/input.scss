@@ -6,6 +6,7 @@ html {
         "Times New Roman", serif;
     overflow-x: hidden;
     // min-height: 100vh;
+    scroll-behavior: smooth;
 }
 a {
     color: rgb(224, 224, 224);
@@ -29,6 +30,9 @@ body,
         justify-content: space-between;
     }
     overflow-y: overlay;
+    @media (min-width: 1500px) {
+        font-size: 1.05em;
+    }
 }
 h2 {
     font-size: 1.75em;
@@ -52,7 +56,7 @@ h2 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #e33030;
+    background: #d31717;
     border-radius: 15px;
 }
 
@@ -197,7 +201,7 @@ nav .toggle-menu {
 }
 
 .main {
-    padding-top: 10em;
+    padding-top: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -228,7 +232,7 @@ nav .toggle-menu {
                 width: 22vw;
             }
             @media (min-width: 1350px) {
-                width: 17vw;
+                width: 20vw;
             }
             width: 27%;
             height: auto;
@@ -238,7 +242,7 @@ nav .toggle-menu {
                 width: 15vw;
             }
             @media (min-width: 1350px) {
-                width: 12vw;
+                width: 14vw;
             }
             width: 19%;
             margin-left: 4%;
@@ -249,7 +253,7 @@ nav .toggle-menu {
                 width: 6vw;
             }
             @media (min-width: 1350px) {
-                width: 4vw;
+                width: 5vw;
             }
             width: 8%;
             height: auto;
@@ -303,7 +307,7 @@ nav .toggle-menu {
         }
         hr {
             background-color: white;
-            width: 10%;
+            width: 5%;
             margin-top: 0.25em;
         }
     }
@@ -338,6 +342,23 @@ nav .toggle-menu {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.blog-title-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // padding-right: 2%;
+    justify-content: flex-end;
+    h2 {
+        margin-bottom: 0.25em !important;
+        text-transform: uppercase;
+    }
+    hr {
+        background-color: white;
+        width: 5%;
+        margin-top: 0.25em;
+    }
 }
 
 .website-card {
@@ -392,7 +413,7 @@ nav .toggle-menu {
     }
     .card__face--back {
         transform: rotateX(180deg);
-        background-color: #aa866b;
+        background-color: #745b4a;
         display: flex;
         flex-direction: column;
         color: white;
@@ -570,6 +591,7 @@ nav .toggle-menu {
     }
 }
 .contact {
+    padding-top: 100px;
     color: white;
     .frame-content {
         width: 90%;
@@ -650,7 +672,36 @@ nav .toggle-menu {
     display: none;
 }
 
+.blog-preview {
+    background-color: $secondary;
+    padding-top: 100px;
+    a[href="/blog"] {
+        float: right;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        padding: 0.5em 0;
+    }
+}
+.blog-preview-post-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .post-card {
+        margin: 1em;
+        width: 45%;
+        // border: $primary solid 2px;
+        border-radius: 5px;
+        background: white;
+        h3,
+        p {
+            color: rgb(26, 26, 26);
+        }
+    }
+}
+
 .portfolio-title,
+.blog-preview h2:first-of-type,
 .about h2 .blog h2:first-of-type {
     color: white;
     text-align: center;
@@ -676,7 +727,7 @@ nav .toggle-menu {
         }
         hr {
             background-color: white;
-            width: 10%;
+            width: 5%;
             margin-top: 0.25em;
         }
     }

@@ -4,7 +4,7 @@ import PortfolioCard from "./PortfolioCard";
 import ScrollAnimation from "react-animate-on-scroll";
 export default function Portfolio() {
     return (
-        <section className="portfolio slide-in">
+        <section id="portfolio" className="portfolio slide-in">
             <br />
             <ScrollAnimation animateIn="fadeIn" offset={250} duration={0.75}>
                 <div className="frame-content">

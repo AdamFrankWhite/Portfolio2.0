@@ -2,7 +2,7 @@ import React from "react";
 
 import Home from "./Home";
 import Portfolio from "./Portfolio";
-import BlogSnippet from "./BlogSnippet";
+import BlogPreview from "./BlogPreview";
 import Contact from "./Contact";
 import About from "./About";
 import HireMe from "./HireMe";
@@ -13,7 +13,7 @@ export default function MainPage() {
             <Home />
             <Portfolio />
             <HireMe />
-            <BlogSnippet />
+            <BlogPreview />
             <Contact />
             <About />
             <Footer />

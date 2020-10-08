@@ -3,10 +3,12 @@ import { NavLink } from "react-router-dom";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 import { useMediaQuery } from "react-responsive";
+
 export default function NavBar() {
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 727px)" });
 
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
     return (
         <header className="header-1">
             <NavLink to="/">
@@ -28,40 +30,40 @@ export default function NavBar() {
                 {isTabletOrMobile ? (
                     <SlideDown className={"my-dropdown-slidedown"}>
                         <ul className={showMobileMenu ? "" : "hide"}>
-                            <NavLink to="/portfolio">
+                            <a href="/#portfolio">
                                 <li className="tab-link">Portfolio</li>
-                            </NavLink>
+                            </a>
                             <NavLink to="/blog">
                                 <li className="tab-link">Blog</li>
                             </NavLink>
-                            <NavLink to="/hire-me">
+                            <a href="/#hire-me">
                                 <li className="tab-link">Hire Me</li>
-                            </NavLink>
-                            <NavLink to="/about">
+                            </a>
+                            <a href="/#about">
                                 <li className="tab-link">About</li>
-                            </NavLink>
-                            <NavLink to="/contact">
+                            </a>
+                            <a href="/#contact">
                                 <li className="tab-link">Contact</li>
-                            </NavLink>
+                            </a>
                         </ul>
                     </SlideDown>
                 ) : (
                     <ul>
-                        <NavLink to="/portfolio">
+                        <a href="/#portfolio">
                             <li className="tab-link">Portfolio</li>
-                        </NavLink>
+                        </a>
                         <NavLink to="/blog">
                             <li className="tab-link">Blog</li>
                         </NavLink>
-                        <NavLink to="/hire-me">
+                        <a href="/#hire-me">
                             <li className="tab-link">Hire Me</li>
-                        </NavLink>
-                        <NavLink to="/about">
+                        </a>
+                        <a href="/#about">
                             <li className="tab-link">About</li>
-                        </NavLink>
-                        <NavLink to="/contact">
+                        </a>
+                        <a href="/#contact">
                             <li className="tab-link">Contact</li>
-                        </NavLink>
+                        </a>
                     </ul>
                 )}
             </nav>

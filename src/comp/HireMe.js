@@ -35,7 +35,7 @@ export default function HireMe() {
         }
     ];
     return (
-        <section className="about slide-in">
+        <section id="hire-me" className="about slide-in">
             <ScrollAnimation animateIn="fadeIn" offset={250} duration={0.75}>
                 <div className="frame-content">
                     <div className="hire-title-cont">

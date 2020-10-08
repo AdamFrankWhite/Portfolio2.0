@@ -2,6 +2,7 @@
 html {
   font-family: "Open Sans", "Franklin Gothic Light", "Roboto", Georgia, Times, "Times New Roman", serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -39,6 +40,14 @@ body,
     justify-content: space-between;
   }
 }
+@media (min-width: 1500px) {
+  html,
+body,
+#root,
+.App {
+    font-size: 1.05em;
+  }
+}
 
 h2 {
   font-size: 1.75em;
@@ -60,7 +69,7 @@ h2 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #e33030;
+  background: #d31717;
   border-radius: 15px;
 }
 
@@ -205,7 +214,7 @@ header nav li:hover {
 }
 
 .main {
-  padding-top: 10em;
+  padding-top: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -250,7 +259,7 @@ header nav li:hover {
 }
 @media (min-width: 1350px) {
   .main .icon-cont .monitor {
-    width: 17vw;
+    width: 20vw;
   }
 }
 .main .icon-cont .laptop {
@@ -265,7 +274,7 @@ header nav li:hover {
 }
 @media (min-width: 1350px) {
   .main .icon-cont .laptop {
-    width: 12vw;
+    width: 14vw;
   }
 }
 .main .icon-cont .tablet-mobile {
@@ -279,7 +288,7 @@ header nav li:hover {
 }
 @media (min-width: 1350px) {
   .main .icon-cont .tablet-mobile {
-    width: 4vw;
+    width: 5vw;
   }
 }
 
@@ -328,7 +337,7 @@ header nav li:hover {
 }
 .portfolio .portfolio-title-cont hr {
   background-color: white;
-  width: 10%;
+  width: 5%;
   margin-top: 0.25em;
 }
 
@@ -362,6 +371,22 @@ header nav li:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.blog-title-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.blog-title-cont h2 {
+  margin-bottom: 0.25em !important;
+  text-transform: uppercase;
+}
+.blog-title-cont hr {
+  background-color: white;
+  width: 5%;
+  margin-top: 0.25em;
 }
 
 .website-card {
@@ -416,7 +441,7 @@ header nav li:hover {
 }
 .website-card .card__face--back {
   transform: rotateX(180deg);
-  background-color: #aa866b;
+  background-color: #745b4a;
   display: flex;
   flex-direction: column;
   color: white;
@@ -582,6 +607,7 @@ header nav li:hover {
 }
 
 .contact {
+  padding-top: 100px;
   color: white;
 }
 .contact .frame-content {
@@ -661,7 +687,36 @@ header nav li:hover {
   display: none;
 }
 
+.blog-preview {
+  background-color: #e64c3c;
+  padding-top: 100px;
+}
+.blog-preview a[href="/blog"] {
+  float: right;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  padding: 0.5em 0;
+}
+
+.blog-preview-post-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.blog-preview-post-cont .post-card {
+  margin: 1em;
+  width: 45%;
+  border-radius: 5px;
+  background: white;
+}
+.blog-preview-post-cont .post-card h3,
+.blog-preview-post-cont .post-card p {
+  color: #1a1a1a;
+}
+
 .portfolio-title,
+.blog-preview h2:first-of-type,
 .about h2 .blog h2:first-of-type {
   color: white;
   text-align: center;
@@ -688,7 +743,7 @@ header nav li:hover {
 }
 .about .hire-title-cont hr {
   background-color: white;
-  width: 10%;
+  width: 5%;
   margin-top: 0.25em;
 }
 .about p,

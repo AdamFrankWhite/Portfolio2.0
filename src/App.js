@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./comp/NavBar";
 import Home from "./comp/Home";
 import Portfolio from "./comp/Portfolio";
-import BlogSnippet from "./comp/BlogSnippet";
+import BlogPreview from "./comp/BlogPreview";
 import Blog from "./comp/Blog";
 import BlogPost from "./comp/BlogPost";
 import Contact from "./comp/Contact";
@@ -13,14 +13,14 @@ import Category from "./comp/Category";
 import posts from "./content/posts";
 import Footer from "./comp/Footer";
 import MainPage from "./comp/MainPage";
-import ScrollToTop from "./ScrollToTop";
+
 function App() {
     const categories = ["All", "React", "CSS/SASS", "Wordpress", "Performance"];
+
     return (
         <div className="App">
             <Router>
                 <NavBar />
-                <ScrollToTop />
                 <Switch>
                     <Route exact path="/" component={MainPage} />
 
