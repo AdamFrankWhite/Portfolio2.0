@@ -441,10 +441,10 @@ header nav li:hover {
 }
 .website-card .card__face--back {
   transform: rotateX(180deg);
-  background-color: #745b4a;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: black;
   justify-content: center;
   align-items: center;
   font-size: 0.95em;
@@ -454,7 +454,7 @@ header nav li:hover {
   margin-top: 1em;
 }
 .website-card .card__face--back a {
-  color: whitesmoke;
+  color: #ff0000;
   font-weight: 500;
   display: inline;
   padding: 0.25em;

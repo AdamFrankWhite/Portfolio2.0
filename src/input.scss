@@ -413,10 +413,10 @@ nav .toggle-menu {
     }
     .card__face--back {
         transform: rotateX(180deg);
-        background-color: #745b4a;
+        background-color: #ffffff;
         display: flex;
         flex-direction: column;
-        color: white;
+        color: rgb(0, 0, 0);
         justify-content: center;
         align-items: center;
         font-size: 0.95em;
@@ -428,7 +428,7 @@ nav .toggle-menu {
             margin-top: 1em;
         }
         a {
-            color: whitesmoke;
+            color: #ff0000;
             font-weight: 500;
             display: inline;
             padding: 0.25em;
