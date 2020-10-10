@@ -50,7 +50,7 @@ body,
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 2em;
 }
 
 .App {
@@ -214,11 +214,16 @@ header nav li:hover {
 }
 
 .main {
-  padding-top: 30vh;
+  padding-top: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1800px) {
+  .main {
+    padding-top: 30vh;
+  }
 }
 .main h2 {
   width: 60%;
@@ -237,7 +242,7 @@ header nav li:hover {
     width: 35%;
   }
 }
-@media (min-width: 1450px) {
+@media (min-width: 1700px) {
   .main h2 {
     font-size: 1.8em;
     width: 35%;
@@ -509,7 +514,7 @@ header nav li:hover {
 }
 
 .frame-content {
-  width: 80%;
+  width: 90%;
   max-width: 1600px;
   margin: auto;
 }
@@ -798,11 +803,22 @@ header nav li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 32%;
   border: 1px solid #cacaca;
   border-radius: 5px;
   transform: translateY(1em);
   transition: transform 0.2s;
+}
+.hire-card-cont .hire-card span {
+  font-weight: bold;
+  font-size: 0.7em;
+}
+.hire-card-cont .hire-card h3.price {
+  color: orange;
+  padding: 0 1em 1em 1em;
+  border-radius: 5px;
+  font-size: 1.75em;
+  line-height: 1em;
 }
 .hire-card-cont .hire-card:hover {
   transform: translateY(-1em);
@@ -823,6 +839,85 @@ header nav li:hover {
   padding: 0.5em;
   text-align: center;
   border-bottom: 1px gray solid;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.service-card-cont {
+  width: 100%;
+  display: flex;
+  margin: 1em auto;
+  justify-content: space-around;
+}
+.service-card-cont .service-card {
+  width: 32%;
+  background: white;
+  border-radius: 5px;
+  padding: 2.25em;
+  display: flex;
+  flex-direction: column;
+}
+.service-card-cont .service-card img {
+  padding: 0;
+  width: 15%;
+  height: auto;
+}
+.service-card-cont .service-card .service-card-head {
+  display: flex;
+  align-items: center;
+}
+.service-card-cont .service-card .service-card-head h3 {
+  font-size: 1.4em;
+  padding-left: 0.5em;
+}
+.service-card-cont .service-card p {
+  color: black;
+  font-size: 0.95em;
+  text-align: justify;
+}
+
+.process-card-cont {
+  width: 100%;
+  display: flex;
+  margin: 1em auto;
+  justify-content: space-between;
+}
+.process-card-cont .process-card {
+  width: 24%;
+  background: white;
+  border: white 1px solid;
+  border-radius: 5px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.process-card-cont .process-card img {
+  padding-bottom: 0.5em;
+  width: 15%;
+  height: auto;
+}
+.process-card-cont .process-card .process-card-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.process-card-cont .process-card .process-card-head h2 {
+  padding: 0.25em 0.5em;
+  border: 1px dotted black;
+  color: #1b1b1b;
+  border-radius: 50%;
+}
+.process-card-cont .process-card .process-card-head h3 {
+  font-size: 1em;
+  color: #a30000;
+  text-align: center;
+}
+.process-card-cont .process-card p {
+  color: black;
+  font-size: 0.9em;
+  text-align: justify;
 }
 
 @-webkit-keyframes slide-left {
@@ -1013,7 +1108,7 @@ header nav li:hover {
 }
 
 footer {
-  font-size: 1.1em;
+  font-size: 0.9em;
   padding: 2em;
   background: #e64c3c;
   color: white;

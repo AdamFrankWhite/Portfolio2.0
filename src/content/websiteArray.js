@@ -45,8 +45,8 @@ const websites = [
         link: "http://quittingweedthebook.com",
         code: "https://github.com/AdamFrankWhite/Landing-Page-1",
         text: [
-            "Client requested an ebook landing page, along with an easily maintainable blog. I created the landing page in plain HTML, CSS, JavaScript, before integrating the blog. I used the Monster Insights plugin for analytics.",
-            "With the goal of keeping the main landing page lightweight, I opted to integrate a Wordpress blog into a sub-directory. Using the same stylesheet and design, I created a simple custom theme with a custom JavaScript blog gallery."
+            "Wanting to delve into full-stack development, I created a app that could let you bookmark your favourite beers, using Untappd's data API. Built with React and Material UI on the front-end; the back end uses Node and MongoDB. Uses bcrypt for encryption",
+            "Back-end deployed using Heroku"
         ]
     },
     {

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function HireCard(props) {
+export default function PriceCard(props) {
     return (
         <div className="hire-card">
             <img src={props.card.imgPath} alt={props.card.name} />
@@ -10,6 +10,8 @@ export default function HireCard(props) {
                     <li>{tab}</li>
                 ))}
             </ul>
+            <span>from</span>
+            <h3 class="price">£{props.card.price}</h3>
         </div>
     );
 }

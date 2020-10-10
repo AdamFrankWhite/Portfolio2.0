@@ -35,7 +35,7 @@ body,
     }
 }
 h2 {
-    font-size: 1.75em;
+    font-size: 2em;
 }
 .App {
     // display: flex;
@@ -201,7 +201,11 @@ nav .toggle-menu {
 }
 
 .main {
-    padding-top: 30vh;
+    padding-top: 15vh;
+    @media (min-width: 1800px) {
+        padding-top: 30vh;
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -217,7 +221,7 @@ nav .toggle-menu {
             font-size: 1.5em;
             width: 35%;
         }
-        @media (min-width: 1450px) {
+        @media (min-width: 1700px) {
             font-size: 1.8em;
             width: 35%;
         }
@@ -490,7 +494,7 @@ nav .toggle-menu {
 }
 
 .frame-content {
-    width: 80%;
+    width: 90%;
     max-width: 1600px;
     margin: auto;
     @media (max-width: 727px) {
@@ -797,11 +801,22 @@ nav .toggle-menu {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 30%;
+        width: 32%;
         border: 1px solid rgb(202, 202, 202);
         border-radius: 5px;
         transform: translateY(1em);
         transition: transform 0.2s;
+        span {
+            font-weight: bold;
+            font-size: 0.7em;
+        }
+        h3.price {
+            color: orange;
+            padding: 0 1em 1em 1em;
+            border-radius: 5px;
+            font-size: 1.75em;
+            line-height: 1em;
+        }
         &:hover {
             // transform: scale(1.05);
             transform: translateY(-1em);
@@ -831,6 +846,86 @@ nav .toggle-menu {
     }
 }
 
+.text-center {
+    text-align: center;
+}
+.service-card-cont {
+    width: 100%;
+    display: flex;
+    margin: 1em auto;
+    justify-content: space-around;
+    .service-card {
+        width: 32%;
+        background: white;
+        border-radius: 5px;
+        padding: 2.25em;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            padding: 0;
+            width: 15%;
+            height: auto;
+        }
+        .service-card-head {
+            display: flex;
+            align-items: center;
+            h3 {
+                font-size: 1.4em;
+                padding-left: 0.5em;
+            }
+        }
+        p {
+            color: black;
+            font-size: 0.95em;
+            text-align: justify;
+        }
+    }
+}
+
+.process-card-cont {
+    width: 100%;
+    display: flex;
+    margin: 1em auto;
+    justify-content: space-between;
+    .process-card {
+        width: 24%;
+        background: white;
+        border: white 1px solid;
+        border-radius: 5px;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            padding-bottom: 0.5em;
+            width: 15%;
+            height: auto;
+        }
+        .process-card-head {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                padding: 0.25em 0.5em;
+                // background: black;
+                border: 1px dotted black;
+                color: rgb(27, 27, 27);
+                border-radius: 50%;
+            }
+            h3 {
+                font-size: 1em;
+                color: rgb(163, 0, 0);
+                text-align: center;
+            }
+        }
+        p {
+            color: black;
+            font-size: 0.9em;
+            text-align: justify;
+        }
+    }
+}
 @-webkit-keyframes slide-left {
     0% {
         opacity: 0;
@@ -1032,7 +1127,7 @@ nav .toggle-menu {
 }
 
 footer {
-    font-size: 1.1em;
+    font-size: 0.9em;
     padding: 2em;
     background: $secondary;
     color: white;
