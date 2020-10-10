@@ -2,7 +2,7 @@ import React, { useState } from "react";
 export default function PortfolioCard(props) {
     const [isFlipped, setIsFlipped] = useState(false);
     const cardClasses = "card " + (isFlipped ? "is-flipped" : "");
-    const cardContent = props.card.text.map(para => <p>{para}</p>);
+    const cardContent = props.card.text.map((para) => <p>{para}</p>);
     return (
         <div className="website-card">
             <div
@@ -30,12 +30,14 @@ export default function PortfolioCard(props) {
                             "url(" +
                             props.card.img +
                             ") no-repeat center center",
-                        backgroundSize: "cover"
+                        backgroundSize: "cover",
                     }}
                 >
-                    <h3>{props.card.name}</h3>
-                    <hr />
-                    <p>{props.card.desc}</p>
+                    <div className="card-front-content">
+                        <h3>{props.card.name}</h3>
+                        {/* <hr />
+                        <p>{props.card.desc}</p> */}
+                    </div>
                 </div>
             </div>
         </div>

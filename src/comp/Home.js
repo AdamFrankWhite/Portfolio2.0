@@ -4,12 +4,12 @@ export default class Home extends React.Component {
     constructor() {
         super();
         this.state = {
-            didLoad: false
+            didLoad: false,
         };
     }
     onLoad = () => {
         this.setState({
-            didLoad: true
+            didLoad: true,
         });
     };
     render() {
@@ -21,10 +21,13 @@ export default class Home extends React.Component {
             // onLoad={this.onLoad}
             >
                 <div className="main slide-in">
-                    <h2 className="headline">
-                        I create minimalist, functional, responsive,
-                        cross-browser web sites and apps
-                    </h2>
+                    <h2 className="headline">Web Design and Development</h2>
+                    <h3>Custom, hand-coded web design for your business</h3>
+                    <div className="cta-cont">
+                        <span>Web Design Portfolio</span>
+                        <span>Web Design Pricing</span>
+                        <span>Web Design FAQs</span>
+                    </div>
                     <div className="icon-cont">
                         <img
                             className="tablet-mobile"

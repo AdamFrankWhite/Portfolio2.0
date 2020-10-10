@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
@@ -6,11 +6,18 @@ import { useMediaQuery } from "react-responsive";
 
 export default function NavBar() {
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 727px)" });
-
+    const [stickyNav, showStickyNav] = useState(false);
     const [showMobileMenu, setShowMobileMenu] = useState(false);
-
+    // useEffect(() => {
+    //     window.addEventListener("scroll", () => {
+    //         console.log(document.documentElement.scrollTop);
+    //         document.documentElement.scrollTop > 400
+    //             ? showStickyNav(true)
+    //             : showStickyNav(false);
+    //     });
+    // });
     return (
-        <header className="header-1">
+        <header className="sticky-nav">
             <NavLink to="/">
                 <div className="title-name home-link">
                     <h1>Adam White</h1>
