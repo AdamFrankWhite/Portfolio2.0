@@ -100,7 +100,7 @@ header {
   align-items: center;
   background-color: transparent;
   color: white;
-  padding: 0.5em 0.75em;
+  padding: 1em;
 }
 @media (max-width: 950px) {
   header {
@@ -225,7 +225,7 @@ header nav li:hover {
   text-transform: uppercase;
   text-align: center;
   margin: auto;
-  color: gray;
+  color: #d4d4d4;
 }
 @media (max-width: 500px) {
   .main h2 {
@@ -234,14 +234,13 @@ header nav li:hover {
 }
 @media (min-width: 1050px) {
   .main h2 {
-    font-size: 1.5em;
-    width: 35%;
+    font-size: 1.8em;
+    width: 50%;
   }
 }
 @media (min-width: 1700px) {
   .main h2 {
-    font-size: 1.8em;
-    width: 35%;
+    font-size: 2.5em;
   }
 }
 .main .cta-cont {
@@ -496,6 +495,7 @@ header nav li:hover {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
   position: relative;
   color: white;
+  border: 20px solid white;
 }
 .website-card .card__face--front .card-front-content {
   position: absolute;
@@ -504,7 +504,7 @@ header nav li:hover {
   color: black;
   width: 100%;
   text-align: center;
-  padding: 0.5em;
+  padding-top: 0.5em;
 }
 .website-card .card__face--front .card-front-content h3 {
   font-size: 1.1em;
@@ -897,12 +897,12 @@ header nav li:hover {
   align-items: center;
 }
 .service-card-cont .service-card .service-card-head h3 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding-left: 0.5em;
 }
 .service-card-cont .service-card p {
   color: black !important;
-  font-size: 0.95em;
+  font-size: 0.85em;
   text-align: justify;
 }
 

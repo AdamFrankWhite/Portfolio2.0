@@ -106,7 +106,7 @@ header {
     background-color: transparent;
 
     color: white;
-    padding: 0.5em 0.75em;
+    padding: 1em;
     h1 {
         text-transform: uppercase;
         font-size: 1.3em;
@@ -221,14 +221,13 @@ nav .toggle-menu {
         text-align: center;
         margin: auto;
         @media (min-width: 1050px) {
-            font-size: 1.5em;
-            width: 35%;
+            font-size: 1.8em;
+            width: 50%;
         }
         @media (min-width: 1700px) {
-            font-size: 1.8em;
-            width: 35%;
+            font-size: 2.5em;
         }
-        color: gray;
+        color: #d4d4d4;
     }
 
     .cta-cont {
@@ -482,7 +481,7 @@ nav .toggle-menu {
         color: white;
         // justify-content: center;
         // align-items: flex-end;
-        // border: 1px solid $primary;
+        border: 20px solid white;
         .card-front-content {
             position: absolute;
             background: rgba(255, 255, 255, 1);
@@ -490,7 +489,7 @@ nav .toggle-menu {
             color: black;
             width: 100%;
             text-align: center;
-            padding: 0.5em;
+            padding-top: 0.5em;
             h3 {
                 font-size: 1.1em;
                 letter-spacing: 0.03em;
@@ -912,13 +911,13 @@ nav .toggle-menu {
             display: flex;
             align-items: center;
             h3 {
-                font-size: 1.4em;
+                font-size: 1.2em;
                 padding-left: 0.5em;
             }
         }
         p {
             color: black !important;
-            font-size: 0.95em;
+            font-size: 0.85em;
             text-align: justify;
         }
     }

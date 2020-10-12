@@ -191,7 +191,7 @@ export default function HireMe() {
                     Following an initial consultation, I'll send you a proposal,
                     containing a quote and basic overview of the project.
                 </p>
-                <ol>
+                {/* <ol>
                     <li>
                         Initial Consultation (email, phone, zoom or in-person)
                     </li>
@@ -263,7 +263,7 @@ export default function HireMe() {
                         Client has 7 days to review and notify us of any errors
                         free. Updates fixed free of charge.
                     </li>
-                </ol>
+                </ol> */}
                 <h2>What Tech Do You Use?</h2>
                 <hr />
                 <p>
