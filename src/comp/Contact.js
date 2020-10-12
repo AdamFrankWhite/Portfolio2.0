@@ -11,7 +11,7 @@ export default function Contact() {
                     duration={0.75}
                 >
                     <div className="contact-content">
-                        <h2>Contact</h2>
+                        <h2 className="section-title">Contact</h2>
                         <hr className="full-width" />
                         <p>
                             If you have a project you'd like me to help out

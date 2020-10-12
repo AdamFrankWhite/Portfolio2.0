@@ -15,6 +15,12 @@ p {
   font-family: "Open Sans";
 }
 
+html,
+body,
+#root,
+.App {
+  overflow-y: overlay;
+}
 @media (min-width: 950px) {
   html,
 body,
@@ -241,9 +247,11 @@ header nav li:hover {
 .main h3 {
   color: #d4d4d4;
   margin-bottom: 1.5em;
+  text-align: center;
 }
 .main .cta-cont {
   display: flex;
+  justify-content: center;
 }
 @media (max-width: 700px) {
   .main .cta-cont {
@@ -252,7 +260,7 @@ header nav li:hover {
     text-align: center;
   }
 }
-.main .cta-cont span {
+.main .cta-cont a {
   text-transform: uppercase;
   padding: 0.5em;
   color: white;
@@ -261,7 +269,7 @@ header nav li:hover {
   border: #e64c3c 1px solid;
   margin: 0.5em;
 }
-.main .cta-cont span:hover {
+.main .cta-cont a:hover {
   color: #4d0d0d;
   background: #fdc4c4;
   cursor: pointer;
@@ -723,11 +731,46 @@ header nav li:hover {
   align-items: center;
 }
 
-.slide-in {
-  -webkit-animation: slide-left 0.8s forwards;
-  animation: slide-left 0.8s forwards;
+.question {
+  margin: 0 !important;
+  font-weight: 600;
+}
+.question i {
+  transform: rotate(0);
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  transition: transform 0.2s;
+}
+.question .flip {
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+}
+.question:hover {
+  cursor: pointer;
 }
 
+.answer {
+  margin: 0.25em !important;
+  display: none;
+  font-weight: 300;
+}
+
+.show {
+  display: block;
+  animation: slide 0.2s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.75em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .hide {
   display: none;
 }
@@ -780,10 +823,14 @@ header nav li:hover {
   text-transform: uppercase;
 }
 
+.section-title {
+  text-transform: uppercase;
+}
+
 #hire-me {
   padding-top: 100px;
 }
-#hire-me h2 {
+#hire-me h2:not(.section-title) {
   font-size: 1.75em;
 }
 #hire-me .hire-title-cont {
@@ -995,14 +1042,12 @@ header nav li:hover {
   text-align: justify;
 }
 
-@-webkit-keyframes slide-left {
+@-webkit-keyframes slide-down {
   0% {
     opacity: 0;
-    right: 5vw;
   }
   100% {
-    right: 0;
-    opacity: 1;
+    bottom: 0;
   }
 }
 @keyframes slide-left {
@@ -1117,6 +1162,7 @@ header nav li:hover {
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes card-slide-in {

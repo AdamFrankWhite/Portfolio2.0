@@ -4,7 +4,7 @@ export default function HireMe() {
     return (
         <section id="about" className="about slide-in">
             <div className="frame-content">
-                <h2>About</h2>
+                <h2 className="section-title">About</h2>
 
                 <hr className="full-width" />
                 <br />

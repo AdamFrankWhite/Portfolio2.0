@@ -12,13 +12,13 @@ export default function BlogPreview() {
                     duration={0.75}
                 >
                     <div className="blog-title-cont">
-                        <h2>Articles</h2>
+                        <h2 className="section-title">Articles</h2>
                         <hr></hr>
                     </div>
 
                     <NavLink to="/blog">View Blog</NavLink>
                     <div className="blog-preview-post-cont">
-                        {posts.slice(0, 4).map(post => {
+                        {posts.slice(0, 4).map((post) => {
                             return (
                                 <div
                                     key={post.title}
@@ -33,7 +33,7 @@ export default function BlogPreview() {
                                                 {post.category}
                                             </h3>
                                         </Link>
-                                        {post.snippet.map(para => (
+                                        {post.snippet.map((para) => (
                                             <p key={para}>{para}</p>
                                         ))}
                                     </div>

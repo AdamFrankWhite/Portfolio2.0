@@ -15,7 +15,7 @@ export default function Portfolio() {
                     </div>
                     <br />
                     <div className="card-container">
-                        {websites.map(website => (
+                        {websites.map((website) => (
                             <PortfolioCard card={website} />
                         ))}
                     </div>

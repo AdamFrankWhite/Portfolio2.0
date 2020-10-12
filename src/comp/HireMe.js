@@ -3,6 +3,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 import ServiceCard from "./ServiceCard";
 import PriceCard from "./PriceCard";
 import ProcessCard from "./ProcessCard";
+import { SlideDown } from "react-slidedown";
+import "react-slidedown/lib/slidedown.css";
 export default function HireMe() {
     const servicesCards = [
         {
@@ -60,7 +62,7 @@ export default function HireMe() {
             icon: "/assets/icons/icons8-chat-240.png",
             title: "1. Connect and discuss",
             content:
-                "Firstly, we’ll have a chat about your business and figure out exactly what kind of website you'll need, your goals and your preferred features.",
+                "Firstly, we’ll have a chat about your business and figure out exactly what kind of website you'll need, your goals and your preferred features. Following this, I'll send you a proposal containing a quote and basic overview of the project.",
         },
         {
             icon: "/assets/icons/icons8-tiles-240.png",
@@ -128,8 +130,44 @@ export default function HireMe() {
             price: 1499,
         },
     ];
+
+    const faqs = [
+        {
+            question: "Do you outsource?",
+            answer:
+                "I complete all work myself, so that I know every part of a project, from top to bottom.",
+        },
+        {
+            question: "Do you use templates?",
+            answer:
+                "Whilst I may re-use indivivual components from time to time, I do not use any templates: all my work is custom-made, coded just for you.",
+        },
+        {
+            question: "Do you provide web hosting?",
+            answer:
+                "  I don't provive hosting myself, however I am happy to help guide you through setting it up yourself, so you are fully in control.",
+        },
+    ];
+
+    const toggleAnswer = (num) => {
+        let questions = document.querySelectorAll(".question");
+        //Prevent double-click highlight
+        questions[num].addEventListener(
+            "mousedown",
+            function (e) {
+                e.preventDefault();
+            },
+            false
+        );
+
+        let answers = document.querySelectorAll(".answer");
+        let arrows = document.querySelectorAll(".question i");
+        answers[num].classList.toggle("show");
+        arrows[num].classList.toggle("flip");
+        console.log(answers[num]);
+    };
     return (
-        <section id="hire-me" className="about slide-in">
+        <section id="hire-me" className="about">
             <div className="frame-content">
                 <ScrollAnimation
                     animateIn="fadeIn"
@@ -137,12 +175,12 @@ export default function HireMe() {
                     duration={0.75}
                 >
                     <div className="hire-title-cont">
-                        <h2>Hire Me</h2>
+                        <h2 className="section-title">Hire Me</h2>
                         <hr className="full-width" />
                     </div>
                     <br />
-                    <h2 className="text-center">Services</h2>
-                    <hr style={{ margin: "auto" }} />
+                    <h2>Services</h2>
+                    <hr />
                     <div className="service-card-cont">
                         {servicesCards.map((card) => (
                             <ServiceCard card={card} />
@@ -151,12 +189,16 @@ export default function HireMe() {
                     <h2>What I Can Do For You</h2>
                     <hr />
                     <p>
-                        I strive to create visually pleasing, well-designed
-                        sites. I pay close attention to detail - fully
-                        responsive layouts, avoiding image display issues and
-                        visual bugs is something I take pride in.
+                        I have a passion for web development and making
+                        user-friendly, beautiful websites that help businesses
+                        achieve their goals.
                     </p>
                     <p>
+                        Whether you are looking for a brand new website, a
+                        re-design, or would like new features integrating into
+                        your current site, I'm here to help.
+                    </p>
+                    {/* <p>
                         If you are looking for a bespoke, stand-alone site, or a
                         managable Wordpress site, or custom theme, I'd be happy
                         to help. Or, if you are looking for someone to edit and
@@ -164,16 +206,31 @@ export default function HireMe() {
                         something I'd be happy to help with. If it's something
                         else, I'm always up for a challenge - let me know and
                         I'll see if I am able to help.
-                    </p>
-                    <h2>FAQs</h2>
-                    <hr />
+                    </p> */}
                 </ScrollAnimation>
                 <ScrollAnimation
                     animateIn="fadeIn"
                     offset={250}
                     duration={0.75}
                 >
-                    <p>Do you outsource?</p>
+                    <h2>FAQs</h2>
+                    <hr />
+                    {faqs.map((faq, index) => {
+                        return (
+                            <>
+                                <p
+                                    className="question"
+                                    onClick={() => {
+                                        toggleAnswer(index);
+                                    }}
+                                >
+                                    {faq.question}
+                                    <i class="fa fa-chevron-circle-down"></i>
+                                </p>
+                                <p className="answer">{faq.answer}</p>
+                            </>
+                        );
+                    })}
                     <h2>My Process</h2>
                     <hr />
                     <div className="process-card-cont">
@@ -182,15 +239,7 @@ export default function HireMe() {
                         ))}
                     </div>
                 </ScrollAnimation>
-                <p>
-                    I will work with you to understand your business needs and
-                    the type of site you require (brochure, blog, e-commerce,
-                    editable content).
-                </p>
-                <p>
-                    Following an initial consultation, I'll send you a proposal,
-                    containing a quote and basic overview of the project.
-                </p>
+
                 {/* <ol>
                     <li>
                         Initial Consultation (email, phone, zoom or in-person)
@@ -274,19 +323,19 @@ export default function HireMe() {
                     projects.
                 </p>
 
-                <h2>Pricing</h2>
+                <h2 id="pricing">Pricing</h2>
                 <hr />
+                <p>
+                    I charge by the project, depending on the complexity and
+                    individual requirements. As a general guide, I offer three
+                    core packages:
+                </p>
                 <div className="hire-card-cont">
                     {priceCards.map((card) => (
                         <PriceCard card={card} />
                     ))}
                 </div>
-                <p>
-                    I charge by the project, depending on the complexity and
-                    individual requirements. As a general guide, my prices are
-                    as follows: a simple brochure-style Wordpress site from
-                    £495, a bespoke custom site from £1295.
-                </p>
+
                 <p>
                     For smaller jobs and consultancy, I charge an hourly rate of
                     £30/hour.

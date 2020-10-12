@@ -29,7 +29,7 @@ body,
         flex-direction: column;
         justify-content: space-between;
     }
-    // overflow-y: overlay;
+    overflow-y: overlay;
     @media (min-width: 1500px) {
         font-size: 1.05em;
     }
@@ -233,15 +233,17 @@ nav .toggle-menu {
     h3 {
         color: #d4d4d4;
         margin-bottom: 1.5em;
+        text-align: center;
     }
     .cta-cont {
         display: flex;
+        justify-content: center;
         @media (max-width: 700px) {
             font-size: 0.9em;
             flex-direction: column;
             text-align: center;
         }
-        span {
+        a {
             text-transform: uppercase;
             padding: 0.5em;
             color: white;
@@ -723,12 +725,52 @@ nav .toggle-menu {
     }
 }
 
-.slide-in {
-    -webkit-animation: slide-left 0.8s forwards;
-    animation: slide-left 0.8s forwards;
-    // display: block;
+// .slide-in {
+//     -webkit-animation: slide-down 0.8s forwards;
+//     animation: slide-down 0.8s forwards;
+//     display: block;
+// }
+
+.question {
+    margin: 0 !important;
+    font-weight: 600;
+    i {
+        transform: rotate(0);
+        display: inline-block;
+        padding: 0.5em;
+        color: white;
+        transition: transform 0.2s;
+    }
+    .flip {
+        transform: rotate(180deg);
+        transition: transform 0.2s;
+    }
+    &:hover {
+        cursor: pointer;
+    }
 }
 
+.answer {
+    margin: 0.25em !important;
+    display: none;
+    font-weight: 300;
+}
+
+.show {
+    display: block;
+    animation: slide 0.2s;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-0.75em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .hide {
     display: none;
 }
@@ -779,10 +821,12 @@ nav .toggle-menu {
     text-align: right;
     text-transform: uppercase;
 }
-
+.section-title {
+    text-transform: uppercase;
+}
 #hire-me {
     padding-top: 100px;
-    h2 {
+    h2:not(.section-title) {
         font-size: 1.75em;
     }
     .hire-title-cont {
@@ -909,6 +953,15 @@ nav .toggle-menu {
 .text-center {
     text-align: center;
 }
+
+// #portfolio h2:nth-of-type(1),
+// #hire-me h2:nth-of-type(1),
+// #contact h2:nth-of-type(1),
+// #about h2:nth-of-type(1) {
+//     text-transform: uppercase;
+//     font-size: 2.5em;
+// }
+// .blog-preview h2:nth-of-type(1),
 .service-card-cont {
     width: 100%;
     display: flex;
@@ -1009,15 +1062,15 @@ nav .toggle-menu {
         }
     }
 }
-@-webkit-keyframes slide-left {
+@-webkit-keyframes slide-down {
     0% {
         opacity: 0;
-        right: 5vw;
+        // bottom: 5vh;
     }
 
     100% {
-        right: 0;
-        opacity: 1;
+        bottom: 0;
+        // opacity: 1;
     }
 }
 
@@ -1139,6 +1192,7 @@ nav .toggle-menu {
     }
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
