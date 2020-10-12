@@ -6,7 +6,7 @@ html {
         "Times New Roman", serif;
     // min-height: 100vh;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 a {
     color: rgb(224, 224, 224);
@@ -205,7 +205,7 @@ nav .toggle-menu {
 .main {
     padding-top: 15vh;
     @media (min-width: 1800px) {
-        padding-top: 30vh;
+        padding-top: 20vh;
     }
 
     display: flex;
@@ -213,25 +213,34 @@ nav .toggle-menu {
     justify-content: space-between;
     align-items: center;
     h2 {
-        width: 60%;
+        width: 70%;
+        font-size: 1.5em;
         text-transform: uppercase;
         @media (max-width: 500px) {
-            width: 90%;
+            width: 50%;
         }
         text-align: center;
         margin: auto;
         @media (min-width: 1050px) {
-            font-size: 1.8em;
+            font-size: 2.5em;
             width: 50%;
         }
-        @media (min-width: 1700px) {
-            font-size: 2.5em;
-        }
-        color: #d4d4d4;
+        // @media (min-width: 1700px) {
+        //     font-size: 2.5em;
+        // }
+        color: white;
     }
-
+    h3 {
+        color: #d4d4d4;
+        margin-bottom: 1.5em;
+    }
     .cta-cont {
         display: flex;
+        @media (max-width: 700px) {
+            font-size: 0.9em;
+            flex-direction: column;
+            text-align: center;
+        }
         span {
             text-transform: uppercase;
             padding: 0.5em;
@@ -240,10 +249,10 @@ nav .toggle-menu {
             border-radius: 2px;
             border: $secondary 1px solid;
             margin: 0.5em;
-            color: white;
+
             &:hover {
                 color: $primary;
-                background: $secondary;
+                background: rgb(253, 196, 196);
                 cursor: pointer;
                 transition: background 0.2s;
             }
@@ -253,6 +262,7 @@ nav .toggle-menu {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        padding-top: 4em;
         .monitor {
             @media (min-width: 951px) and (max-width: 1349px) {
                 width: 22vw;
@@ -322,12 +332,14 @@ nav .toggle-menu {
     height: 100%;
     background: $secondary;
     padding-top: 100px;
+
     .portfolio-title-cont {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         // padding-right: 2%;
         justify-content: flex-end;
+
         .portfolio-title {
             margin-bottom: 0.25em !important;
         }
@@ -573,6 +585,9 @@ nav .toggle-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: 650px) {
+        justify-content: center;
+    }
 }
 .post-card {
     width: 100%;
@@ -738,7 +753,11 @@ nav .toggle-menu {
     .post-card {
         margin: 0;
         margin-top: 3vw;
-        width: 48%;
+        width: 100%;
+        @media (min-width: 950px) {
+            width: 48%;
+        }
+
         // border: $primary solid 2px;
         border-radius: 5px;
         background: white;
@@ -826,6 +845,7 @@ nav .toggle-menu {
     margin: 3em auto;
     justify-content: space-evenly;
     align-items: center;
+
     h2 {
         text-align: left;
     }
@@ -894,8 +914,15 @@ nav .toggle-menu {
     display: flex;
     margin: 1em auto;
     justify-content: space-around;
+    flex-direction: column;
+    @media (min-width: 1050px) {
+        flex-direction: row;
+    }
     .service-card {
-        width: 32%;
+        width: 100%;
+        @media (min-width: 1050px) {
+            width: 32%;
+        }
         background: white;
         border-radius: 5px;
         padding: 2.25em;
@@ -927,13 +954,29 @@ nav .toggle-menu {
     width: 100%;
     display: flex;
     margin: 1em auto;
-    justify-content: space-between;
+
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media (min-width: 750px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .process-card {
-        width: 24%;
+        flex-direction: column;
+        // margin: auto;
+        width: 90%;
+        @media (min-width: 750px) and (max-width: 1249px) {
+            width: 48%;
+        }
+        @media (min-width: 1250px) {
+            width: 24%;
+        }
+        margin-bottom: 1.5em;
         background: white;
         border: white 1px solid;
         border-radius: 5px;
-        padding: 2em;
+        padding: 1.5em;
         display: flex;
         flex-direction: column;
 

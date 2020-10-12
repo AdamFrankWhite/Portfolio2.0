@@ -2,7 +2,6 @@
 html {
   font-family: "Open Sans", "Franklin Gothic Light", "Roboto", Georgia, Times, "Times New Roman", serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 a {
@@ -217,34 +216,41 @@ header nav li:hover {
 }
 @media (min-width: 1800px) {
   .main {
-    padding-top: 30vh;
+    padding-top: 20vh;
   }
 }
 .main h2 {
-  width: 60%;
+  width: 70%;
+  font-size: 1.5em;
   text-transform: uppercase;
   text-align: center;
   margin: auto;
-  color: #d4d4d4;
+  color: white;
 }
 @media (max-width: 500px) {
   .main h2 {
-    width: 90%;
+    width: 50%;
   }
 }
 @media (min-width: 1050px) {
   .main h2 {
-    font-size: 1.8em;
+    font-size: 2.5em;
     width: 50%;
   }
 }
-@media (min-width: 1700px) {
-  .main h2 {
-    font-size: 2.5em;
-  }
+.main h3 {
+  color: #d4d4d4;
+  margin-bottom: 1.5em;
 }
 .main .cta-cont {
   display: flex;
+}
+@media (max-width: 700px) {
+  .main .cta-cont {
+    font-size: 0.9em;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .main .cta-cont span {
   text-transform: uppercase;
@@ -254,11 +260,10 @@ header nav li:hover {
   border-radius: 2px;
   border: #e64c3c 1px solid;
   margin: 0.5em;
-  color: white;
 }
 .main .cta-cont span:hover {
   color: #4d0d0d;
-  background: #e64c3c;
+  background: #fdc4c4;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -266,6 +271,7 @@ header nav li:hover {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  padding-top: 4em;
 }
 .main .icon-cont .monitor {
   width: 27%;
@@ -576,6 +582,11 @@ header nav li:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 650px) {
+  .card-container {
+    justify-content: center;
+  }
+}
 
 .post-card {
   width: 100%;
@@ -743,9 +754,14 @@ header nav li:hover {
 .blog-preview-post-cont .post-card {
   margin: 0;
   margin-top: 3vw;
-  width: 48%;
+  width: 100%;
   border-radius: 5px;
   background: white;
+}
+@media (min-width: 950px) {
+  .blog-preview-post-cont .post-card {
+    width: 48%;
+  }
 }
 .blog-preview-post-cont .post-card h3,
 .blog-preview-post-cont .post-card p {
@@ -878,14 +894,25 @@ header nav li:hover {
   display: flex;
   margin: 1em auto;
   justify-content: space-around;
+  flex-direction: column;
+}
+@media (min-width: 1050px) {
+  .service-card-cont {
+    flex-direction: row;
+  }
 }
 .service-card-cont .service-card {
-  width: 32%;
+  width: 100%;
   background: white;
   border-radius: 5px;
   padding: 2.25em;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1050px) {
+  .service-card-cont .service-card {
+    width: 32%;
+  }
 }
 .service-card-cont .service-card img {
   padding: 0;
@@ -910,16 +937,36 @@ header nav li:hover {
   width: 100%;
   display: flex;
   margin: 1em auto;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (min-width: 750px) {
+  .process-card-cont {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .process-card-cont .process-card {
-  width: 24%;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 1.5em;
   background: white;
   border: white 1px solid;
   border-radius: 5px;
-  padding: 2em;
+  padding: 1.5em;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 750px) and (max-width: 1249px) {
+  .process-card-cont .process-card {
+    width: 48%;
+  }
+}
+@media (min-width: 1250px) {
+  .process-card-cont .process-card {
+    width: 24%;
+  }
 }
 .process-card-cont .process-card img {
   padding-bottom: 0.5em;
