@@ -940,8 +940,9 @@ header nav li:hover {
   width: 100%;
   display: flex;
   margin: 1em auto;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 @media (min-width: 1050px) {
   .service-card-cont {
@@ -955,16 +956,12 @@ header nav li:hover {
   padding: 2.25em;
   display: flex;
   flex-direction: column;
+  margin-bottom: 4vw;
 }
 @media (min-width: 1050px) {
   .service-card-cont .service-card {
-    width: 32%;
+    width: 47.5%;
   }
-}
-.service-card-cont .service-card img {
-  padding: 0;
-  width: 15%;
-  height: auto;
 }
 .service-card-cont .service-card .service-card-head {
   display: flex;
@@ -973,6 +970,11 @@ header nav li:hover {
 .service-card-cont .service-card .service-card-head h3 {
   font-size: 1.2em;
   padding-left: 0.5em;
+}
+.service-card-cont .service-card .service-card-head img {
+  padding: 10px;
+  width: 15%;
+  height: auto;
 }
 .service-card-cont .service-card p {
   color: black !important;

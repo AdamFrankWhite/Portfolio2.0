@@ -17,13 +17,19 @@ export default function HireMe() {
             title: "Web Hosting/Maintainence",
             imgPath: "/assets/icons/icons8-launch-90.png",
             content:
-                "I can help you set up your web hosting, hosted email and domain, as well as help maintain your webiste, uploading new content and security updates.",
+                "I can help you set up your web hosting, hosted email and domain, as well as help maintain your website, uploading new content and security updates.",
         },
         {
             title: "Custom Web Development",
             imgPath: "/assets/icons/icons8-code-104.png",
             content:
                 "Looking for add a custom feature to your website, like a slideshow, animation or contact form? Perhaps you already have a site that you would like re-designed or tweaking? I can help you set up a Wordpress website that you can update yourself, or if you want something a little more unique, I can create a site from the groundup, as a front-end developer. ",
+        },
+        {
+            title: "SEO and Analytics",
+            imgPath: "/assets/icons/icons8-web-analytics-128.png",
+            content:
+                "It is important to get noticed and to understand who your customers are and where they come from. I can help build SEO and get you the insights you need to help better understand and grow your business. I can also help set up Google Business Listing.",
         },
         // {
         //     title: "Wordpress Development",
@@ -133,19 +139,60 @@ export default function HireMe() {
 
     const faqs = [
         {
+            question: "Which package should I get?",
+            answer:
+                "If you want to keep costs low, and don't mind using a Wordpress theme template, go for the Standard package. If you would like a custom-built theme with some more advanced features, but still have the functionality of a Wordpress site, go for the Premium package. If you are particularly concerned about speed and performance, and are also keen on a unique, custom design, a site coded from scratch with the Bespoke package would be your best option.",
+        },
+        {
+            question: "Will my website look good on mobile?",
+            answer:
+                "Mobile responsiveness is vital for a website - it is estimated that around 51% of web traffic is mobile. As such, it is vital that a website looks good and loads fast on a mobile, as well as looking good on both Android and Apple products.",
+        },
+        {
+            question: "Should I get a Wordpress site?",
+            answer:
+                "Wordpress powers around 30% of the web - its popularity is partly down to its ease of use. As a CMS (Content Management System), you can easily add images and content to your site. If you are looking to update content yourself, a Wordpress site is a good option. However, if you would like all aspects of your site managed for you, I am happy to add/update content for you, as part of a maintainence plan.",
+        },
+        {
             question: "Do you outsource?",
             answer:
-                "I complete all work myself, so that I know every part of a project, from top to bottom.",
+                "I complete all work myself, so that I know every part of a project, from top to bottom. I'm based in Stockport, Cheshire.",
         },
         {
             question: "Do you use templates?",
             answer:
-                "Whilst I may re-use indivivual components from time to time, I do not use any templates: all my work is custom-made, coded just for you.",
+                "Only for the standard package, a theme template is used - still customised though. The premium and bespoke packages do not use templates. Whilst I may re-use indivivual components from time to time, all my work is custom-made, coded just for you.",
         },
         {
             question: "Do you provide web hosting?",
             answer:
-                "  I don't provive hosting myself, however I am happy to help guide you through setting it up yourself, so you are fully in control.",
+                " I don't provive hosting myself, however I am happy to help guide you through setting it up yourself, so you are fully in control. I can do this through a screenshare.",
+        },
+        {
+            question:
+                "What is included in the quote? How do I know how much I'll have to pay?",
+            answer:
+                "I take pricing transparency seriously - no one wants to have a project cost keep on rising. The proposal I provide gives a detailed breakdown of the project scope, exactly what I will provide, how many rounds of revision and how much it costs - so you know exactly how much you are paying and what is included. Please note, however, anything extra outside the scope outlined in the proposal, will require extra costs.",
+        },
+        {
+            question: "How long will it take?",
+            answer:
+                "I get to work quickly; you can generally expect your site to be up and running within 2-4 weeks, depending on the size of the project and my outstanding project queue. I will be upfront with the timeline in your proposal.",
+        },
+        {
+            question: "What sort of guarantee do I have?",
+            answer:
+                "I pride myself on excellent customer service. After I send you the proposal, I provide a contract outlining the project scope, costs, deliverables and timeline so that both parties can rest assured that things will go smoothly.",
+        },
+        {
+            question: "What technology do you use?",
+            answer:
+                "I am comfortable with a variety of languages, frameworks and tools including HTML, CSS/SASS, JavaScript, React, Node/Express and Wordpress. I use Adobe XD for prototyping, VS Code for most projects, and XAMPP for PHP/Wordpress-based projects.",
+        },
+        {
+            question: "Why should I hire you?",
+            answer:
+                "As a freelance web developer, I have a solid understanding of the core programming languages that websites are built with: HTML, CSS, JavaScript and PHP. This means that I can create custom sites and features and alter how a site runs, improving performance, aesthetics and security. I also believe in frequent communication - no one wants any nasty surprises or disappearing contractors.",
         },
     ];
 
@@ -179,15 +226,6 @@ export default function HireMe() {
                         <hr className="full-width" />
                     </div>
                     <br />
-                    <h2>Services</h2>
-                    <hr />
-                    <div className="service-card-cont">
-                        {servicesCards.map((card) => (
-                            <ServiceCard card={card} />
-                        ))}
-                    </div>
-                    <h2>What I Can Do For You</h2>
-                    <hr />
                     <p>
                         I have a passion for web development and making
                         user-friendly, beautiful websites that help businesses
@@ -198,6 +236,17 @@ export default function HireMe() {
                         re-design, or would like new features integrating into
                         your current site, I'm here to help.
                     </p>
+                    <h2>Services</h2>
+                    <hr />
+
+                    <div className="service-card-cont">
+                        {servicesCards.map((card) => (
+                            <ServiceCard card={card} />
+                        ))}
+                    </div>
+                    {/* <h2>What I Can Do For You</h2>
+                    <hr /> */}
+
                     {/* <p>
                         If you are looking for a bespoke, stand-alone site, or a
                         managable Wordpress site, or custom theme, I'd be happy
@@ -313,15 +362,6 @@ export default function HireMe() {
                         free. Updates fixed free of charge.
                     </li>
                 </ol> */}
-                <h2>What Tech Do You Use?</h2>
-                <hr />
-                <p>
-                    I am comfortable with a variety of languages, frameworks and
-                    tools including HTML, CSS/SASS, JavaScript, React,
-                    Node/Express and Wordpress. I use Adobe XD for prototyping,
-                    VS Code for most projects, and XAMPP for PHP/Wordpress-based
-                    projects.
-                </p>
 
                 <h2 id="pricing">Pricing</h2>
                 <hr />

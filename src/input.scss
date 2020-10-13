@@ -966,33 +966,35 @@ nav .toggle-menu {
     width: 100%;
     display: flex;
     margin: 1em auto;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
+    flex-wrap: wrap;
     @media (min-width: 1050px) {
         flex-direction: row;
     }
     .service-card {
         width: 100%;
         @media (min-width: 1050px) {
-            width: 32%;
+            width: 47.5%;
         }
         background: white;
         border-radius: 5px;
         padding: 2.25em;
         display: flex;
         flex-direction: column;
+        margin-bottom: 4vw;
 
-        img {
-            padding: 0;
-            width: 15%;
-            height: auto;
-        }
         .service-card-head {
             display: flex;
             align-items: center;
             h3 {
                 font-size: 1.2em;
                 padding-left: 0.5em;
+            }
+            img {
+                padding: 10px;
+                width: 15%;
+                height: auto;
             }
         }
         p {
