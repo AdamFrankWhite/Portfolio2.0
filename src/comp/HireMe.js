@@ -65,14 +65,19 @@ export default function HireMe() {
             title: "Standard",
             imgPath: "/assets/icons/icons8-wordpress-104.png",
             tabs: [
+                "up to 5 pages",
                 "Wordpress theme template",
                 "Mobile Responsive",
-                "Theme Customisation",
+                "Content Management System",
                 "Social Media Integration",
                 "Contact Form",
-                "Google Maps",
-                "Photo Sourcing",
+                "Image Gallery",
+                "Embedded Google Maps",
+                "Stock Images",
+                "Basic SEO",
                 "2 rounds of revision",
+                "SSL Certification",
+                "-",
             ],
             price: 499,
         },
@@ -80,13 +85,19 @@ export default function HireMe() {
             title: "Premium",
             imgPath: "/assets/icons/icons8-wordpress-104.png",
             tabs: [
-                "Custom-made Wordpress theme",
+                "up to 10 pages",
+                "Custom Design",
                 "Mobile Responsive",
+                "Content Management System",
                 "Social Media Integration",
                 "Contact Form",
-                "Google Maps",
-                "Photo Sourcing",
+                "Image Gallery",
+                "Embedded Video",
+                "Embedded Google Maps",
+                "Stock Images",
+                "SEO Boost",
                 "2 rounds of revision",
+                "SSL Certification",
             ],
             price: 999,
         },
@@ -94,14 +105,19 @@ export default function HireMe() {
             title: "Bespoke",
             imgPath: "/assets/icons/icons8-code-104.png",
             tabs: [
-                "Coded from scratch",
-                "Tailor-made solution",
+                "Unlimited Pages",
+                "Custom Design",
                 "Mobile Responsive",
+                "Content Management System",
                 "Social Media Integration",
                 "Contact Form",
-                "Google Maps",
-                "Photo Sourcing",
+                "Image Gallery",
+                "Embedded Video",
+                "Embedded Google Maps",
+                "Premium Stock Images",
+                "SEO Boost",
                 "3 rounds of revision",
+                "SSL Certification",
             ],
             price: 1499,
         },
@@ -116,7 +132,7 @@ export default function HireMe() {
         {
             question: "Will my website look good on mobile?",
             answer:
-                "Mobile responsiveness is vital for a website - it is estimated that around 51% of web traffic is mobile. As such, it is vital that a website looks good and loads fast on a mobile, as well as looking good on both Android and Apple products.",
+                "Mobile responsiveness is vital for a website - it is estimated that around 51% of web traffic is mobile. As such, it is vital that a website looks good and loads fast on a mobile, as well as looking good on both Android and Apple products. This comes as standard is all packages.",
         },
         {
             question: "Should I get a Wordpress site?",
@@ -142,12 +158,12 @@ export default function HireMe() {
             question:
                 "What is included in the quote? How do I know how much I'll have to pay?",
             answer:
-                "I take pricing transparency seriously - no one wants to have a project cost keep on rising. The proposal I provide gives a detailed breakdown of the project scope, exactly what I will provide, how many rounds of revision and how much it costs - so you know exactly how much you are paying and what is included. Please note, however, anything extra outside the scope outlined in the proposal, will require extra costs.",
+                "I take pricing transparency seriously - no one wants to have a project cost keep on rising. The proposal I provide gives a detailed breakdown of the project scope, exactly what I will provide, how many rounds of revision and how much it costs - so you know exactly how much you are paying and what is included. Please note, however, anything extra outside the scope outlined in the proposal will require extra costs.",
         },
         {
             question: "How long will it take?",
             answer:
-                "I get to work quickly; you can generally expect your site to be up and running within 2-4 weeks, depending on the size of the project and my outstanding project queue. I will be upfront with the timeline in your proposal.",
+                "I get to work quickly; you can generally expect your site to be up and running within 3-4 weeks, depending on the size of the project and my outstanding project queue. I will be upfront with the timeline in your proposal.",
         },
         {
             question: "What sort of guarantee do I have?",
@@ -157,7 +173,7 @@ export default function HireMe() {
         {
             question: "What technology do you use?",
             answer:
-                "I am comfortable with a variety of languages, frameworks and tools including HTML, CSS/SASS, JavaScript, React, Node/Express and Wordpress. I use Adobe XD for prototyping, VS Code for most projects, and XAMPP for PHP/Wordpress-based projects.",
+                "I am comfortable with a variety of languages, frameworks and tools including HTML, CSS/SASS, JavaScript, React, Node/Express and Wordpress. I use Adobe XD for prototyping, VS Code for most projects, and XAMPP for PHP/Wordpress-based projects. In my spare time, I continue to learn and study to further enhance my skills.",
         },
         {
             question: "Why should I hire you?",
@@ -181,7 +197,6 @@ export default function HireMe() {
         let arrows = document.querySelectorAll(".question i");
         answers[num].classList.toggle("show");
         arrows[num].classList.toggle("flip");
-        console.log(answers[num]);
     };
     return (
         <section id="hire-me" className="about">
@@ -222,24 +237,27 @@ export default function HireMe() {
                 >
                     <h2>FAQs</h2>
                     <hr />
-                    {faqs.map((faq, index) => {
-                        return (
-                            <>
-                                <p
-                                    className="question"
-                                    onClick={() => {
-                                        toggleAnswer(index);
-                                    }}
-                                >
-                                    {faq.question}
-                                    <i class="fa fa-chevron-circle-down"></i>
-                                </p>
-                                <p className="answer">{faq.answer}</p>
-                            </>
-                        );
-                    })}
+                    <div className="faq-cont">
+                        {faqs.map((faq, index) => {
+                            return (
+                                <>
+                                    <p
+                                        className="question"
+                                        onClick={() => {
+                                            toggleAnswer(index);
+                                        }}
+                                    >
+                                        {faq.question}
+                                        <i class="fa fa-chevron-circle-down"></i>
+                                    </p>
+                                    <p className="answer">{faq.answer}</p>
+                                </>
+                            );
+                        })}
+                    </div>
                     <h2>My Process</h2>
                     <hr />
+                    <h3>Working with me</h3>
                     <div className="process-card-cont">
                         {process.map((step) => (
                             <ProcessCard card={step} />

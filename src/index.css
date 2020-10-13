@@ -227,7 +227,7 @@ header nav li:hover {
 }
 .main h2 {
   width: 70%;
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-transform: uppercase;
   text-align: center;
   margin: auto;
@@ -258,6 +258,8 @@ header nav li:hover {
     font-size: 0.9em;
     flex-direction: column;
     text-align: center;
+    width: 70%;
+    margin: auto;
   }
 }
 .main .cta-cont a {
@@ -475,7 +477,7 @@ header nav li:hover {
 }
 .website-card .card__face--back {
   transform: rotateX(180deg);
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
   color: black;
@@ -553,7 +555,7 @@ header nav li:hover {
 }
 
 .frame-content {
-  width: 90%;
+  width: 70%;
   max-width: 1600px;
   margin: auto;
 }
@@ -657,6 +659,7 @@ header nav li:hover {
 
 .contact {
   padding-top: 100px;
+  padding-bottom: 75px;
   color: white;
 }
 .contact hr {
@@ -664,10 +667,15 @@ header nav li:hover {
   margin: auto;
 }
 .contact .frame-content {
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+@media (min-width: 1050px) {
+  .contact .frame-content {
+    width: 70%;
+  }
 }
 .contact .frame-content .contact-content {
   margin: auto;
@@ -679,14 +687,14 @@ header nav li:hover {
 }
 
 .contact-form {
-  width: 50%;
+  width: 60%;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 727px) {
+@media (max-width: 1049px) {
   .contact-form {
-    width: 95%;
+    width: 80%;
   }
 }
 .contact-form label,
@@ -738,14 +746,32 @@ header nav li:hover {
 }
 
 .question {
-  margin: 0 !important;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4d0d0d !important;
+  padding: 0.5em;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  margin: 0.5em 0 !important;
   font-weight: 600;
+  font-size: 1.2em;
+}
+@media (min-width: 1050px) {
+  .question {
+    width: 60%;
+  }
+}
+.question ~ h2 {
+  margin-top: 1em;
 }
 .question i {
   transform: rotate(0);
   display: inline-block;
-  padding: 0.5em;
-  color: white;
+  padding: 0 0.5em;
+  font-size: 1.2em;
   transition: transform 0.2s;
 }
 .question .flip {
@@ -757,9 +783,15 @@ header nav li:hover {
 }
 
 .answer {
-  margin: 0.25em !important;
+  margin: 0.5em !important;
   display: none;
   font-weight: 300;
+  width: 90%;
+}
+@media (min-width: 1050px) {
+  .answer {
+    width: 60%;
+  }
 }
 
 .show {
@@ -767,14 +799,19 @@ header nav li:hover {
   animation: slide 0.2s;
 }
 
+.faq-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @keyframes slide {
   0% {
     opacity: 0;
-    transform: translateY(-0.75em);
+    transform: translateY(-1.75em);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 .hide {
@@ -835,6 +872,7 @@ header nav li:hover {
 
 #hire-me {
   padding-top: 100px;
+  padding-bottom: 75px;
 }
 #hire-me h2:not(.section-title) {
   font-size: 1.75em;
@@ -909,6 +947,7 @@ header nav li:hover {
 .hire-card-cont .hire-card {
   background: white;
   width: 80%;
+  margin-bottom: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -950,7 +989,8 @@ header nav li:hover {
 }
 .hire-card-cont .hire-card ul li {
   color: #5f5f5f !important;
-  padding: 0.5em;
+  font-size: 0.9em;
+  padding: 0.4em;
   text-align: center;
   border-bottom: 1px gray solid;
 }
@@ -1070,10 +1110,10 @@ header nav li:hover {
 
 @-webkit-keyframes slide-down {
   0% {
-    opacity: 0;
+    height: 0;
   }
   100% {
-    bottom: 0;
+    height: auto;
   }
 }
 @keyframes slide-left {

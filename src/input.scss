@@ -214,7 +214,7 @@ nav .toggle-menu {
     align-items: center;
     h2 {
         width: 70%;
-        font-size: 1.5em;
+        font-size: 1.8em;
         text-transform: uppercase;
         @media (max-width: 500px) {
             width: 50%;
@@ -242,6 +242,8 @@ nav .toggle-menu {
             font-size: 0.9em;
             flex-direction: column;
             text-align: center;
+            width: 70%;
+            margin: auto;
         }
         a {
             text-transform: uppercase;
@@ -454,7 +456,7 @@ nav .toggle-menu {
     }
     .card__face--back {
         transform: rotateX(180deg);
-        background-color: #ffffff;
+        background-color: #f1f1f1;
         display: flex;
         flex-direction: column;
         color: rgb(0, 0, 0);
@@ -546,7 +548,7 @@ nav .toggle-menu {
 }
 
 .frame-content {
-    width: 90%;
+    width: 70%;
     max-width: 1600px;
     margin: auto;
     @media (max-width: 727px) {
@@ -651,13 +653,18 @@ nav .toggle-menu {
 }
 .contact {
     padding-top: 100px;
+    padding-bottom: 75px;
     color: white;
     hr {
         width: 5%;
         margin: auto;
     }
     .frame-content {
-        width: 90%;
+        width: 95%;
+        @media (min-width: 1050px) {
+            width: 70%;
+        }
+
         display: flex;
         justify-content: space-between;
 
@@ -674,10 +681,10 @@ nav .toggle-menu {
     }
 }
 .contact-form {
-    @media (max-width: 727px) {
-        width: 95%;
+    @media (max-width: 1049px) {
+        width: 80%;
     }
-    width: 50%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -732,13 +739,31 @@ nav .toggle-menu {
 }
 
 .question {
-    margin: 0 !important;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary !important;
+    padding: 0.5em;
+    width: 90%;
+    margin: auto;
+    // margin-bottom: 0.5em;
+    border-radius: 5px;
+    @media (min-width: 1050px) {
+        width: 60%;
+    }
+    & ~ h2 {
+        margin-top: 1em;
+    }
+    margin: 0.5em 0 !important;
     font-weight: 600;
+    font-size: 1.2em;
     i {
         transform: rotate(0);
         display: inline-block;
-        padding: 0.5em;
-        color: white;
+        padding: 0 0.5em;
+        font-size: 1.2em;
+        // color: white;
         transition: transform 0.2s;
     }
     .flip {
@@ -751,9 +776,14 @@ nav .toggle-menu {
 }
 
 .answer {
-    margin: 0.25em !important;
+    margin: 0.5em !important;
     display: none;
     font-weight: 300;
+    width: 90%;
+    // animation: slide-up 0.2s;
+    @media (min-width: 1050px) {
+        width: 60%;
+    }
 }
 
 .show {
@@ -761,16 +791,23 @@ nav .toggle-menu {
     animation: slide 0.2s;
 }
 
+.faq-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @keyframes slide {
     0% {
         opacity: 0;
-        transform: translateY(-0.75em);
+
+        transform: translateY(-1.75em);
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        // transform: translateY(0);
     }
 }
+
 .hide {
     display: none;
 }
@@ -826,6 +863,7 @@ nav .toggle-menu {
 }
 #hire-me {
     padding-top: 100px;
+    padding-bottom: 75px;
     h2:not(.section-title) {
         font-size: 1.75em;
     }
@@ -909,6 +947,7 @@ nav .toggle-menu {
     .hire-card {
         background: white;
         width: 80%;
+        margin-bottom: 1.5em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -948,8 +987,9 @@ nav .toggle-menu {
             flex-direction: column;
             li {
                 color: rgb(95, 95, 95) !important;
+                font-size: 0.9em;
                 // background: rgb(78, 78, 78);
-                padding: 0.5em;
+                padding: 0.4em;
                 // margin-bottom: 0.1em;
                 text-align: center;
                 // border-top: 1px gray solid;
@@ -1079,12 +1119,12 @@ nav .toggle-menu {
 }
 @-webkit-keyframes slide-down {
     0% {
-        opacity: 0;
+        height: 0;
         // bottom: 5vh;
     }
 
     100% {
-        bottom: 0;
+        height: auto;
         // opacity: 1;
     }
 }

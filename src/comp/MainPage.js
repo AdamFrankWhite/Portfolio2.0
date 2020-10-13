@@ -15,7 +15,7 @@ export default function MainPage() {
             <HireMe />
             <BlogPreview />
             <Contact />
-            <About />
+            {/* <About /> */}
             <Footer />
         </div>
     );
