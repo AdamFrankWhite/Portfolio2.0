@@ -3,6 +3,7 @@ import posts from "../content/posts";
 import PostsList from "./PostsList";
 import Category from "./Category";
 import { Link, Route } from "react-router-dom";
+import ScrollAnimation from "react-animate-on-scroll";
 export default function Blog() {
     const [postList, setPostList] = useState();
     const [selectedCategory, setSelectedCategory] = useState("All");
@@ -10,7 +11,7 @@ export default function Blog() {
     useEffect(() => {
         if (selectedCategory !== "All") {
             const filterPosts = posts.filter(
-                post => post.category === selectedCategory
+                (post) => post.category === selectedCategory
             );
             setPostList(filterPosts);
         }
@@ -48,21 +49,22 @@ export default function Blog() {
     //         </ul>
     //     );
     // };
-    const setCategoryCallBack = category => {
+    const setCategoryCallBack = (category) => {
         setSelectedCategory(category);
     };
     return (
-        <div className="blog">
-            {/* <CategoryMenu callback={setCategoryCallBack} /> */}
-            {/* Need to create duplicate postcards, to force rerender for uniform animation */}
-            {selectedCategory == "All" && (
-                <PostsList
-                    callback={setCategoryCallBack}
-                    categories={categories}
-                />
-            )}
+        <ScrollAnimation animateIn="fadeIn" offset={250} duration={0.75}>
+            <div className="blog">
+                {/* <CategoryMenu callback={setCategoryCallBack} /> */}
+                {/* Need to create duplicate postcards, to force rerender for uniform animation */}
+                {selectedCategory == "All" && (
+                    <PostsList
+                        callback={setCategoryCallBack}
+                        categories={categories}
+                    />
+                )}
 
-            {/* {postList &&
+                {/* {postList &&
                 selectedCategory !== "All" &&
                 postList.map(post => {
                     return (
@@ -81,7 +83,7 @@ export default function Blog() {
                         </div>
                     );
                 })} */}
-            {/* {categories
+                {/* {categories
                         .filter(category => category !== "All")
                         .map(category => (
                             <Route
@@ -96,6 +98,7 @@ export default function Blog() {
                                 )}
                             />
                         ))} */}
-        </div>
+            </div>
+        </ScrollAnimation>
     );
 }

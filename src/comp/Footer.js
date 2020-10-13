@@ -7,6 +7,7 @@ export default function Footer() {
                 <div>
                     <h3>Adam White</h3>
                     <h4>Freelance Web Developer</h4>
+                    <h4>&copy; 2020</h4>
                 </div>
                 <div>
                     <div className="link-cont">
