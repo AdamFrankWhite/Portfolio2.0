@@ -10,7 +10,6 @@ export default function Portfolio() {
                 <div className="frame-content">
                     <div className="portfolio-title-cont">
                         <h2 class="portfolio-title">Projects</h2>
-
                         <hr />
                     </div>
                     <br />
@@ -19,13 +18,6 @@ export default function Portfolio() {
                             <PortfolioCard card={website} />
                         ))}
                     </div>
-                    {/* <Carousel>
-                        {websites.map(website => (
-                            <Carousel.Item>
-                                <PortfolioCard card={website} />
-                            </Carousel.Item>
-                        ))}
-                    </Carousel> */}
                 </div>
             </ScrollAnimation>
         </section>

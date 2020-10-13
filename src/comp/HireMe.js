@@ -31,36 +31,6 @@ export default function HireMe() {
             content:
                 "It is important to get noticed and to understand who your customers are and where they come from. I can help build SEO and get you the insights you need to help better understand and grow your business. I can also help set up Google Business Listing.",
         },
-        // {
-        //     title: "Wordpress Development",
-        //     imgPath: "/assets/icons/icons8-wordpress-104.png",
-        //     tabs: [
-        //         "Wordpress Installation",
-        //         "Custom Theme Development",
-        //         "Plug-in management",
-        //         "Theme Customisation"
-        //     ]
-        // },
-        // {
-        //     title: "Web Hosting/Maintainence",
-        //     imgPath: "/assets/icons/icons8-launch-90.png",
-        //     tabs: [
-        //         "Web Hosting",
-        //         "Domain Registration",
-        //         "Domain Email",
-        //         "SSL Certification"
-        //     ]
-        // },
-        // {
-        //     title: "Custom Web Development",
-        //     imgPath: "/assets/icons/icons8-code-104.png",
-        //     tabs: [
-        //         "Custom HTML/CSS/JavaScript",
-        //         "Coded from scratch",
-        //         "Node.js",
-        //         "React/Redux"
-        //     ]
-        // }
     ];
 
     const process = [
@@ -244,18 +214,6 @@ export default function HireMe() {
                             <ServiceCard card={card} />
                         ))}
                     </div>
-                    {/* <h2>What I Can Do For You</h2>
-                    <hr /> */}
-
-                    {/* <p>
-                        If you are looking for a bespoke, stand-alone site, or a
-                        managable Wordpress site, or custom theme, I'd be happy
-                        to help. Or, if you are looking for someone to edit and
-                        improve a pre-existing site or page, that's also
-                        something I'd be happy to help with. If it's something
-                        else, I'm always up for a challenge - let me know and
-                        I'll see if I am able to help.
-                    </p> */}
                 </ScrollAnimation>
                 <ScrollAnimation
                     animateIn="fadeIn"
@@ -288,80 +246,6 @@ export default function HireMe() {
                         ))}
                     </div>
                 </ScrollAnimation>
-
-                {/* <ol>
-                    <li>
-                        Initial Consultation (email, phone, zoom or in-person)
-                    </li>
-                    <li>
-                        Price Quote or Proposal (watch:
-                        https://www.youtube.com/watch?v=g4sxe...)
-                    </li>
-                    <li>
-                        Statement of Work aka SOW (watch:
-                        https://www.youtube.com/watch?v=GKKG_...)
-                    </li>
-                    <li>
-                        Website Design Contract (watch:
-                        https://www.youtube.com/watch?v=SGa1X...)
-                    </li>
-                    <li>Non-Refundable 50% Deposit</li>
-                    <li>
-                        Deep Dive w/ Client (Sitemap, set goals, expectations
-                        and review sites together)
-                    </li>
-                    <li>Submit 5-10 Templates or a 2 page Custom Mock-up </li>
-                    <li>
-                        Request Content (including but not limited to logo,
-                        brand guidelines, images, text content) w/ dropbox
-                        folders{" "}
-                    </li>
-                    <li>
-                        A Developer is given the project and website is started
-                        on our server.
-                    </li>
-                    <li>
-                        Client is provided 1st look at dev. link and we request
-                        revisions (on desktop only).
-                    </li>
-                    <li>
-                        Next payment of 25% is required to move forward with
-                        revisions.
-                    </li>
-                    <li>
-                        Client provides second and last set of revisions. We
-                        make the changes.
-                    </li>
-                    <li>
-                        Client is given a final review of site on desktop for
-                        approval.
-                    </li>
-                    <li>
-                        Once desktop is approved mobile responsiveness is
-                        completed.
-                    </li>
-                    <li>
-                        Testing Website on multiple, browsers, devices, screen
-                        sizes, contact forms, navigation items, hyperlinks,
-                        social media, anchor texts.
-                    </li>
-                    <li>Client pays remainder of balance (25%).</li>
-                    <li>
-                        We migrate site to clients hosting server (or hand over
-                        files).
-                    </li>
-                    <li>
-                        An email with login’s and passwords provided to client.
-                    </li>
-                    <li>
-                        Client is offered additional services and/or 1-on-1
-                        tutorial with developer for $120 per hour.
-                    </li>
-                    <li>
-                        Client has 7 days to review and notify us of any errors
-                        free. Updates fixed free of charge.
-                    </li>
-                </ol> */}
 
                 <h2 id="pricing">Pricing</h2>
                 <hr />

@@ -8,14 +8,7 @@ export default function NavBar() {
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 727px)" });
     const [stickyNav, showStickyNav] = useState(false);
     const [showMobileMenu, setShowMobileMenu] = useState(false);
-    // useEffect(() => {
-    //     window.addEventListener("scroll", () => {
-    //         console.log(document.documentElement.scrollTop);
-    //         document.documentElement.scrollTop > 400
-    //             ? showStickyNav(true)
-    //             : showStickyNav(false);
-    //     });
-    // });
+
     return (
         <header className="sticky-nav">
             <NavLink to="/">
