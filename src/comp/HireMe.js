@@ -254,7 +254,7 @@ export default function HireMe() {
                     offset={250}
                     duration={0.75}
                 >
-                    <h2>FAQs</h2>
+                    <h2 id="faqs">FAQs</h2>
                     <hr />
                     <div className="faq-cont">
                         {faqs.map((faq, index) => {
