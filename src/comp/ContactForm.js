@@ -9,6 +9,9 @@ export default function ContactUs() {
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
     function sendEmail(e) {
+        if (name.length < 1) {
+            return;
+        }
         setMailStatus("Sending");
         e.preventDefault();
 
@@ -20,11 +23,11 @@ export default function ContactUs() {
                 "user_wX2G7BuTDkcHkqSyCMvuU"
             )
             .then(
-                result => {
+                (result) => {
                     console.log(result.text);
                     setMailStatus("Sent");
                 },
-                error => {
+                (error) => {
                     console.log(error.text);
                     setError(error.text);
                 }
@@ -38,20 +41,23 @@ export default function ContactUs() {
                 type="text"
                 name="user_name"
                 value={name}
-                onChange={e => setName(e.target.value)}
+                required
+                onChange={(e) => setName(e.target.value)}
             />
             <label>Email</label>
             <input
                 type="email"
                 name="user_email"
                 value={email}
-                onChange={e => setEmail(e.target.value)}
+                required
+                onChange={(e) => setEmail(e.target.value)}
             />
             <label>Message</label>
             <textarea
                 name="message"
                 value={message}
-                onChange={e => setMessage(e.target.value)}
+                required
+                onChange={(e) => setMessage(e.target.value)}
             />
             <div className="email-result">
                 {mailStatus === "Sending" && (

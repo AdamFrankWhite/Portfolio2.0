@@ -71,6 +71,7 @@ export default function HireMe() {
                 "Content Management System",
                 "Social Media Integration",
                 "Contact Form",
+                "Favicon and icons",
                 "Image Gallery",
                 "Embedded Google Maps",
                 "Stock Images",
@@ -91,6 +92,7 @@ export default function HireMe() {
                 "Content Management System",
                 "Social Media Integration",
                 "Contact Form",
+                "Favicon and icons",
                 "Image Gallery",
                 "Embedded Video",
                 "Embedded Google Maps",
@@ -111,6 +113,7 @@ export default function HireMe() {
                 "Content Management System",
                 "Social Media Integration",
                 "Contact Form",
+                "Favicon and icons",
                 "Image Gallery",
                 "Embedded Video",
                 "Embedded Google Maps",
@@ -135,9 +138,29 @@ export default function HireMe() {
                 "Mobile responsiveness is vital for a website - it is estimated that around 51% of web traffic is mobile. As such, it is vital that a website looks good and loads fast on a mobile, as well as looking good on both Android and Apple products. This comes as standard is all packages.",
         },
         {
+            question: "Do I own the website?",
+            answer:
+                "100% yes. Once the project is complete and handed over, it is entirely owned by you.",
+        },
+        {
+            question: "What is web hosting?",
+            answer:
+                "Web hosting is where your website files actually live. There are a few hosting companies that I recommend in particular. If you sign up with my affiliate link, you can get a discount on your hosting.",
+        },
+        {
+            question: "Do you provide web hosting?",
+            answer:
+                "I don't provive hosting myself, however I am happy to help guide you through setting it up yourself, so you are fully in control. I can do this through a screenshare. Typical prices range from £3-10/month, depending on the length of billing cycle.",
+        },
+        {
             question: "Should I get a Wordpress site?",
             answer:
                 "Wordpress powers around 30% of the web - its popularity is partly down to its ease of use. As a CMS (Content Management System), you can easily add images and content to your site. If you are looking to update content yourself, a Wordpress site is a good option. However, if you would like all aspects of your site managed for you, I am happy to add/update content for you, as part of a maintainence plan.",
+        },
+        {
+            question: "What do you need to get started?",
+            answer:
+                "Once we have arranged the project details, I'll need your logo, text content for the website & photos (I can provide stock photos). Professionally written copy and professional photographs help with making a website more effective. I can provide a logo branding service if you need a new logo designed for your business.",
         },
         {
             question: "Do you outsource?",
@@ -149,11 +172,7 @@ export default function HireMe() {
             answer:
                 "Only for the standard package, a theme template is used - still customised though. The premium and bespoke packages do not use templates. Whilst I may re-use indivivual components from time to time, all my work is custom-made, coded just for you.",
         },
-        {
-            question: "Do you provide web hosting?",
-            answer:
-                " I don't provive hosting myself, however I am happy to help guide you through setting it up yourself, so you are fully in control. I can do this through a screenshare.",
-        },
+
         {
             question:
                 "What is included in the quote? How do I know how much I'll have to pay?",
