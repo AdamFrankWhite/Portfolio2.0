@@ -14,7 +14,7 @@ export default function NavBar() {
             <NavLink to="/">
                 <div className="title-name home-link">
                     <h1>Adam White</h1>
-                    <h2>UX/UI Designer and Web Developer</h2>
+                    <h2>Freelance Web Designer</h2>
                 </div>
             </NavLink>
 

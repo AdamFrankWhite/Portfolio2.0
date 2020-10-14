@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import ServiceCard from "./ServiceCard";
 import PriceCard from "./PriceCard";
@@ -50,7 +51,7 @@ export default function HireMe() {
             icon: "/assets/icons/icons8-code-240.png",
             title: "3. Design and develop your website",
             content:
-                "After narrowing down your design, I will develop your website from scratch, using the latest web technology to create a beautiful, functional, secure site.",
+                "After narrowing down your design, I will develop your website from scratch, using the latest web technology to create a beautiful, functional, secure site. I will then chat with you and undertake requested revisions.",
         },
         {
             icon: "/assets/icons/icons8-launch-240.png",
@@ -240,6 +241,13 @@ export default function HireMe() {
                         re-design, or would like new features integrating into
                         your current site, I'm here to help.
                     </p>
+                    {/* <p>
+                        Find out more about{" "}
+                        <Link className="link" to="working-with-me">
+                            working with me
+                        </Link>
+                        .
+                    </p> */}
                     <h2>Services</h2>
                     <hr />
 
@@ -274,9 +282,9 @@ export default function HireMe() {
                             );
                         })}
                     </div>
-                    <h2>My Process</h2>
+                    <h2 className="pt-1">My Process</h2>
                     <hr />
-                    <h3>Working with me</h3>
+
                     <div className="process-card-cont">
                         {process.map((step) => (
                             <ProcessCard card={step} />

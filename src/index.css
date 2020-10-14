@@ -714,10 +714,11 @@ header nav li:hover {
   margin: 1em auto;
   width: 80%;
 }
-.contact .frame-content .contact-content a {
+
+.link {
   color: #ff5100;
 }
-.contact .frame-content .contact-content a:hover {
+.link:hover {
   color: orange;
   text-decoration: underline;
 }
@@ -839,6 +840,17 @@ header nav li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1.5em;
+}
+@media (min-width: 1050px) {
+  .faq-cont {
+    display: block;
+    padding-left: 3em;
+  }
+}
+
+.pt-1 {
+  padding-top: 1em;
 }
 
 @keyframes slide {
@@ -982,7 +994,7 @@ header nav li:hover {
 }
 .hire-card-cont img {
   width: 40%;
-  max-width: 175px;
+  max-width: 150px;
   height: auto;
   padding: 1.5em;
 }
@@ -1018,6 +1030,14 @@ header nav li:hover {
 .hire-card-cont .hire-card:hover {
   transform: translateY(-1em);
   transition: transform 0.2s ease-in-out;
+}
+.hire-card-cont .hire-card a {
+  background: #d30000;
+  padding: 0.75em;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-bottom: 1em;
 }
 .hire-card-cont .hire-card h3 {
   font-size: 1.6em;
@@ -1068,7 +1088,7 @@ header nav li:hover {
   padding: 2.25em;
   display: flex;
   flex-direction: column;
-  margin-bottom: 4vw;
+  margin: 2vw 0;
 }
 @media (min-width: 1050px) {
   .service-card-cont .service-card {
@@ -1090,7 +1110,7 @@ header nav li:hover {
 }
 .service-card-cont .service-card p {
   color: black !important;
-  font-size: 0.85em;
+  font-size: 0.95em;
   text-align: justify;
 }
 
@@ -1166,6 +1186,10 @@ header nav li:hover {
   .process-card-cont .process-card p {
     font-size: 0.9em;
   }
+}
+
+.working-with-me {
+  color: white;
 }
 
 @-webkit-keyframes slide-down {
@@ -1309,15 +1333,16 @@ footer {
   width: 100%;
 }
 footer hr {
-  width: 80%;
-  margin: auto;
-  background-color: #e64c3c;
+  width: 30%;
+  margin: 0.25em auto;
+  background-color: white;
 }
 footer .footer-content {
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   width: 70%;
 }
 footer .footer-content .link-cont {

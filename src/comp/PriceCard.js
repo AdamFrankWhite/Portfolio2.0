@@ -6,12 +6,13 @@ export default function PriceCard(props) {
             <img src={props.card.imgPath} alt={props.card.name} />
             <h3>{props.card.title}</h3>
             <ul>
-                {props.card.tabs.map(tab => (
+                {props.card.tabs.map((tab) => (
                     <li>{tab}</li>
                 ))}
             </ul>
             <span>from</span>
             <h3 class="price">£{props.card.price}</h3>
+            <a href="#contact">Contact me now</a>
         </div>
     );
 }

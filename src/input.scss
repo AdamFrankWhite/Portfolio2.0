@@ -698,15 +698,16 @@ nav .toggle-menu {
                 margin: 1em auto;
                 width: 80%;
             }
-            a {
-                color: rgb(255, 81, 0);
-
-                &:hover {
-                    color: orange;
-                    text-decoration: underline;
-                }
-            }
         }
+    }
+}
+
+.link {
+    color: rgb(255, 81, 0);
+
+    &:hover {
+        color: orange;
+        text-decoration: underline;
     }
 }
 .contact-form {
@@ -824,6 +825,15 @@ nav .toggle-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1.5em;
+    @media (min-width: 1050px) {
+        display: block;
+        padding-left: 3em;
+    }
+}
+
+.pt-1 {
+    padding-top: 1em;
 }
 @keyframes slide {
     0% {
@@ -976,7 +986,7 @@ nav .toggle-menu {
 
     img {
         width: 40%;
-        max-width: 175px;
+        max-width: 150px;
         height: auto;
         padding: 1.5em;
     }
@@ -1011,6 +1021,14 @@ nav .toggle-menu {
             // transform: scale(1.05);
             transform: translateY(-1em);
             transition: transform 0.2s ease-in-out;
+        }
+        a {
+            background: rgb(211, 0, 0);
+            padding: 0.75em;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 5px;
+            margin-bottom: 1em;
         }
         h3 {
             font-size: 1.6em;
@@ -1075,7 +1093,7 @@ nav .toggle-menu {
         padding: 2.25em;
         display: flex;
         flex-direction: column;
-        margin-bottom: 4vw;
+        margin: 2vw 0;
 
         .service-card-head {
             display: flex;
@@ -1092,7 +1110,7 @@ nav .toggle-menu {
         }
         p {
             color: black !important;
-            font-size: 0.85em;
+            font-size: 0.95em;
             text-align: justify;
         }
     }
@@ -1168,6 +1186,11 @@ nav .toggle-menu {
         }
     }
 }
+
+.working-with-me {
+    color: white;
+}
+
 @-webkit-keyframes slide-down {
     0% {
         height: 0;
@@ -1355,17 +1378,17 @@ footer {
     color: white;
     font-family: "Open Sans";
     width: 100%;
-
     hr {
-        width: 80%;
-        margin: auto;
-        background-color: $secondary;
+        width: 30%;
+        margin: 0.25em auto;
+        background-color: white;
     }
     .footer-content {
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        text-align: center;
         width: 70%;
         .link-cont {
             display: flex;

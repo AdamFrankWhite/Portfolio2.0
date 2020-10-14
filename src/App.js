@@ -13,6 +13,7 @@ import Category from "./comp/Category";
 import posts from "./content/posts";
 import Footer from "./comp/Footer";
 import MainPage from "./comp/MainPage";
+import PrivacyPolicy from "./comp/PrivacyPolicy";
 
 function App() {
     const categories = ["All", "React", "CSS/SASS", "Wordpress", "Performance"];
@@ -24,29 +25,25 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={MainPage} />
 
-                    {/* <div className="main-cont"> */}
-                    {/* <Route exact path="/" component={Home} />
-                <Route path="/portfolio" component={Portfolio} />
-                <Route path="/hire-me" component={HireMe} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/about" component={About} />*/}
                     <Route exact path="/blog" component={Blog} />
-                    {posts.map(post => (
+                    {/* <Route path="/privacy-policy" component={PrivacyPolicy} /> */}
+                    {/* <Route path="/working-with-me" component={WorkingWithMe} /> */}
+                    {posts.map((post) => (
                         <Route
                             key={post.title}
                             path={`/blog/${post.path}`}
-                            render={props => (
+                            render={(props) => (
                                 <BlogPost {...props} post={post} />
                             )}
                         />
                     ))}
                     {categories
-                        .filter(category => category !== "All")
-                        .map(category => (
+                        .filter((category) => category !== "All")
+                        .map((category) => (
                             <Route
                                 key={category}
                                 path={`/blog/${category}`}
-                                render={props => (
+                                render={(props) => (
                                     <Category
                                         {...props}
                                         categories={categories}
@@ -55,9 +52,6 @@ function App() {
                                 )}
                             />
                         ))}
-
-                    {/* <Route path="/blog/:post" component={BlogPost} /> */}
-                    {/* </div> */}
                 </Switch>
             </Router>
         </div>
