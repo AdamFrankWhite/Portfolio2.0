@@ -136,7 +136,7 @@ export default function HireMe() {
         {
             question: "Will my website look good on mobile?",
             answer:
-                "Mobile responsiveness is vital for a website - it is estimated that around 51% of web traffic is mobile. As such, it is vital that a website looks good and loads fast on a mobile, as well as looking good on both Android and Apple products. This comes as standard is all packages.",
+                "Mobile responsiveness is vital for a website - it is estimated that around 51% of web traffic is mobile. As such, it is essential that a website looks good and loads fast on a mobile, as well as looking good on both Android and Apple products. This comes as standard in all packages.",
         },
         {
             question: "Do I own the website?",
@@ -146,7 +146,8 @@ export default function HireMe() {
         {
             question: "What is web hosting?",
             answer:
-                "Web hosting is where your website files actually live. There are a few hosting companies that I recommend in particular. If you sign up with my affiliate link, you can get a discount on your hosting.",
+                "Web hosting is the server where your website files actually live. There are a few hosting companies that I recommend in particular.",
+            // If you sign up with my affiliate link, you can get a discount on your hosting.
         },
         {
             question: "Do you provide web hosting?",
@@ -171,14 +172,14 @@ export default function HireMe() {
         {
             question: "Do you use templates?",
             answer:
-                "Only for the standard package, a theme template is used - still customised though. The premium and bespoke packages do not use templates. Whilst I may re-use indivivual components from time to time, all my work is custom-made, coded just for you.",
+                "Only for the standard package is a customised theme template used. The premium and bespoke packages do not use templates. Whilst I may re-use individual components from time to time, all my work is custom-made, coded just for you.",
         },
 
         {
             question:
                 "What is included in the quote? How do I know how much I'll have to pay?",
             answer:
-                "I take pricing transparency seriously - no one wants to have a project cost keep on rising. The proposal I provide gives a detailed breakdown of the project scope, exactly what I will provide, how many rounds of revision and how much it costs - so you know exactly how much you are paying and what is included. Please note, however, anything extra outside the scope outlined in the proposal will require extra costs.",
+                "I take pricing transparency seriously - no one wants to have a project cost keep on rising. The proposal I provide gives a detailed breakdown of the project scope, exactly what I will provide, how many rounds of revision and how much it costs - so you know exactly how much you are paying and what is included. Please note, however, anything extra outside the scope agreed in the proposal will be chargeable.",
         },
         {
             question: "How long will it take?",
@@ -193,12 +194,12 @@ export default function HireMe() {
         {
             question: "What technology do you use?",
             answer:
-                "I am comfortable with a variety of languages, frameworks and tools including HTML, CSS/SASS, JavaScript, React, Node/Express and Wordpress. I use Adobe XD for prototyping, VS Code for most projects, and XAMPP for PHP/Wordpress-based projects. In my spare time, I continue to learn and study to further enhance my skills.",
+                "I am comfortable with a variety of languages, frameworks and tools including HTML, CSS/SASS, JavaScript, React, Node/Express and Wordpress. I use Adobe XD for prototyping, VS Code my text editor, and XAMPP for PHP/Wordpress-based projects. In my spare time, I continue to learn and study to further enhance my skills.",
         },
         {
             question: "Why should I hire you?",
             answer:
-                "As a freelance web developer, I have a solid understanding of the core programming languages that websites are built with: HTML, CSS, JavaScript and PHP. This means that I can create custom sites and features and alter how a site runs, improving performance, aesthetics and security. I also believe in frequent communication - no one wants any nasty surprises or disappearing contractors.",
+                "As a freelance web developer, I have a solid understanding of the core programming languages that websites are built with: HTML, CSS, JavaScript and PHP. This means that I can create custom sites and features, improving performance, aesthetics and security. I also believe in frequent communication - no one wants any nasty surprises or disappearing contractors. I am committed to providing a quality experience from start to finish.",
         },
     ];
 
