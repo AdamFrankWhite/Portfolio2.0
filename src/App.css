@@ -657,6 +657,7 @@ header nav li:hover {
 
 .blog-post {
   width: 80%;
+  max-width: 1000px;
   margin: auto;
 }
 .blog-post hr {
@@ -684,6 +685,45 @@ header nav li:hover {
   margin: 1em;
   border-radius: 5px;
   font-size: 1.1em;
+}
+
+.browser-comp {
+  color: white;
+}
+.browser-comp h3 {
+  text-align: center;
+  font-size: 1.6em;
+}
+.browser-comp hr {
+  margin: 0 auto;
+}
+.browser-comp code {
+  display: inline;
+  padding: 0.25em;
+}
+.browser-comp .pc-cont {
+  display: flex;
+}
+.browser-comp table {
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+}
+.browser-comp img {
+  display: block;
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+.browser-comp th,
+.browser-comp td {
+  background: white;
+  padding: 0.35em;
+}
+.browser-comp th span,
+.browser-comp td span {
+  padding: 0.35em;
+  border-radius: 5px;
 }
 
 .contact {
@@ -1192,7 +1232,7 @@ header nav li:hover {
   color: white;
 }
 
-@-webkit-keyframes slide-down {
+@keyframes slide-down {
   0% {
     height: 0;
   }
@@ -1352,4 +1392,4 @@ footer .footer-content .link-cont {
   justify-content: center;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=App.css.map */

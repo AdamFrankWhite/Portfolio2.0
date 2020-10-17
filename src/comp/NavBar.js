@@ -10,7 +10,7 @@ export default function NavBar() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     return (
-        <header className="sticky-nav">
+        <header>
             <NavLink to="/">
                 <div className="title-name home-link">
                     <h1>Adam White</h1>
