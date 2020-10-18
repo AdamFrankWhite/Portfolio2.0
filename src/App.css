@@ -394,6 +394,10 @@ header nav li:hover {
   width: 5%;
   margin-top: 0.25em;
 }
+.portfolio a {
+  font-size: 1.1em;
+  padding: 0.5em 0;
+}
 
 .portfolio-tabs {
   display: flex;
