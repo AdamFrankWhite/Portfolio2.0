@@ -1,6 +1,6 @@
 import React from "react";
 import BrowserCompatibility from "./posts/BrowserCompatibility";
-import Compress2 from "./posts/Compress2";
+import CompressImages from "./posts/CompressImages";
 import Compress3 from "./posts/Compress3";
 import Compress4 from "./posts/Compress4";
 import Compress5 from "./posts/Compress5";
@@ -13,7 +13,7 @@ const posts = [
     {
         title:
             "Compressing images for faster load times - progressive jpgs are your friend",
-        content: <BrowserCompatibility />,
+        content: <CompressImages />,
         path: "compressing-images-for-faster-load-times",
         snippet: ["When developing for the web,"],
         category: "Performance",
@@ -30,7 +30,7 @@ const posts = [
     },
     {
         title: "Keeping multiple images uniform - handy CSS tips",
-        content: <Compress2 />,
+        content: <Compress3 />,
         path: "keeping-multiple-images-uniform",
         snippet: [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunornare diam et tempus semper. Integer pharetra, metus sit ameteuismod elementum, nulla nisl finibus est, in dictum dui duiornare turpis. Vestibulum a euismod metus, et volutpat quam. Maecenas auctor metus quis viverra aliquam. Maecenas convallis imperdiet porttitor.",

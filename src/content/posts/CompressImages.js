@@ -1,20 +1,17 @@
 import React from "react";
 import Highlight from "react-highlight.js";
-export default function Compress2() {
+export default function CompressImages() {
     return (
         <div class="blog-post">
             <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                ornare diam et tempus semper. Integer pharetra, metus sit amet
-                euismod elementum, nulla nisl finibus est, in dictum dui dui
-                ornare turpis. Vestibulum a euismod metus, et volutpat quam.
-                Maecenas auctor metus quis viverra aliquam. Maecenas convallis
-                imperdiet porttitor. Mauris interdum, orci egestas rhoncus
-                condimentum, turpis velit convallis eros, in posuere eros purus
-                in diam. Ut cursus leo ac augue elementum, id congue tortor
-                elementum. Nam convallis blandit ipsum, non pulvinar dolor
-                sodales eget. Suspendisse et massa ultricies, tempor est at,
-                luctus magna.",
+                Loading times are really important when designing websites -
+                visitors are generally unwilling to wait long for a site to load
+                - one of the biggest factors in losing visitors is poor loading
+                times. Images are commonplace online, and it is crucial to
+                compress your images, to signiifcaly speed up loading times. The
+                trick is to do this without compromosing quality. Image
+                compression can do this. WHen compressing jpgs, there are two
+                types of compression: progressive and x.
             </p>
             <Highlight language={"javascript"}>
                 {`

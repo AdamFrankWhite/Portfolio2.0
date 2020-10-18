@@ -172,16 +172,31 @@ export default function BrowserCompatibility() {
             </p>
             <p>
                 Now, as you can imagine, this can get rather tedious when coding
-                an entire stylesheet. This is where prefixers come into play. VS
-                Code has a great extension called Autoprefixer, that, as its
-                name suggests, automatically prefixes your code to ensure
-                cross-browser support. When you add{" "}
+                an entire stylesheet. This is where prefixers come into play.{" "}
+            </p>
+            <p>
+                There are numerous prefixers out there - I like using a VS Code
+                extension called Autoprefixer, that, as its name suggests,
+                automatically prefixes your code on save to ensure cross-browser
+                support. When you add{" "}
                 <code>animation: slide-down 0.8s forwards</code> to your
                 stylesheet, the output saved is{" "}
                 <code>
-                    -webkit-animation: slide-down 0.8s forwards; animation:
-                    slide-down 0.8s forwards;
-                </code>{" "}
+                    -webkit-animation: slide-down 0.8s forwards;
+                    <br /> animation: slide-down 0.8s forwards;
+                </code>
+            </p>
+            <h3>Conclusion</h3>
+            <hr />
+            <p>
+                For accessibility and a smooth user experience, it is important
+                to make sure your CSS is compatibility across a range of
+                browsers. This has been much easier in recent yers, with an
+                increased market share of the most popular browsers - Chrome and
+                Opera - an increased adoption of rendering engines, plus the
+                growth of prefixers. It has never been easier to ensure your
+                site or app is able to be utilised and experienced fully by the
+                maximum number of people.
             </p>
         </div>
     );

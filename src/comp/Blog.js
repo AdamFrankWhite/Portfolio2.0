@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import posts from "../content/posts";
 import PostsList from "./PostsList";
-import Category from "./Category";
+import CategoryMenu from "./CategoryMenu";
 import { Link, Route } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
+import BlogPost from "./BlogPost";
 export default function Blog() {
     const [postList, setPostList] = useState();
     const [selectedCategory, setSelectedCategory] = useState("All");

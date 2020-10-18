@@ -33,7 +33,12 @@ function App() {
                             key={post.title}
                             path={`/blog/${post.path}`}
                             render={(props) => (
-                                <BlogPost {...props} post={post} />
+                                <BlogPost
+                                    {...props}
+                                    post={post}
+                                    // callback={}
+                                    categories={categories}
+                                />
                             )}
                         />
                     ))}

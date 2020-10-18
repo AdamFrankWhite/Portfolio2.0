@@ -564,7 +564,17 @@ nav .toggle-menu {
     height: 100%;
     min-height: 80vh;
 }
-
+.cat-menu {
+    h2 {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    hr {
+        width: 5%;
+        margin: auto;
+    }
+}
 .frame-content {
     width: 80%;
     max-width: 1600px;
@@ -643,6 +653,7 @@ nav .toggle-menu {
     width: 80%;
     max-width: 1000px;
     margin: auto;
+    padding-bottom: 2em;
     hr {
         width: 50%;
         margin: 1em auto;
@@ -658,13 +669,14 @@ nav .toggle-menu {
     p {
         margin: 1em 0;
         text-align: justify;
+        font-weight: 100;
     }
     code {
         background: rgb(34, 34, 34);
         color: white;
         display: block;
         white-space: pre-wrap;
-        padding: 2em 1em;
+        padding: 1em;
         margin: 1em;
         border-radius: 5px;
         font-size: 1.1em;
@@ -682,10 +694,7 @@ nav .toggle-menu {
     hr {
         margin: 0 auto;
     }
-    code {
-        display: inline;
-        padding: 0.25em;
-    }
+
     .pc-cont {
         display: flex;
     }
@@ -693,6 +702,7 @@ nav .toggle-menu {
         width: 90%;
         margin: auto;
         border-radius: 5px;
+        color: black;
     }
     img {
         display: block;

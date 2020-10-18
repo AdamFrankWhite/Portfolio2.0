@@ -12,7 +12,7 @@ export default function PostsList(props) {
                 category="All"
             />
             <div className="card-container">
-                {posts.map(post => {
+                {posts.map((post) => {
                     return (
                         <div key={post.title} className="post-card slide-in">
                             <div className="post-card-content">
@@ -22,7 +22,7 @@ export default function PostsList(props) {
                                 <Link to={`/blog/${post.category}`}>
                                     <h3 class="post-cat">{post.category}</h3>
                                 </Link>
-                                {post.snippet.map(para => (
+                                {post.snippet.map((para) => (
                                     <p key={para}>{para}</p>
                                 ))}
                             </div>

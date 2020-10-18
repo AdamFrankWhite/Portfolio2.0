@@ -583,6 +583,16 @@ header nav li:hover {
   min-height: 80vh;
 }
 
+.cat-menu h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cat-menu hr {
+  width: 5%;
+  margin: auto;
+}
+
 .frame-content {
   width: 80%;
   max-width: 1600px;
@@ -659,6 +669,7 @@ header nav li:hover {
   width: 80%;
   max-width: 1000px;
   margin: auto;
+  padding-bottom: 2em;
 }
 .blog-post hr {
   width: 50%;
@@ -675,13 +686,14 @@ header nav li:hover {
 .blog-post p {
   margin: 1em 0;
   text-align: justify;
+  font-weight: 100;
 }
 .blog-post code {
   background: #222222;
   color: white;
   display: block;
   white-space: pre-wrap;
-  padding: 2em 1em;
+  padding: 1em;
   margin: 1em;
   border-radius: 5px;
   font-size: 1.1em;
@@ -697,10 +709,6 @@ header nav li:hover {
 .browser-comp hr {
   margin: 0 auto;
 }
-.browser-comp code {
-  display: inline;
-  padding: 0.25em;
-}
 .browser-comp .pc-cont {
   display: flex;
 }
@@ -708,6 +716,7 @@ header nav li:hover {
   width: 90%;
   margin: auto;
   border-radius: 5px;
+  color: black;
 }
 .browser-comp img {
   display: block;

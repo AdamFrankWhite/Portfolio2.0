@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 export default function CategoryMenu(props) {
     const [active, setActive] = useState(props.category);
     return (
-        <div>
+        <div className="cat-menu">
             <h2>Blog</h2>
-            <hr className="full-width" />
+            <hr />
             <br />
             <ul class="blog-menu">
-                {props.categories.map(category => {
+                {props.categories.map((category) => {
                     const linkPath =
                         category !== "All"
                             ? `/blog/${category.toLowerCase()}`
