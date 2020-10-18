@@ -42,8 +42,8 @@ const websites = [
         tech: "React, Redux, CSS, Node, MongoDB",
         desc: "Lorem ipsum bla bla bla",
         img: "assets/beerme-min.jpg",
-        link: "http://quittingweedthebook.com",
-        code: "https://github.com/AdamFrankWhite/Landing-Page-1",
+        link: "https://my-fave-beers.herokuapp.com/",
+        code: "https://github.com/AdamFrankWhite/Beer-App",
         text: [
             "Wanting to delve into full-stack development, I created a app that could let you bookmark your favourite beers, using Untappd's data API. Built with React and Material UI on the front-end; the back end uses Node and MongoDB. Uses bcrypt for encryption",
             "Back-end deployed using Heroku",
