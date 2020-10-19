@@ -253,41 +253,6 @@ export default function HireMe() {
                         ))}
                     </div>
                 </ScrollAnimation>
-                <ScrollAnimation
-                    animateIn="fadeIn"
-                    offset={250}
-                    duration={0.75}
-                >
-                    <h2 id="faqs">FAQs</h2>
-                    <hr />
-                    <div className="faq-cont">
-                        {faqs.map((faq, index) => {
-                            return (
-                                <>
-                                    <p
-                                        className="question"
-                                        onClick={() => {
-                                            toggleAnswer(index);
-                                        }}
-                                    >
-                                        {faq.question}
-                                        <i class="fa fa-chevron-circle-down"></i>
-                                    </p>
-                                    <p className="answer">{faq.answer}</p>
-                                </>
-                            );
-                        })}
-                    </div>
-                    <h2 className="pt-1">My Process</h2>
-                    <hr />
-
-                    <div className="process-card-cont">
-                        {process.map((step) => (
-                            <ProcessCard card={step} />
-                        ))}
-                    </div>
-                </ScrollAnimation>
-
                 <h2 id="pricing">Pricing</h2>
                 <hr />
                 <p>
@@ -310,6 +275,40 @@ export default function HireMe() {
                     project, and 50% on completion, before the site is made live
                     and handed over
                 </p>
+                <ScrollAnimation
+                    animateIn="fadeIn"
+                    offset={250}
+                    duration={0.75}
+                >
+                    <h2 className="pt-1">My Process</h2>
+                    <hr />
+
+                    <div className="process-card-cont">
+                        {process.map((step) => (
+                            <ProcessCard card={step} />
+                        ))}
+                    </div>
+                    <h2 id="faqs">FAQs</h2>
+                    <hr />
+                    <div className="faq-cont">
+                        {faqs.map((faq, index) => {
+                            return (
+                                <>
+                                    <p
+                                        className="question"
+                                        onClick={() => {
+                                            toggleAnswer(index);
+                                        }}
+                                    >
+                                        {faq.question}
+                                        <i class="fa fa-chevron-circle-down"></i>
+                                    </p>
+                                    <p className="answer">{faq.answer}</p>
+                                </>
+                            );
+                        })}
+                    </div>
+                </ScrollAnimation>
             </div>
         </section>
     );

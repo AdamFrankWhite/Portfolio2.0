@@ -894,12 +894,7 @@ header nav li:hover {
   flex-direction: column;
   align-items: center;
   padding-top: 1.5em;
-}
-@media (min-width: 1050px) {
-  .faq-cont {
-    display: block;
-    padding-left: 3em;
-  }
+  margin: auto;
 }
 
 .pt-1 {
@@ -1007,7 +1002,7 @@ header nav li:hover {
   color: white;
 }
 #hire-me hr {
-  width: 10%;
+  width: 5%;
   background-color: white;
 }
 #hire-me .full-width {

@@ -880,10 +880,11 @@ nav .toggle-menu {
     flex-direction: column;
     align-items: center;
     padding-top: 1.5em;
-    @media (min-width: 1050px) {
-        display: block;
-        padding-left: 3em;
-    }
+    margin: auto;
+    // @media (min-width: 1050px) {
+    //     display: block;
+    //     padding-left: 3em;
+    // }
 }
 
 .pt-1 {
@@ -990,7 +991,7 @@ nav .toggle-menu {
         color: white;
     }
     hr {
-        width: 10%;
+        width: 5%;
         background-color: white;
     }
     .full-width {
