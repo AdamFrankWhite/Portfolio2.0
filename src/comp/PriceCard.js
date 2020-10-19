@@ -4,7 +4,8 @@ export default function PriceCard(props) {
     return (
         <div className="hire-card">
             <img src={props.card.imgPath} alt={props.card.name} />
-            <h3>{props.card.title}</h3>
+            <h3 className={props.card.title}>{props.card.title}</h3>
+            <p>{props.card.desc}</p>
             <ul>
                 {props.card.tabs.map((tab) => (
                     <li>{tab}</li>

@@ -63,11 +63,31 @@ export default function HireMe() {
 
     const priceCards = [
         {
-            title: "Standard",
-            imgPath: "/assets/icons/icons8-wordpress-104.png",
+            title: "standard",
+            imgPath: "/assets/icons/icons8-web-design-208.png",
+            desc:
+                "The most cost-effective web design package, popular for small businesses, sole traders, community groups and landing pages.",
+            tabs: [
+                "1-page site",
+                "Custom Design",
+                "Mobile Responsive",
+                "Social Media Integration",
+                "Contact Form",
+                "Favicon and icons",
+                "Image Gallery",
+                "Embedded Google Maps",
+                "2 rounds of revision",
+            ],
+            price: 399,
+        },
+        {
+            title: "premium",
+            imgPath: "/assets/icons/icons8-site-quality-warranty-250.png",
+            desc:
+                "Geared towards small businesses with more content, a multi-page site helps present your company in a professional manner, on an affordable budget. Add more content than the standard package.",
             tabs: [
                 "up to 5 pages",
-                "Wordpress theme template",
+                "Custom Design",
                 "Mobile Responsive",
                 "Content Management System",
                 "Social Media Integration",
@@ -75,19 +95,17 @@ export default function HireMe() {
                 "Favicon and icons",
                 "Image Gallery",
                 "Embedded Google Maps",
-                "Stock Images",
-                "Basic SEO",
                 "2 rounds of revision",
-                "SSL Certification",
-                "-",
             ],
-            price: 499,
+            price: 799,
         },
         {
-            title: "Premium",
-            imgPath: "/assets/icons/icons8-wordpress-104.png",
+            title: "bespoke",
+            imgPath: "/assets/icons/icons8-code-208-gold.png",
+            desc:
+                "The best choice if you have a lot of important information about your business or organisation. Also great for SEO, our bespoke package allows you to create a powerful website with advanced features.",
             tabs: [
-                "up to 10 pages",
+                "Unlimited pages",
                 "Custom Design",
                 "Mobile Responsive",
                 "Content Management System",
@@ -97,33 +115,10 @@ export default function HireMe() {
                 "Image Gallery",
                 "Embedded Video",
                 "Embedded Google Maps",
-                "Stock Images",
-                "SEO Boost",
-                "2 rounds of revision",
-                "SSL Certification",
-            ],
-            price: 999,
-        },
-        {
-            title: "Bespoke",
-            imgPath: "/assets/icons/icons8-code-104.png",
-            tabs: [
-                "Unlimited Pages",
-                "Custom Design",
-                "Mobile Responsive",
-                "Content Management System",
-                "Social Media Integration",
-                "Contact Form",
-                "Favicon and icons",
-                "Image Gallery",
-                "Embedded Video",
-                "Embedded Google Maps",
-                "Premium Stock Images",
                 "SEO Boost",
                 "3 rounds of revision",
-                "SSL Certification",
             ],
-            price: 1499,
+            price: 1299,
         },
     ];
 
@@ -302,7 +297,7 @@ export default function HireMe() {
                 </p>
                 <div className="hire-card-cont">
                     {priceCards.map((card) => (
-                        <PriceCard card={card} />
+                        <PriceCard key={card.title} card={card} />
                     ))}
                 </div>
 
