@@ -35,7 +35,7 @@ export default function BrowserCompatibility() {
             ];
             `}
             </Highlight> */}
-            <img src="/assets/blog/browsers.png" alt="browers" />
+            <img src="/assets/blog/browsers-min.png" alt="browers" />
             <p>
                 As of September 2020, the web browser market share is dominated
                 by the top 5 companies: altogether, they account for over 90% of
@@ -159,13 +159,13 @@ export default function BrowserCompatibility() {
                 , a handy resource for front-end developers. As you'll notice,
                 grid does not have ubiquitous support:
             </p>
-            <img src="/assets/blog/caniuse.png"></img>
+            <img src="/assets/blog/caniuse-min.png"></img>
             <p>
                 Now, if we hover over IE 11 for example, we can see that it
                 accounts for 1.22% of global users, which represents a lot of
                 people. You can see it gives us advice on providing support:
             </p>
-            <img src="/assets/blog/caniuse2.png" />
+            <img src="/assets/blog/caniuse2-min.png" />
             <p>
                 So, by adding <code>-ms-display: grid</code>, we ensure our IE
                 11 users have no problems viewing our grid.
