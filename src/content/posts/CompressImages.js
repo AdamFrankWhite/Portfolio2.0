@@ -5,8 +5,8 @@ export default function CompressImages() {
         <div class="blog-post">
             <p>
                 Loading times are really important when designing websites -
-                visitors are generally unwilling to wait long for a site to load
-                - one of the biggest factors in losing visitors is poor loading
+                visitors are generally unwiling to wait around long waiting for
+                your website to load. First impressions are decided within
                 times. Images are commonplace online, and it is crucial to
                 compress your images, to signiifcaly speed up loading times. The
                 trick is to do this without compromosing quality. Image

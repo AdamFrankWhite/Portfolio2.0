@@ -4,8 +4,6 @@ import ScrollAnimation from "react-animate-on-scroll";
 import ServiceCard from "./ServiceCard";
 import PriceCard from "./PriceCard";
 import ProcessCard from "./ProcessCard";
-import { SlideDown } from "react-slidedown";
-import "react-slidedown/lib/slidedown.css";
 export default function HireMe() {
     const servicesCards = [
         {
