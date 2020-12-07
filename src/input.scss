@@ -520,6 +520,8 @@ nav .toggle-menu {
         // justify-content: center;
         // align-items: flex-end;
         border: 20px solid white;
+        @media (max-width: 605px) {
+        }
         .card-front-content {
             position: absolute;
             background: rgba(255, 255, 255, 1);
@@ -549,6 +551,30 @@ nav .toggle-menu {
                 background-color: white;
                 margin: 0.25em auto;
             }
+        }
+    }
+    .card__heatons {
+        background-image: url("/public/heatons-min.jpg") center top;
+        @media (max-width: 605px) {
+            background-image: url("/public/heatons-min-mob.jpg") center top;
+        }
+    }
+    .card__kdp {
+        background-image: url("/public/kdp-min.jpg") center top;
+        @media (max-width: 605px) {
+            background-image: url("/public/kdp-min-mob.jpg") center top;
+        }
+    }
+    .card__beerbookmark {
+        background-image: url("/public/beerme-min.jpg") center top;
+        @media (max-width: 605px) {
+            background-image: url("/public/beerme-min-mob.jpg") center top;
+        }
+    }
+    .card__quitweed {
+        background-image: url("/public/ebook-min.jpg") center top;
+        @media (max-width: 605px) {
+            background-image: url("/public/heatons-min-mob.jpg") center top;
         }
     }
     .card.is-flipped {
@@ -1027,10 +1053,11 @@ nav .toggle-menu {
     width: 100%;
     margin: 3em auto;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     @media (min-width: 965px) {
         flex-direction: row;
+        align-items: flex-start;
     }
     @media (min-width: 1050px) {
         width: 100%;

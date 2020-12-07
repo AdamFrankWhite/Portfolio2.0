@@ -24,13 +24,11 @@ export default function PortfolioCard(props) {
                     {cardContent}
                 </div>
                 <div
-                    className="card__face card__face--front"
+                    className={`card__face card__face--front care__${props.card.bgClass}`}
                     style={{
                         background:
-                            "url(" +
-                            props.card.img +
-                            ") no-repeat center center",
-                        backgroundSize: "cover",
+                            "url(" + props.card.img + ") no-repeat center top",
+                        backgroundSize: "contain",
                     }}
                 >
                     <div className="card-front-content">
