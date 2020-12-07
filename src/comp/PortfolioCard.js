@@ -23,14 +23,8 @@ export default function PortfolioCard(props) {
                     <hr />
                     {cardContent}
                 </div>
-                <div
-                    className={`card__face card__face--front care__${props.card.bgClass}`}
-                    style={{
-                        background:
-                            "url(" + props.card.img + ") no-repeat center top",
-                        backgroundSize: "contain",
-                    }}
-                >
+                <div className="card__face card__face--front">
+                    <img src={props.card.img} />
                     <div className="card-front-content">
                         <h3>{props.card.name}</h3>
                         {/* <hr />

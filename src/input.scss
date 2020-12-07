@@ -520,6 +520,10 @@ nav .toggle-menu {
         // justify-content: center;
         // align-items: flex-end;
         border: 20px solid white;
+        img {
+            width: 100%;
+            height: auto;
+        }
         @media (max-width: 605px) {
         }
         .card-front-content {
@@ -553,30 +557,7 @@ nav .toggle-menu {
             }
         }
     }
-    .card__heatons {
-        background-image: url("/public/heatons-min.jpg") center top;
-        @media (max-width: 605px) {
-            background-image: url("/public/heatons-min-mob.jpg") center top;
-        }
-    }
-    .card__kdp {
-        background-image: url("/public/kdp-min.jpg") center top;
-        @media (max-width: 605px) {
-            background-image: url("/public/kdp-min-mob.jpg") center top;
-        }
-    }
-    .card__beerbookmark {
-        background-image: url("/public/beerme-min.jpg") center top;
-        @media (max-width: 605px) {
-            background-image: url("/public/beerme-min-mob.jpg") center top;
-        }
-    }
-    .card__quitweed {
-        background-image: url("/public/ebook-min.jpg") center top;
-        @media (max-width: 605px) {
-            background-image: url("/public/heatons-min-mob.jpg") center top;
-        }
-    }
+
     .card.is-flipped {
         transform: rotateX(180deg);
     }
