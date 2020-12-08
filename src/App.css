@@ -463,36 +463,13 @@ header nav li:hover {
     width: 47%;
   }
 }
+.website-card:hover {
+  cursor: pointer;
+}
 @media (max-width: 649px) {
   .website-card {
     width: 95%;
   }
-}
-.website-card .card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: transform 0.75s;
-  transform-style: preserve-3d;
-}
-@media (max-width: 650px) {
-  .website-card .card .card__face {
-    font-size: 0.9em;
-  }
-  .website-card .card .card__face a {
-    font-size: 1.1em;
-  }
-  .website-card .card .card__face h4 {
-    font-size: 1.1em;
-    margin-bottom: 0.5em;
-  }
-  .website-card .card .card__face p {
-    padding: 0;
-    margin: 0.5em 0;
-  }
-}
-.website-card .card:hover {
-  cursor: pointer;
 }
 .website-card .card__face {
   width: 100%;
@@ -546,20 +523,99 @@ header nav li:hover {
   margin: 0.25em auto;
 }
 
-.modal-card {
+.modal-frame {
+  opacity: 0;
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fade-in 0.3s ease-in-out forwards;
 }
-.modal-card .modal-content {
+.modal-frame .modal-content {
   background: white;
   width: 80%;
+  display: flex;
+  height: 80vh;
+  overflow: hidden;
+}
+.modal-frame .screen-cap {
+  width: auto;
+  height: 75vh;
+}
+.modal-frame .small-screen-cap {
+  width: 40%;
+  height: auto;
+}
+.modal-frame .after-screen-cont {
+  display: flex;
+  align-items: flex-start;
+}
+.modal-frame .modal-text {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.modal-frame .modal-text a {
+  font-size: 0.8em;
+  display: inline-block;
+  background: #e64c3c;
+  color: white;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  border-radius: 5px;
+}
+.modal-frame .modal-text p {
+  margin-top: 0.75em;
+  font-size: 0.9em;
+}
+.modal-frame svg {
+  font-size: 2.5em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: white;
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+}
+.modal-frame svg:hover {
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.alert-exit {
+  opacity: 1;
+}
+
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }
 
 .about,

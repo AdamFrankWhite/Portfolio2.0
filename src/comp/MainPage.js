@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import About from "./About";
 import HireMe from "./HireMe";
 import Footer from "./Footer";
+import Modal from "./Modal";
 export default function MainPage() {
     // const [showModal, toggleModal] = useState(false);
     const [selectedModal, setModal] = useState(null);
@@ -28,24 +29,7 @@ export default function MainPage() {
             {/* <About /> */}
             <Footer />
             {selectedModal && (
-                <div className="modal-card">
-                    <div className="modal-content">
-                        <div className="title-cont">
-                            <a target="_blank" href={selectedModal.link}>
-                                View Site
-                            </a>
-                            |
-                            <a target="_blank" href={selectedModal.code}>
-                                View Code
-                            </a>
-                        </div>
-                        <h4>Built with {selectedModal.tech}</h4>
-                        <hr />
-                        {selectedModal.text.map((para) => (
-                            <p>{para}</p>
-                        ))}
-                    </div>
-                </div>
+                <Modal selectedModal={selectedModal} setModal={setModal} />
             )}
         </div>
     );
