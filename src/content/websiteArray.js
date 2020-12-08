@@ -40,7 +40,7 @@ const websites = [
             "Frustrated by the lack of clarity of Kindle author royalty reports, with different currencies making it hard to calculate royalties at a glance, I created a simple app to convert royalties to a chosen currency.",
             "The front end is built using React, using a currency converter API and React Hooks for a smooth user experience. On the back end, a simple Express server, hosted on Heroku, uses an external API to conver an .xlsx upload to JSON, which the React front end visualises in table format. Fun to make, it solved a niggling problem.",
         ],
-        screenCapture: "assets/kdp-min.jpg",
+        screenCapture: "assets/kdp-screen.png",
     },
     {
         name: "E-book landing page",
@@ -53,7 +53,8 @@ const websites = [
             "Requiring an ebook landing page, along with an easily maintainable blog. I created the landing page in plain HTML, CSS, JavaScript, before integrating the blog. I used the Monster Insights plugin for analytics.",
             "With the goal of keeping the main landing page lightweight, I opted to integrate a Wordpress blog into a sub-directory. Using the same stylesheet and design, I created a simple custom theme with a custom JavaScript blog gallery.",
         ],
-        screenCapture: "assets/ebook-min.jpg",
+        screenCapture: "assets/qw-blog.png",
+        afterPic: "assets/qw-blog.png",
     },
 
     // {
