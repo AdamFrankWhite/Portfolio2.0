@@ -243,7 +243,7 @@ export default function HireMe() {
                         .
                     </p> */}
                     <h2>Services</h2>
-                    <hr />
+                    <hr className="mx-auto" />
 
                     <div className="service-card-cont">
                         {servicesCards.map((card) => (
@@ -252,8 +252,8 @@ export default function HireMe() {
                     </div>
                 </ScrollAnimation>
                 <h2 id="pricing">Pricing</h2>
-                <hr />
-                <p>
+                <hr className="mx-auto" />
+                <p className="text-center">
                     I charge by the project, depending on the complexity and
                     individual requirements. As a general guide, I offer three
                     core packages:
@@ -264,11 +264,11 @@ export default function HireMe() {
                     ))}
                 </div>
 
-                <p>
+                <p className="text-center">
                     For smaller jobs and consultancy, I charge an hourly rate of
                     £30/hour.
                 </p>
-                <p>
+                <p className="text-center">
                     Please note, I require 50% deposit before beginning the
                     project, and 50% on completion, before the site is made live
                     and handed over
@@ -279,7 +279,7 @@ export default function HireMe() {
                     duration={0.75}
                 >
                     <h2 className="pt-1">My Process</h2>
-                    <hr />
+                    <hr className="mx-auto" />
 
                     <div className="process-card-cont">
                         {process.map((step) => (
@@ -287,7 +287,7 @@ export default function HireMe() {
                         ))}
                     </div>
                     <h2 id="faqs">FAQs</h2>
-                    <hr />
+                    <hr className="mx-auto" />
                     <div className="faq-cont">
                         {faqs.map((faq, index) => {
                             return (
