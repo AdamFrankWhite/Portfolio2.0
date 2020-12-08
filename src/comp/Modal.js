@@ -21,12 +21,6 @@ export default function Modal({ selectedModal, setModal }) {
                     {selectedModal.text.map((para) => (
                         <p>{para}</p>
                     ))}
-                    {selectedModal.afterPic && (
-                        <img
-                            src={selectedModal.afterPic}
-                            className="small-screen-cap"
-                        />
-                    )}
                 </div>
             </div>
         </div>
