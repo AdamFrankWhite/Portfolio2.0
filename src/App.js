@@ -1,19 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NavBar from "./comp/NavBar";
-import Home from "./comp/Home";
-import Portfolio from "./comp/Portfolio";
-import BlogPreview from "./comp/BlogPreview";
-import Blog from "./comp/Blog";
-import BlogPost from "./comp/BlogPost";
-import Contact from "./comp/Contact";
-import About from "./comp/About";
-import HireMe from "./comp/HireMe";
-import Category from "./comp/Category";
-import posts from "./content/posts";
-import Footer from "./comp/Footer";
-import MainPage from "./comp/MainPage";
-import PrivacyPolicy from "./comp/PrivacyPolicy";
+
+const NavBar = React.lazy(() => import("./comp/NavBar"));
+const Home = React.lazy(() => import("./comp/Home"));
+const Blog = React.lazy(() => import("./comp/Blog"));
+const BlogPost = React.lazy(() => import("./comp/BlogPost"));
+const Category = React.lazy(() => import("./comp/Category"));
+const MainPage = React.lazy(() => import("./comp/MainPage"));
+const posts = React.lazy(() => import("./content/posts"));
 
 function App() {
     const categories = ["All", "React", "CSS/SASS", "Wordpress", "Performance"];

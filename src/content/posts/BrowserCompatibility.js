@@ -159,13 +159,13 @@ export default function BrowserCompatibility() {
                 , a handy resource for front-end developers. As you'll notice,
                 grid does not have ubiquitous support:
             </p>
-            <img src="/assets/blog/caniuse-min.png"></img>
+            <img src="/assets/blog/caniuse-min.png" alt="can i use image"></img>
             <p>
                 Now, if we hover over IE 11 for example, we can see that it
                 accounts for 1.22% of global users, which represents a lot of
                 people. You can see it gives us advice on providing support:
             </p>
-            <img src="/assets/blog/caniuse2-min.png" />
+            <img src="/assets/blog/caniuse2-min.png" alt="can i use image" />
             <p>
                 So, by adding <code>-ms-display: grid</code>, we ensure our IE
                 11 users have no problems viewing our grid.

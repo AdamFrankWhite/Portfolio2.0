@@ -19,7 +19,7 @@ export default function PortfolioCard({
                 }}
             > */}
             <div className="card__face card__face--front">
-                <img src={card.img} />
+                <img src={card.img} alt={`${card.name} image`} />
                 <div className="card-front-content">
                     <h3>{card.name}</h3>
                     {/* <hr />

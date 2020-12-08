@@ -8,7 +8,9 @@ export default function Footer() {
                     <h3>Adam White</h3>
                     <h4>Freelance Web Developer</h4>
                     <hr />
-                    <a href="mailto:info@adamwhite.tech">info@adamwhite.tech</a>
+                    <a href="mailto:info@adamwhite.tech" rel="noopener">
+                        info@adamwhite.tech
+                    </a>
                 </div>
                 {/* <div>
                     <div className="link-cont">

@@ -24,9 +24,15 @@ export default class Home extends React.Component {
                     <h2 className="headline">Web Design and Development</h2>
                     <h3>Custom, hand-coded web design for your business</h3>
                     <div className="cta-cont">
-                        <a href="#portfolio">Web Design Portfolio</a>
-                        <a href="#pricing">Web Design Pricing</a>
-                        <a href="#faqs">Web Design FAQs</a>
+                        <a href="#portfolio" rel="noopener">
+                            Web Design Portfolio
+                        </a>
+                        <a href="#pricing" rel="noopener">
+                            Web Design Pricing
+                        </a>
+                        <a href="#faqs" rel="noopener">
+                            Web Design FAQs
+                        </a>
                     </div>
                     <div className="icon-cont">
                         <img

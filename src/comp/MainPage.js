@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
+const Home = React.lazy(() => import("./Home"));
+const Portfolio = React.lazy(() => import("./Portfolio"));
+const BlogPreview = React.lazy(() => import("./BlogPreview"));
+const Contact = React.lazy(() => import("./Contact"));
+const HireMe = React.lazy(() => import("./HireMe"));
+const Footer = React.lazy(() => import("./Footer"));
+const Modal = React.lazy(() => import("./Modal"));
 
-import Home from "./Home";
-import Portfolio from "./Portfolio";
-import BlogPreview from "./BlogPreview";
-import Contact from "./Contact";
-import About from "./About";
-import HireMe from "./HireMe";
-import Footer from "./Footer";
-import Modal from "./Modal";
 export default function MainPage() {
     // const [showModal, toggleModal] = useState(false);
     const [selectedModal, setModal] = useState(null);
