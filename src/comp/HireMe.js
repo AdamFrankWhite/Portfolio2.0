@@ -67,7 +67,7 @@ export default function HireMe() {
                 "The most cost-effective web design package, popular for small businesses, sole traders, community groups and landing pages.",
             tabs: [
                 "1-page site",
-                "Custom Design",
+                "Customised Wordpress Site",
                 "Mobile Responsive",
                 "Social Media Integration",
                 "Contact Form",

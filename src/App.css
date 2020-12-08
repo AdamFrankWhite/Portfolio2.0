@@ -526,11 +526,11 @@ header nav li:hover {
 .modal-frame {
   opacity: 0;
   position: fixed;
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -544,8 +544,8 @@ header nav li:hover {
   overflow: hidden;
 }
 .modal-frame .screen-cap {
-  width: auto;
-  height: 80vh;
+  width: 65%;
+  height: auto;
 }
 .modal-frame .small-screen-cap {
   width: 40%;

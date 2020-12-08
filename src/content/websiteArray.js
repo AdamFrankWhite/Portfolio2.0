@@ -8,8 +8,8 @@ const websites = [
         link: "http://heatonscats.org.uk",
         code: "https://github.com/AdamFrankWhite/Heatons-Cats",
         text: [
-            "Heatons Cats had an existing Wordpress site that they updated regularly. Familiar with the CMS, I suggested creating a custom theme to keep it easily maintainable.",
-            "After creating a couple of mockups using Adobe XD, and following their choice of design, I went about creating a custom Wordpress theme. Dissatisfied with the lack of customisation over slider plugins, I created a responsive slider using jQuery. I also created the ability for the user to add post subheadings using a dash as a delimiter in the post title. Used All-in-One SEO plugin.",
+            "Heatons Cats had an existing  Wordpress site that was in need of a re-design. They update the site regularly and were familiar with using Wordpress, and so I suggested keeping a Wordpress site, but with a new, bespoke custom theme. ",
+            "After creating a couple of mockup designs using Adobe XD, and following their choice of design, I went about creating the custom Wordpress theme. Dissatisfied with the lack of customisation over slider plugins, I created a responsive image slider using JavaScript. I also created the ability for the user to add post subheadings using a dash as a delimiter in the post title. Used All-in-One SEO plugin for robust SEO.",
         ],
         screenCapture: "assets/heatons-after.png",
         afterPic: "assets/heatons-after.png",
@@ -22,10 +22,12 @@ const websites = [
         link: "https://beerbookmark.herokuapp.com/",
         code: "https://github.com/AdamFrankWhite/Beer-App",
         text: [
-            "Wanting to delve into full-stack development, I created a app that could let you bookmark your favourite beers, using Untappd's data API. Built with React and Material UI on the front-end; the back end uses Node and MongoDB. Uses bcrypt for encryption",
+            "Wanting to delve into full-stack development, I created a app that could let you bookmark your favourite beers, using Untappd's data API. Built with React and Redux on the front-end; the back end uses Node and MongoDB. Uses bcrypt for encryption.",
             "Back-end deployed using Heroku",
+            "** Still in development **",
         ],
-        screenCapture: "assets/beerme-min.jpg",
+        screenCapture: "assets/beerbookmark2.jpg",
+        afterPic: "assets/beerbookmark2.jpg",
     },
 
     {
@@ -50,7 +52,7 @@ const websites = [
         link: "http://quittingweedthebook.com",
         code: "https://github.com/AdamFrankWhite/Landing-Page-1",
         text: [
-            "Requiring an ebook landing page, along with an easily maintainable blog. I created the landing page in plain HTML, CSS, JavaScript, before integrating the blog. I used the Monster Insights plugin for analytics.",
+            "My client required an ebook landing page, along with an easily maintainable blog and analytics. I created the landing page in plain HTML, CSS, JavaScript, before integrating a Wordpress blog. I used the Monster Insights plugin for analytics.",
             "With the goal of keeping the main landing page lightweight, I opted to integrate a Wordpress blog into a sub-directory. Using the same stylesheet and design, I created a simple custom theme with a custom JavaScript blog gallery.",
         ],
         screenCapture: "assets/qw-blog.png",
