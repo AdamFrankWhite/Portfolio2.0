@@ -1000,12 +1000,21 @@ header nav li:hover {
   text-transform: uppercase;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin: auto;
+}
+
 #hire-me {
-  padding-top: 100px;
+  padding-top: 75px;
   padding-bottom: 75px;
 }
 #hire-me h2:not(.section-title) {
   font-size: 1.75em;
+  text-align: center;
 }
 #hire-me .hire-title-cont {
   display: flex;
