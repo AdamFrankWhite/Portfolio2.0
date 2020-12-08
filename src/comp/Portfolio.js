@@ -3,7 +3,12 @@ import websites from "../content/websiteArray";
 import PortfolioCard from "./PortfolioCard";
 import ScrollAnimation from "react-animate-on-scroll";
 
-export default function Portfolio() {
+export default function Portfolio({
+    toggleModal,
+    showModal,
+    selectedModal,
+    setModal,
+}) {
     return (
         <section id="portfolio" className="portfolio slide-in">
             <br />
@@ -23,7 +28,13 @@ export default function Portfolio() {
                     <br />
                     <div className="card-container">
                         {websites.map((website) => (
-                            <PortfolioCard card={website} />
+                            <PortfolioCard
+                                // toggleModal={toggleModal}
+                                // showModal={showModal}
+                                selectedModal={selectedModal}
+                                setModal={setModal}
+                                card={website}
+                            />
                         ))}
                     </div>
                 </div>

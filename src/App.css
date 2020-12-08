@@ -503,40 +503,6 @@ header nav li:hover {
   border-radius: 5px;
   overflow: hidden;
 }
-.website-card .card__face--back {
-  transform: rotateX(180deg);
-  background-color: #f1f1f1;
-  display: flex;
-  flex-direction: column;
-  color: black;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.95em;
-}
-@media (max-width: 1049px) {
-  .website-card .card__face--back {
-    padding: 1em;
-  }
-}
-.website-card .card__face--back hr {
-  width: 30%;
-  margin-top: 1em;
-}
-.website-card .card__face--back a {
-  color: #ff0000;
-  font-weight: 500;
-  display: inline;
-  padding: 0.25em;
-  text-transform: uppercase;
-}
-.website-card .card__face--back a:hover {
-  text-decoration: underline;
-}
-.website-card .card__face--back p {
-  width: 95%;
-  font-size: 0.95em;
-  padding: 1em 2em 0em 2em;
-}
 .website-card .card__face--front {
   width: 100%;
   height: 100%;
@@ -579,8 +545,21 @@ header nav li:hover {
   background-color: white;
   margin: 0.25em auto;
 }
-.website-card .card.is-flipped {
-  transform: rotateX(180deg);
+
+.modal-card {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-card .modal-content {
+  background: white;
+  width: 80%;
 }
 
 .about,
