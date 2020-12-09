@@ -547,6 +547,7 @@ nav .toggle-menu {
         background: white;
         width: 80%;
         display: flex;
+        justify-content: flex-end;
         height: 80vh;
         overflow: hidden;
     }
@@ -566,6 +567,7 @@ nav .toggle-menu {
         display: flex;
         flex-direction: column;
         padding: 1em;
+        width: 35%;
         a {
             font-size: 0.8em;
             display: inline-block;

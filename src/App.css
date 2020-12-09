@@ -540,6 +540,7 @@ header nav li:hover {
   background: white;
   width: 80%;
   display: flex;
+  justify-content: flex-end;
   height: 80vh;
   overflow: hidden;
 }
@@ -559,6 +560,7 @@ header nav li:hover {
   display: flex;
   flex-direction: column;
   padding: 1em;
+  width: 35%;
 }
 .modal-frame .modal-text a {
   font-size: 0.8em;
