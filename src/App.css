@@ -287,8 +287,7 @@ header nav li:hover {
   margin: 0.5em 0.5em 0.5em 0em;
 }
 .main .cta-cont a:hover {
-  background: #fff924;
-  color: #18167e;
+  background: #5fa4ff;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -1346,10 +1345,22 @@ header nav li:hover {
 }
 .title-name {
   border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
-.title-name:hover {
-  -webkit-animation: pulse 0.3s;
-  animation: pulse 0.3s;
+.title-name h2 {
+  font-weight: 400;
+}
+.title-name img {
+  width: 80px;
+  height: auto;
+  margin-right: 0.5em;
+  transform: rotate(0);
+  transition: transform 0.6s;
+}
+.title-name img:hover {
+  transform: rotate(-360deg);
+  transition: transform 0.6s;
   cursor: pointer;
 }
 

@@ -13,8 +13,11 @@ export default function NavBar() {
         <header>
             <NavLink to="/">
                 <div className="title-name home-link">
-                    <h1>Adam White</h1>
-                    <h2>Web Designer</h2>
+                    <img src="/assets/icons/aw_logo.png" alt="AW logo" />
+                    <div>
+                        <h1>Adam White</h1>
+                        <h2>Web Designer</h2>
+                    </div>
                 </div>
             </NavLink>
 
