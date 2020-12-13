@@ -4,13 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  color: #e0e0e0;
-}
-a:hover {
-  color: rbga(201, 201, 201, 0.5);
-}
-
 p {
   font-family: "Open Sans";
 }
@@ -128,6 +121,9 @@ header {
   background-color: transparent;
   color: white;
 }
+header a:visited {
+  color: black !important;
+}
 @media (max-width: 950px) {
   header {
     display: block;
@@ -167,7 +163,7 @@ header nav {
   }
 }
 header nav a {
-  color: #18167e;
+  color: black;
 }
 header nav ul {
   padding-left: 0;
@@ -182,7 +178,7 @@ header nav ul {
 }
 header nav li {
   display: inline-block;
-  color: #18167e;
+  color: black;
   padding: 0.5em 0.75em 0.25em 0.75em;
   position: relative;
 }
@@ -526,6 +522,7 @@ header nav li:hover {
 }
 
 .modal-frame {
+  pointer-events: none;
   opacity: 0;
   position: fixed;
   width: 100%;
@@ -536,9 +533,24 @@ header nav li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fade-in 0.3s ease-in-out forwards;
+}
+.modal-frame #close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5em;
+  color: white;
+  transform: rotate(0);
+  transition: transform 0.2s;
+}
+.modal-frame #close-btn:hover {
+  transform: rotate(180deg);
+  animation: transform 0.3s;
+  top: 23px;
+  cursor: pointer;
 }
 .modal-frame .modal-content {
+  margin: auto;
   background: white;
   width: 80%;
   display: flex;
@@ -591,6 +603,11 @@ header nav li:hover {
   transform: rotate(180deg);
   transition: transform 0.2s;
   cursor: pointer;
+}
+
+.show-modal {
+  animation: fade-in 0.3s ease-in forwards;
+  pointer-events: auto;
 }
 
 @keyframes fade-in {

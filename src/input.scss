@@ -11,12 +11,12 @@ html {
     scroll-behavior: smooth;
     // overflow-x: hidden;
 }
-a {
-    color: rgb(224, 224, 224);
-    &:hover {
-        color: rbga(201, 201, 201, 0.5);
-    }
-}
+// a {
+//     color: rgb(224, 224, 224);
+//     &:hover {
+//         color: rbga(201, 201, 201, 0.5);
+//     }
+// }
 p {
     font-family: "Open Sans";
 }
@@ -103,11 +103,15 @@ body {
     width: 70%;
     margin-left: 0;
 }
+
 header {
     padding: 1em 0;
     width: 80%;
     margin: auto;
     font-family: "Open Sans";
+    a:visited {
+        color: black !important;
+    }
     @media (max-width: 950px) {
         display: block;
         text-align: center;
@@ -145,8 +149,9 @@ header {
         text-align: right;
         font-size: 1.3em;
         a {
-            color: $secondary;
+            color: black;
         }
+
         // padding: 0 1em;
         ul {
             padding-left: 0;
@@ -159,7 +164,7 @@ header {
         }
         li {
             display: inline-block;
-            color: $secondary;
+            color: black;
             padding: 0.5em 0.75em 0.25em 0.75em;
             position: relative;
             // hover non-active tabs
@@ -541,6 +546,7 @@ nav .toggle-menu {
     }
 }
 .modal-frame {
+    pointer-events: none;
     opacity: 0;
     position: fixed;
     width: 100%;
@@ -552,9 +558,23 @@ nav .toggle-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fade-in 0.3s ease-in-out forwards;
-
+    #close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2.5em;
+        color: white;
+        transform: rotate(0);
+        transition: transform 0.2s;
+        &:hover {
+            transform: rotate(180deg);
+            animation: transform 0.3s;
+            top: 23px;
+            cursor: pointer;
+        }
+    }
     .modal-content {
+        margin: auto;
         background: white;
         width: 80%;
         display: flex;
@@ -608,6 +628,10 @@ nav .toggle-menu {
             cursor: pointer;
         }
     }
+}
+.show-modal {
+    animation: fade-in 0.3s ease-in forwards;
+    pointer-events: auto;
 }
 @keyframes fade-in {
     0% {
@@ -1404,6 +1428,7 @@ nav .toggle-menu {
     border-radius: 10px;
     display: flex;
     align-items: center;
+
     h2 {
         font-weight: 400;
     }

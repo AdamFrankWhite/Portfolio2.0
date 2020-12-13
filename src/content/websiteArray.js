@@ -36,7 +36,7 @@ const websites = [
         desc:
             "Simple SPA converting uploaded Kindle Author royalty .xlsx files into various currencies ",
         img: "assets/kdp-min.jpg",
-        link: "http://kdp-royalty-converter.com",
+        link: "https://kdp-royalty-converter.com",
         code: "https://github.com/AdamFrankWhite/KDP-Sales-Converter-Client",
         text: [
             "Frustrated by the lack of clarity of Kindle author royalty reports, with different currencies making it hard to calculate royalties at a glance, I created a simple app to convert royalties to a chosen currency.",
@@ -49,7 +49,7 @@ const websites = [
         tech: "Wordpress, HTML, CSS, jQuery",
         desc: "Ebook Sales Landing page with Wordpress blog",
         img: "assets/ebook-min.jpg",
-        link: "http://quittingweedthebook.com",
+        link: "https://quittingweedthebook.com",
         code: "https://github.com/AdamFrankWhite/Landing-Page-1",
         text: [
             "My client required an ebook landing page, along with an easily maintainable blog and analytics. I created the landing page in plain HTML, CSS, JavaScript, before integrating a Wordpress blog. I used the Monster Insights plugin for analytics.",
