@@ -20,19 +20,21 @@ export default class Home extends React.Component {
             // className="home slide-in"
             // onLoad={this.onLoad}
             >
-                <div className="main slide-in">
-                    <h2 className="headline">Web Design and Development</h2>
-                    <h3>Custom, hand-coded web design for your business</h3>
-                    <div className="cta-cont">
-                        <a href="#portfolio" rel="noopener">
-                            Web Design Portfolio
-                        </a>
-                        <a href="#pricing" rel="noopener">
-                            Web Design Pricing
-                        </a>
-                        <a href="#faqs" rel="noopener">
-                            Web Design FAQs
-                        </a>
+                <div className="main frame-content slide-in">
+                    <div className="header-content">
+                        <h2 className="headline">Web Design and Development</h2>
+                        <h3>Custom, hand-coded web design for your business</h3>
+                        <div className="cta-cont">
+                            <a href="#portfolio" rel="noopener">
+                                Web Design Portfolio
+                            </a>
+                            <a href="#pricing" rel="noopener">
+                                Web Design Pricing
+                            </a>
+                            <a href="#faqs" rel="noopener">
+                                Web Design FAQs
+                            </a>
+                        </div>
                     </div>
                     <div className="icon-cont">
                         <img
