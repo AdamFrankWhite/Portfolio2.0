@@ -16,9 +16,9 @@ export default class Home extends React.Component {
         const style = this.state.didLoad ? {} : { visibility: "hidden" };
         return (
             <section
-            // style={style}
-            // className="home slide-in"
-            // onLoad={this.onLoad}
+                // style={style}
+                className="home slide-in"
+                // onLoad={this.onLoad}
             >
                 <div className="main frame-content slide-in">
                     <div className="header-content">
@@ -26,13 +26,13 @@ export default class Home extends React.Component {
                         <h3>Custom, hand-coded web design for your business</h3>
                         <div className="cta-cont">
                             <a href="#portfolio" rel="noopener">
-                                Web Design Portfolio
+                                Hire Me
                             </a>
-                            <a href="#pricing" rel="noopener">
-                                Web Design Pricing
-                            </a>
+                            {/* <a href="#pricing" rel="noopener">
+                                FAQs
+                            </a> */}
                             <a href="#faqs" rel="noopener">
-                                Web Design FAQs
+                                FAQs
                             </a>
                         </div>
                     </div>

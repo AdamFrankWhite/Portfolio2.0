@@ -1,12 +1,13 @@
-$primary: #fff924;
-$secondary: #18167e;
+// $primary: #fff924;
+$primary: #fffc91;
+$secondary: #0300d1;
 
 // $primary: rgb(39, 39, 39);
 // $secondary: #fff924;
 
 html {
-    font-family: "Open Sans", "Franklin Gothic Light", "Roboto", Georgia, Times,
-        "Times New Roman", serif;
+    font-family: "Noto Serif", "Open Sans", "Franklin Gothic Light", "Roboto",
+        Georgia, Times, "Times New Roman", serif;
     // min-height: 100vh;
     scroll-behavior: smooth;
     // overflow-x: hidden;
@@ -17,8 +18,17 @@ html {
 //         color: rbga(201, 201, 201, 0.5);
 //     }
 // }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Slab", "Franklin Gothic Medium", "Arial Narrow", Arial,
+        sans-serif;
+}
 p {
-    font-family: "Open Sans";
+    font-family: "Noto Serif", "Open Sans";
 }
 html,
 body,
@@ -108,7 +118,7 @@ header {
     padding: 1em 0;
     width: 80%;
     margin: auto;
-    font-family: "Open Sans";
+    font-family: "Noto Serif", "Open Sans";
     a:visited {
         color: black !important;
     }
@@ -209,14 +219,12 @@ nav .toggle-menu {
     }
 }
 // .home {
-//     width: 100%;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     display: flex;
-// @media (min-width: 950px) {
-//     position: absolute;
-// }
-// bottom: 0;
+//     background: rgb(255, 252, 145);
+//     background: linear-gradient(
+//         130deg,
+//         rgba(255, 252, 145, 1) 0%,
+//         rgba(255, 249, 36, 1) 100%
+//     );
 // }
 
 .block-div {
@@ -251,7 +259,7 @@ nav .toggle-menu {
         // text-align: center;
         margin: auto;
         @media (min-width: 1050px) {
-            font-size: 2.5em;
+            font-size: 2.75em;
             // width: 50%;
         }
         // @media (min-width: 1700px) {
@@ -275,7 +283,7 @@ nav .toggle-menu {
             margin: auto;
         }
         a {
-            text-transform: uppercase;
+            // text-transform: uppercase;
             padding: 0.5em;
             color: $primary;
             background: $secondary;
@@ -329,9 +337,7 @@ nav .toggle-menu {
         }
     }
 }
-.animated {
-    width: 100%;
-}
+
 .animation-1 {
     -webkit-animation: card-slide-in 0.4s 1.2s forwards;
     animation: card-slide-in 0.4s 1.2s forwards;
@@ -534,7 +540,7 @@ nav .toggle-menu {
                 // font-weight: bold;
             }
             p {
-                font-family: "Open Sans";
+                font-family: "Noto Serif", "Open Sans";
                 font-size: 0.9em;
                 width: 70%;
                 padding: 0.5em 2em;
@@ -888,8 +894,8 @@ nav .toggle-menu {
     textarea,
     span {
         width: 100%;
-        font-family: "Franklin Gothic Medium", Cochin, Georgia, Times,
-            "Times New Roman", serif;
+        font-family: "Noto Serif", "Franklin Gothic Medium", Cochin, Georgia,
+            Times, "Times New Roman", serif;
     }
     label {
         color: white;
@@ -933,7 +939,7 @@ nav .toggle-menu {
 // }
 
 .question {
-    background: white;
+    background: $secondary;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1272,15 +1278,15 @@ nav .toggle-menu {
     margin-top: 3em;
     @media (min-width: 1050px) {
         flex-direction: row;
-        width: 85%;
     }
     .service-card {
-        width: 100%;
-        @media (min-width: 1050px) {
-            width: 46.5%;
-        }
+        height: 90%;
+        // @media (min-width: 1050px) {
+        //     width: 43%;
+        // }
         border: 2px solid $primary;
-        color: white;
+        color: black;
+        background: rgb(255, 255, 255);
         font-size: 1.1em;
         border-radius: 5px;
         // border: 3px rgb(255, 0, 0) solid;
@@ -1293,17 +1299,18 @@ nav .toggle-menu {
             display: flex;
             align-items: center;
             h3 {
-                font-size: 1.4em;
+                font-size: 1.6em;
                 padding-left: 0.5em;
+                // text-transform: uppercase;
             }
             img {
                 padding: 10px 0;
-                width: 11%;
+                width: 10%;
                 height: auto;
             }
         }
         p {
-            color: white !important;
+            color: rgb(26, 26, 26);
             font-size: 0.9em;
             text-align: justify;
             letter-spacing: 0.035em;
@@ -1311,7 +1318,9 @@ nav .toggle-menu {
         }
     }
 }
-
+.animated {
+    width: 48%;
+}
 .process-card-cont {
     width: 100%;
     display: flex;
@@ -1585,7 +1594,7 @@ footer {
     padding: 2em;
     background: $secondary;
     color: white;
-    font-family: "Open Sans";
+    font-family: "Noto Serif", "Open Sans";
     width: 100%;
     hr {
         width: 30%;

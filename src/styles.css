@@ -1,20 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 html {
-  font-family: "Noto Serif", "Open Sans", "Franklin Gothic Light", "Roboto", Georgia, Times, "Times New Roman", serif;
+  font-family: "Open Sans", "Franklin Gothic Light", "Roboto", Georgia, Times, "Times New Roman", serif;
   scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Roboto Slab", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
 p {
-  font-family: "Noto Serif", "Open Sans";
+  font-family: "Open Sans";
 }
 
 html,
@@ -122,7 +113,7 @@ header {
   padding: 1em 0;
   width: 80%;
   margin: auto;
-  font-family: "Noto Serif", "Open Sans";
+  font-family: "Open Sans";
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -288,6 +279,7 @@ header nav li:hover {
   }
 }
 .main .cta-cont a {
+  text-transform: uppercase;
   padding: 0.5em;
   color: #fffc91;
   background: #0300d1;
@@ -520,7 +512,7 @@ header nav li:hover {
   color: #b80000;
 }
 .website-card .card__face--front .card-front-content p {
-  font-family: "Noto Serif", "Open Sans";
+  font-family: "Open Sans";
   font-size: 0.9em;
   width: 70%;
   padding: 0.5em 2em;
@@ -860,7 +852,7 @@ header nav li:hover {
 .contact-form textarea,
 .contact-form span {
   width: 100%;
-  font-family: "Noto Serif", "Franklin Gothic Medium", Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Franklin Gothic Medium", Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .contact-form label {
   color: white;
@@ -1215,13 +1207,16 @@ header nav li:hover {
 @media (min-width: 1050px) {
   .service-card-cont {
     flex-direction: row;
+    width: 100%;
   }
 }
+.service-card-cont .service-card-row {
+  flex-direction: row;
+}
 .service-card-cont .service-card {
-  height: 90%;
+  width: 100%;
   border: 2px solid #fffc91;
-  color: black;
-  background: white;
+  color: white;
   font-size: 1.1em;
   border-radius: 5px;
   padding: 1.5em 2.25em 2.25em 2.25em;
@@ -1229,29 +1224,31 @@ header nav li:hover {
   flex-direction: column;
   margin: 1em 2em;
 }
+@media (min-width: 1050px) {
+  .service-card-cont .service-card {
+    width: 46.5%;
+  }
+}
 .service-card-cont .service-card .service-card-head {
   display: flex;
   align-items: center;
 }
 .service-card-cont .service-card .service-card-head h3 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   padding-left: 0.5em;
+  text-transform: uppercase;
 }
 .service-card-cont .service-card .service-card-head img {
   padding: 10px 0;
-  width: 10%;
+  width: 11%;
   height: auto;
 }
 .service-card-cont .service-card p {
-  color: #1a1a1a;
+  color: white !important;
   font-size: 0.9em;
   text-align: justify;
   letter-spacing: 0.035em;
   font-weight: 300;
-}
-
-.animated {
-  width: 48%;
 }
 
 .process-card-cont {
@@ -1481,7 +1478,7 @@ footer {
   padding: 2em;
   background: #0300d1;
   color: white;
-  font-family: "Noto Serif", "Open Sans";
+  font-family: "Open Sans";
   width: 100%;
 }
 footer hr {
@@ -1504,4 +1501,4 @@ footer .footer-content .link-cont {
   justify-content: center;
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=styles.css.map */
