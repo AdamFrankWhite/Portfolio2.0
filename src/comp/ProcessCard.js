@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ServiceCard(props) {
+export default function ProcessCard(props) {
     return (
         <div className="process-card">
             <div className="process-card-head">

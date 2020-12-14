@@ -8,6 +8,7 @@ import HireMe from "./HireMe";
 import Footer from "./Footer";
 import Modal from "./Modal";
 import Services from "./Services";
+import FAQs from "./FAQs";
 export default function MainPage() {
     const [selectedModal, setModal] = useState(null);
 
@@ -15,9 +16,11 @@ export default function MainPage() {
         <div>
             <Home />
             <Services />
-            <Portfolio selectedModal={selectedModal} setModal={setModal} />
             <HireMe />
-            <BlogPreview />
+            <Portfolio selectedModal={selectedModal} setModal={setModal} />
+            <FAQs />
+            {/* <BlogPreview /> */}
+
             <Contact />
             <Footer />
             {selectedModal && (
