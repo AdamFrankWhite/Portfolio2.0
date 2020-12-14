@@ -30,20 +30,24 @@ export default function Services() {
         },
     ];
     return (
-        <div className="frame-content" id="services">
-            <h2>Services</h2>
+        <section id="services">
+            <div className="frame-content">
+                <h2>Services</h2>
 
-            <div className="service-card-cont">
-                {servicesCards.map((card, i) => (
-                    <ScrollAnimation
-                        animateIn={i % 2 !== 0 ? "fadeInLeft" : "fadeInRight"}
-                        offset={250}
-                        duration={1}
-                    >
-                        <ServiceCard card={card} i={i} />
-                    </ScrollAnimation>
-                ))}
+                <div className="service-card-cont">
+                    {servicesCards.map((card, i) => (
+                        <ScrollAnimation
+                            animateIn={
+                                i % 2 !== 0 ? "fadeInLeft" : "fadeInRight"
+                            }
+                            offset={250}
+                            duration={1}
+                        >
+                            <ServiceCard card={card} i={i} />
+                        </ScrollAnimation>
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 }

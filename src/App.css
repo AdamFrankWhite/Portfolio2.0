@@ -531,7 +531,6 @@ header nav li:hover {
 }
 
 .modal-frame {
-  pointer-events: none;
   opacity: 0;
   position: fixed;
   width: 100%;
@@ -542,6 +541,7 @@ header nav li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fade-in 0.3s ease-in forwards;
 }
 .modal-frame #close-btn {
   position: absolute;
@@ -612,11 +612,6 @@ header nav li:hover {
   transform: rotate(180deg);
   transition: transform 0.2s;
   cursor: pointer;
-}
-
-.show-modal {
-  animation: fade-in 0.3s ease-in forwards;
-  pointer-events: auto;
 }
 
 @keyframes fade-in {
@@ -1221,18 +1216,18 @@ header nav li:hover {
 }
 .service-card-cont .service-card {
   width: 100%;
-  border: 1px solid #fff924;
+  border: 2px solid #fff924;
   color: white;
   font-size: 1.1em;
   border-radius: 5px;
   padding: 1.5em 2.25em 2.25em 2.25em;
   display: flex;
   flex-direction: column;
-  margin: 2vw 2em;
+  margin: 1em 2em;
 }
 @media (min-width: 1050px) {
   .service-card-cont .service-card {
-    width: 47%;
+    width: 46.5%;
   }
 }
 .service-card-cont .service-card .service-card-head {
@@ -1250,9 +1245,10 @@ header nav li:hover {
 }
 .service-card-cont .service-card p {
   color: white !important;
-  font-size: 0.95em;
+  font-size: 0.9em;
   text-align: justify;
   letter-spacing: 0.035em;
+  font-weight: 300;
 }
 
 .process-card-cont {

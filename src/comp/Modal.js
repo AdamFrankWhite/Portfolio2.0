@@ -22,8 +22,8 @@ export default function Modal({ selectedModal, setModal }) {
                             View Code
                         </a>
                     </div>
-                    {selectedModal.text.map((para) => (
-                        <p>{para}</p>
+                    {selectedModal.text.map((para, key) => (
+                        <p key={key}>{para}</p>
                     ))}
                 </div>
             </div>
