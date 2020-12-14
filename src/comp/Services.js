@@ -38,7 +38,7 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn={i % 2 !== 0 ? "fadeInLeft" : "fadeInRight"}
                         offset={250}
-                        duration={0.75}
+                        duration={1}
                     >
                         <ServiceCard card={card} i={i} />
                     </ScrollAnimation>
