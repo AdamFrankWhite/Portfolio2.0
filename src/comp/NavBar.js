@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 import { useMediaQuery } from "react-responsive";
-
+import ScrollAnimation from "react-animate-on-scroll";
 export default function NavBar() {
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 727px)" });
     const [stickyNav, showStickyNav] = useState(false);
     const [showMobileMenu, setShowMobileMenu] = useState(false);
-
     return (
+        // <ScrollAnimation animateIn="fadeInDown" duration={0.75} delay={1300}>
         <header>
             <NavLink to="/">
                 <div className="title-name home-link">
@@ -71,5 +71,6 @@ export default function NavBar() {
                 )}
             </nav>
         </header>
+        // </ScrollAnimation>
     );
 }

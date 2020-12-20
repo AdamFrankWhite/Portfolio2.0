@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 html {
-  font-family: "Noto Serif", "Open Sans", "Franklin Gothic Light", "Roboto", Georgia, Times, "Times New Roman", serif;
+  font-family: "Open Sans", "Franklin Gothic Light", "Roboto", Georgia, Times, "Times New Roman", serif;
   scroll-behavior: smooth;
 }
 
@@ -10,11 +10,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Slab", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Open Sans", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 p {
-  font-family: "Noto Serif", "Open Sans";
+  font-family: "Open Sans";
 }
 
 html,
@@ -102,7 +102,7 @@ a {
 }
 
 body {
-  background: #fffc91;
+  background: #adefd1;
   margin: auto;
   position: relative;
   height: 100%;
@@ -122,7 +122,9 @@ header {
   padding: 1em 0;
   width: 80%;
   margin: auto;
-  font-family: "Noto Serif", "Open Sans";
+  font-family: "Open Sans";
+  opacity: 0;
+  animation: fade-in-down 0.8s 0.4s forwards;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -161,7 +163,7 @@ header h2 {
 header nav {
   text-transform: uppercase;
   text-align: right;
-  font-size: 1.3em;
+  font-size: 1.15em;
 }
 @media (max-width: 950px) {
   header nav {
@@ -215,7 +217,7 @@ header nav li:hover {
 
 @media (max-width: 727px) {
   nav .toggle-menu {
-    color: #0300d1;
+    color: #00203f;
     font-size: 0.9em;
     padding: 0.25em;
     border: solid 1px red;
@@ -234,7 +236,7 @@ header nav li:hover {
 .block-div {
   height: 100px;
   width: 100%;
-  background: #0300d1;
+  background: #00203f;
 }
 
 .display-none {
@@ -243,7 +245,12 @@ header nav li:hover {
 
 #services {
   width: 100%;
-  background: #0300d1;
+  background: #00203f;
+}
+#services h2 {
+  color: #adefd1;
+  text-transform: uppercase;
+  padding-top: 3em;
 }
 
 .main {
@@ -263,20 +270,32 @@ header nav li:hover {
   font-size: 1.8em;
   text-transform: uppercase;
   margin: auto;
-  color: #0300d1;
+  color: #00203f;
 }
 @media (min-width: 1050px) {
   .main h2 {
-    font-size: 2.75em;
+    font-size: 3em;
   }
 }
 .main h3 {
   color: #333333;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.7em;
+}
+.main h2,
+.main h3 {
+  opacity: 0;
+}
+.main h2 {
+  animation: fade-in-down 0.7s 0.9s forwards;
+}
+.main h3 {
+  animation: fade-in-down 0.7s 1.3s forwards;
 }
 .main .cta-cont {
   display: flex;
   justify-content: flex-start;
+  opacity: 0;
+  animation: fade-in-left 0.9s 2s forwards;
 }
 @media (max-width: 700px) {
   .main .cta-cont {
@@ -287,12 +306,15 @@ header nav li:hover {
     margin: auto;
   }
 }
+.main .cta-cont a[href="#faqs"] {
+  background: #0077ea;
+}
 .main .cta-cont a {
   padding: 0.5em;
-  color: #fffc91;
-  background: #0300d1;
+  color: #adefd1;
+  background: #00203f;
   border-radius: 2px;
-  border: #0300d1 1px solid;
+  border: #00203f 1px solid;
   margin: 0.5em 0.5em 0.5em 0em;
 }
 .main .cta-cont a:hover {
@@ -307,48 +329,16 @@ header nav li:hover {
   padding-top: 4em;
   align-self: flex-end;
 }
-.main .icon-cont .monitor {
-  width: 27%;
+
+.hero-icon {
+  width: 25%;
+  opacity: 0;
   height: auto;
-}
-@media (min-width: 951px) and (max-width: 1349px) {
-  .main .icon-cont .monitor {
-    width: 22vw;
-  }
-}
-@media (min-width: 1350px) {
-  .main .icon-cont .monitor {
-    width: 20vw;
-  }
-}
-.main .icon-cont .laptop {
-  width: 19%;
-  margin-left: 4%;
-  height: auto;
-}
-@media (min-width: 951px) and (max-width: 1349px) {
-  .main .icon-cont .laptop {
-    width: 15vw;
-  }
-}
-@media (min-width: 1350px) {
-  .main .icon-cont .laptop {
-    width: 14vw;
-  }
-}
-.main .icon-cont .tablet-mobile {
-  width: 8%;
-  height: auto;
-}
-@media (min-width: 951px) and (max-width: 1349px) {
-  .main .icon-cont .tablet-mobile {
-    width: 6vw;
-  }
-}
-@media (min-width: 1350px) {
-  .main .icon-cont .tablet-mobile {
-    width: 5vw;
-  }
+  margin-left: auto;
+  display: block;
+  margin-top: -2em;
+  margin-bottom: 2em;
+  animation: fade-in-right 0.9s 2.5s forwards;
 }
 
 .animation-1 {
@@ -372,7 +362,7 @@ header nav li:hover {
 }
 
 .active {
-  color: #0300d1;
+  color: #00203f;
 }
 .active:after {
   width: 100%;
@@ -382,7 +372,7 @@ header nav li:hover {
 .portfolio {
   width: 100%;
   height: 100%;
-  background: #0300d1;
+  background: #00203f;
   padding-top: 100px;
 }
 .portfolio .portfolio-title-cont {
@@ -520,7 +510,7 @@ header nav li:hover {
   color: #b80000;
 }
 .website-card .card__face--front .card-front-content p {
-  font-family: "Noto Serif", "Open Sans";
+  font-family: "Open Sans";
   font-size: 0.9em;
   width: 70%;
   padding: 0.5em 2em;
@@ -592,7 +582,7 @@ header nav li:hover {
 .modal-frame .modal-text a {
   font-size: 0.8em;
   display: inline-block;
-  background: #0300d1;
+  background: #00203f;
   color: white;
   padding: 0.5em;
   margin-right: 0.5em;
@@ -624,6 +614,36 @@ header nav li:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-1em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-2.5em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2.5em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 .alert-enter {
@@ -714,7 +734,7 @@ header nav li:hover {
   margin: auto;
   min-height: 250px;
   border-radius: 10px;
-  border: #0300d1 2px solid;
+  border: #00203f 2px solid;
   margin-bottom: 2em;
 }
 .post-card .post-card-content {
@@ -860,7 +880,7 @@ header nav li:hover {
 .contact-form textarea,
 .contact-form span {
   width: 100%;
-  font-family: "Noto Serif", "Franklin Gothic Medium", Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Franklin Gothic Medium", Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .contact-form label {
   color: white;
@@ -898,11 +918,11 @@ header nav li:hover {
 }
 
 .question {
-  background: #0300d1;
+  background: #00203f;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fffc91 !important;
+  color: #adefd1 !important;
   padding: 0.5em;
   width: 90%;
   margin: auto;
@@ -977,7 +997,7 @@ header nav li:hover {
 }
 
 .blog-preview {
-  background-color: #0300d1;
+  background-color: #00203f;
   padding-top: 100px;
 }
 .blog-preview a[href="/blog"] {
@@ -1070,11 +1090,11 @@ header nav li:hover {
 #hire-me li,
 #hire-me h1,
 #hire-me h2 {
-  color: white;
+  color: black;
 }
 #hire-me hr {
   width: 5%;
-  background-color: white;
+  background-color: black;
 }
 #hire-me .full-width {
   width: 100%;
@@ -1086,7 +1106,7 @@ header nav li:hover {
 .highlight {
   background: white;
   border-radius: 5px 5px 0 0;
-  color: #fffc91;
+  color: #adefd1;
   transition: background 0.2s;
 }
 
@@ -1217,9 +1237,12 @@ header nav li:hover {
     flex-direction: row;
   }
 }
+.service-card-cont .animated {
+  width: 48%;
+}
 .service-card-cont .service-card {
   height: 90%;
-  border: 2px solid #fffc91;
+  border: 2px solid #adefd1;
   color: black;
   background: white;
   font-size: 1.1em;
@@ -1248,10 +1271,6 @@ header nav li:hover {
   text-align: justify;
   letter-spacing: 0.035em;
   font-weight: 300;
-}
-
-.animated {
-  width: 48%;
 }
 
 .process-card-cont {
@@ -1479,9 +1498,9 @@ header nav li:hover {
 footer {
   font-size: 0.9em;
   padding: 2em;
-  background: #0300d1;
+  background: #00203f;
   color: white;
-  font-family: "Noto Serif", "Open Sans";
+  font-family: "Open Sans";
   width: 100%;
 }
 footer hr {

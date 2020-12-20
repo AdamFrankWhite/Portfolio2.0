@@ -48,14 +48,14 @@ const websites = [
         name: "E-book landing page",
         tech: "Wordpress, HTML, CSS, jQuery",
         desc: "Ebook Sales Landing page with Wordpress blog",
-        img: "assets/ebook-min.jpg",
+        img: "assets/qw-min.png",
         link: "https://quittingweedthebook.com",
         code: "https://github.com/AdamFrankWhite/Landing-Page-1",
         text: [
             "My client required an ebook landing page, along with an easily maintainable blog and analytics. I created the landing page in plain HTML, CSS, JavaScript, before integrating a Wordpress blog. I used the Monster Insights plugin for analytics.",
             "With the goal of keeping the main landing page lightweight, I opted to integrate a Wordpress blog into a sub-directory. Using the same stylesheet and design, I created a simple custom theme with a custom JavaScript blog gallery.",
         ],
-        screenCapture: "assets/qw-blog.png",
+        screenCapture: "assets/qw-min.png",
         afterPic: "assets/qw-blog.png",
     },
 

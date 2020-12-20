@@ -1,62 +1,29 @@
 import React from "react";
+import { ReactComponent as HeroIcon } from "../img/hero-icon.svg";
+import ScrollAnimation from "react-animate-on-scroll";
+export default function Home() {
+    return (
+        <section className="home slide-in">
+            <div className="main frame-content slide-in">
+                <div className="header-content">
+                    <h2 className="headline">Web Design and Development</h2>
+                    <h3>Custom, hand-coded web design for your business</h3>
 
-export default class Home extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            didLoad: false,
-        };
-    }
-    onLoad = () => {
-        this.setState({
-            didLoad: true,
-        });
-    };
-    render() {
-        const style = this.state.didLoad ? {} : { visibility: "hidden" };
-        return (
-            <section
-                // style={style}
-                className="home slide-in"
-                // onLoad={this.onLoad}
-            >
-                <div className="main frame-content slide-in">
-                    <div className="header-content">
-                        <h2 className="headline">Web Design and Development</h2>
-                        <h3>Custom, hand-coded web design for your business</h3>
-                        <div className="cta-cont">
-                            <a href="#portfolio" rel="noopener">
-                                Hire Me
-                            </a>
-                            {/* <a href="#pricing" rel="noopener">
+                    <div className="cta-cont">
+                        <a href="#portfolio" rel="noopener">
+                            Hire Me
+                        </a>
+                        {/* <a href="#pricing" rel="noopener">
                                 FAQs
                             </a> */}
-                            <a href="#faqs" rel="noopener">
-                                FAQs
-                            </a>
-                        </div>
+                        <a href="#faqs" rel="noopener">
+                            FAQs
+                        </a>
                     </div>
-                    <div className="icon-cont">
-                        <img
-                            className="tablet-mobile"
-                            src="assets/icons/icons8-smartphone-tablet-256.png"
-                            alt="tree"
-                        />
-                        <img
-                            className="laptop"
-                            src="assets/icons/icons8-laptop-400.png"
-                            alt="tree"
-                        />
-
-                        <img
-                            className="monitor"
-                            src="assets/icons/icons8-monitor-400.png"
-                            alt="tree"
-                        />
-                    </div>
-                    {/* <div className="block-div"></div> */}
                 </div>
-            </section>
-        );
-    }
+
+                <HeroIcon className="hero-icon" />
+            </div>
+        </section>
+    );
 }

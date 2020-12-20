@@ -39,8 +39,9 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInLeft"
                         initiallyVisible={false}
-                        offset={350}
+                        offset={250}
                         duration={1}
+                        animateOnce={true}
                     >
                         <ServiceCard card={servicesCards[0]} />
                     </ScrollAnimation>
@@ -48,9 +49,10 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInRight"
                         initiallyVisible={false}
-                        offset={350}
+                        offset={250}
                         duration={1}
                         delay={600}
+                        animateOnce={true}
                     >
                         <ServiceCard card={servicesCards[1]} />
                     </ScrollAnimation>
@@ -58,9 +60,10 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInLeft"
                         initiallyVisible={false}
-                        offset={250}
+                        offset={0}
                         duration={1}
-                        delay={1200}
+                        delay={900}
+                        animateOnce={true}
                     >
                         <ServiceCard card={servicesCards[2]} />
                     </ScrollAnimation>
@@ -68,9 +71,10 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInRight"
                         initiallyVisible={false}
-                        offset={250}
+                        offset={0}
                         duration={1}
-                        delay={1800}
+                        delay={1500}
+                        animateOnce={true}
                     >
                         <ServiceCard card={servicesCards[3]} />
                     </ScrollAnimation>

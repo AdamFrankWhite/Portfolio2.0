@@ -73,10 +73,10 @@ export default function HireMe() {
             title: "bespoke",
             imgPath: "/assets/icons/icons8-code-208-gold.png",
             desc:
-                "The best choice if you have a lot of important information about your business or organisation. Also great for SEO, our bespoke package allows you to create a powerful website with advanced features.",
+                "The best choice if you want an in-depth custom design. Also great for SEO, our bespoke package allows you to create a powerful website with advanced features.",
             tabs: [
                 "Unlimited pages",
-                "Custom Design",
+                "In-depth Custom Design - wireframes and mockups",
                 "Mobile Responsive",
                 "Content Management System",
                 "Social Media Integration",
