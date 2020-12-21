@@ -269,6 +269,7 @@ header nav li:hover {
   width: 100%;
   font-size: 1.8em;
   text-transform: uppercase;
+  font-weight: 700;
   margin: auto;
   color: #00203f;
 }
@@ -1063,7 +1064,7 @@ header nav li:hover {
 }
 #hire-me h2:not(.section-title) {
   font-size: 1.75em;
-  text-align: center;
+  text-align: left;
 }
 #hire-me .hire-title-cont {
   display: flex;
@@ -1081,26 +1082,29 @@ header nav li:hover {
   margin-bottom: 0.25em !important;
   text-transform: uppercase;
 }
-#hire-me .hire-title-cont hr {
-  background-color: white;
-  width: 5%;
-  margin-top: 0.25em;
-}
 #hire-me p,
 #hire-me li,
 #hire-me h1,
 #hire-me h2 {
-  color: black;
+  color: #00203f;
 }
 #hire-me hr {
+  display: block;
+  padding-top: 1px;
   width: 5%;
-  background-color: black;
+  background-color: #00203f;
+  margin-left: 0;
+  border: none;
 }
 #hire-me .full-width {
   width: 100%;
 }
 #hire-me p {
   margin: 1em auto;
+}
+
+.hire-intro {
+  width: 50%;
 }
 
 .highlight {
@@ -1182,7 +1186,7 @@ header nav li:hover {
   transition: transform 0.2s ease-in-out;
 }
 .hire-card-cont .hire-card a {
-  background: #d30000;
+  background: #00203f;
   padding: 0.75em;
   color: white;
   text-transform: uppercase;
@@ -1400,7 +1404,7 @@ header nav li:hover {
   font-weight: 400;
 }
 .title-name img {
-  width: 80px;
+  width: 60px;
   height: auto;
   margin-right: 0.5em;
   transform: rotate(0);

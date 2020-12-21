@@ -102,19 +102,21 @@ export default function HireMe() {
                 >
                     <div className="hire-title-cont">
                         <h2 className="section-title">Hire Me</h2>
-                        <hr className="full-width" />
+                        <hr />
                     </div>
                     <br />
-                    <p>
-                        I have a passion for web development and making
-                        user-friendly, beautiful websites that help businesses
-                        achieve their goals.
-                    </p>
-                    <p>
-                        Whether you are looking for a brand new website, a
-                        re-design, or would like new features integrating into
-                        your current site, I'm here to help.
-                    </p>
+                    <div className="hire-intro">
+                        <p>
+                            I have a passion for web development and making
+                            user-friendly, beautiful websites that help
+                            businesses achieve their goals.
+                        </p>
+                        <p>
+                            Whether you are looking for a brand new website, a
+                            re-design, or would like new features integrating
+                            into your current site, I'm here to help.
+                        </p>
+                    </div>
                     {/* <p>
                         Find out more about{" "}
                         <Link className="link" to="working-with-me">
@@ -123,12 +125,21 @@ export default function HireMe() {
                         .
                     </p> */}
                 </ScrollAnimation>
-                <h2 id="pricing">Pricing</h2>
+                <h2 id="pricing">Packages</h2>
                 <hr className="mx-auto" />
-                <p className="text-center">
+                <p>
                     I charge by the project, depending on the complexity and
                     individual requirements. As a general guide, I offer three
-                    core packages:
+                    core packages, listed below. All projects are customisable.
+                </p>
+                <p>
+                    For smaller jobs and consultancy, I charge an hourly rate of
+                    £30/hour.
+                </p>
+                <p>
+                    Please note, I require 50% deposit before beginning the
+                    project, and 50% on completion, before the site is made live
+                    and handed over
                 </p>
                 <div className="hire-card-cont">
                     {priceCards.map((card) => (
@@ -136,15 +147,6 @@ export default function HireMe() {
                     ))}
                 </div>
 
-                <p className="text-center">
-                    For smaller jobs and consultancy, I charge an hourly rate of
-                    £30/hour.
-                </p>
-                <p className="text-center">
-                    Please note, I require 50% deposit before beginning the
-                    project, and 50% on completion, before the site is made live
-                    and handed over
-                </p>
                 <ScrollAnimation
                     animateIn="fadeIn"
                     offset={250}

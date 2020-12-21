@@ -262,6 +262,7 @@ nav .toggle-menu {
         width: 100%;
         font-size: 1.8em;
         text-transform: uppercase;
+        font-weight: 700;
         @media (max-width: 500px) {
             // width: 50%;
         }
@@ -1157,7 +1158,7 @@ nav .toggle-menu {
     padding-bottom: 75px;
     h2:not(.section-title) {
         font-size: 1.75em;
-        text-align: center;
+        text-align: left;
     }
     .hire-title-cont {
         display: flex;
@@ -1172,21 +1173,20 @@ nav .toggle-menu {
             margin-bottom: 0.25em !important;
             text-transform: uppercase;
         }
-        hr {
-            background-color: white;
-            width: 5%;
-            margin-top: 0.25em;
-        }
     }
     p,
     li,
     h1,
     h2 {
-        color: black;
+        color: $secondary;
     }
     hr {
+        display: block;
+        padding-top: 1px;
         width: 5%;
-        background-color: black;
+        background-color: $secondary;
+        margin-left: 0;
+        border: none;
     }
     .full-width {
         width: 100%;
@@ -1207,6 +1207,13 @@ nav .toggle-menu {
     //         border-radius: 5px;
     //         margin: 0.25em;
     //     }
+    // }
+}
+.hire-intro {
+    width: 50%;
+    // p {
+    //     line-height: 1.2em;
+    //     font-size: 1.1em;
     // }
 }
 .highlight {
@@ -1285,7 +1292,7 @@ nav .toggle-menu {
             transition: transform 0.2s ease-in-out;
         }
         a {
-            background: rgb(211, 0, 0);
+            background: $secondary;
             padding: 0.75em;
             color: white;
             text-transform: uppercase;
@@ -1525,7 +1532,7 @@ nav .toggle-menu {
         font-weight: 400;
     }
     img {
-        width: 80px;
+        width: 60px;
         height: auto;
         margin-right: 0.5em;
         transform: rotate(0);
