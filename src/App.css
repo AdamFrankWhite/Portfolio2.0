@@ -1263,7 +1263,7 @@ header nav li:hover {
   font-size: 1.1em;
   border-radius: 5px;
   padding: 1.5em 2.25em 2.25em 2.25em;
-  display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -1272,59 +1272,69 @@ header nav li:hover {
 .service-card-cont .service-card:hover {
   cursor: pointer;
 }
+.service-card-cont .service-card:hover .service-card-head {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  transition: all 1s;
+}
 .service-card-cont .service-card:hover .service-card-head h3 {
   font-size: 1.6em;
   padding-left: 0.5em;
-  transition: font-size 0.5s;
+  transition: all 0.5s;
 }
 .service-card-cont .service-card:hover .service-card-head img {
   padding: 10px 0;
-  width: 20%;
+  width: 10%;
   height: auto;
-  animation: icon-morph 0.5s forwards;
-}
-.service-card-cont .service-card:hover p.text-show {
-  display: block;
-  height: 100%;
-  opacity: 1;
-  transform: translateY(0);
   transition: all 0.5s;
 }
+.service-card-cont .service-card:hover p.text-show {
+  height: 100%;
+  position: absolute;
+  top: 55%;
+  opacity: 1;
+  bottom: 1em;
+  left: 2em;
+  right: 2em;
+  transition: all 0.5s;
+  transform: translateY(-3em);
+}
 .service-card-cont .service-card .service-card-head {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s;
 }
 .service-card-cont .service-card .service-card-head h3 {
   font-size: 2.3em;
   padding-left: 0.5em;
   text-align: center;
+  transition: font-size 0.5s 0.5s;
 }
 .service-card-cont .service-card .service-card-head img {
   padding: 10px 0;
   width: 20%;
   height: auto;
-}
-.service-card-cont .service-card .service-card-head-small {
-  display: flex;
-  align-items: center;
-}
-.service-card-cont .service-card .service-card-head-small h3 {
-  font-size: 1.6em;
-  padding-left: 0.5em;
-  transition: font-size 0.5s;
-}
-.service-card-cont .service-card .service-card-head-small img {
-  padding: 10px 0;
-  width: 20%;
-  height: auto;
-  animation: icon-morph 0.5s forwards;
+  transition: width 0.5s 0.5s;
 }
 .service-card-cont .service-card p {
   height: 0;
+  display: block;
   opacity: 0;
-  transform: translateY(-3em);
+  transition: all 0.5s;
+  position: absolute;
+  top: 55%;
+  left: 1em;
+  right: 1em;
+  transform: translateY(3em);
   color: #1a1a1a;
   font-size: 0.9em;
   text-align: justify;
@@ -1332,6 +1342,21 @@ header nav li:hover {
   font-weight: 300;
 }
 
+@keyframes card-head-move {
+  0% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    flex-direction: row;
+  }
+}
 @keyframes text-slide-up {
   0% {
     opacity: 0;
