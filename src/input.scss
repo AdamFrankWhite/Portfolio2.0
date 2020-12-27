@@ -1267,16 +1267,19 @@ nav .toggle-menu {
             padding: 1em;
         }
         .bespoke {
+            text-transform: uppercase;
             color: rgb(241, 196, 15);
         }
         .standard {
             color: rgb(231, 76, 60);
+            text-transform: uppercase;
         }
 
         .premium {
             color: rgb(52, 152, 219);
+            text-transform: uppercase;
         }
-        background: white;
+        background: $secondary;
         width: 80%;
         margin-bottom: 1.5em;
         display: flex;
@@ -1295,6 +1298,8 @@ nav .toggle-menu {
         span {
             font-weight: bold;
             font-size: 0.7em;
+            color: white;
+            // padding-right: 4em;
         }
         h3.price {
             color: orange;
@@ -1309,9 +1314,9 @@ nav .toggle-menu {
             transition: transform 0.2s ease-in-out;
         }
         a {
-            background: $secondary;
+            background: white;
             padding: 0.75em;
-            color: white;
+            color: $secondary;
             text-transform: uppercase;
             border-radius: 5px;
             margin-bottom: 1em;
@@ -1322,7 +1327,7 @@ nav .toggle-menu {
             font-weight: 600;
         }
         p {
-            color: rgb(37, 37, 37) !important;
+            color: rgb(230, 230, 230) !important;
             font-size: 0.9em;
             padding: 0 2.5em;
             text-align: justify;
@@ -1335,7 +1340,7 @@ nav .toggle-menu {
             display: flex;
             flex-direction: column;
             li {
-                color: rgb(95, 95, 95) !important;
+                color: rgb(224, 224, 224) !important;
                 font-size: 1em;
                 @media (min-width: 965px) {
                     font-size: 0.9em;
