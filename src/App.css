@@ -1048,6 +1048,8 @@ header nav li:hover {
 
 .section-title {
   text-transform: uppercase;
+  width: 100%;
+  text-align: right;
 }
 
 .text-center {
@@ -1058,13 +1060,16 @@ header nav li:hover {
   margin: auto;
 }
 
+.ml-auto {
+  margin-left: auto !important;
+}
+
 #hire-me {
   padding-top: 75px;
   padding-bottom: 75px;
 }
 #hire-me h2:not(.section-title) {
   font-size: 1.75em;
-  text-align: left;
 }
 #hire-me .hire-title-cont {
   display: flex;
@@ -1100,11 +1105,17 @@ header nav li:hover {
   width: 100%;
 }
 #hire-me p {
-  margin: 1em auto;
+  width: 50%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .hire-intro {
-  width: 50%;
+  margin-left: auto;
+  text-align: right;
+}
+.hire-intro p {
+  margin-left: auto;
 }
 
 .highlight {
@@ -1245,7 +1256,7 @@ header nav li:hover {
   width: 48%;
 }
 .service-card-cont .service-card {
-  height: 90%;
+  height: 300px;
   border: 2px solid #adefd1;
   color: black;
   background: white;
@@ -1253,23 +1264,67 @@ header nav li:hover {
   border-radius: 5px;
   padding: 1.5em 2.25em 2.25em 2.25em;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: 1em 2em;
 }
+.service-card-cont .service-card:hover {
+  cursor: pointer;
+}
+.service-card-cont .service-card:hover .service-card-head h3 {
+  font-size: 1.6em;
+  padding-left: 0.5em;
+  transition: font-size 0.5s;
+}
+.service-card-cont .service-card:hover .service-card-head img {
+  padding: 10px 0;
+  width: 20%;
+  height: auto;
+  animation: icon-morph 0.5s forwards;
+}
+.service-card-cont .service-card:hover p.text-show {
+  display: block;
+  height: 100%;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s;
+}
 .service-card-cont .service-card .service-card-head {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .service-card-cont .service-card .service-card-head h3 {
-  font-size: 1.6em;
+  font-size: 2.3em;
   padding-left: 0.5em;
+  text-align: center;
 }
 .service-card-cont .service-card .service-card-head img {
   padding: 10px 0;
-  width: 10%;
+  width: 20%;
   height: auto;
 }
+.service-card-cont .service-card .service-card-head-small {
+  display: flex;
+  align-items: center;
+}
+.service-card-cont .service-card .service-card-head-small h3 {
+  font-size: 1.6em;
+  padding-left: 0.5em;
+  transition: font-size 0.5s;
+}
+.service-card-cont .service-card .service-card-head-small img {
+  padding: 10px 0;
+  width: 20%;
+  height: auto;
+  animation: icon-morph 0.5s forwards;
+}
 .service-card-cont .service-card p {
+  height: 0;
+  opacity: 0;
+  transform: translateY(-3em);
   color: #1a1a1a;
   font-size: 0.9em;
   text-align: justify;
@@ -1277,6 +1332,24 @@ header nav li:hover {
   font-weight: 300;
 }
 
+@keyframes text-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(3em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes icon-morph {
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 10%;
+  }
+}
 .process-card-cont {
   width: 100%;
   display: flex;

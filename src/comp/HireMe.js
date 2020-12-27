@@ -96,16 +96,16 @@ export default function HireMe() {
         <section id="hire-me" className="about">
             <div className="frame-content">
                 <ScrollAnimation
-                    animateIn="fadeIn"
+                    animateIn="fadeInRight"
                     offset={250}
                     duration={0.75}
                 >
                     <div className="hire-title-cont">
                         <h2 className="section-title">Hire Me</h2>
-                        <hr />
+                        <hr className="ml-auto" />
                     </div>
                     <br />
-                    <div className="hire-intro">
+                    <div className="hire-intro ml-auto">
                         <p>
                             I have a passion for web development and making
                             user-friendly, beautiful websites that help
@@ -126,7 +126,7 @@ export default function HireMe() {
                     </p> */}
                 </ScrollAnimation>
                 <h2 id="pricing">Packages</h2>
-                <hr className="mx-auto" />
+                <hr />
                 <p>
                     I charge by the project, depending on the complexity and
                     individual requirements. As a general guide, I offer three

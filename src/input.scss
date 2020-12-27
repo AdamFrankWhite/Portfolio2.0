@@ -1146,6 +1146,8 @@ nav .toggle-menu {
 // }
 .section-title {
     text-transform: uppercase;
+    width: 100%;
+    text-align: right;
 }
 .text-center {
     text-align: center;
@@ -1153,12 +1155,15 @@ nav .toggle-menu {
 .mx-auto {
     margin: auto;
 }
+
+.ml-auto {
+    margin-left: auto !important;
+}
 #hire-me {
     padding-top: 75px;
     padding-bottom: 75px;
     h2:not(.section-title) {
         font-size: 1.75em;
-        text-align: left;
     }
     .hire-title-cont {
         display: flex;
@@ -1192,7 +1197,9 @@ nav .toggle-menu {
         width: 100%;
     }
     p {
-        margin: 1em auto;
+        width: 50%;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     // ul {
     //     margin: auto;
@@ -1210,11 +1217,11 @@ nav .toggle-menu {
     // }
 }
 .hire-intro {
-    width: 50%;
-    // p {
-    //     line-height: 1.2em;
-    //     font-size: 1.1em;
-    // }
+    margin-left: auto;
+    text-align: right;
+    p {
+        margin-left: auto;
+    }
 }
 .highlight {
     background: white;
@@ -1362,7 +1369,7 @@ nav .toggle-menu {
         width: 48%;
     }
     .service-card {
-        height: 90%;
+        height: 300px;
         // @media (min-width: 1050px) {
         //     width: 43%;
         // }
@@ -1374,24 +1381,73 @@ nav .toggle-menu {
         // border: 3px rgb(255, 0, 0) solid;
         padding: 1.5em 2.25em 2.25em 2.25em;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         margin: 1em 2em;
-
+        &:hover {
+            cursor: pointer;
+            .service-card-head {
+                // flex-direction: row;
+                // transition: flex-direction 0.5s;
+                h3 {
+                    font-size: 1.6em;
+                    padding-left: 0.5em;
+                    transition: font-size 0.5s;
+                    // text-transform: uppercase;
+                }
+                img {
+                    padding: 10px 0;
+                    width: 20%;
+                    height: auto;
+                    animation: icon-morph 0.5s forwards;
+                }
+            }
+            p.text-show {
+                display: block;
+                height: 100%;
+                opacity: 1;
+                transform: translateY(0);
+                transition: all 0.5s;
+            }
+        }
         .service-card-head {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-size: 2.3em;
+                padding-left: 0.5em;
+                text-align: center;
+                // text-transform: uppercase;
+            }
+            img {
+                padding: 10px 0;
+                width: 20%;
+                height: auto;
+            }
+        }
+        .service-card-head-small {
             display: flex;
             align-items: center;
             h3 {
                 font-size: 1.6em;
                 padding-left: 0.5em;
+                transition: font-size 0.5s;
                 // text-transform: uppercase;
             }
             img {
                 padding: 10px 0;
-                width: 10%;
+                width: 20%;
                 height: auto;
+                animation: icon-morph 0.5s forwards;
             }
         }
         p {
+            height: 0;
+            opacity: 0;
+            transform: translateY(-3em);
             color: rgb(26, 26, 26);
             font-size: 0.9em;
             text-align: justify;
@@ -1400,7 +1456,30 @@ nav .toggle-menu {
         }
     }
 }
+@keyframes text-slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(3em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+@keyframes icon-morph {
+    0% {
+        width: 20%;
+        // transform: translateX(0);
+        // transform: translateY(0);
+    }
+
+    100% {
+        width: 10%;
+        // transform: translateX(-3em);
+        // transform: translateY(-3em);
+    }
+}
 .process-card-cont {
     width: 100%;
     display: flex;
