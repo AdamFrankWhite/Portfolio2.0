@@ -42,9 +42,9 @@ export default function NavBar() {
                             <a href="/#hire-me" rel="noopener">
                                 <li className="tab-link">Hire Me</li>
                             </a>
-                            <a href="/#about" rel="noopener">
+                            {/* <a href="/#about" rel="noopener">
                                 <li className="tab-link">About</li>
-                            </a>
+                            </a> */}
                             <a href="/#contact" rel="noopener">
                                 <li className="tab-link">Contact</li>
                             </a>
@@ -61,9 +61,9 @@ export default function NavBar() {
                         <a href="/#hire-me" rel="noopener">
                             <li className="tab-link">Hire Me</li>
                         </a>
-                        <a href="/#about" rel="noopener">
+                        {/* <a href="/#about" rel="noopener">
                             <li className="tab-link">About</li>
-                        </a>
+                        </a> */}
                         <a href="/#contact" rel="noopener">
                             <li className="tab-link">Contact</li>
                         </a>

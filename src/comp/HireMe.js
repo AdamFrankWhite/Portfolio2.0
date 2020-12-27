@@ -24,7 +24,7 @@ export default function HireMe() {
                 "After narrowing down your design, I will develop your website from scratch, using the latest web technology to create a beautiful, functional, secure site. I will then chat with you and undertake requested revisions.",
         },
         {
-            icon: "/assets/icons/icons8-launch-240.png",
+            icon: "/assets/icons/icons8-rocket-240.png",
             title: "4. Launch and on-going support",
             content:
                 "Once launched, you'll receive any required training and support to help you get the most from your site. I will also be available for long-term support and updates.",
@@ -96,16 +96,16 @@ export default function HireMe() {
         <section id="hire-me" className="about">
             <div className="frame-content">
                 <ScrollAnimation
-                    animateIn="fadeInRight"
+                    animateIn="fadeInLeft"
                     offset={250}
                     duration={0.75}
                 >
                     <div className="hire-title-cont">
                         <h2 className="section-title">Hire Me</h2>
-                        <hr className="ml-auto" />
+                        <hr className="mr-auto" />
                     </div>
                     <br />
-                    <div className="hire-intro ml-auto">
+                    <div className="hire-intro mr-auto">
                         <p>
                             I have a passion for web development and making
                             user-friendly, beautiful websites that help
@@ -125,28 +125,43 @@ export default function HireMe() {
                         .
                     </p> */}
                 </ScrollAnimation>
-                <h2 id="pricing">Packages</h2>
-                <hr />
-                <p>
-                    I charge by the project, depending on the complexity and
-                    individual requirements. As a general guide, I offer three
-                    core packages, listed below. All projects are customisable.
-                </p>
-                <p>
-                    For smaller jobs and consultancy, I charge an hourly rate of
-                    £30/hour.
-                </p>
-                <p>
-                    Please note, I require 50% deposit before beginning the
-                    project, and 50% on completion, before the site is made live
-                    and handed over
-                </p>
-                <div className="hire-card-cont">
-                    {priceCards.map((card) => (
-                        <PriceCard key={card.title} card={card} />
-                    ))}
-                </div>
-
+                <ScrollAnimation
+                    animateIn="fadeIn"
+                    offset={450}
+                    duration={0.75}
+                >
+                    <h2 id="pricing">Packages</h2>
+                    <hr className="mr-auto" />
+                    <div className="hire-card-cont">
+                        {priceCards.map((card, i) => (
+                            <ScrollAnimation
+                                animateIn="fadeIn"
+                                offset={450}
+                                duration={0.75}
+                                delay={i * 500}
+                            >
+                                <PriceCard key={card.title} card={card} />
+                            </ScrollAnimation>
+                        ))}
+                    </div>
+                    <div className="hire-intro">
+                        <p>
+                            I charge by the project, depending on the complexity
+                            and individual requirements. As a general guide, I
+                            offer three core packages, listed below. All
+                            projects are customisable.
+                        </p>
+                        <p>
+                            For smaller jobs and consultancy, I charge an hourly
+                            rate of £30/hour.
+                        </p>
+                        <p>
+                            Please note, I require 50% deposit before beginning
+                            the project, and 50% on completion, before the site
+                            is made live and handed over
+                        </p>
+                    </div>
+                </ScrollAnimation>
                 <ScrollAnimation
                     animateIn="fadeIn"
                     offset={250}
