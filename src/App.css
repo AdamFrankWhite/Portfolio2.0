@@ -976,7 +976,6 @@ header nav li:hover {
 
 .answer {
   margin: 0.5em !important;
-  display: none;
   font-weight: 300;
   width: 90%;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons/faQuestionCircle";
 import SlideDown from "react-slidedown";
@@ -78,22 +78,26 @@ export default function FAQs() {
                 "As a freelance web developer, I have a solid understanding of the core programming languages that websites are built with: HTML, CSS, JavaScript and PHP. This means that I can create custom sites and features, improving performance, aesthetics and security. I also believe in frequent communication - no one wants any nasty surprises or disappearing contractors. I am committed to providing a quality experience from start to finish.",
         },
     ];
-    const toggleAnswer = (num) => {
-        let questions = document.querySelectorAll(".question");
-        //Prevent double-click highlight
-        questions[num].addEventListener(
-            "mousedown",
-            function (e) {
-                e.preventDefault();
-            },
-            false
-        );
+    // const toggleAnswer = (num) => {
+    //     let questions = document.querySelectorAll(".question");
+    //     //Prevent double-click highlight
+    //     questions[num].addEventListener(
+    //         "mousedown",
+    //         function (e) {
+    //             e.preventDefault();
+    //         },
+    //         false
+    //     );
 
-        let answers = document.querySelectorAll(".answer");
-        let arrows = document.querySelectorAll(".question i");
-        answers[num].classList.toggle("show");
-        arrows[num].classList.toggle("flip");
-    };
+    //     let answers = document.querySelectorAll(".answer");
+    //     let arrows = document.querySelectorAll(".question i");
+    //     answers[num].classList.toggle("show");
+    //     arrows[num].classList.toggle("flip");
+    // };
+    const [answerToggle, setAnswerToggle] = useState({
+        visibility: false,
+        index: null,
+    });
     return (
         <div className="faq-cont">
             <div className="flex-row">
@@ -107,14 +111,27 @@ export default function FAQs() {
                         <p
                             className="question"
                             onClick={() => {
-                                toggleAnswer(index);
+                                setAnswerToggle({
+                                    index,
+                                    visibility: !answerToggle.visibility,
+                                });
                             }}
                         >
                             {faq.question}
-                            <i class="fa fa-chevron-circle-down"></i>
+                            <i
+                                className={
+                                    answerToggle.visibility &&
+                                    answerToggle.index == index
+                                        ? "fa fa-chevron-circle-down flip"
+                                        : "fa fa-chevron-circle-down"
+                                }
+                            ></i>
                         </p>
                         <SlideDown>
-                            <p className="answer">{faq.answer}</p>
+                            {answerToggle.index == index &&
+                                answerToggle.visibility && (
+                                    <p className="answer">{faq.answer}</p>
+                                )}
                         </SlideDown>
                     </>
                 );
