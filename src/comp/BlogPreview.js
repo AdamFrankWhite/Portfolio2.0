@@ -10,6 +10,7 @@ export default function BlogPreview() {
                     animateIn="fadeIn"
                     offset={250}
                     duration={0.75}
+                    animateOnce={true}
                 >
                     <div className="blog-title-cont">
                         <h2 className="section-title">Articles</h2>

@@ -18,7 +18,12 @@ export default function Category(props) {
                 callback={props.callback}
                 category={props.category}
             />
-            <ScrollAnimation animateIn="fadeIn" offset={250} duration={0.75}>
+            <ScrollAnimation
+                animateIn="fadeIn"
+                offset={250}
+                duration={0.75}
+                animateOnce={true}
+            >
                 <div className="card-container">
                     {filterPosts.map((post) => {
                         return (

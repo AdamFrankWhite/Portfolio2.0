@@ -13,7 +13,12 @@ export default function BlogPost(props) {
                 categories={props.categories}
                 category={""}
             />
-            <ScrollAnimation animateIn="fadeIn" offset={250} duration={0.75}>
+            <ScrollAnimation
+                animateIn="fadeIn"
+                offset={250}
+                duration={0.75}
+                animateOnce={true}
+            >
                 <div className="blog-post">
                     <h1>{props.post.title}</h1>
                     <hr />

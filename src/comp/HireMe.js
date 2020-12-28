@@ -99,6 +99,7 @@ export default function HireMe() {
                     animateIn="fadeInLeft"
                     offset={250}
                     duration={0.75}
+                    animateOnce={true}
                 >
                     <div className="hire-title-cont">
                         <h2 className="section-title">Hire Me</h2>
@@ -129,6 +130,7 @@ export default function HireMe() {
                     animateIn="fadeIn"
                     offset={450}
                     duration={0.75}
+                    animateOnce={true}
                 >
                     <h2 id="pricing">Packages</h2>
                     <hr className="mr-auto" />
@@ -139,6 +141,7 @@ export default function HireMe() {
                                 offset={450}
                                 duration={0.75}
                                 delay={i * 500}
+                                animateOnce={true}
                             >
                                 <PriceCard key={card.title} card={card} />
                             </ScrollAnimation>
@@ -162,20 +165,23 @@ export default function HireMe() {
                         </p>
                     </div>
                 </ScrollAnimation>
-                <ScrollAnimation
-                    animateIn="fadeIn"
-                    offset={250}
-                    duration={0.75}
-                >
-                    <h2 className="pt-1">My Process</h2>
-                    <hr className="mx-auto" />
 
-                    <div className="process-card-cont">
-                        {process.map((step) => (
+                <h2 className="pt-1">My Process</h2>
+                <hr className="mx-auto" />
+
+                <div className="process-card-cont">
+                    {process.map((step, i) => (
+                        <ScrollAnimation
+                            animateIn="fadeIn"
+                            offset={250}
+                            duration={0.75}
+                            delay={i * 500}
+                            animateOnce={true}
+                        >
                             <ProcessCard card={step} />
-                        ))}
-                    </div>
-                </ScrollAnimation>
+                        </ScrollAnimation>
+                    ))}
+                </div>
             </div>
         </section>
     );

@@ -9,6 +9,7 @@ export default function Contact() {
                     animateIn="fadeIn"
                     offset={250}
                     duration={0.75}
+                    animateOnce={true}
                 >
                     <div className="contact-content">
                         <h2 className="section-title">Contact</h2>

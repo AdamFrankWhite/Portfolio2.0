@@ -26,7 +26,12 @@ export default function Blog() {
         setSelectedCategory(category);
     };
     return (
-        <ScrollAnimation animateIn="fadeIn" offset={250} duration={0.75}>
+        <ScrollAnimation
+            animateIn="fadeIn"
+            offset={250}
+            duration={0.75}
+            animateOnce={true}
+        >
             <div className="blog">
                 {/* Need to create duplicate postcards, to force rerender for uniform animation */}
                 {selectedCategory == "All" && (

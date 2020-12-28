@@ -1165,6 +1165,7 @@ nav .toggle-menu {
     margin-right: auto !important;
 }
 .about {
+    background: black;
     padding-top: 75px;
     padding-bottom: 75px;
     h2:not(.section-title) {
@@ -1188,13 +1189,13 @@ nav .toggle-menu {
     li,
     h1,
     h2 {
-        color: $secondary;
+        color: white;
     }
     hr {
         display: block;
         padding-top: 2px;
         width: 5%;
-        background-color: $secondary;
+        background-color: white;
         margin-left: 0;
         border: none;
     }
@@ -1542,11 +1543,13 @@ nav .toggle-menu {
 
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
     @media (min-width: 750px) {
         flex-direction: row;
         justify-content: space-between;
+    }
+    .animated {
+        width: 25%;
     }
     .process-card {
         flex-direction: column;
@@ -1562,11 +1565,10 @@ nav .toggle-menu {
             width: 48%;
         }
         @media (min-width: 1250px) {
-            width: 24%;
+            // width: 24%;
             margin-bottom: 0;
         }
 
-        background: white;
         border: white 1px solid;
         border-radius: 5px;
         padding: 1.5em;
@@ -1591,12 +1593,12 @@ nav .toggle-menu {
             }
             h3 {
                 font-size: 1em;
-                color: rgb(163, 0, 0);
+                color: #bfcdff;
                 text-align: center;
             }
         }
         p {
-            color: black !important;
+            color: #ffffff !important;
             width: 100%;
             font-size: 1em;
             @media (min-width: 1600px) {
@@ -1829,6 +1831,14 @@ footer {
             margin: auto;
             justify-content: center;
         }
+    }
+    a {
+        font-size: 1.25em;
+        color: white;
+        &:hover {
+            color: orange;
+        }
+        padding: 0.25em;
     }
 }
 

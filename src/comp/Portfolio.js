@@ -12,7 +12,12 @@ export default function Portfolio({
     return (
         <section id="portfolio" className="portfolio slide-in">
             <br />
-            <ScrollAnimation animateIn="fadeIn" offset={250} duration={0.75}>
+            <ScrollAnimation
+                animateIn="fadeIn"
+                offset={250}
+                duration={0.75}
+                animateOnce={true}
+            >
                 <div className="frame-content">
                     <div className="portfolio-title-cont">
                         <h2 class="portfolio-title">Projects</h2>

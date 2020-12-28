@@ -1071,6 +1071,7 @@ header nav li:hover {
 }
 
 .about {
+  background: black;
   padding-top: 75px;
   padding-bottom: 75px;
 }
@@ -1097,13 +1098,13 @@ header nav li:hover {
 .about li,
 .about h1,
 .about h2 {
-  color: #00203f;
+  color: white;
 }
 .about hr {
   display: block;
   padding-top: 2px;
   width: 5%;
-  background-color: #00203f;
+  background-color: white;
   margin-left: 0;
   border: none;
 }
@@ -1404,7 +1405,6 @@ header nav li:hover {
   margin: 1em auto;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 @media (min-width: 750px) {
@@ -1413,11 +1413,13 @@ header nav li:hover {
     justify-content: space-between;
   }
 }
+.process-card-cont .animated {
+  width: 25%;
+}
 .process-card-cont .process-card {
   flex-direction: column;
   width: 90%;
   margin-bottom: 1.5em;
-  background: white;
   border: white 1px solid;
   border-radius: 5px;
   padding: 1.5em;
@@ -1436,7 +1438,6 @@ header nav li:hover {
 }
 @media (min-width: 1250px) {
   .process-card-cont .process-card {
-    width: 24%;
     margin-bottom: 0;
   }
 }
@@ -1458,11 +1459,11 @@ header nav li:hover {
 }
 .process-card-cont .process-card .process-card-head h3 {
   font-size: 1em;
-  color: #a30000;
+  color: #bfcdff;
   text-align: center;
 }
 .process-card-cont .process-card p {
-  color: black !important;
+  color: #ffffff !important;
   width: 100%;
   font-size: 1em;
   text-align: justify;
@@ -1647,6 +1648,14 @@ footer .footer-content .link-cont {
   flex-direction: row;
   margin: auto;
   justify-content: center;
+}
+footer a {
+  font-size: 1.25em;
+  color: white;
+  padding: 0.25em;
+}
+footer a:hover {
+  color: orange;
 }
 
 /*# sourceMappingURL=App.css.map */
