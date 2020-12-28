@@ -308,17 +308,22 @@ header nav li:hover {
   }
 }
 .main .cta-cont a[href="#faqs"] {
-  background: none;
-  color: #00203f;
+  background: #000986;
+  color: #adefd1;
   border: 2px solid #00203f;
 }
 .main .cta-cont a {
-  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0.8em;
+  font-size: 1em;
   color: #adefd1;
-  background: #00203f;
+  background: #0011ff;
   border-radius: 2px;
-  border: #00203f 1px solid;
   margin: 0.5em 0.5em 0.5em 0em;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.5;
 }
 .main .cta-cont a:hover {
   background: #5fa4ff;
@@ -1641,30 +1646,55 @@ header nav li:hover {
 }
 footer {
   font-size: 0.9em;
-  padding: 2em;
+  padding: 4em;
   background: #00203f;
-  color: white;
+  color: #f7f7f7;
   font-family: "Open Sans";
   width: 100%;
 }
 footer hr {
   width: 30%;
-  margin: 0.25em auto;
+  margin: 0.25em auto 0.25em 0;
   background-color: white;
 }
 footer .footer-content {
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+  width: 80%;
+}
+footer .footer-content .footer-about {
+  text-align: left;
   width: 70%;
 }
+footer .footer-content .footer-about h3 {
+  font-weight: 800;
+}
+footer .footer-content .footer-about h4 {
+  font-weight: 600 !important;
+}
+footer .footer-content .footer-about p {
+  width: 50%;
+  font-weight: 300;
+}
 footer .footer-content .link-cont {
+  width: 30%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: auto;
   justify-content: center;
+  align-items: flex-end;
+}
+footer .footer-content .link-cont .row-1 {
+  display: flex;
+  font-size: 1.5em;
+}
+footer .footer-content .link-cont .row-2 {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
 }
 footer a {
   font-size: 1.25em;
