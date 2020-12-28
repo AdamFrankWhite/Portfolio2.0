@@ -836,14 +836,17 @@ header nav li:hover {
 }
 
 .contact {
-  padding-top: 100px;
+  padding-top: 4em;
   padding-bottom: 75px;
   color: #00203f;
   background: #adefd1;
 }
 .contact hr {
-  width: 5%;
+  width: 10%;
   margin: auto;
+  padding-top: 2px;
+  background: #00203f;
+  border: none;
 }
 .contact .frame-content {
   width: 95%;
@@ -866,11 +869,13 @@ header nav li:hover {
 }
 
 .link {
-  color: #ff5100;
+  color: black;
+  font-weight: 700;
 }
 .link:hover {
   color: orange;
   text-decoration: underline;
+  transition: color 0.1s;
 }
 
 .contact-form {
@@ -984,10 +989,10 @@ header nav li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1.5em;
+  padding: 4em 0;
   margin-left: auto;
   width: 100%;
-  background: #ececec;
+  background: white;
 }
 .faq-cont h2 {
   font-size: 1.75em;
@@ -1703,6 +1708,7 @@ footer a {
 }
 footer a:hover {
   color: orange;
+  transition: color 0.1s;
 }
 
 /*# sourceMappingURL=App.css.map */

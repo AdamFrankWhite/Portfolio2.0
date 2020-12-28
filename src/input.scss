@@ -922,13 +922,16 @@ nav .toggle-menu {
 
 //Contact
 .contact {
-    padding-top: 100px;
+    padding-top: 4em;
     padding-bottom: 75px;
     color: $secondary;
     background: $primary;
     hr {
-        width: 5%;
+        width: 10%;
         margin: auto;
+        padding-top: 2px;
+        background: $secondary;
+        border: none;
     }
     .frame-content {
         width: 95%;
@@ -953,11 +956,13 @@ nav .toggle-menu {
 }
 
 .link {
-    color: rgb(255, 81, 0);
+    color: black;
+    font-weight: 700;
 
     &:hover {
         color: orange;
         text-decoration: underline;
+        transition: color 0.1s;
     }
 }
 .contact-form {
@@ -1075,10 +1080,10 @@ nav .toggle-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.5em;
+    padding: 4em 0;
     margin-left: auto;
     width: 100%;
-    background: rgb(236, 236, 236);
+    background: rgb(255, 255, 255);
     h2 {
         font-size: 1.75em;
     }
@@ -1887,6 +1892,7 @@ footer {
         color: white;
         &:hover {
             color: orange;
+            transition: color 0.1s;
         }
         padding: 0.25em;
     }
