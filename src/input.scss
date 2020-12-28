@@ -439,6 +439,7 @@ nav .toggle-menu {
     a {
         font-size: 1.1em;
         padding: 0.5em 0;
+        color: white;
     }
 }
 .portfolio-tabs {
@@ -653,6 +654,10 @@ nav .toggle-menu {
         flex-direction: column;
         padding: 1em;
         width: 35%;
+        .flex-row {
+            margin: 0;
+            margin-right: auto;
+        }
         a {
             font-size: 0.8em;
             display: inline-block;
@@ -924,13 +929,13 @@ nav .toggle-menu {
 .contact {
     padding-top: 4em;
     padding-bottom: 75px;
-    color: $secondary;
-    background: $primary;
+    color: $primary;
+    background: black;
     hr {
-        width: 10%;
+        width: 12%;
         margin: auto;
         padding-top: 2px;
-        background: $secondary;
+        background: $primary;
         border: none;
     }
     .frame-content {
@@ -956,8 +961,9 @@ nav .toggle-menu {
 }
 
 .link {
-    color: black;
+    color: $primary;
     font-weight: 700;
+    text-decoration: underline;
 
     &:hover {
         color: orange;
@@ -983,13 +989,13 @@ nav .toggle-menu {
             "Times New Roman", serif;
     }
     label {
-        color: $secondary;
+        color: $primary;
         padding: 0.5em 0;
     }
     input,
     textarea {
         background: transparent;
-        border: 1px solid $secondary;
+        border: 1px solid $primary;
         border-radius: 5px;
         font-size: 1em;
         padding: 0.5em;
@@ -1004,8 +1010,8 @@ nav .toggle-menu {
         margin-bottom: 1em;
     }
     input[type="submit"] {
-        background: $secondary;
-        color: white;
+        background: $primary;
+        color: $secondary;
         &:hover {
             cursor: pointer;
         }
@@ -1083,7 +1089,7 @@ nav .toggle-menu {
     padding: 4em 0;
     margin-left: auto;
     width: 100%;
-    background: rgb(255, 255, 255);
+    background: $primary;
     h2 {
         font-size: 1.75em;
     }

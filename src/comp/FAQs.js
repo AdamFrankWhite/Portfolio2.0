@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons/faQuestionCircle";
-import ScrollAnimation from "react-animate-on-scroll";
+import SlideDown from "react-slidedown";
 export default function FAQs() {
     const faqs = [
         {
@@ -113,7 +113,9 @@ export default function FAQs() {
                             {faq.question}
                             <i class="fa fa-chevron-circle-down"></i>
                         </p>
-                        <p className="answer">{faq.answer}</p>
+                        <SlideDown>
+                            <p className="answer">{faq.answer}</p>
+                        </SlideDown>
                     </>
                 );
             })}

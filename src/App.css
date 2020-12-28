@@ -406,6 +406,7 @@ header nav li:hover {
 .portfolio a {
   font-size: 1.1em;
   padding: 0.5em 0;
+  color: white;
 }
 
 .portfolio-tabs {
@@ -586,6 +587,10 @@ header nav li:hover {
   flex-direction: column;
   padding: 1em;
   width: 35%;
+}
+.modal-frame .modal-text .flex-row {
+  margin: 0;
+  margin-right: auto;
 }
 .modal-frame .modal-text a {
   font-size: 0.8em;
@@ -838,14 +843,14 @@ header nav li:hover {
 .contact {
   padding-top: 4em;
   padding-bottom: 75px;
-  color: #00203f;
-  background: #adefd1;
+  color: #adefd1;
+  background: black;
 }
 .contact hr {
-  width: 10%;
+  width: 12%;
   margin: auto;
   padding-top: 2px;
-  background: #00203f;
+  background: #adefd1;
   border: none;
 }
 .contact .frame-content {
@@ -869,8 +874,9 @@ header nav li:hover {
 }
 
 .link {
-  color: black;
+  color: #adefd1;
   font-weight: 700;
+  text-decoration: underline;
 }
 .link:hover {
   color: orange;
@@ -897,13 +903,13 @@ header nav li:hover {
   font-family: "Franklin Gothic Medium", Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .contact-form label {
-  color: #00203f;
+  color: #adefd1;
   padding: 0.5em 0;
 }
 .contact-form input,
 .contact-form textarea {
   background: transparent;
-  border: 1px solid #00203f;
+  border: 1px solid #adefd1;
   border-radius: 5px;
   font-size: 1em;
   padding: 0.5em;
@@ -919,8 +925,8 @@ header nav li:hover {
   margin-bottom: 1em;
 }
 .contact-form input[type=submit] {
-  background: #00203f;
-  color: white;
+  background: #adefd1;
+  color: #00203f;
 }
 .contact-form input[type=submit]:hover {
   cursor: pointer;
@@ -992,7 +998,7 @@ header nav li:hover {
   padding: 4em 0;
   margin-left: auto;
   width: 100%;
-  background: white;
+  background: #adefd1;
 }
 .faq-cont h2 {
   font-size: 1.75em;
