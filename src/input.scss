@@ -929,8 +929,8 @@ nav .toggle-menu {
 .contact {
     padding-top: 4em;
     padding-bottom: 75px;
-    color: $primary;
-    background: black;
+    color: white;
+    background: $secondary;
     hr {
         width: 12%;
         margin: auto;
@@ -955,6 +955,7 @@ nav .toggle-menu {
             text-align: center;
             p {
                 margin: 1em auto;
+                color: white;
             }
         }
     }
@@ -989,7 +990,7 @@ nav .toggle-menu {
             "Times New Roman", serif;
     }
     label {
-        color: $primary;
+        color: white;
         padding: 0.5em 0;
     }
     input,
@@ -997,10 +998,12 @@ nav .toggle-menu {
         background: transparent;
         border: 1px solid $primary;
         border-radius: 5px;
-        font-size: 1em;
+        font-size: 1.1em;
         padding: 0.5em;
         margin-bottom: 0.5em;
-        color: $secondary;
+        font-family: "Franklin Gothic Light";
+        color: white;
+        letter-spacing: 0.05em;
         &:focus {
             transition: border 0.1s;
         }
@@ -1035,18 +1038,18 @@ nav .toggle-menu {
     justify-content: space-between;
     align-items: center;
     color: white !important;
-    padding: 0.5em;
+    padding: 0.75em;
     width: 100%;
-    margin: auto;
-    // margin-bottom: 0.5em;
-    border-radius: 5px;
+    margin: 0.1em auto;
+    margin-bottom: 0;
+
     @media (min-width: 1050px) {
         width: 60%;
     }
     & ~ h2 {
         margin-top: 1em;
     }
-    margin: 0.5em 0 !important;
+
     font-weight: 600;
     font-size: 1.2em;
     i {
@@ -1065,10 +1068,17 @@ nav .toggle-menu {
         cursor: pointer;
     }
 }
-
+.react-slidedown {
+    width: 100%;
+}
 .answer {
-    margin: 0.5em !important;
+    margin: auto;
+
+    color: white;
+    padding: 1em;
+    background: $secondary;
     // display: none;
+    margin-top: -0.5em;
     font-weight: 300;
     width: 90%;
     // animation: slide-up 0.2s;
@@ -1845,8 +1855,8 @@ nav .toggle-menu {
 footer {
     font-size: 0.9em;
     padding: 4em;
-    background: $secondary;
-    color: rgb(247, 247, 247);
+    background: rgb(12, 12, 12);
+    color: rgb(245, 245, 245);
     font-family: "Open Sans";
     width: 100%;
     hr {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons/faQuestionCircle";
 import SlideDown from "react-slidedown";
@@ -94,10 +94,16 @@ export default function FAQs() {
     //     answers[num].classList.toggle("show");
     //     arrows[num].classList.toggle("flip");
     // };
-    const [answerToggle, setAnswerToggle] = useState({
-        visibility: false,
-        index: null,
+    const questionToggles = Object.assign(
+        {},
+        faqs.map((faq) => {
+            return false;
+        })
+    );
+    useEffect(() => {
+        console.log(answerToggle);
     });
+    const [answerToggle, setAnswerToggle] = useState(questionToggles);
     return (
         <div className="faq-cont">
             <div className="flex-row">
@@ -112,26 +118,26 @@ export default function FAQs() {
                             className="question"
                             onClick={() => {
                                 setAnswerToggle({
-                                    index,
-                                    visibility: !answerToggle.visibility,
+                                    ...answerToggle,
+                                    ...{
+                                        [index]: !answerToggle[index],
+                                    },
                                 });
                             }}
                         >
                             {faq.question}
                             <i
                                 className={
-                                    answerToggle.visibility &&
-                                    answerToggle.index == index
+                                    answerToggle[index]
                                         ? "fa fa-chevron-circle-down flip"
                                         : "fa fa-chevron-circle-down"
                                 }
                             ></i>
                         </p>
                         <SlideDown>
-                            {answerToggle.index == index &&
-                                answerToggle.visibility && (
-                                    <p className="answer">{faq.answer}</p>
-                                )}
+                            {answerToggle[index] && (
+                                <p className="answer">{faq.answer}</p>
+                            )}
                         </SlideDown>
                     </>
                 );

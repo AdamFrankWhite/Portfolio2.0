@@ -843,8 +843,8 @@ header nav li:hover {
 .contact {
   padding-top: 4em;
   padding-bottom: 75px;
-  color: #adefd1;
-  background: black;
+  color: white;
+  background: #00203f;
 }
 .contact hr {
   width: 12%;
@@ -871,6 +871,7 @@ header nav li:hover {
 }
 .contact .frame-content .contact-content p {
   margin: 1em auto;
+  color: white;
 }
 
 .link {
@@ -903,7 +904,7 @@ header nav li:hover {
   font-family: "Franklin Gothic Medium", Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .contact-form label {
-  color: #adefd1;
+  color: white;
   padding: 0.5em 0;
 }
 .contact-form input,
@@ -911,10 +912,12 @@ header nav li:hover {
   background: transparent;
   border: 1px solid #adefd1;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 1.1em;
   padding: 0.5em;
   margin-bottom: 0.5em;
-  color: #00203f;
+  font-family: "Franklin Gothic Light";
+  color: white;
+  letter-spacing: 0.05em;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
@@ -943,11 +946,10 @@ header nav li:hover {
   justify-content: space-between;
   align-items: center;
   color: white !important;
-  padding: 0.5em;
+  padding: 0.75em;
   width: 100%;
-  margin: auto;
-  border-radius: 5px;
-  margin: 0.5em 0 !important;
+  margin: 0.1em auto;
+  margin-bottom: 0;
   font-weight: 600;
   font-size: 1.2em;
 }
@@ -974,8 +976,16 @@ header nav li:hover {
   cursor: pointer;
 }
 
+.react-slidedown {
+  width: 100%;
+}
+
 .answer {
-  margin: 0.5em !important;
+  margin: auto;
+  color: white;
+  padding: 1em;
+  background: #00203f;
+  margin-top: -0.5em;
   font-weight: 300;
   width: 90%;
 }
@@ -1657,8 +1667,8 @@ header nav li:hover {
 footer {
   font-size: 0.9em;
   padding: 4em;
-  background: #00203f;
-  color: #f7f7f7;
+  background: #0c0c0c;
+  color: whitesmoke;
   font-family: "Open Sans";
   width: 100%;
 }
