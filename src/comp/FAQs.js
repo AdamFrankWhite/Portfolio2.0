@@ -1,5 +1,7 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons/faQuestionCircle";
+import ScrollAnimation from "react-animate-on-scroll";
 export default function FAQs() {
     const faqs = [
         {
@@ -94,7 +96,10 @@ export default function FAQs() {
     };
     return (
         <div className="faq-cont">
-            <h2 id="faqs">FAQs</h2>
+            <div className="flex-row">
+                <FontAwesomeIcon icon={faQuestionCircle} />
+                <h2 id="faqs">FAQs</h2>
+            </div>
             <hr className="mx-auto" />
             {faqs.map((faq, index) => {
                 return (

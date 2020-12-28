@@ -308,7 +308,9 @@ header nav li:hover {
   }
 }
 .main .cta-cont a[href="#faqs"] {
-  background: #0077ea;
+  background: none;
+  color: #00203f;
+  border: 2px solid #00203f;
 }
 .main .cta-cont a {
   padding: 0.5em;
@@ -850,12 +852,12 @@ header nav li:hover {
   }
 }
 .contact .frame-content .contact-content {
+  width: 60%;
   margin: auto;
   text-align: center;
 }
 .contact .frame-content .contact-content p {
   margin: 1em auto;
-  width: 80%;
 }
 
 .link {
@@ -926,7 +928,7 @@ header nav li:hover {
   align-items: center;
   color: white !important;
   padding: 0.5em;
-  width: 90%;
+  width: 100%;
   margin: auto;
   border-radius: 5px;
   margin: 0.5em 0 !important;
@@ -978,8 +980,12 @@ header nav li:hover {
   flex-direction: column;
   align-items: center;
   padding-top: 1.5em;
-  margin: auto;
+  margin-left: auto;
+  width: 100%;
   background: #ececec;
+}
+.faq-cont h2 {
+  font-size: 1.75em;
 }
 
 .pt-1 {
@@ -1014,6 +1020,16 @@ header nav li:hover {
   .blog-preview a[href="/blog"] {
     float: right;
   }
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row svg {
+  font-size: 1.75em;
+  margin-right: 0.25em;
 }
 
 .blog-preview-post-cont {
@@ -1074,6 +1090,7 @@ header nav li:hover {
   background: black;
   padding-top: 75px;
   padding-bottom: 75px;
+  margin-top: -1em;
 }
 .about h2:not(.section-title) {
   font-size: 1.75em;
@@ -1262,6 +1279,7 @@ header nav li:hover {
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 3em;
+  padding-bottom: 3em;
 }
 .service-card-cont .animated {
   width: 100%;
@@ -1276,7 +1294,6 @@ header nav li:hover {
 }
 .service-card-cont .service-card {
   height: 300px;
-  border: 2px solid #adefd1;
   color: black;
   background: white;
   font-size: 1.1em;
@@ -1360,7 +1377,7 @@ header nav li:hover {
   margin: 0 auto;
   transform: translateY(3em);
   color: #1a1a1a;
-  font-size: 0.9em;
+  font-size: 0.85em;
   text-align: justify;
   letter-spacing: 0.035em;
   font-weight: 300;

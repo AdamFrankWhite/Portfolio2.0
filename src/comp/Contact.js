@@ -12,7 +12,8 @@ export default function Contact() {
                     animateOnce={true}
                 >
                     <div className="contact-content">
-                        <h2 className="section-title">Contact</h2>
+                        <h2 className="section-title text-center">Contact</h2>
+
                         <hr className="full-width" />
                         <p>
                             If you have a project you'd like me to help out

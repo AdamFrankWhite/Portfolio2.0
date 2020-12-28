@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import Modal from "./Modal";
 import Services from "./Services";
 import FAQs from "./FAQs";
+import ScrollAnimation from "react-animate-on-scroll";
 export default function MainPage() {
     const [selectedModal, setModal] = useState(null);
 
@@ -18,7 +19,14 @@ export default function MainPage() {
             <Services />
             <HireMe />
             <Portfolio selectedModal={selectedModal} setModal={setModal} />
-            <FAQs />
+            <ScrollAnimation
+                animateIn="fadeIn"
+                offset={250}
+                duration={0.75}
+                animateOnce={true}
+            >
+                <FAQs />{" "}
+            </ScrollAnimation>
             {/* <BlogPreview /> */}
 
             <Contact />

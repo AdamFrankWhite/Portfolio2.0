@@ -306,7 +306,9 @@ nav .toggle-menu {
         }
         animation: fade-in-left 1.1s 2.4s forwards;
         a[href="#faqs"] {
-            background: #0077ea;
+            background: none;
+            color: $secondary;
+            border: 2px solid $secondary;
         }
         a {
             // text-transform: uppercase;
@@ -935,11 +937,11 @@ nav .toggle-menu {
         flex-direction: column;
 
         .contact-content {
+            width: 60%;
             margin: auto;
             text-align: center;
             p {
                 margin: 1em auto;
-                width: 80%;
             }
         }
     }
@@ -1018,7 +1020,7 @@ nav .toggle-menu {
     align-items: center;
     color: white !important;
     padding: 0.5em;
-    width: 90%;
+    width: 100%;
     margin: auto;
     // margin-bottom: 0.5em;
     border-radius: 5px;
@@ -1069,8 +1071,12 @@ nav .toggle-menu {
     flex-direction: column;
     align-items: center;
     padding-top: 1.5em;
-    margin: auto;
+    margin-left: auto;
+    width: 100%;
     background: rgb(236, 236, 236);
+    h2 {
+        font-size: 1.75em;
+    }
     // @media (min-width: 1050px) {
     //     display: block;
     //     padding-left: 3em;
@@ -1108,6 +1114,17 @@ nav .toggle-menu {
         text-transform: uppercase;
         font-size: 1.1em;
         padding: 0.5em 0;
+    }
+}
+
+.flex-row {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    svg {
+        font-size: 1.75em;
+        margin-right: 0.25em;
     }
 }
 .blog-preview-post-cont {
@@ -1154,6 +1171,7 @@ nav .toggle-menu {
 .text-center {
     text-align: center;
 }
+
 .mx-auto {
     margin: auto;
 }
@@ -1168,6 +1186,7 @@ nav .toggle-menu {
     background: black;
     padding-top: 75px;
     padding-bottom: 75px;
+    margin-top: -1em;
     h2:not(.section-title) {
         font-size: 1.75em;
     }
@@ -1379,6 +1398,7 @@ nav .toggle-menu {
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 3em;
+    padding-bottom: 3em;
     .animated {
         width: 100%;
     }
@@ -1394,7 +1414,7 @@ nav .toggle-menu {
         // @media (min-width: 1050px) {
         //     width: 43%;
         // }
-        border: 2px solid $primary;
+        // border: 2px solid blue;
         color: black;
         background: rgb(255, 255, 255);
         font-size: 1.1em;
@@ -1489,7 +1509,7 @@ nav .toggle-menu {
             margin: 0 auto;
             transform: translateY(3em);
             color: rgb(26, 26, 26);
-            font-size: 0.9em;
+            font-size: 0.85em;
             text-align: justify;
             letter-spacing: 0.035em;
             font-weight: 300;

@@ -148,21 +148,28 @@ export default function HireMe() {
                         ))}
                     </div>
                     <div className="hire-intro">
-                        <p>
-                            I charge by the project, depending on the complexity
-                            and individual requirements. As a general guide, I
-                            offer three core packages, listed below. All
-                            projects are customisable.
-                        </p>
-                        <p>
-                            For smaller jobs and consultancy, I charge an hourly
-                            rate of £30/hour.
-                        </p>
-                        <p>
-                            Please note, I require 50% deposit before beginning
-                            the project, and 50% on completion, before the site
-                            is made live and handed over
-                        </p>
+                        <ScrollAnimation
+                            animateIn="fadeIn"
+                            offset={150}
+                            duration={0.75}
+                            animateOnce={true}
+                        >
+                            <p>
+                                I charge by the project, depending on the
+                                complexity and individual requirements. As a
+                                general guide, I offer three core packages,
+                                listed below. All projects are customisable.
+                            </p>
+                            <p>
+                                For smaller jobs and consultancy, I charge an
+                                hourly rate of £30/hour.
+                            </p>
+                            <p>
+                                Please note, I require 50% deposit before
+                                beginning the project, and 50% on completion,
+                                before the site is made live and handed over
+                            </p>
+                        </ScrollAnimation>
                     </div>
                 </ScrollAnimation>
 
