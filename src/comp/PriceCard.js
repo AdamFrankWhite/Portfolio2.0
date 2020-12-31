@@ -3,7 +3,7 @@ import React from "react";
 export default function PriceCard(props) {
     return (
         <div className="hire-card">
-            <img src={props.card.imgPath} alt={props.card.name} />
+            <img src={props.card.imgPath} alt={`${props.card.title} icon`} />
             <h3 className={props.card.title}>{props.card.title}</h3>
             <p>{props.card.desc}</p>
             <ul>

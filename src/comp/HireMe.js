@@ -76,7 +76,7 @@ export default function HireMe() {
                 "The best choice if you want an in-depth custom design. Also great for SEO, our bespoke package allows you to create a powerful website with advanced features.",
             tabs: [
                 "Unlimited pages",
-                "In-depth Custom Design - wireframes and mockups",
+                "In-depth Custom Design",
                 "Mobile Responsive",
                 "Content Management System",
                 "Social Media Integration",
