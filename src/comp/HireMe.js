@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import PriceCard from "./PriceCard";
+import { useMediaQuery } from "react-responsive";
 import ProcessCard from "./ProcessCard";
 export default function HireMe() {
+    const isTabletOrMobile = useMediaQuery({ query: "(max-width: 964px)" });
     const process = [
         {
             icon: "/assets/icons/icons8-chat-240.png",
@@ -97,7 +99,7 @@ export default function HireMe() {
             <div className="frame-content">
                 <ScrollAnimation
                     animateIn="fadeInLeft"
-                    offset={250}
+                    offset={isTabletOrMobile ? 10000 : 250}
                     duration={0.75}
                     animateOnce={true}
                 >
@@ -128,7 +130,7 @@ export default function HireMe() {
                 </ScrollAnimation>
                 <ScrollAnimation
                     animateIn="fadeIn"
-                    offset={450}
+                    offset={isTabletOrMobile ? 0 : 450}
                     duration={0.75}
                     animateOnce={true}
                 >
@@ -138,9 +140,9 @@ export default function HireMe() {
                         {priceCards.map((card, i) => (
                             <ScrollAnimation
                                 animateIn="fadeIn"
-                                offset={450}
+                                offset={150}
                                 duration={0.75}
-                                delay={i * 500}
+                                delay={isTabletOrMobile ? 0 : i * 500}
                                 animateOnce={true}
                             >
                                 <PriceCard key={card.title} card={card} />
@@ -150,7 +152,7 @@ export default function HireMe() {
                     <div className="hire-intro">
                         <ScrollAnimation
                             animateIn="fadeIn"
-                            offset={150}
+                            offset={0}
                             duration={0.75}
                             animateOnce={true}
                         >
@@ -180,9 +182,9 @@ export default function HireMe() {
                     {process.map((step, i) => (
                         <ScrollAnimation
                             animateIn="fadeIn"
-                            offset={250}
+                            offset={150}
                             duration={0.75}
-                            delay={i * 500}
+                            delay={isTabletOrMobile ? 0 : i * 500}
                             animateOnce={true}
                         >
                             <ProcessCard card={step} />

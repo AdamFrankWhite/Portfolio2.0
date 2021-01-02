@@ -1,8 +1,10 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
+import { useMediaQuery } from "react-responsive";
 
 import ScrollAnimation from "react-animate-on-scroll";
 export default function Services() {
+    const isTabletOrMobile = useMediaQuery({ query: "(max-width: 964px)" });
     const servicesCards = [
         {
             title: "Web Design",
@@ -39,7 +41,7 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInLeft"
                         initiallyVisible={false}
-                        offset={250}
+                        offset={150}
                         duration={1}
                         animateOnce={true}
                     >
@@ -49,9 +51,9 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInRight"
                         initiallyVisible={false}
-                        offset={250}
+                        offset={150}
                         duration={1}
-                        delay={600}
+                        delay={isTabletOrMobile ? 0 : 600}
                         animateOnce={true}
                     >
                         <ServiceCard card={servicesCards[1]} />
@@ -60,9 +62,9 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInLeft"
                         initiallyVisible={false}
-                        offset={0}
+                        offset={150}
                         duration={1}
-                        delay={900}
+                        delay={isTabletOrMobile ? 0 : 900}
                         animateOnce={true}
                     >
                         <ServiceCard card={servicesCards[2]} />
@@ -71,9 +73,9 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInRight"
                         initiallyVisible={false}
-                        offset={0}
+                        offset={150}
                         duration={1}
-                        delay={1500}
+                        delay={isTabletOrMobile ? 0 : 1200}
                         animateOnce={true}
                     >
                         <ServiceCard card={servicesCards[3]} />

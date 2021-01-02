@@ -113,7 +113,7 @@ body {
     align-items: center;
 
     width: 70%;
-    margin-left: 0;
+    margin-right: auto;
     @media (max-width: 700px) {
         margin: auto;
         text-align: center;
@@ -492,9 +492,10 @@ nav .toggle-menu {
     @media (min-width: 1100px) {
         width: 47%;
     }
-
+    height: 0;
+    transition: all 0.2s;
     height: 400px;
-    perspective: 600px;
+    // perspective: 600px;
     // position: relative;
     margin-bottom: 3em;
     // padding-top: 2em;
@@ -625,13 +626,20 @@ nav .toggle-menu {
         background: white;
         width: 80%;
         display: flex;
+        @media (max-width: 964px) {
+            flex-direction: column;
+        }
         justify-content: flex-end;
-        height: 80vh;
         overflow: hidden;
     }
     .screen-cap {
         width: 65%;
         height: auto;
+        @media (max-width: 964px) {
+            width: 100%;
+            // height: 300px;
+            background-size: cover;
+        }
     }
     .small-screen-cap {
         width: 40%;
@@ -1031,7 +1039,7 @@ nav .toggle-menu {
     align-items: center;
     color: white !important;
     padding: 0.75em;
-    width: 100%;
+    width: 90%;
     margin: 0.1em auto;
     margin-bottom: 0;
 
@@ -1188,6 +1196,9 @@ nav .toggle-menu {
     text-transform: uppercase;
     width: 100%;
     text-align: left;
+    @media (max-width: 964px) {
+        text-align: center;
+    }
 }
 .text-center {
     text-align: center;
@@ -1238,6 +1249,9 @@ nav .toggle-menu {
         background-color: white;
         margin-left: 0;
         border: none;
+        @media (max-width: 964px) {
+            margin: auto;
+        }
     }
     .full-width {
         width: 100%;
@@ -1267,6 +1281,12 @@ nav .toggle-menu {
     text-align: left;
     p {
         margin-right: auto;
+        @media (max-width: 964px) {
+            margin: auto;
+            text-align: center;
+            width: 80%;
+            margin-bottom: 1em;
+        }
     }
 }
 
@@ -1300,7 +1320,7 @@ nav .toggle-menu {
 
     .hire-card {
         @media (max-width: 1049px) {
-            margin: auto;
+            margin: 1em auto;
         }
 
         img {
@@ -1311,12 +1331,22 @@ nav .toggle-menu {
             height: auto;
             min-width: 100px;
             padding: 1em;
+            @media (max-width: 964px) {
+                align-self: center;
+                margin: auto;
+            }
         }
         img[alt="standard icon"] {
             margin-left: 6.5%;
+            @media (max-width: 964px) {
+                margin: auto;
+            }
         }
         img[alt="premium icon"] {
             margin-left: 7%;
+            @media (max-width: 964px) {
+                margin: auto;
+            }
         }
         .bespoke,
         .standard,
@@ -1325,6 +1355,9 @@ nav .toggle-menu {
             width: 75%;
             text-transform: capitalize;
             font-weight: 700;
+            @media (max-width: 964px) {
+                text-align: center;
+            }
         }
         .bespoke {
             color: rgb(241, 196, 15);
@@ -1367,11 +1400,10 @@ nav .toggle-menu {
             font-size: 1.75em;
             line-height: 1em;
         }
-        &:hover {
-            // transform: scale(1.05);
-            transform: translateY(-1em);
-            transition: transform 0.2s ease-in-out;
-        }
+        // &:hover {
+        //     transform: translateY(-1em);
+        //     transition: transform 0.2s ease-in-out;
+        // }
         a {
             background: white;
             padding: 0.75em;
@@ -1382,16 +1414,19 @@ nav .toggle-menu {
         }
         h3 {
             font-size: 1.6em;
-            color: rgb(206, 0, 0);
+            // color: rgb(206, 0, 0);
             font-weight: 600;
         }
         p {
             color: rgb(221, 220, 220) !important;
-            font-size: 0.95em;
+            font-size: 1em;
             padding: 0 12.5%;
             text-align: left;
             width: 100%;
             margin: 1em auto;
+            @media (max-width: 964px) {
+                text-align: center;
+            }
         }
         ul {
             list-style-type: none;
@@ -1400,11 +1435,10 @@ nav .toggle-menu {
             display: flex;
             flex-direction: column;
             li {
-                color: rgb(240, 240, 240) !important;
-                font-size: 1em;
-                @media (min-width: 965px) {
-                    font-size: 0.9em;
-                }
+                color: rgb(230, 230, 230) !important;
+
+                font-size: 0.9em;
+
                 // background: rgb(78, 78, 78);
                 padding: 0.4em;
                 // margin-bottom: 0.1em;
@@ -1422,14 +1456,6 @@ nav .toggle-menu {
     text-align: center;
 }
 
-// #portfolio h2:nth-of-type(1),
-// #hire-me h2:nth-of-type(1),
-// #contact h2:nth-of-type(1),
-// #about h2:nth-of-type(1) {
-//     text-transform: uppercase;
-//     font-size: 2.5em;
-// }
-// .blog-preview h2:nth-of-type(1),
 .service-card-cont {
     width: 100%;
     display: flex;
@@ -1464,7 +1490,7 @@ nav .toggle-menu {
         // border: 3px rgb(255, 0, 0) solid;
         padding: 1.5em 2.25em 2.25em 2.25em;
         // display: flex;
-        position: relative;
+        // position: relative;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -1473,121 +1499,121 @@ nav .toggle-menu {
             width: 80%;
             margin: auto;
         }
-        @media (max-width: 999px) {
-            .service-card-head {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                transition: all 0.5s;
-                h3 {
-                    font-size: 1.4em;
-                    padding-left: 0.5em;
-                    text-align: center;
-                    transition: font-size 0.5s;
-                    margin-bottom: 1em;
-                    // text-transform: uppercase;
-                }
-                img {
-                    padding: 10px 0;
-                    width: 10%;
-                    height: auto;
-                    transition: width 0.5s;
-                }
+        // @media (max-width: 999px) {
+        .service-card-head {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+            h3 {
+                font-size: 1.4em;
+                padding-left: 0.5em;
+                text-align: center;
+                transition: font-size 0.5s;
+                margin-bottom: 1em;
+                // text-transform: uppercase;
             }
-
-            p.text-show {
-                height: 100%;
-                width: 100%;
-                opacity: 1;
+            img {
+                padding: 10px 0;
+                width: 10%;
+                height: auto;
+                transition: width 0.5s;
             }
         }
-        @media (min-width: 1000px) {
-            .service-card-head {
-                position: absolute;
-                transform: translateY(0);
-                top: 0;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                transition: all 0.5s;
-                h3 {
-                    font-size: 1.7em;
-                    padding-left: 0.5em;
-                    text-align: center;
-                    transition: font-size 0.5s;
-                    // text-transform: uppercase;
-                }
-                img {
-                    padding: 10px 0;
-                    width: 13%;
-                    height: auto;
-                    transition: width 0.5s;
-                }
-            }
-            p {
-                height: 0;
-                display: block;
-                opacity: 0;
-                transition: all 0.5s;
-                position: absolute;
-                top: 55%;
-                left: 1em;
-                right: 1em;
-                width: 85%;
 
-                font-weight: 500 !important;
-                margin: 0 auto;
-                transform: translateY(3em);
-                color: rgb(26, 26, 26);
-                font-size: 0.85em;
-                text-align: justify;
-                letter-spacing: 0.035em;
-                font-weight: 300;
-            }
-            &:hover {
-                cursor: pointer;
-                .service-card-head {
-                    // transition: flex-direction 0.5s;
-                    transform: translateY(-5em);
-                    // top: 0;
-                    left: 0;
-                    right: 0;
-                    // bottom: auto;
-                    transition: all 1s;
-                    h3 {
-                        font-size: 1.2em;
-                        padding-left: 0.5em;
-                        transition: all 0.5s;
-                        // text-transform: uppercase;
-                    }
-                    img {
-                        padding: 10px 0;
-                        width: 7%;
-                        height: auto;
-                        transition: all 0.5s;
-                    }
-                }
-                p.text-show {
-                    height: 100%;
-                    position: absolute;
-                    top: 55%;
-                    opacity: 1;
-                    bottom: 1em;
-                    left: 2em;
-                    right: 2em;
-                    // opacity: 1;
-                    // transform: translateY(0);
-                    // animation: text-slide-up 0.7s forwards;
-                    transition: all 0.4s 0.5s;
-                    transform: translateY(-3em);
-                }
-            }
+        p.text-show {
+            height: 100%;
+            width: 100%;
+            opacity: 1;
         }
+        // }
+        // @media (min-width: 1000px) {
+        //     .service-card-head {
+        //         position: absolute;
+        //         transform: translateY(0);
+        //         top: 0;
+        //         bottom: 0;
+        //         right: 0;
+        //         left: 0;
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: center;
+        //         align-items: center;
+        //         transition: all 0.5s;
+        //         h3 {
+        //             font-size: 1.7em;
+        //             padding-left: 0.5em;
+        //             text-align: center;
+        //             transition: font-size 0.5s;
+        //             // text-transform: uppercase;
+        //         }
+        //         img {
+        //             padding: 10px 0;
+        //             width: 13%;
+        //             height: auto;
+        //             transition: width 0.5s;
+        //         }
+        //     }
+        //     p {
+        //         height: 0;
+        //         display: block;
+        //         opacity: 0;
+        //         transition: all 0.5s;
+        //         position: absolute;
+        //         top: 55%;
+        //         left: 1em;
+        //         right: 1em;
+        //         width: 85%;
+
+        //         font-weight: 500 !important;
+        //         margin: 0 auto;
+        //         transform: translateY(3em);
+        //         color: rgb(26, 26, 26);
+        //         font-size: 0.85em;
+        //         text-align: justify;
+        //         letter-spacing: 0.035em;
+        //         font-weight: 300;
+        //     }
+        //     &:hover {
+        //         cursor: pointer;
+        //         .service-card-head {
+        //             // transition: flex-direction 0.5s;
+        //             transform: translateY(-5em);
+        //             // top: 0;
+        //             left: 0;
+        //             right: 0;
+        //             // bottom: auto;
+        //             transition: all 1s;
+        //             h3 {
+        //                 font-size: 1.2em;
+        //                 padding-left: 0.5em;
+        //                 transition: all 0.5s;
+        //                 // text-transform: uppercase;
+        //             }
+        //             img {
+        //                 padding: 10px 0;
+        //                 width: 7%;
+        //                 height: auto;
+        //                 transition: all 0.5s;
+        //             }
+        //         }
+        //         p.text-show {
+        //             height: 100%;
+        //             position: absolute;
+        //             top: 55%;
+        //             opacity: 1;
+        //             bottom: 1em;
+        //             left: 2em;
+        //             right: 2em;
+        //             // opacity: 1;
+        //             // transform: translateY(0);
+        //             // animation: text-slide-up 0.7s forwards;
+        //             transition: all 0.4s 0.5s;
+        //             transform: translateY(-3em);
+        //         }
+        //     }
+        // }
 
         p {
             display: block;
@@ -1652,26 +1678,34 @@ nav .toggle-menu {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
     @media (min-width: 750px) {
         flex-direction: row;
         justify-content: space-between;
     }
     .animated {
-        width: 25%;
+        width: 100%;
+    }
+    @media (min-width: 750px) and (max-width: 1249px) {
+        .animated {
+            width: 48%;
+        }
+    }
+    @media (min-width: 1250px) {
+        .animated {
+            width: 24%;
+        }
     }
     .process-card {
         flex-direction: column;
         // margin: auto;
-        width: 90%;
+        width: 100%;
         @media (min-width: 750px) {
             min-height: 350px;
         }
 
         margin-bottom: 1.5em;
 
-        @media (min-width: 750px) and (max-width: 1249px) {
-            width: 48%;
-        }
         @media (min-width: 1250px) {
             // width: 24%;
             margin-bottom: 0;
@@ -1937,7 +1971,8 @@ header {
 footer {
     font-size: 0.9em;
     padding: 4em;
-    background: rgb(12, 12, 12);
+    // background: rgb(12, 12, 12);
+    background: #026eca;
     color: rgb(245, 245, 245);
     font-family: "Open Sans";
     width: 100%;

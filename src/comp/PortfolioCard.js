@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import ScrollAnimation from "react-animate-on-scroll";
+import SlideDown from "react-slidedown";
+
 export default function PortfolioCard({
     card,
     // toggleModal,
@@ -6,11 +10,12 @@ export default function PortfolioCard({
     selectedModal,
     setModal,
 }) {
+    const isTabletOrMobile = useMediaQuery({ query: "(max-width: 964px)" });
     return (
         <div
             className="website-card"
             onClick={() => {
-                setModal(card);
+                !isTabletOrMobile && setModal(card);
             }}
         >
             {/* <div
@@ -22,8 +27,12 @@ export default function PortfolioCard({
                 <img src={card.img} alt={`${card.name} image`} />
                 <div className="card-front-content">
                     <h3>{card.name}</h3>
-                    {/* <hr />
-                        <p>{card.desc}</p> */}
+                    {isTabletOrMobile && (
+                        <>
+                            <hr />
+                            <p>{card.desc}</p>
+                        </>
+                    )}
                 </div>
             </div>
             {/* </div> */}

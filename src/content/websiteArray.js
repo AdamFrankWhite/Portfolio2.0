@@ -55,7 +55,7 @@ const websites = [
             "My client required an ebook landing page, along with an easily maintainable blog and analytics. I created the landing page in plain HTML, CSS, JavaScript, before integrating a Wordpress blog. I used the Monster Insights plugin for analytics.",
             "With the goal of keeping the main landing page lightweight, I opted to integrate a Wordpress blog into a sub-directory. Using the same stylesheet and design, I created a simple custom theme with a custom JavaScript blog gallery.",
         ],
-        screenCapture: "assets/qw-min.png",
+        screenCapture: "assets/qw-blog.png",
         afterPic: "assets/qw-blog.png",
     },
 

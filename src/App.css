@@ -116,7 +116,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 70%;
-  margin-left: 0;
+  margin-right: auto;
 }
 @media (max-width: 700px) {
   .header-content {
@@ -502,8 +502,9 @@ header nav li:hover {
 
 .website-card {
   width: 100%;
+  height: 0;
+  transition: all 0.2s;
   height: 400px;
-  perspective: 600px;
   margin-bottom: 3em;
 }
 @media (min-width: 1100px) {
@@ -605,12 +606,22 @@ header nav li:hover {
   width: 80%;
   display: flex;
   justify-content: flex-end;
-  height: 80vh;
   overflow: hidden;
+}
+@media (max-width: 964px) {
+  .modal-frame .modal-content {
+    flex-direction: column;
+  }
 }
 .modal-frame .screen-cap {
   width: 65%;
   height: auto;
+}
+@media (max-width: 964px) {
+  .modal-frame .screen-cap {
+    width: 100%;
+    background-size: cover;
+  }
 }
 .modal-frame .small-screen-cap {
   width: 40%;
@@ -985,7 +996,7 @@ header nav li:hover {
   align-items: center;
   color: white !important;
   padding: 0.75em;
-  width: 100%;
+  width: 90%;
   margin: 0.1em auto;
   margin-bottom: 0;
   font-weight: 600;
@@ -1135,6 +1146,11 @@ header nav li:hover {
   width: 100%;
   text-align: left;
 }
+@media (max-width: 964px) {
+  .section-title {
+    text-align: center;
+  }
+}
 
 .text-center {
   text-align: center;
@@ -1191,6 +1207,11 @@ header nav li:hover {
   margin-left: 0;
   border: none;
 }
+@media (max-width: 964px) {
+  .about hr {
+    margin: auto;
+  }
+}
 .about .full-width {
   width: 100%;
 }
@@ -1206,6 +1227,14 @@ header nav li:hover {
 }
 .hire-intro p {
   margin-right: auto;
+}
+@media (max-width: 964px) {
+  .hire-intro p {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 1em;
+  }
 }
 
 .highlight {
@@ -1255,7 +1284,7 @@ header nav li:hover {
 }
 @media (max-width: 1049px) {
   .hire-card-cont .hire-card {
-    margin: auto;
+    margin: 1em auto;
   }
 }
 .hire-card-cont .hire-card img {
@@ -1267,11 +1296,27 @@ header nav li:hover {
   min-width: 100px;
   padding: 1em;
 }
+@media (max-width: 964px) {
+  .hire-card-cont .hire-card img {
+    align-self: center;
+    margin: auto;
+  }
+}
 .hire-card-cont .hire-card img[alt="standard icon"] {
   margin-left: 6.5%;
 }
+@media (max-width: 964px) {
+  .hire-card-cont .hire-card img[alt="standard icon"] {
+    margin: auto;
+  }
+}
 .hire-card-cont .hire-card img[alt="premium icon"] {
   margin-left: 7%;
+}
+@media (max-width: 964px) {
+  .hire-card-cont .hire-card img[alt="premium icon"] {
+    margin: auto;
+  }
 }
 .hire-card-cont .hire-card .bespoke,
 .hire-card-cont .hire-card .standard,
@@ -1280,6 +1325,13 @@ header nav li:hover {
   width: 75%;
   text-transform: capitalize;
   font-weight: 700;
+}
+@media (max-width: 964px) {
+  .hire-card-cont .hire-card .bespoke,
+.hire-card-cont .hire-card .standard,
+.hire-card-cont .hire-card .premium {
+    text-align: center;
+  }
 }
 .hire-card-cont .hire-card .bespoke {
   color: #f1c40f;
@@ -1312,10 +1364,6 @@ header nav li:hover {
   font-size: 1.75em;
   line-height: 1em;
 }
-.hire-card-cont .hire-card:hover {
-  transform: translateY(-1em);
-  transition: transform 0.2s ease-in-out;
-}
 .hire-card-cont .hire-card a {
   background: white;
   padding: 0.75em;
@@ -1326,16 +1374,20 @@ header nav li:hover {
 }
 .hire-card-cont .hire-card h3 {
   font-size: 1.6em;
-  color: #ce0000;
   font-weight: 600;
 }
 .hire-card-cont .hire-card p {
   color: #dddcdc !important;
-  font-size: 0.95em;
+  font-size: 1em;
   padding: 0 12.5%;
   text-align: left;
   width: 100%;
   margin: 1em auto;
+}
+@media (max-width: 964px) {
+  .hire-card-cont .hire-card p {
+    text-align: center;
+  }
 }
 .hire-card-cont .hire-card ul {
   list-style-type: none;
@@ -1345,16 +1397,11 @@ header nav li:hover {
   flex-direction: column;
 }
 .hire-card-cont .hire-card ul li {
-  color: #f0f0f0 !important;
-  font-size: 1em;
+  color: #e6e6e6 !important;
+  font-size: 0.9em;
   padding: 0.4em;
   text-align: center;
   border-bottom: 1px gray solid;
-}
-@media (min-width: 965px) {
-  .hire-card-cont .hire-card ul li {
-    font-size: 0.9em;
-  }
 }
 
 .text-center {
@@ -1391,7 +1438,6 @@ header nav li:hover {
   font-size: 1.1em;
   border-radius: 5px;
   padding: 1.5em 2.25em 2.25em 2.25em;
-  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -1403,109 +1449,30 @@ header nav li:hover {
     margin: auto;
   }
 }
-@media (max-width: 999px) {
-  .service-card-cont .service-card .service-card-head {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-  }
-  .service-card-cont .service-card .service-card-head h3 {
-    font-size: 1.4em;
-    padding-left: 0.5em;
-    text-align: center;
-    transition: font-size 0.5s;
-    margin-bottom: 1em;
-  }
-  .service-card-cont .service-card .service-card-head img {
-    padding: 10px 0;
-    width: 10%;
-    height: auto;
-    transition: width 0.5s;
-  }
-  .service-card-cont .service-card p.text-show {
-    height: 100%;
-    width: 100%;
-    opacity: 1;
-  }
+.service-card-cont .service-card .service-card-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
 }
-@media (min-width: 1000px) {
-  .service-card-cont .service-card .service-card-head {
-    position: absolute;
-    transform: translateY(0);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-  }
-  .service-card-cont .service-card .service-card-head h3 {
-    font-size: 1.7em;
-    padding-left: 0.5em;
-    text-align: center;
-    transition: font-size 0.5s;
-  }
-  .service-card-cont .service-card .service-card-head img {
-    padding: 10px 0;
-    width: 13%;
-    height: auto;
-    transition: width 0.5s;
-  }
-  .service-card-cont .service-card p {
-    height: 0;
-    display: block;
-    opacity: 0;
-    transition: all 0.5s;
-    position: absolute;
-    top: 55%;
-    left: 1em;
-    right: 1em;
-    width: 85%;
-    font-weight: 500 !important;
-    margin: 0 auto;
-    transform: translateY(3em);
-    color: #1a1a1a;
-    font-size: 0.85em;
-    text-align: justify;
-    letter-spacing: 0.035em;
-    font-weight: 300;
-  }
-  .service-card-cont .service-card:hover {
-    cursor: pointer;
-  }
-  .service-card-cont .service-card:hover .service-card-head {
-    transform: translateY(-5em);
-    left: 0;
-    right: 0;
-    transition: all 1s;
-  }
-  .service-card-cont .service-card:hover .service-card-head h3 {
-    font-size: 1.2em;
-    padding-left: 0.5em;
-    transition: all 0.5s;
-  }
-  .service-card-cont .service-card:hover .service-card-head img {
-    padding: 10px 0;
-    width: 7%;
-    height: auto;
-    transition: all 0.5s;
-  }
-  .service-card-cont .service-card:hover p.text-show {
-    height: 100%;
-    position: absolute;
-    top: 55%;
-    opacity: 1;
-    bottom: 1em;
-    left: 2em;
-    right: 2em;
-    transition: all 0.4s 0.5s;
-    transform: translateY(-3em);
-  }
+.service-card-cont .service-card .service-card-head h3 {
+  font-size: 1.4em;
+  padding-left: 0.5em;
+  text-align: center;
+  transition: font-size 0.5s;
+  margin-bottom: 1em;
+}
+.service-card-cont .service-card .service-card-head img {
+  padding: 10px 0;
+  width: 10%;
+  height: auto;
+  transition: width 0.5s;
+}
+.service-card-cont .service-card p.text-show {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
 }
 .service-card-cont .service-card p {
   display: block;
@@ -1567,11 +1534,21 @@ header nav li:hover {
   }
 }
 .process-card-cont .animated {
-  width: 25%;
+  width: 100%;
+}
+@media (min-width: 750px) and (max-width: 1249px) {
+  .process-card-cont .animated {
+    width: 48%;
+  }
+}
+@media (min-width: 1250px) {
+  .process-card-cont .animated {
+    width: 24%;
+  }
 }
 .process-card-cont .process-card {
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   margin-bottom: 1.5em;
   border: white 1px solid;
   border-radius: 5px;
@@ -1582,11 +1559,6 @@ header nav li:hover {
 @media (min-width: 750px) {
   .process-card-cont .process-card {
     min-height: 350px;
-  }
-}
-@media (min-width: 750px) and (max-width: 1249px) {
-  .process-card-cont .process-card {
-    width: 48%;
   }
 }
 @media (min-width: 1250px) {
@@ -1807,7 +1779,7 @@ header nav li:hover {
 footer {
   font-size: 0.9em;
   padding: 4em;
-  background: #0c0c0c;
+  background: #026eca;
   color: whitesmoke;
   font-family: "Open Sans";
   width: 100%;
