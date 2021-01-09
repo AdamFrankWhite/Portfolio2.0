@@ -8,25 +8,25 @@ export default function Services() {
     const servicesCards = [
         {
             title: "Web Design",
-            imgPath: "/assets/icons/icons8-design-250.png",
+            imgPath: "/assets/icons/icons8-design.svg",
             content:
                 "Looking for a website? Whether you know exactly what you want, or if you need some guidance and friendly advice, I can help. Perhaps you already have a site that you would like re-designed or tweaking? I can help you set up a Wordpress website that you can update yourself, or if you want something a little more unique, I can create a site from the groundup, as a front-end developer. ",
         },
         {
             title: "Setup",
-            imgPath: "/assets/icons/icons8-launch-240.png",
+            imgPath: "/assets/icons/icons8-launch.svg",
             content:
                 "I can help you set up your web hosting, hosted email and domain, as well as help maintain your website, uploading new content and security updates.",
         },
         {
             title: "Custom Web Development",
-            imgPath: "/assets/icons/icons8-code-208.png",
+            imgPath: "/assets/icons/icons8-code.svg",
             content:
                 "Looking for add a custom feature to your website, like a slideshow, animation or contact form? Perhaps you already have a site that you would like re-designed or tweaking? I can help you set up a Wordpress website that you can update yourself, or if you want something a little more unique, I can create a site from the groundup, as a front-end developer. ",
         },
         {
             title: "SEO and Analytics",
-            imgPath: "/assets/icons/icons8-web-analytics-256.png",
+            imgPath: "/assets/icons/icons8-web-analytics.svg",
             content:
                 "It is important to get noticed and to understand who your customers are and where they come from. I can help build SEO and get you the insights you need to help better understand and grow your business. I can also help set up Google Business Listing.",
         },
@@ -41,7 +41,7 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInLeft"
                         initiallyVisible={false}
-                        offset={150}
+                        offset={350}
                         duration={1}
                         animateOnce={true}
                     >
@@ -51,7 +51,7 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInRight"
                         initiallyVisible={false}
-                        offset={150}
+                        offset={350}
                         duration={1}
                         delay={isTabletOrMobile ? 0 : 600}
                         animateOnce={true}
@@ -62,7 +62,7 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInLeft"
                         initiallyVisible={false}
-                        offset={150}
+                        offset={600}
                         duration={1}
                         delay={isTabletOrMobile ? 0 : 900}
                         animateOnce={true}
@@ -73,7 +73,7 @@ export default function Services() {
                     <ScrollAnimation
                         animateIn="fadeInRight"
                         initiallyVisible={false}
-                        offset={150}
+                        offset={600}
                         duration={1}
                         delay={isTabletOrMobile ? 0 : 1200}
                         animateOnce={true}

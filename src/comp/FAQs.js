@@ -106,7 +106,7 @@ export default function FAQs() {
     const [answerToggle, setAnswerToggle] = useState(questionToggles);
     return (
         <div className="faq-cont">
-            <div className="flex-row">
+            <div className="flex-col">
                 <FontAwesomeIcon icon={faQuestionCircle} />
                 <h2 id="faqs">FAQs</h2>
             </div>

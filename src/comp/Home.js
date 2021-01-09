@@ -10,7 +10,7 @@ export default function Home() {
                     <h3>Custom, hand-coded web design for your business</h3>
 
                     <div className="cta-cont">
-                        <a href="#portfolio" rel="noopener">
+                        <a href="#hire-me" rel="noopener">
                             Hire Me
                         </a>
                         {/* <a href="#pricing" rel="noopener">

@@ -55,9 +55,9 @@ export default function NavBar() {
                         <a href="/#portfolio" rel="noopener">
                             <li className="tab-link">Portfolio</li>
                         </a>
-                        <NavLink to="/blog">
+                        {/* <NavLink to="/blog">
                             <li className="tab-link">Blog</li>
-                        </NavLink>
+                        </NavLink> */}
                         <a href="/#hire-me" rel="noopener">
                             <li className="tab-link">Hire Me</li>
                         </a>
@@ -65,7 +65,7 @@ export default function NavBar() {
                             <li className="tab-link">About</li>
                         </a> */}
                         <a href="/#contact" rel="noopener">
-                            <li className="tab-link">Contact</li>
+                            <li className="tab-link tab-contact">Contact</li>
                         </a>
                     </ul>
                 )}
