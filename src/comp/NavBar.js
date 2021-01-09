@@ -4,6 +4,8 @@ import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 import { useMediaQuery } from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 export default function NavBar() {
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 727px)" });
     const [stickyNav, showStickyNav] = useState(false);
@@ -28,7 +30,7 @@ export default function NavBar() {
                     }}
                     className="toggle-menu"
                 >
-                    menu
+                    <FontAwesomeIcon icon={faBars} />
                 </span>
                 {isTabletOrMobile ? (
                     <SlideDown className={"my-dropdown-slidedown"}>

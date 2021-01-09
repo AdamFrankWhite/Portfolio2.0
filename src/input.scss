@@ -114,7 +114,7 @@ body {
 
     width: 70%;
     margin-right: auto;
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
         margin: auto;
         text-align: center;
     }
@@ -183,7 +183,7 @@ header {
             align-items: center;
             @media (max-width: 728px) {
                 flex-direction: column;
-                align-items: right;
+                align-items: flex-end;
             }
         }
         .tab-contact {
@@ -202,9 +202,7 @@ header {
             font-weight: 600;
             margin: 0.5em 2.5em;
             @media (max-width: 728px) {
-                padding: 0.25em 0;
-                border-bottom: $secondary 1px solid;
-                width: 100%;
+                margin-right: auto;
             }
             position: relative;
             // hover non-active tabs
@@ -236,9 +234,8 @@ header {
 nav .toggle-menu {
     @media (max-width: 727px) {
         color: $secondary;
-        font-size: 0.75em;
-        padding: 0.4em;
-        border: 2px solid $secondary;
+        font-size: 1.5em;
+
         border-radius: 10px;
         &:hover {
             cursor: pointer;
@@ -267,9 +264,8 @@ nav .toggle-menu {
     }
 }
 .main {
-    @media (min-width: 728px) {
-        padding-top: 15vh;
-    }
+    padding-top: 15vh;
+
     @media (min-width: 1800px) {
         padding-top: 20vh;
     }
@@ -297,8 +293,8 @@ nav .toggle-menu {
     h3 {
         color: #333333;
         margin-bottom: 1.7em;
-        @media (max-width: 727px) {
-            // text-align: center;
+        @media (max-width: 900px) {
+            text-align: left;
         }
     }
     h2,
@@ -1744,6 +1740,9 @@ header {
 
 footer {
     font-size: 0.9em;
+    @media (max-width: 727px) {
+        padding: 2em 1em;
+    }
     padding: 4em;
     background: #026eca;
     color: rgb(245, 245, 245);
@@ -1761,9 +1760,18 @@ footer {
         align-items: center;
         text-align: center;
         width: 80%;
+        @media (max-width: 727px) {
+            flex-direction: column;
+            width: 100%;
+        }
         .footer-about {
             text-align: left;
-            width: 70%;
+            @media (max-width: 727px) {
+                text-align: center;
+            }
+            @media (min-width: 1100px) {
+                width: 70%;
+            }
             h3 {
                 font-weight: 800;
             }
@@ -1771,11 +1779,28 @@ footer {
                 font-weight: 600 !important;
             }
             p {
-                width: 50%;
+                width: 70%;
                 font-weight: 300;
+                @media (min-width: 1100px) {
+                    width: 50%;
+                }
+                @media (max-width: 727px) {
+                    margin: auto;
+                    text-align: justify;
+                }
+            }
+            hr {
+                @media (max-width: 727px) {
+                    margin: 0.5em auto;
+                }
             }
         }
         .link-cont {
+            @media (max-width: 727px) {
+                width: 70%;
+                align-items: center;
+                margin-top: 1em;
+            }
             width: 30%;
             display: flex;
             flex-direction: column;
@@ -1785,6 +1810,9 @@ footer {
             .row-1 {
                 display: flex;
                 font-size: 1.5em;
+                @media (max-width: 727px) {
+                    justify-content: center;
+                }
             }
             .row-2 {
                 display: flex;

@@ -118,7 +118,7 @@ body {
   width: 70%;
   margin-right: auto;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .header-content {
     margin: auto;
     text-align: center;
@@ -195,7 +195,7 @@ header nav ul {
 @media (max-width: 728px) {
   header nav ul {
     flex-direction: column;
-    align-items: right;
+    align-items: flex-end;
   }
 }
 header nav .tab-contact {
@@ -217,9 +217,7 @@ header nav li {
 }
 @media (max-width: 728px) {
   header nav li {
-    padding: 0.25em 0;
-    border-bottom: #00203f 1px solid;
-    width: 100%;
+    margin-right: auto;
   }
 }
 header nav li:hover {
@@ -230,9 +228,7 @@ header nav li:hover {
 @media (max-width: 727px) {
   nav .toggle-menu {
     color: #00203f;
-    font-size: 0.75em;
-    padding: 0.4em;
-    border: 2px solid #00203f;
+    font-size: 1.5em;
     border-radius: 10px;
   }
   nav .toggle-menu:hover {
@@ -266,15 +262,11 @@ header nav li:hover {
 }
 
 .main {
+  padding-top: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-@media (min-width: 728px) {
-  .main {
-    padding-top: 15vh;
-  }
 }
 @media (min-width: 1800px) {
   .main {
@@ -303,6 +295,11 @@ header nav li:hover {
 .main h3 {
   color: #333333;
   margin-bottom: 1.7em;
+}
+@media (max-width: 900px) {
+  .main h3 {
+    text-align: left;
+  }
 }
 .main h2,
 .main h3 {
@@ -1802,6 +1799,11 @@ footer {
   font-family: "Open Sans";
   width: 100%;
 }
+@media (max-width: 727px) {
+  footer {
+    padding: 2em 1em;
+  }
+}
 footer hr {
   width: 30%;
   margin: 0.25em auto 0.25em 0;
@@ -1815,9 +1817,24 @@ footer .footer-content {
   text-align: center;
   width: 80%;
 }
+@media (max-width: 727px) {
+  footer .footer-content {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 footer .footer-content .footer-about {
   text-align: left;
-  width: 70%;
+}
+@media (max-width: 727px) {
+  footer .footer-content .footer-about {
+    text-align: center;
+  }
+}
+@media (min-width: 1100px) {
+  footer .footer-content .footer-about {
+    width: 70%;
+  }
 }
 footer .footer-content .footer-about h3 {
   font-weight: 800;
@@ -1826,8 +1843,24 @@ footer .footer-content .footer-about h4 {
   font-weight: 600 !important;
 }
 footer .footer-content .footer-about p {
-  width: 50%;
+  width: 70%;
   font-weight: 300;
+}
+@media (min-width: 1100px) {
+  footer .footer-content .footer-about p {
+    width: 50%;
+  }
+}
+@media (max-width: 727px) {
+  footer .footer-content .footer-about p {
+    margin: auto;
+    text-align: justify;
+  }
+}
+@media (max-width: 727px) {
+  footer .footer-content .footer-about hr {
+    margin: 0.5em auto;
+  }
 }
 footer .footer-content .link-cont {
   width: 30%;
@@ -1837,9 +1870,21 @@ footer .footer-content .link-cont {
   justify-content: center;
   align-items: flex-end;
 }
+@media (max-width: 727px) {
+  footer .footer-content .link-cont {
+    width: 70%;
+    align-items: center;
+    margin-top: 1em;
+  }
+}
 footer .footer-content .link-cont .row-1 {
   display: flex;
   font-size: 1.5em;
+}
+@media (max-width: 727px) {
+  footer .footer-content .link-cont .row-1 {
+    justify-content: center;
+  }
 }
 footer .footer-content .link-cont .row-2 {
   display: flex;
