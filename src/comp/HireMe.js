@@ -184,7 +184,7 @@ export default function HireMe() {
                             animateIn="fadeIn"
                             offset={150}
                             duration={0.75}
-                            delay={isTabletOrMobile ? 0 : i * 300}
+                            delay={isTabletOrMobile ? 0 : i * 500}
                             animateOnce={true}
                         >
                             <ProcessCard card={step} />

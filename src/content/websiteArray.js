@@ -18,7 +18,7 @@ const websites = [
         name: "BeerBookmark",
         tech: "React, Redux, CSS, Node, MongoDB",
         desc: "Lorem ipsum bla bla bla",
-        img: "assets/beerme-min.jpg",
+        img: "assets/beerbookmark2.jpg",
         link: "https://beerbookmark.herokuapp.com/",
         code: "https://github.com/AdamFrankWhite/Beer-App",
         text: [
@@ -35,7 +35,7 @@ const websites = [
         tech: "React, Node, Express, CSS",
         desc:
             "Simple SPA converting uploaded Kindle Author royalty .xlsx files into various currencies ",
-        img: "assets/kdp-min.jpg",
+        img: "assets/kdp-screen.png",
         link: "https://kdp-royalty-converter.com",
         code: "https://github.com/AdamFrankWhite/KDP-Sales-Converter-Client",
         text: [
@@ -48,7 +48,7 @@ const websites = [
         name: "E-book landing page",
         tech: "Wordpress, HTML, CSS, jQuery",
         desc: "Ebook Sales Landing page with Wordpress blog",
-        img: "assets/qw-min.png",
+        img: "assets/qw-blog.png",
         link: "https://quittingweedthebook.com",
         code: "https://github.com/AdamFrankWhite/Landing-Page-1",
         text: [
