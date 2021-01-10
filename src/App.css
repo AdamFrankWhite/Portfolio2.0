@@ -142,7 +142,7 @@ header {
 header a:visited {
   color: black !important;
 }
-@media (max-width: 950px) {
+@media (max-width: 899px) {
   header {
     text-align: center;
   }
@@ -152,7 +152,7 @@ header a:visited {
     font-size: 0.85em;
   }
 }
-@media (min-width: 950px) {
+@media (min-width: 900px) {
   header {
     flex-direction: row;
   }
@@ -192,7 +192,7 @@ header nav ul {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 728px) {
+@media (max-width: 727px) {
   header nav ul {
     flex-direction: column;
     align-items: flex-end;
@@ -201,7 +201,7 @@ header nav ul {
 header nav .tab-contact {
   border: 2px solid black;
   background: black;
-  color: #adefd1;
+  color: white;
   border-radius: 30px;
   padding: 0.5em 0.8em;
 }
@@ -222,10 +222,9 @@ header nav li {
 }
 header nav li:hover {
   cursor: pointer;
-  color: white;
 }
 
-@media (max-width: 727px) {
+@media (max-width: 726px) {
   nav .toggle-menu {
     color: #00203f;
     font-size: 1.5em;
@@ -235,7 +234,7 @@ header nav li:hover {
     cursor: pointer;
   }
 }
-@media (min-width: 728px) {
+@media (min-width: 727px) {
   nav .toggle-menu {
     display: none;
   }
@@ -287,19 +286,15 @@ header nav li:hover {
     font-size: 3em;
   }
 }
-@media (max-width: 727px) {
+@media (max-width: 899px) {
   .main h2 {
     text-align: center;
   }
 }
 .main h3 {
   color: #333333;
+  font-size: 1.4em;
   margin-bottom: 1.7em;
-}
-@media (max-width: 900px) {
-  .main h3 {
-    text-align: left;
-  }
 }
 .main h2,
 .main h3 {
@@ -353,9 +348,7 @@ header nav li:hover {
   }
 }
 .main .cta-cont a:hover {
-  background: #5fa4ff;
   cursor: pointer;
-  transition: background 0.2s;
 }
 .main .icon-cont {
   display: flex;
@@ -414,7 +407,7 @@ header nav li:hover {
   width: 100%;
   height: 100%;
   background: #00203f;
-  padding-top: 100px;
+  padding-top: 3em;
 }
 .portfolio .portfolio-title-cont {
   display: flex;
@@ -724,7 +717,6 @@ header nav li:hover {
   transition: opacity 300ms, transform 300ms;
 }
 
-.about,
 .contact,
 .blog {
   width: 100%;
@@ -1171,71 +1163,158 @@ header nav li:hover {
   margin-right: auto !important;
 }
 
-.about {
-  background: black;
-  padding-bottom: 75px;
+#hire-me {
+  background: #222222;
   margin-top: -1em;
+  padding-bottom: 3em;
 }
-.about h2:not(.section-title) {
+#hire-me h2:not(.section-title) {
   font-size: 1.75em;
 }
-.about .hire-title-cont {
+#hire-me .hire-title-cont {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
 }
 @media (max-width: 1049px) {
-  .about .hire-title-cont {
+  #hire-me .hire-title-cont {
     align-items: center;
   }
 }
-.about .hire-title-cont h2 {
+#hire-me .hire-title-cont h2 {
   margin-top: 2em;
+  text-align: center;
   margin-bottom: 0.25em !important;
   text-transform: uppercase;
 }
-.about p,
-.about li,
-.about h1,
-.about h2 {
+#hire-me p,
+#hire-me li,
+#hire-me h1 {
+  color: white;
+  text-align: justify;
+}
+#hire-me h2 {
+  text-align: center;
   color: white;
 }
-.about hr {
+#hire-me hr {
   display: block;
   padding-top: 2px;
   width: 5%;
   background-color: white;
-  margin-left: 0;
+  margin: auto;
   border: none;
 }
 @media (max-width: 964px) {
-  .about hr {
+  #hire-me hr {
     margin: auto;
   }
 }
-.about .full-width {
+#hire-me .full-width {
   width: 100%;
 }
-.about p {
-  width: 50%;
+#hire-me p {
+  width: 80%;
   margin-top: 1em;
   margin-bottom: 1em;
 }
+@media (min-width: 965px) {
+  #hire-me p {
+    width: 50%;
+  }
+}
 
 .hire-intro {
-  margin-right: auto;
-  text-align: left;
+  margin: auto;
+  text-align: center;
 }
 .hire-intro p {
-  margin-right: auto;
+  margin: auto;
 }
 @media (max-width: 964px) {
   .hire-intro p {
-    margin: auto;
     text-align: center;
     width: 80%;
     margin-bottom: 1em;
+  }
+}
+
+#packages {
+  background: black;
+  color: white;
+  padding-bottom: 3em;
+  margin-bottom: -1em;
+}
+#packages h2:not(.section-title) {
+  font-size: 1.75em;
+}
+#packages .hire-title-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+@media (max-width: 1049px) {
+  #packages .hire-title-cont {
+    align-items: center;
+  }
+}
+#packages .hire-title-cont h2 {
+  margin-top: 2em;
+  text-align: center;
+  margin-bottom: 0.25em !important;
+  text-transform: uppercase;
+}
+#packages p,
+#packages h1 {
+  color: white;
+  text-align: center;
+  text-align: left;
+}
+@media (min-width: 965px) {
+  #packages p,
+#packages h1 {
+    text-align: left;
+  }
+}
+#packages li {
+  text-align: center;
+}
+#packages h2 {
+  text-align: center;
+  color: white;
+}
+@media (min-width: 965px) {
+  #packages h2 {
+    text-align: left;
+  }
+}
+#packages hr {
+  display: block;
+  padding-top: 2px;
+  width: 5%;
+  background-color: white;
+  margin: 0.25em auto 1em 0;
+  border: none;
+}
+@media (max-width: 964px) {
+  #packages hr {
+    margin: auto;
+  }
+}
+#packages .full-width {
+  width: 100%;
+}
+#packages .hire-intro p {
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+}
+@media (min-width: 965px) {
+  #packages .hire-intro p {
+    margin-left: 0;
+    width: 60%;
   }
 }
 
@@ -1446,7 +1525,7 @@ header nav li:hover {
 }
 .service-card-cont .service-card {
   height: 100%;
-  min-height: 320px;
+  min-height: 300px;
   color: black;
   background: #0362be;
   font-size: 1.1em;
@@ -1457,10 +1536,15 @@ header nav li:hover {
   flex-direction: column;
   margin: 1em 0.25em;
 }
-@media (min-width: 580px) and (max-width: 727px) {
+@media (min-width: 580px) and (max-width: 899px) {
   .service-card-cont .service-card {
-    width: 80%;
+    width: 70%;
     margin: auto;
+  }
+}
+@media (min-width: 900px) {
+  .service-card-cont .service-card {
+    width: 45%;
   }
 }
 .service-card-cont .service-card .service-card-head {

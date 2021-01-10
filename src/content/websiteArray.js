@@ -5,7 +5,7 @@ const websites = [
         desc:
             "Responsive custom Wordpress Theme written with HTML, JavaScript, PHP and SASS",
         img: "assets/heatons-min.png",
-        link: "http://heatonscats.org.uk",
+        link: "https://heatonscats.org.uk",
         code: "https://github.com/AdamFrankWhite/Heatons-Cats",
         text: [
             "Heatons Cats had an existing  Wordpress site that was in need of a re-design. They update the site regularly and were familiar with using Wordpress, and so I suggested keeping a Wordpress site, but with a new, bespoke custom theme. ",
@@ -17,7 +17,8 @@ const websites = [
     {
         name: "BeerBookmark",
         tech: "React, Redux, CSS, Node, MongoDB",
-        desc: "Lorem ipsum bla bla bla",
+        desc:
+            "Full-stack web app built using React, Redux, Node/Express, MongoDB",
         img: "assets/beerbookmark2.jpg",
         link: "https://beerbookmark.herokuapp.com/",
         code: "https://github.com/AdamFrankWhite/Beer-App",

@@ -40,14 +40,15 @@ export default function HireMe() {
             desc:
                 "The most cost-effective web design package, popular for small businesses, sole traders, community groups and landing pages.",
             tabs: [
-                "1-page site",
-                "Customised Wordpress Site",
-                "Mobile Responsive",
+                "1-5 page site",
+                "Content Management System",
+                "Mobile/Tablet Responsive",
                 "Social Media Integration",
                 "Contact Form",
                 "Favicon and icons",
                 "Image Gallery",
                 "Embedded Google Maps",
+                "Optimised Performance",
                 "2 rounds of revision",
             ],
             price: 399,
@@ -58,15 +59,16 @@ export default function HireMe() {
             desc:
                 "Geared towards small businesses with more content, a multi-page site helps present your company in a professional manner, on an affordable budget. Add more content than the standard package.",
             tabs: [
-                "up to 5 pages",
+                "up to 10 pages",
                 "Custom Design",
-                "Mobile Responsive",
+                "Mobile/Tablet Responsive",
                 "Content Management System",
                 "Social Media Integration",
                 "Contact Form",
                 "Favicon and icons",
                 "Image Gallery",
                 "Embedded Google Maps",
+                "Optimised Performance",
                 "2 rounds of revision",
             ],
             price: 799,
@@ -75,11 +77,11 @@ export default function HireMe() {
             title: "bespoke",
             imgPath: "/assets/icons/icons8-code-208-gold.png",
             desc:
-                "The best choice if you want an in-depth custom design. Also great for SEO, our bespoke package allows you to create a powerful website with advanced features.",
+                "The best choice if you want a large multi-page website with in-depth custom design. Also great for SEO, our bespoke package allows you to create a powerful website with advanced features.",
             tabs: [
-                "Unlimited pages",
+                "Up to 20 pages",
                 "In-depth Custom Design",
-                "Mobile Responsive",
+                "Mobile/Tablet Responsive",
                 "Content Management System",
                 "Social Media Integration",
                 "Contact Form",
@@ -88,6 +90,9 @@ export default function HireMe() {
                 "Embedded Video",
                 "Embedded Google Maps",
                 "SEO Boost",
+                "Custom Features",
+                "Optimised Performance",
+                "Backend functionality",
                 "3 rounds of revision",
             ],
             price: 1299,
@@ -95,47 +100,57 @@ export default function HireMe() {
     ];
 
     return (
-        <section id="hire-me" className="about">
-            <div className="frame-content">
-                <ScrollAnimation
-                    animateIn="fadeInLeft"
-                    offset={isTabletOrMobile ? 10000 : 250}
-                    duration={0.75}
-                    animateOnce={true}
-                >
-                    <div className="hire-title-cont">
-                        <h2 className="section-title">Hire Me</h2>
-                        <hr className="mr-auto" />
-                    </div>
-                    <br />
-                    <div className="hire-intro mr-auto">
-                        <p>
-                            I have a passion for web development and making
-                            user-friendly, beautiful websites that help
-                            businesses achieve their goals.
-                        </p>
-                        <p>
-                            Whether you are looking for a brand new website, a
-                            re-design, or would like new features integrating
-                            into your current site, I'm here to help.
-                        </p>
-                    </div>
-                    {/* <p>
-                        Find out more about{" "}
-                        <Link className="link" to="working-with-me">
-                            working with me
-                        </Link>
-                        .
-                    </p> */}
-                </ScrollAnimation>
-                <ScrollAnimation
-                    animateIn="fadeIn"
-                    offset={isTabletOrMobile ? 0 : 450}
-                    duration={0.75}
-                    animateOnce={true}
-                >
+        <>
+            <section id="hire-me" className="about">
+                <div className="frame-content">
+                    <ScrollAnimation
+                        animateIn="fadeInLeft"
+                        offset={isTabletOrMobile ? 10000 : 250}
+                        duration={0.75}
+                        animateOnce={true}
+                    >
+                        <div className="hire-title-cont">
+                            <h2 className="section-title">Hire Me</h2>
+                            <hr className="mr-auto" />
+                        </div>
+                        <br />
+                        <div className="hire-intro mr-auto">
+                            <p>
+                                I have a passion for web development and making
+                                user-friendly, beautiful websites that help
+                                businesses achieve their goals.
+                            </p>
+                            <p>
+                                Whether you are looking for a brand new website,
+                                a re-design, or would like new features
+                                integrating into your current site, I'm here to
+                                help.
+                            </p>
+                        </div>
+                    </ScrollAnimation>
+                </div>
+            </section>
+            <section id="packages">
+                <div className="frame-content">
                     <h2 id="pricing">Packages</h2>
                     <hr className="mr-auto" />
+                    <div className="hire-intro">
+                        <p>
+                            I charge by the project, depending on the complexity
+                            and individual requirements. As a general guide, I
+                            offer three core packages, listed below. All
+                            projects are customisable.
+                        </p>
+                        <p>
+                            For smaller jobs and consultancy, I charge an hourly
+                            rate of £30/hour.
+                        </p>
+                        <p>
+                            Please note, I require 50% deposit before beginning
+                            the project, and 50% on completion, before the site
+                            is made live and handed over
+                        </p>
+                    </div>
                     <div className="hire-card-cont">
                         {priceCards.map((card, i) => (
                             <ScrollAnimation
@@ -149,49 +164,24 @@ export default function HireMe() {
                             </ScrollAnimation>
                         ))}
                     </div>
-                    <div className="hire-intro">
-                        <ScrollAnimation
-                            animateIn="fadeIn"
-                            offset={0}
-                            duration={0.75}
-                            animateOnce={true}
-                        >
-                            <p>
-                                I charge by the project, depending on the
-                                complexity and individual requirements. As a
-                                general guide, I offer three core packages,
-                                listed below. All projects are customisable.
-                            </p>
-                            <p>
-                                For smaller jobs and consultancy, I charge an
-                                hourly rate of £30/hour.
-                            </p>
-                            <p>
-                                Please note, I require 50% deposit before
-                                beginning the project, and 50% on completion,
-                                before the site is made live and handed over
-                            </p>
-                        </ScrollAnimation>
+
+                    <h2 className="pt-1">My Process</h2>
+                    <hr className="mx-auto" />
+                    <div className="process-card-cont">
+                        {process.map((step, i) => (
+                            <ScrollAnimation
+                                animateIn="fadeIn"
+                                offset={150}
+                                duration={0.75}
+                                delay={isTabletOrMobile ? 0 : i * 500}
+                                animateOnce={true}
+                            >
+                                <ProcessCard card={step} />
+                            </ScrollAnimation>
+                        ))}
                     </div>
-                </ScrollAnimation>
-
-                <h2 className="pt-1">My Process</h2>
-                <hr className="mx-auto" />
-
-                <div className="process-card-cont">
-                    {process.map((step, i) => (
-                        <ScrollAnimation
-                            animateIn="fadeIn"
-                            offset={150}
-                            duration={0.75}
-                            delay={isTabletOrMobile ? 0 : i * 500}
-                            animateOnce={true}
-                        >
-                            <ProcessCard card={step} />
-                        </ScrollAnimation>
-                    ))}
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 }

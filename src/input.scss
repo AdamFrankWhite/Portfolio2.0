@@ -130,7 +130,7 @@ header {
     a:visited {
         color: black !important;
     }
-    @media (max-width: 950px) {
+    @media (max-width: 899px) {
         // display: block;
         text-align: center;
     }
@@ -139,7 +139,7 @@ header {
     }
     display: flex;
     flex-direction: column;
-    @media (min-width: 950px) {
+    @media (min-width: 900px) {
         flex-direction: row;
     }
     justify-content: space-between;
@@ -181,7 +181,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-            @media (max-width: 728px) {
+            @media (max-width: 727px) {
                 flex-direction: column;
                 align-items: flex-end;
             }
@@ -189,7 +189,7 @@ header {
         .tab-contact {
             border: 2px solid black;
             background: black;
-            color: $primary;
+            color: white;
             border-radius: 30px;
             padding: 0.5em 0.8em;
         }
@@ -205,34 +205,15 @@ header {
                 margin-right: auto;
             }
             position: relative;
-            // hover non-active tabs
-            // &:after {
-            //     background: none repeat scroll 0 0 transparent;
-            //     bottom: 0;
-            //     content: "";
-            //     display: block;
-            //     height: 2px;
-            //     left: 50%;
-            //     position: absolute;
-            //     background: #fff;
-            //     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-            //     width: 0;
-            // }
-            // &:not(.active):hover {
-            //     transform: translateY(-0.2em);
-            //     color: white;
-            //     transition: transform 0.3s;
-            // }
             &:hover {
                 cursor: pointer;
-                color: white;
             }
         }
     }
 }
 
 nav .toggle-menu {
-    @media (max-width: 727px) {
+    @media (max-width: 726px) {
         color: $secondary;
         font-size: 1.5em;
 
@@ -241,7 +222,7 @@ nav .toggle-menu {
             cursor: pointer;
         }
     }
-    @media (min-width: 728px) {
+    @media (min-width: 727px) {
         display: none;
     }
 }
@@ -286,16 +267,17 @@ nav .toggle-menu {
             font-size: 3em;
         }
         color: $secondary;
-        @media (max-width: 727px) {
+        @media (max-width: 899px) {
             text-align: center;
         }
     }
     h3 {
         color: #333333;
+        font-size: 1.4em;
         margin-bottom: 1.7em;
-        @media (max-width: 900px) {
-            text-align: left;
-        }
+        // @media (max-width: 727px) {
+        //     text-align: center;
+        // }
     }
     h2,
     h3 {
@@ -345,9 +327,7 @@ nav .toggle-menu {
             font-weight: 500;
             line-height: 1.5;
             &:hover {
-                background: #5fa4ff;
                 cursor: pointer;
-                transition: background 0.2s;
             }
         }
     }
@@ -403,7 +383,7 @@ nav .toggle-menu {
     width: 100%;
     height: 100%;
     background: $secondary;
-    padding-top: 100px;
+    padding-top: 3em;
 
     .portfolio-title-cont {
         display: flex;
@@ -713,7 +693,6 @@ nav .toggle-menu {
 //     margin-bottom: 2em;
 // }
 
-.about,
 .contact,
 .blog {
     width: 100%;
@@ -1142,10 +1121,10 @@ nav .toggle-menu {
 .mr-auto {
     margin-right: auto !important;
 }
-.about {
-    background: black;
-    padding-bottom: 75px;
+#hire-me {
+    background: rgb(34, 34, 34);
     margin-top: -1em;
+    padding-bottom: 3em;
     h2:not(.section-title) {
         font-size: 1.75em;
     }
@@ -1159,14 +1138,19 @@ nav .toggle-menu {
         }
         h2 {
             margin-top: 2em;
+            text-align: center;
             margin-bottom: 0.25em !important;
             text-transform: uppercase;
         }
     }
     p,
     li,
-    h1,
+    h1 {
+        color: white;
+        text-align: justify;
+    }
     h2 {
+        text-align: center;
         color: white;
     }
     hr {
@@ -1174,7 +1158,7 @@ nav .toggle-menu {
         padding-top: 2px;
         width: 5%;
         background-color: white;
-        margin-left: 0;
+        margin: auto;
         border: none;
         @media (max-width: 964px) {
             margin: auto;
@@ -1184,25 +1168,98 @@ nav .toggle-menu {
         width: 100%;
     }
     p {
-        width: 50%;
+        width: 80%;
+        @media (min-width: 965px) {
+            width: 50%;
+        }
         margin-top: 1em;
         margin-bottom: 1em;
     }
 }
 .hire-intro {
-    margin-right: auto;
-    text-align: left;
+    margin: auto;
+    text-align: center;
     p {
-        margin-right: auto;
+        margin: auto;
         @media (max-width: 964px) {
-            margin: auto;
             text-align: center;
             width: 80%;
             margin-bottom: 1em;
         }
     }
 }
+#packages {
+    background: black;
+    color: white;
+    padding-bottom: 3em;
+    margin-bottom: -1em;
+    h2:not(.section-title) {
+        font-size: 1.75em;
+    }
+    .hire-title-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        @media (max-width: 1049px) {
+            align-items: center;
+        }
+        h2 {
+            margin-top: 2em;
+            text-align: center;
+            margin-bottom: 0.25em !important;
+            text-transform: uppercase;
+        }
+    }
+    p,
+    h1 {
+        color: white;
+        text-align: center;
+        @media (min-width: 965px) {
+            text-align: left;
+        }
+        text-align: left;
+    }
+    li {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        @media (min-width: 965px) {
+            text-align: left;
+        }
+        color: white;
+    }
+    hr {
+        display: block;
+        padding-top: 2px;
+        width: 5%;
+        background-color: white;
+        margin: 0.25em auto 1em 0;
+        border: none;
+        @media (max-width: 964px) {
+            margin: auto;
+        }
+    }
+    .full-width {
+        width: 100%;
+    }
+    .hire-intro p {
+        width: 80%;
+        text-align: justify;
+        margin: auto;
 
+        @media (min-width: 965px) {
+            margin-left: 0;
+            width: 60%;
+        }
+    }
+    // p {
+    //     width: 50%;
+    //     margin-top: 1em;
+    //     margin-bottom: 1em;
+    // }
+}
 .highlight {
     background: white;
     border-radius: 5px 5px 0 0;
@@ -1387,7 +1444,7 @@ nav .toggle-menu {
     }
     .service-card {
         height: 100%;
-        min-height: 320px;
+        min-height: 300px;
         color: black;
         background: #0362be;
         font-size: 1.1em;
@@ -1397,9 +1454,12 @@ nav .toggle-menu {
         align-items: center;
         flex-direction: column;
         margin: 1em 0.25em;
-        @media (min-width: 580px) and (max-width: 727px) {
-            width: 80%;
+        @media (min-width: 580px) and (max-width: 899px) {
+            width: 70%;
             margin: auto;
+        }
+        @media (min-width: 900px) {
+            width: 45%;
         }
         .service-card-head {
             display: flex;

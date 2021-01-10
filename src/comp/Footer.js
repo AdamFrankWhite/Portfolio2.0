@@ -35,10 +35,10 @@ export default function Footer() {
                             />
                         </a>
                     </div>
-                    <div className="row-2">
+                    {/* <div className="row-2">
                         <Link to="/privacy-policy">Privacy Policy</Link>|
                         <a>Working With Me</a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>

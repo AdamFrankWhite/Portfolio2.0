@@ -7,7 +7,7 @@ export default function FAQs() {
         {
             question: "Which package should I get?",
             answer:
-                "If you want to keep costs low, and don't mind using a Wordpress theme template, go for the Standard package. If you would like a custom-built theme with some more advanced features, but still have the functionality of a Wordpress site, go for the Premium package. If you are particularly concerned about speed and performance, and are also keen on a unique, custom design, a site coded from scratch with the Bespoke package would be your best option.",
+                "The packages are a general guide based on the size of the project and typical features. If you want to keep costs low, and only need a simple, smaller site, go for the Standard package; if you have a medium-sized project (up to 10 pages), Premium is the way to go. If you have a larger projecs, and perhaps have advanced features in mind, the Bespoke package is for you. All packages are customisable and are priced according to specific needs.",
         },
         {
             question: "Will my website look good on mobile?",
@@ -22,8 +22,7 @@ export default function FAQs() {
         {
             question: "What is web hosting?",
             answer:
-                "Web hosting is the server where your website files actually live. There are a few hosting companies that I recommend in particular.",
-            // If you sign up with my affiliate link, you can get a discount on your hosting.
+                "Web hosting is the server where your website files actually live. There are a few hosting companies that I can recommend in particular.",
         },
         {
             question: "Do you provide web hosting?",
@@ -33,7 +32,7 @@ export default function FAQs() {
         {
             question: "Should I get a Wordpress site?",
             answer:
-                "Wordpress powers around 30% of the web - its popularity is partly down to its ease of use. As a CMS (Content Management System), you can easily add images and content to your site. If you are looking to update content yourself, a Wordpress site is a good option. However, if you would like all aspects of your site managed for you, I am happy to add/update content for you, as part of a maintainence plan.",
+                "Wordpress powers around 30% of the web - its popularity is partly down to its ease of use. As a CMS (Content Management System), you can easily add images and content to your site. If you are looking to update content yourself, a Wordpress site is a good option. However, if you don't have a need or desire to update the site yourself, or are concerned about the drawbacks/limitations of using a CMS, a coded custom site is your best option. I am happy to add/update content for you, on an ad hoc basis.",
         },
         {
             question: "What do you need to get started?",

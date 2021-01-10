@@ -18,23 +18,35 @@ export default function PortfolioCard({
                 !isTabletOrMobile && setModal(card);
             }}
         >
-            {/* <div
-                onClick={() => {
-                    toggleModal(true);
-                }}
-            > */}
-            <div className="card__face card__face--front">
-                <img src={card.img} alt={`${card.name} image`} />
-                <div className="card-front-content">
-                    <h3>{card.name}</h3>
-                    {isTabletOrMobile && (
-                        <>
-                            <hr />
-                            <p>{card.desc}</p>
-                        </>
-                    )}
+            {isTabletOrMobile ? (
+                <a href={card.link}>
+                    <div className="card__face card__face--front">
+                        <img src={card.img} alt={`${card.name} image`} />
+                        <div className="card-front-content">
+                            <h3>{card.name}</h3>
+                            {isTabletOrMobile && (
+                                <>
+                                    <hr />
+                                    <p>{card.desc}</p>
+                                </>
+                            )}
+                        </div>
+                    </div>
+                </a>
+            ) : (
+                <div className="card__face card__face--front">
+                    <img src={card.img} alt={`${card.name} image`} />
+                    <div className="card-front-content">
+                        <h3>{card.name}</h3>
+                        {isTabletOrMobile && (
+                            <>
+                                <hr />
+                                <p>{card.desc}</p>
+                            </>
+                        )}
+                    </div>
                 </div>
-            </div>
+            )}
             {/* </div> */}
         </div>
     );
