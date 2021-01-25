@@ -5,12 +5,9 @@ export default function PriceCard(props) {
         <div className="hire-card">
             <img src={props.card.imgPath} alt={`${props.card.title} icon`} />
             <h3 className={props.card.title}>{props.card.title}</h3>
+            <h2 className="subtitle">{props.card.subtitle}</h2>
             <p>{props.card.desc}</p>
-            <ul>
-                {props.card.tabs.map((tab) => (
-                    <li>{tab}</li>
-                ))}
-            </ul>
+
             <span>from</span>
             <h3 class="price">£{props.card.price}</h3>
             <a href="#contact">Contact me now</a>

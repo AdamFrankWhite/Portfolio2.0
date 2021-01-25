@@ -4,6 +4,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 import PriceCard from "./PriceCard";
 import { useMediaQuery } from "react-responsive";
 import ProcessCard from "./ProcessCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 export default function HireMe() {
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 964px)" });
     const process = [
@@ -35,42 +37,19 @@ export default function HireMe() {
 
     const priceCards = [
         {
-            title: "standard",
+            title: "basic",
             imgPath: "/assets/icons/icons8-web-design-208.png",
             desc:
-                "The most cost-effective web design package, popular for small businesses, sole traders, community groups and landing pages.",
-            tabs: [
-                "1-5 page site",
-                "Content Management System",
-                "Mobile/Tablet Responsive",
-                "Social Media Integration",
-                "Contact Form",
-                "Favicon and icons",
-                "Image Gallery",
-                "Embedded Google Maps",
-                "Optimised Performance",
-                "2 rounds of revision",
-            ],
+                "The most cost-effective web design package, popular for small businesses, sole traders, community groups and landing pages. All core web design features included.",
+            subtitle: "up to 5 pages",
             price: 399,
         },
         {
-            title: "premium",
+            title: "standard",
             imgPath: "/assets/icons/icons8-site-quality-warranty-250.png",
             desc:
                 "Geared towards small businesses with more content, a multi-page site helps present your company in a professional manner, on an affordable budget. Add more content than the standard package.",
-            tabs: [
-                "up to 10 pages",
-                "Custom Design",
-                "Mobile/Tablet Responsive",
-                "Content Management System",
-                "Social Media Integration",
-                "Contact Form",
-                "Favicon and icons",
-                "Image Gallery",
-                "Embedded Google Maps",
-                "Optimised Performance",
-                "2 rounds of revision",
-            ],
+            subtitle: "up to 10 pages",
             price: 799,
         },
         {
@@ -78,79 +57,62 @@ export default function HireMe() {
             imgPath: "/assets/icons/icons8-code-208-gold.png",
             desc:
                 "The best choice if you want a large multi-page website with in-depth custom design. Also great for SEO, our bespoke package allows you to create a powerful website with advanced features.",
-            tabs: [
-                "Up to 20 pages",
-                "In-depth Custom Design",
-                "Mobile/Tablet Responsive",
-                "Content Management System",
-                "Social Media Integration",
-                "Contact Form",
-                "Favicon and icons",
-                "Image Gallery",
-                "Embedded Video",
-                "Embedded Google Maps",
-                "SEO Boost",
-                "Custom Features",
-                "Optimised Performance",
-                "Backend functionality",
-                "3 rounds of revision",
-            ],
+            subtitle: "unlimited pages",
             price: 1299,
         },
     ];
-
+    const tabs = [
+        "Custom Design",
+        "Responsive design (mobile/tablet/desktop)",
+        "Optimised Performance",
+        "Social Media Integration",
+        "Basic SEO",
+        "Contact Form",
+        "Favicon and icons",
+        "Free stock images",
+        "2 rounds of revision",
+    ];
+    const optionalTabs = [
+        "Gallery",
+        "Slideshow",
+        "Popup",
+        "Widget integration (e.g. Yell Reviews)",
+        "Sticky navigation",
+        "Email/Newsletter signup form",
+        "Premium stock images/graphics",
+        "Embedded Google Maps",
+        "Google My Business Listing",
+        "Extra revisions",
+        "Animations",
+    ];
     return (
         <>
             <section id="hire-me" className="about">
                 <div className="frame-content">
-                    <ScrollAnimation
-                        animateIn="fadeInLeft"
-                        offset={isTabletOrMobile ? 10000 : 250}
-                        duration={0.75}
-                        animateOnce={true}
-                    >
-                        <div className="hire-title-cont">
-                            <h2 className="section-title">Hire Me</h2>
-                            <hr className="mr-auto" />
-                        </div>
-                        <br />
-                        <div className="hire-intro mr-auto">
-                            <p>
-                                I have a passion for web development and making
-                                user-friendly, beautiful websites that help
-                                businesses achieve their goals.
-                            </p>
-                            <p>
-                                Whether you are looking for a brand new website,
-                                a re-design, or would like new features
-                                integrating into your current site, I'm here to
-                                help.
-                            </p>
-                        </div>
-                    </ScrollAnimation>
-                </div>
-            </section>
-            <section id="packages">
-                <div className="frame-content">
-                    <h2 id="pricing">Packages</h2>
-                    <hr className="mr-auto" />
-                    <div className="hire-intro">
+                    <div className="hire-title-cont">
+                        <h2 className="section-title">Hire Me</h2>
+                        <hr className="mr-auto" />
+                    </div>
+                    <br />
+                    <div className="hire-intro mr-auto">
                         <p>
-                            I charge by the project, depending on the complexity
-                            and individual requirements. As a general guide, I
-                            offer three core packages, listed below. All
-                            projects are customisable.
+                            I have a passion for web development and making
+                            user-friendly, beautiful websites that help
+                            businesses achieve their goals.
                         </p>
                         <p>
-                            For smaller jobs and consultancy, I charge an hourly
-                            rate of £30/hour.
-                        </p>
-                        <p>
-                            Please note, I require 50% deposit before beginning
-                            the project, and 50% on completion, before the site
-                            is made live and handed over
+                            Whether you are looking for a brand new website, a
+                            re-design, or would like new features integrating
+                            into your current site, I'm here to help.
                         </p>
                     </div>
+                </div>
+            </section>
+            <section id="packages" className="packages">
+                <div className="frame-content">
+                    <h2 id="pricing">Packages</h2>
+                    <hr className="mx-auto" />
+
                     <div className="hire-card-cont">
                         {priceCards.map((card, i) => (
                             <ScrollAnimation
@@ -164,8 +126,55 @@ export default function HireMe() {
                             </ScrollAnimation>
                         ))}
                     </div>
-
-                    <h2 className="pt-1">My Process</h2>
+                    <div className="package-cont">
+                        <div className="package-details">
+                            <div className="package-details-list">
+                                <h2>What's included?</h2>
+                                <ul>
+                                    {tabs.map((tab) => (
+                                        <li>
+                                            {tab}
+                                            <FontAwesomeIcon
+                                                icon={faCheckCircle}
+                                            />
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="package-details-list">
+                                <h2>Extra features</h2>
+                                <ul>
+                                    {optionalTabs.map((tab) => (
+                                        <li>
+                                            {tab}
+                                            <FontAwesomeIcon
+                                                icon={faPlusCircle}
+                                            />
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="hire-intro">
+                        <h3>Please Note</h3>
+                        <p>
+                            - I charge by the project, depending on the
+                            complexity and individual requirements. As a general
+                            guide, I offer three core packages, listed below.
+                            All projects are customisable.
+                        </p>
+                        <p>
+                            - For smaller jobs and consultancy, I charge an
+                            hourly rate of £30/hour.
+                        </p>
+                        <p>
+                            - Please note, I require 50% deposit before
+                            beginning the project, and 50% on completion, before
+                            the site is made live and handed over
+                        </p>
+                    </div>
+                    <h2 className="pt-1">What to expect</h2>
                     <hr className="mx-auto" />
                     <div className="process-card-cont">
                         {process.map((step, i) => (
