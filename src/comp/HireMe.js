@@ -89,30 +89,44 @@ export default function HireMe() {
         <>
             <section id="hire-me" className="about">
                 <div className="frame-content">
-                    <div className="hire-title-cont">
-                        <h2 className="section-title">Hire Me</h2>
-                        <hr className="mr-auto" />
-                    </div>
-                    <br />
-                    <div className="hire-intro mr-auto">
-                        <p>
-                            I have a passion for web development and making
-                            user-friendly, beautiful websites that help
-                            businesses achieve their goals.
-                        </p>
-                        <p>
-                            Whether you are looking for a brand new website, a
-                            re-design, or would like new features integrating
-                            into your current site, I'm here to help.
-                        </p>
-                    </div>
+                    <ScrollAnimation
+                        animateIn="fadeIn"
+                        offset={150}
+                        duration={0.75}
+                        animateOnce={true}
+                    >
+                        <div className="hire-title-cont">
+                            <h2 className="section-title">Hire Me</h2>
+                            <hr className="mr-auto" />
+                        </div>
+                        <br />
+                        <div className="hire-intro mr-auto">
+                            <p>
+                                I have a passion for web development and making
+                                user-friendly, beautiful websites that help
+                                businesses achieve their goals.
+                            </p>
+                            <p>
+                                Whether you are looking for a brand new website,
+                                a re-design, or would like new features
+                                integrating into your current site, I'm here to
+                                help.
+                            </p>
+                        </div>
+                    </ScrollAnimation>
                 </div>
             </section>
             <section id="packages" className="packages">
                 <div className="frame-content">
-                    <h2 id="pricing">Packages</h2>
-                    <hr className="mx-auto" />
-
+                    <ScrollAnimation
+                        animateIn="fadeIn"
+                        offset={150}
+                        duration={0.75}
+                        animateOnce={true}
+                    >
+                        <h2 id="pricing">Packages</h2>
+                        <hr className="mx-auto" />
+                    </ScrollAnimation>
                     <div className="hire-card-cont">
                         {priceCards.map((card, i) => (
                             <ScrollAnimation
@@ -129,50 +143,71 @@ export default function HireMe() {
                     <div className="package-cont">
                         <div className="package-details">
                             <div className="package-details-list">
-                                <h2>What's included?</h2>
-                                <ul>
-                                    {tabs.map((tab) => (
-                                        <li>
-                                            {tab}
-                                            <FontAwesomeIcon
-                                                icon={faCheckCircle}
-                                            />
-                                        </li>
-                                    ))}
-                                </ul>
+                                <ScrollAnimation
+                                    animateIn="fadeIn"
+                                    offset={150}
+                                    duration={0.75}
+                                    animateOnce={true}
+                                >
+                                    <h2>What's included?</h2>
+                                    <ul>
+                                        {tabs.map((tab) => (
+                                            <li>
+                                                {tab}
+                                                <FontAwesomeIcon
+                                                    icon={faCheckCircle}
+                                                />
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </ScrollAnimation>
                             </div>
                             <div className="package-details-list">
-                                <h2>Extra features</h2>
-                                <ul>
-                                    {optionalTabs.map((tab) => (
-                                        <li>
-                                            {tab}
-                                            <FontAwesomeIcon
-                                                icon={faPlusCircle}
-                                            />
-                                        </li>
-                                    ))}
-                                </ul>
+                                <ScrollAnimation
+                                    animateIn="fadeIn"
+                                    offset={150}
+                                    duration={0.75}
+                                    animateOnce={true}
+                                >
+                                    <h2>Extra features</h2>
+                                    <ul>
+                                        {optionalTabs.map((tab) => (
+                                            <li>
+                                                {tab}
+                                                <FontAwesomeIcon
+                                                    icon={faPlusCircle}
+                                                />
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </ScrollAnimation>
                             </div>
                         </div>
                     </div>
                     <div className="hire-intro">
-                        <h3>Please Note</h3>
-                        <p>
-                            - I charge by the project, depending on the
-                            complexity and individual requirements. As a general
-                            guide, I offer three core packages, listed below.
-                            All projects are customisable.
-                        </p>
-                        <p>
-                            - For smaller jobs and consultancy, I charge an
-                            hourly rate of £30/hour.
-                        </p>
-                        <p>
-                            - Please note, I require 50% deposit before
-                            beginning the project, and 50% on completion, before
-                            the site is made live and handed over
-                        </p>
+                        <ScrollAnimation
+                            animateIn="fadeIn"
+                            offset={150}
+                            duration={0.75}
+                            animateOnce={true}
+                        >
+                            <h3>Please Note</h3>
+                            <p>
+                                - I charge by the project, depending on the
+                                complexity and individual requirements. As a
+                                general guide, I offer three core packages,
+                                listed below. All projects are customisable.
+                            </p>
+                            <p>
+                                - For smaller jobs and consultancy, I charge an
+                                hourly rate of £30/hour.
+                            </p>
+                            <p>
+                                - Please note, I require 50% deposit before
+                                beginning the project, and 50% on completion,
+                                before the site is made live and handed over
+                            </p>
+                        </ScrollAnimation>
                     </div>
                     <h2 className="pt-1">What to expect</h2>
                     <hr className="mx-auto" />
