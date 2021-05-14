@@ -5,10 +5,11 @@ export default function Home() {
     return (
         <section className="home slide-in">
             <div className="main frame-content slide-in">
-                <div className="header-content">
-                    <h2 className="headline">Web Design and Development</h2>
-                    <h3>Custom, hand-coded web design for your business</h3>
-
+                <div className="header-content ">
+                    <div className="slide-down">
+                        <h2 className="headline">Web Design and Development</h2>
+                        <h3>Custom, hand-coded web design for your business</h3>
+                    </div>
                     <div className="cta-cont">
                         <a href="#hire-me" rel="noopener">
                             Hire Me

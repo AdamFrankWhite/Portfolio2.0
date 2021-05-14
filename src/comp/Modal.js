@@ -7,11 +7,17 @@ export default function Modal({ selectedModal, setModal }) {
         <div className="modal-frame">
             <FontAwesomeIcon icon={faTimes} onClick={() => setModal(false)} />
             <div className="modal-content">
-                <img
-                    src={selectedModal.screenCapture}
-                    className="screen-cap"
-                    alt={`${selectedModal.name} screenshot`}
-                />
+                <a
+                    className="modal-pic-link"
+                    href={selectedModal.link}
+                    alt="link"
+                >
+                    <img
+                        src={selectedModal.screenCapture}
+                        className="screen-cap"
+                        alt={`${selectedModal.name} screenshot`}
+                    />
+                </a>
                 <div className="modal-text">
                     <h1>{selectedModal.name}</h1>
                     <div className="flex-row">

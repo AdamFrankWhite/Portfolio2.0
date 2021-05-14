@@ -6,75 +6,61 @@ export default function FAQs() {
     const faqs = [
         {
             question: "Which package should I get?",
-            answer:
-                "The packages are a general guide based on the size of the project and typical features. If you want to keep costs low, and only need a simple, smaller site, go for the Standard package; if you have a medium-sized project (up to 10 pages), Premium is the way to go. If you have a larger projecs, and perhaps have advanced features in mind, the Bespoke package is for you. All packages are customisable and are priced according to specific needs.",
+            answer: "The packages are a general guide based on the size of the project and typical features. If you want to keep costs low, and only need a simple, smaller site, go for the Standard package; if you have a medium-sized project (up to 10 pages), Premium is the way to go. If you have a larger projecs, and perhaps have advanced features in mind, the Bespoke package is for you. All packages are customisable and are priced according to specific needs.",
         },
         {
             question: "Will my website look good on mobile?",
-            answer:
-                "Mobile responsiveness is vital for a website - it is estimated that around 51% of web traffic is mobile. As such, it is essential that a website looks good and loads fast on a mobile, as well as looking good on both Android and Apple products. This comes as standard in all packages.",
+            answer: "Mobile responsiveness is vital for a website - it is estimated that around 51% of web traffic is mobile. As such, it is essential that a website looks good and loads fast on a mobile, as well as looking good on both Android and Apple products. This comes as standard in all packages.",
         },
         {
             question: "Do I own the website?",
-            answer:
-                "100% yes. Once the project is complete and handed over, it is entirely owned by you.",
+            answer: "100% yes. Once the project is complete and handed over, it is entirely owned by you.",
         },
         {
             question: "What is web hosting?",
-            answer:
-                "Web hosting is the server where your website files actually live. There are a few hosting companies that I can recommend in particular.",
+            answer: "Web hosting is the server where your website files actually live. There are a few hosting companies that I can recommend in particular.",
         },
         {
             question: "Do you provide web hosting?",
-            answer:
-                "I don't provive hosting myself, however I am happy to help guide you through setting it up yourself, so you are fully in control. I can do this through a screenshare. Typical prices range from £3-10/month, depending on the length of billing cycle.",
+            answer: "I don't provive hosting myself, however I am happy to help guide you through setting it up yourself, so you are fully in control. I can do this through a screenshare. Typical prices range from £3-10/month, depending on the length of billing cycle.",
         },
         {
             question: "Should I get a Wordpress site?",
-            answer:
-                "Wordpress powers around 30% of the web - its popularity is partly down to its ease of use. As a CMS (Content Management System), you can easily add images and content to your site. If you are looking to update content yourself, a Wordpress site is a good option. However, if you don't have a need or desire to update the site yourself, or are concerned about the drawbacks/limitations of using a CMS, a coded custom site is your best option. I am happy to add/update content for you, on an ad hoc basis.",
+            answer: "Wordpress powers around 30% of the web - its popularity is partly down to its ease of use. As a CMS (Content Management System), you can easily add images and content to your site. If you are looking to update content yourself, a Wordpress site is a good option. However, if you don't have a need or desire to update the site yourself, or are concerned about the drawbacks/limitations of using a CMS, a coded custom site is your best option. I am happy to add/update content for you, on an ad hoc basis.",
         },
         {
             question: "What do you need to get started?",
-            answer:
-                "Once we have arranged the project details, I'll need your logo, text content for the website & photos (I can provide stock photos). Professionally written copy and professional photographs help with making a website more effective. I can provide a logo branding service if you need a new logo designed for your business.",
+            answer: "Once we have arranged the project details, I'll need your logo, text content for the website & photos (I can provide stock photos). Professionally written copy and professional photographs help with making a website more effective. I can provide a logo branding service if you need a new logo designed for your business.",
         },
         {
             question: "Do you outsource?",
-            answer:
-                "I complete all work myself, so that I know every part of a project, from top to bottom. I'm based in Stockport, Cheshire.",
+            answer: "I complete all work myself, so that I know every part of a project, from top to bottom. I'm based in Stockport, Cheshire.",
         },
         {
             question: "Do you use templates?",
-            answer:
-                "Only for the standard package is a customised theme template used. The premium and bespoke packages do not use templates. Whilst I may re-use individual components from time to time, all my work is custom-made, coded just for you.",
+            answer: "Only for the standard package is a customised theme template used. The premium and bespoke packages do not use templates. Whilst I may re-use individual components from time to time, all my work is custom-made, coded just for you.",
         },
 
         {
             question:
                 "What is included in the quote? How do I know how much I'll have to pay?",
-            answer:
-                "I take pricing transparency seriously - no one wants to have a project cost keep on rising. The proposal I provide gives a detailed breakdown of the project scope, exactly what I will provide, how many rounds of revision and how much it costs - so you know exactly how much you are paying and what is included. Please note, however, anything extra outside the scope agreed in the proposal will be chargeable.",
+            answer: "I take pricing transparency seriously - no one wants to have a project cost keep on rising. The proposal I provide gives a detailed breakdown of the project scope, exactly what I will provide, how many rounds of revision and how much it costs - so you know exactly how much you are paying and what is included. Please note, however, anything extra outside the scope agreed in the proposal will be chargeable.",
         },
         {
             question: "How long will it take?",
-            answer:
-                "I get to work quickly; you can generally expect your site to be up and running within 3-4 weeks, depending on the size of the project and my outstanding project queue. I will be upfront with the timeline in your proposal.",
+            answer: "I get to work quickly; you can generally expect your site to be up and running within 3-4 weeks, depending on the size of the project and my outstanding project queue. I will be upfront with the timeline in your proposal.",
         },
         {
             question: "What sort of guarantee do I have?",
-            answer:
-                "I pride myself on excellent customer service. After I send you the proposal, I provide a contract outlining the project scope, costs, deliverables and timeline so that both parties can rest assured that things will go smoothly.",
+            answer: "I pride myself on excellent customer service. After I send you the proposal, I provide a contract outlining the project scope, costs, deliverables and timeline so that both parties can rest assured that things will go smoothly.",
         },
         {
             question: "What technology do you use?",
-            answer:
-                "I am comfortable with a variety of languages, frameworks and tools including HTML, CSS/SASS, JavaScript, React, Node/Express and Wordpress. I use Adobe XD for prototyping, VS Code my text editor, and XAMPP for PHP/Wordpress-based projects. In my spare time, I continue to learn and study to further enhance my skills.",
+            answer: "I am comfortable with a variety of languages, frameworks and tools including HTML, CSS/SASS, JavaScript, React, Node/Express and Wordpress. I use Adobe XD for prototyping, VS Code my text editor, and XAMPP for PHP/Wordpress-based projects. In my spare time, I continue to learn and study to further enhance my skills.",
         },
         {
             question: "Why should I hire you?",
-            answer:
-                "As a freelance web developer, I have a solid understanding of the core programming languages that websites are built with: HTML, CSS, JavaScript and PHP. This means that I can create custom sites and features, improving performance, aesthetics and security. I also believe in frequent communication - no one wants any nasty surprises or disappearing contractors. I am committed to providing a quality experience from start to finish.",
+            answer: "As a freelance web developer, I have a solid understanding of the core programming languages that websites are built with: HTML, CSS, JavaScript and PHP. This means that I can create custom sites and features, improving performance, aesthetics and security. I also believe in frequent communication - no one wants any nasty surprises or disappearing contractors. I am committed to providing a quality experience from start to finish.",
         },
     ];
     // const toggleAnswer = (num) => {
@@ -107,9 +93,9 @@ export default function FAQs() {
         <div className="faq-cont">
             <div className="flex-col">
                 <FontAwesomeIcon icon={faQuestionCircle} />
-                <h2 id="faqs">FAQs</h2>
+                <h2 id="faqs">FAQs</h2> <hr className="mx-auto" />
             </div>
-            <hr className="mx-auto" />
+
             {faqs.map((faq, index) => {
                 return (
                     <>

@@ -39,24 +39,21 @@ export default function HireMe() {
         {
             title: "basic",
             imgPath: "/assets/icons/icons8-web-design-208.png",
-            desc:
-                "The most cost-effective web design package, popular for small businesses, sole traders, community groups and landing pages. All core web design features included.",
+            desc: "The most cost-effective web design package, popular for small businesses, sole traders, community groups and landing pages. All core web design features included.",
             subtitle: "up to 5 pages",
             price: 399,
         },
         {
             title: "standard",
             imgPath: "/assets/icons/icons8-site-quality-warranty-250.png",
-            desc:
-                "Geared towards small businesses with more content, a multi-page site helps present your company in a professional manner, on an affordable budget. Add more content than the standard package.",
+            desc: "Geared towards small businesses with more content, a multi-page site helps present your company in a professional manner, on an affordable budget. Add more content than the standard package.",
             subtitle: "up to 10 pages",
             price: 799,
         },
         {
             title: "bespoke",
             imgPath: "/assets/icons/icons8-code-208-gold.png",
-            desc:
-                "The best choice if you want a large multi-page website with in-depth custom design. Also great for SEO, our bespoke package allows you to create a powerful website with advanced features.",
+            desc: "The best choice if you want a large multi-page website with in-depth custom design. Also great for SEO, our bespoke package allows you to create a powerful website with advanced features.",
             subtitle: "unlimited pages",
             price: 1299,
         },
@@ -140,15 +137,15 @@ export default function HireMe() {
                             </ScrollAnimation>
                         ))}
                     </div>
-                    <div className="package-cont">
-                        <div className="package-details">
-                            <div className="package-details-list">
-                                <ScrollAnimation
-                                    animateIn="fadeIn"
-                                    offset={150}
-                                    duration={0.75}
-                                    animateOnce={true}
-                                >
+                    <ScrollAnimation
+                        animateIn="fadeIn"
+                        offset={250}
+                        duration={0.75}
+                        animateOnce={true}
+                    >
+                        <div className="package-cont">
+                            <div className="package-details">
+                                <div className="package-details-list">
                                     <h2>What's included?</h2>
                                     <ul>
                                         {tabs.map((tab) => (
@@ -160,15 +157,8 @@ export default function HireMe() {
                                             </li>
                                         ))}
                                     </ul>
-                                </ScrollAnimation>
-                            </div>
-                            <div className="package-details-list">
-                                <ScrollAnimation
-                                    animateIn="fadeIn"
-                                    offset={150}
-                                    duration={0.75}
-                                    animateOnce={true}
-                                >
+                                </div>
+                                <div className="package-details-list">
                                     <h2>Extra features</h2>
                                     <ul>
                                         {optionalTabs.map((tab) => (
@@ -180,17 +170,11 @@ export default function HireMe() {
                                             </li>
                                         ))}
                                     </ul>
-                                </ScrollAnimation>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="hire-intro">
-                        <ScrollAnimation
-                            animateIn="fadeIn"
-                            offset={150}
-                            duration={0.75}
-                            animateOnce={true}
-                        >
+
+                        <div className="hire-intro">
                             <h3>Please Note</h3>
                             <p>
                                 - I charge by the project, depending on the
@@ -203,12 +187,13 @@ export default function HireMe() {
                                 hourly rate of £30/hour.
                             </p>
                             <p>
-                                - Please note, I require 50% deposit before
-                                beginning the project, and 50% on completion,
-                                before the site is made live and handed over
+                                - Please note, I require 25% deposit before
+                                beginning the project, 25% after designs have
+                                been approved, and 50% on completion (before the
+                                site is made live and handed over).
                             </p>
-                        </ScrollAnimation>
-                    </div>
+                        </div>
+                    </ScrollAnimation>
                     <h2 className="pt-1">What to expect</h2>
                     <hr className="mx-auto" />
                     <div className="process-card-cont">

@@ -36,8 +36,9 @@ export default function Services() {
         <section id="services">
             <div className="frame-content">
                 <h2>Services</h2>
+                <hr className="mr-auto" />
                 <ScrollAnimation
-                    animateIn="fadeInLeft"
+                    animateIn="fadeIn"
                     initiallyVisible={false}
                     offset={350}
                     duration={1}

@@ -5,7 +5,10 @@ export default function ServiceCard(props) {
     return (
         <div className="service-card">
             <div className="service-card-head">
-                <img src={props.card.imgPath} alt={props.card.name} />
+                <img
+                    src={props.card.imgPath}
+                    alt={`${props.card.title} icon`}
+                />
                 <h3>{props.card.title}</h3>
             </div>
             <p className="text-show">{props.card.content}</p>
