@@ -1,17 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 import { useMediaQuery } from "react-responsive";
-import ScrollAnimation from "react-animate-on-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 export default function NavBar() {
     const isTabletOrMobile = useMediaQuery({ query: "(max-width: 727px)" });
-    const [stickyNav, showStickyNav] = useState(false);
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
     return (
-        // <ScrollAnimation animateIn="fadeInDown" duration={0.75} delay={1300}>
         <header>
             <NavLink to="/">
                 <div className="title-name home-link">
@@ -44,9 +42,6 @@ export default function NavBar() {
                             <a href="/#hire-me" rel="noopener">
                                 <li className="tab-link">Hire Me</li>
                             </a>
-                            {/* <a href="/#about" rel="noopener">
-                                <li className="tab-link">About</li>
-                            </a> */}
                             <a href="/#contact" rel="noopener">
                                 <li className="tab-link">Contact</li>
                             </a>
@@ -57,15 +52,9 @@ export default function NavBar() {
                         <a href="/#portfolio" rel="noopener">
                             <li className="tab-link">Portfolio</li>
                         </a>
-                        {/* <NavLink to="/blog">
-                            <li className="tab-link">Blog</li>
-                        </NavLink> */}
                         <a href="/#hire-me" rel="noopener">
                             <li className="tab-link">Hire Me</li>
                         </a>
-                        {/* <a href="/#about" rel="noopener">
-                            <li className="tab-link">About</li>
-                        </a> */}
                         <a href="/#contact" rel="noopener">
                             <li className="tab-link tab-contact">Contact</li>
                         </a>
@@ -73,6 +62,5 @@ export default function NavBar() {
                 )}
             </nav>
         </header>
-        // </ScrollAnimation>
     );
 }

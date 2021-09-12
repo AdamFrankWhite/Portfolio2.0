@@ -17,12 +17,8 @@ export default function FAQs() {
             answer: "100% yes. Once the project is complete and handed over, it is entirely owned by you.",
         },
         {
-            question: "What is web hosting?",
-            answer: "Web hosting is the server where your website files actually live. There are a few hosting companies that I can recommend in particular.",
-        },
-        {
             question: "Do you provide web hosting?",
-            answer: "I don't provive hosting myself, however I am happy to help guide you through setting it up yourself, so you are fully in control. I can do this through a screenshare. Typical prices range from £3-10/month, depending on the length of billing cycle.",
+            answer: "I don't provive hosting myself, however I am happy to help set this up for you, so you are fully in control. Typical prices range from £3-10/month, depending on the length of billing cycle.",
         },
         {
             question: "Should I get a Wordpress site?",
@@ -32,14 +28,14 @@ export default function FAQs() {
             question: "What do you need to get started?",
             answer: "Once we have arranged the project details, I'll need your logo, text content for the website & photos (I can provide stock photos). Professionally written copy and professional photographs help with making a website more effective. I can provide a logo branding service if you need a new logo designed for your business.",
         },
-        {
-            question: "Do you outsource?",
-            answer: "I complete all work myself, so that I know every part of a project, from top to bottom. I'm based in Stockport, Cheshire.",
-        },
-        {
-            question: "Do you use templates?",
-            answer: "Only for the standard package is a customised theme template used. The premium and bespoke packages do not use templates. Whilst I may re-use individual components from time to time, all my work is custom-made, coded just for you.",
-        },
+        // {
+        //     question: "Do you outsource?",
+        //     answer: "If there is something specific you require outside of my skillset - for example, custom graphics - I complete all work myself, so that I know every part of a project, from top to bottom. I'm based in Stockport, Cheshire.",
+        // },
+        // {
+        //     question: "Do you use templates?",
+        //     answer: "No.  Whilst I may re-use individual components from time to time, all my work is custom-made, coded just for you.",
+        // },
 
         {
             question:
@@ -48,11 +44,7 @@ export default function FAQs() {
         },
         {
             question: "How long will it take?",
-            answer: "I get to work quickly; you can generally expect your site to be up and running within 3-4 weeks, depending on the size of the project and my outstanding project queue. I will be upfront with the timeline in your proposal.",
-        },
-        {
-            question: "What sort of guarantee do I have?",
-            answer: "I pride myself on excellent customer service. After I send you the proposal, I provide a contract outlining the project scope, costs, deliverables and timeline so that both parties can rest assured that things will go smoothly.",
+            answer: "I get to work quickly; you can generally expect your site to be up and running within 4-6 weeks, depending on the size of the project and my outstanding project queue. I will be upfront with the timeline in your proposal.",
         },
         {
             question: "What technology do you use?",
@@ -60,7 +52,7 @@ export default function FAQs() {
         },
         {
             question: "Why should I hire you?",
-            answer: "As a freelance web developer, I have a solid understanding of the core programming languages that websites are built with: HTML, CSS, JavaScript and PHP. This means that I can create custom sites and features, improving performance, aesthetics and security. I also believe in frequent communication - no one wants any nasty surprises or disappearing contractors. I am committed to providing a quality experience from start to finish.",
+            answer: "As a freelance web developer, I don't have the overheads of an agency. I am also the exclusive point of contact - all things are handled by me. I have a solid understanding of the core programming languages that websites are built with: HTML, CSS, JavaScript and PHP. This means that I can create custom sites and features, improving performance, aesthetics and security. I also believe in frequent communication - no one wants any nasty surprises or disappearing contractors. I am committed to providing a quality experience from start to finish.",
         },
     ];
     // const toggleAnswer = (num) => {

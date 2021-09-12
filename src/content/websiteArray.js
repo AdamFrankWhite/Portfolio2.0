@@ -2,14 +2,13 @@ const websites = [
     {
         name: "Shaw Farm Holidays",
         tech: "HTML, CSS, JavaScript",
-        desc: "Full website re-design for holiday accomodation business, using HTML, CSS and JavaScript",
+        desc: "Full website re-design for holiday accommodation business, using HTML, CSS and JavaScript",
         img: "assets/shaw-farm.jpg",
         link: "https://1drv.ms/u/s!Ah3q4XX0IpNPjdhnDf5WCwk40p_SLw?e=cLpyUl",
         code: "https://github.com/AdamFrankWhite",
         text: [
-            "A full-redesign for a holiday accomodation business that were looking for a fresh look and a mobile-friendly, performant website.",
+            "A full-redesign for a holiday accommodation business that were looking for a fresh look and a mobile-friendly, performant website.",
             "I provided a complete re-design and a new logo, with a focus on enticing images and crisp, clear design. My client wanted to avoid using a Content Management System; to integrate existing widgets, including GoogleMaps and a Facebook feed; and to activate SSL certification.",
-            "** Currently in development **",
         ],
         screenCapture: "assets/shaw-farm.jpg",
         afterPic: "assets/shaw-farm.jpg",
@@ -58,18 +57,18 @@ const websites = [
     //     ],
     //     screenCapture: "assets/kdp-screen.webp",
     // },
-    {
-        name: "Solicitors Mockup",
-        tech: "Adobe XD",
-        desc: "Design mockup for a fictional solicitors firm based in Stockport ",
-        img: "assets/stockportSolicitors.jpg",
-        link: "assets/stockportSolicitors.jpg",
-        code: "https://github.com/AdamFrankWhite",
-        text: [
-            "Mockup created for developing a template for solicitor/lawyer websites.",
-        ],
-        screenCapture: "assets/stockportSolicitors.jpg",
-    },
+    // {
+    //     name: "Solicitors Mockup",
+    //     tech: "Adobe XD",
+    //     desc: "Design mockup for a fictional solicitors firm based in Stockport ",
+    //     img: "assets/stockportSolicitors.jpg",
+    //     link: "assets/stockportSolicitors.jpg",
+    //     code: "https://github.com/AdamFrankWhite",
+    //     text: [
+    //         "Mockup created for developing a template for solicitor/lawyer websites.",
+    //     ],
+    //     screenCapture: "assets/stockportSolicitors.jpg",
+    // },
     {
         name: "E-book landing page",
         tech: "Wordpress, HTML, CSS, jQuery",
@@ -85,17 +84,18 @@ const websites = [
         afterPic: "assets/qw-landing.jpg",
     },
 
-    // {
-    //     name: "Kakuro",
-    //     tech: "React, CSS",
-    //     desc: "Logic puzzle built using React",
-    //     img: "assets/kakuro-min.jpg",
-    //     link: "http://quittingweedthebook.com",
-    //     code: "https://github.com/AdamFrankWhite/Kakuro",
-    //     text: [
-    //         "An avid logic puzzle fan, I thought it would be an interesting learning process to create a Kakuro app using React. Unfamiliar with React at the time, this project was a good learning experience in React, as well as thinking logically to create the program - from how to structure the grid, choosing a suitable data structure for storing the game board, answers and user answers."
-    //     ]
-    // },
+    {
+        name: "Kakuro",
+        tech: "React, CSS",
+        desc: "Logic puzzle built using React",
+        img: "assets/kakuro-min.jpg",
+        link: "/kakuro",
+        code: "https://github.com/AdamFrankWhite/Kakuro",
+        text: [
+            "An avid logic puzzle fan, I thought it would be an interesting learning process to create a Kakuro app using React. Unfamiliar with React at the time, this project was a good learning experience in React, as well as thinking logically to create the program - from how to structure the grid, choosing a suitable data structure for storing the game board, answers and user answers.",
+        ],
+        screenCapture: "assets/kakuro-min.jpg",
+    },
     // {
     //     name: "NASA Image App",
     //     tech: "React, CSS",

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import ScrollAnimation from "react-animate-on-scroll";
 import PriceCard from "./PriceCard";
 import { useMediaQuery } from "react-responsive";
@@ -92,23 +93,26 @@ export default function HireMe() {
                         duration={0.75}
                         animateOnce={true}
                     >
-                        <div className="hire-title-cont">
+                        {/* <div className="hire-title-cont">
                             <h2 className="section-title">Hire Me</h2>
                             <hr className="mr-auto" />
-                        </div>
+                        </div> */}
                         <br />
                         <div className="hire-intro mr-auto">
-                            <p>
-                                I have a passion for web development and making
-                                user-friendly, beautiful websites that help
-                                businesses achieve their goals.
-                            </p>
-                            <p>
-                                Whether you are looking for a brand new website,
-                                a re-design, or would like new features
-                                integrating into your current site, I'm here to
-                                help.
-                            </p>
+                            <img src="/assets/business-6584073_640.png" />
+                            <div>
+                                <p>
+                                    I have a passion for web development and
+                                    making user-friendly, beautiful websites
+                                    that help businesses achieve their goals.
+                                </p>
+                                <p>
+                                    Whether you are looking for a brand new
+                                    website, a re-design, or would like new
+                                    features integrating into your current site,
+                                    I'm here to help.
+                                </p>
+                            </div>
                         </div>
                     </ScrollAnimation>
                 </div>
@@ -174,7 +178,7 @@ export default function HireMe() {
                             </div>
                         </div>
 
-                        <div className="hire-intro">
+                        <div className="">
                             <h3>Please Note</h3>
                             <p>
                                 - I charge by the project, depending on the
