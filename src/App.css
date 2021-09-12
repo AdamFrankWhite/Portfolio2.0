@@ -160,7 +160,7 @@ html header h2 {
 html header nav {
   text-transform: uppercase;
   text-align: right;
-  font-size: 1.15em;
+  font-size: 1.25em;
 }
 @media (max-width: 950px) {
   html header nav {
@@ -176,6 +176,10 @@ html header nav a {
   letter-spacing: 0.03em;
   text-transform: capitalize;
 }
+html header nav a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}
 html header nav ul {
   padding-left: 0;
   list-style-type: none;
@@ -188,10 +192,6 @@ html header nav ul {
     flex-direction: column;
     align-items: flex-end;
   }
-}
-html header nav .tab-contact {
-  border-radius: 20px;
-  padding: 0.5em 0.8em;
 }
 html header nav li {
   display: inline-block;
@@ -207,9 +207,6 @@ html header nav li {
   html header nav li {
     margin-right: auto;
   }
-}
-html header nav li:hover {
-  cursor: pointer;
 }
 @media (max-width: 726px) {
   html nav .toggle-menu {
@@ -584,6 +581,7 @@ html .modal-frame .modal-content {
   margin: auto;
   background: white;
   width: 80%;
+  height: 90vh;
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
@@ -1320,10 +1318,25 @@ html #pricing {
 }
 html .package-cont {
   width: 100%;
+  padding-top: 4em;
+}
+html .please-note {
+  width: 100%;
+  margin: auto;
+  padding: 2.5em;
+  border-radius: 5px;
+  background: #464646;
+  color: white;
+}
+@media (min-width: 1024px) {
+  html .please-note {
+    width: 70%;
+  }
 }
 html .package-details {
   display: flex;
   flex-direction: column;
+  padding-bottom: 4em;
   justify-content: space-between;
 }
 @media (min-width: 1030px) {
@@ -1718,6 +1731,8 @@ html .process-card-cont {
   width: 100%;
   display: flex;
   margin: 1em auto;
+  padding-top: 2em;
+  padding-bottom: 4em;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -1743,7 +1758,8 @@ html .process-card-cont .animated {
 }
 html .process-card-cont .process-card {
   flex-direction: column;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   margin-bottom: 1.5em;
   border: white 1px solid;
   border-radius: 5px;

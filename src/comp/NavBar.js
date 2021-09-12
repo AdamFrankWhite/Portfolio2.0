@@ -33,31 +33,47 @@ export default function NavBar() {
                 {isTabletOrMobile ? (
                     <SlideDown className={"my-dropdown-slidedown"}>
                         <ul className={showMobileMenu ? "" : "hide"}>
-                            <a href="/#portfolio" rel="noopener">
-                                <li className="tab-link">Portfolio</li>
-                            </a>
-                            <NavLink to="/blog">
-                                <li className="tab-link">Blog</li>
-                            </NavLink>
-                            <a href="/#hire-me" rel="noopener">
-                                <li className="tab-link">Hire Me</li>
-                            </a>
-                            <a href="/#contact" rel="noopener">
-                                <li className="tab-link">Contact</li>
-                            </a>
+                            <li className="tab-link">
+                                <a href="/#portfolio" rel="noopener">
+                                    Portfolio
+                                </a>
+                            </li>
+
+                            <li className="tab-link">
+                                <a href="/#hire-me" rel="noopener">
+                                    Hire Me
+                                </a>
+                            </li>
+
+                            <li className="tab-link">
+                                <a href="/#contact" rel="noopener">
+                                    Contact{" "}
+                                </a>
+                            </li>
                         </ul>
                     </SlideDown>
                 ) : (
                     <ul>
-                        <a href="/#portfolio" rel="noopener">
-                            <li className="tab-link">Portfolio</li>
-                        </a>
-                        <a href="/#hire-me" rel="noopener">
-                            <li className="tab-link">Hire Me</li>
-                        </a>
-                        <a href="/#contact" rel="noopener">
-                            <li className="tab-link tab-contact">Contact</li>
-                        </a>
+                        <li className="tab-link">
+                            {" "}
+                            <a href="/#portfolio" rel="noopener">
+                                Portfolio{" "}
+                            </a>
+                        </li>
+
+                        <li className="tab-link">
+                            {" "}
+                            <a href="/#hire-me" rel="noopener">
+                                Hire Me{" "}
+                            </a>
+                        </li>
+
+                        <li className="tab-link tab-contact">
+                            {" "}
+                            <a href="/#contact" rel="noopener">
+                                Contact{" "}
+                            </a>
+                        </li>
                     </ul>
                 )}
             </nav>
