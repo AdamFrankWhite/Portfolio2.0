@@ -100,7 +100,7 @@ export default function HireMe() {
                         <br />
                         <div className="hire-intro mr-auto">
                             <img src="/assets/business-6584073_640.png" />
-                            <div>
+                            <div className="hire-intro-content">
                                 <p>
                                     I have a passion for web development and
                                     making user-friendly, beautiful websites
@@ -112,6 +112,7 @@ export default function HireMe() {
                                     features integrating into your current site,
                                     I'm here to help.
                                 </p>
+                                <a href="#contact">Contact Me</a>
                             </div>
                         </div>
                     </ScrollAnimation>
@@ -138,6 +139,23 @@ export default function HireMe() {
                                 animateOnce={true}
                             >
                                 <PriceCard key={card.title} card={card} />
+                            </ScrollAnimation>
+                        ))}
+                    </div>{" "}
+                    <div className="process-heading-cont">
+                        <h2>The Design Process</h2>
+                        <hr className="mx-auto" />
+                    </div>
+                    <div className="process-card-cont">
+                        {process.map((step, i) => (
+                            <ScrollAnimation
+                                animateIn="fadeIn"
+                                offset={150}
+                                duration={0.75}
+                                delay={isTabletOrMobile ? 0 : i * 500}
+                                animateOnce={true}
+                            >
+                                <ProcessCard card={step} />
                             </ScrollAnimation>
                         ))}
                     </div>
@@ -178,21 +196,6 @@ export default function HireMe() {
                             </div>
                         </div>
                     </ScrollAnimation>
-                    <h2 className="pt-1">What to expect</h2>
-                    <hr className="mx-auto" />
-                    <div className="process-card-cont">
-                        {process.map((step, i) => (
-                            <ScrollAnimation
-                                animateIn="fadeIn"
-                                offset={150}
-                                duration={0.75}
-                                delay={isTabletOrMobile ? 0 : i * 500}
-                                animateOnce={true}
-                            >
-                                <ProcessCard card={step} />
-                            </ScrollAnimation>
-                        ))}
-                    </div>
                     <div className="please-note">
                         <h3>Please Note</h3>
                         <p>

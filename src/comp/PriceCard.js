@@ -10,7 +10,7 @@ export default function PriceCard(props) {
 
             <span>from</span>
             <h3 class="price">£{props.card.price}</h3>
-            <a href="#contact">Contact me now</a>
+            <a href="#contact">Enquire Now</a>
         </div>
     );
 }

@@ -11,14 +11,11 @@ export default function Home() {
                         <h3>Custom, hand-coded web design for your business</h3>
                     </div>
                     <div className="cta-cont">
-                        <a href="#hire-me" rel="noopener">
+                        <a href="#contact" rel="noopener">
                             Hire Me
                         </a>
-                        {/* <a href="#pricing" rel="noopener">
-                                FAQs
-                            </a> */}
-                        <a href="#faqs" rel="noopener">
-                            FAQs
+                        <a href="#packages" rel="noopener">
+                            Packages
                         </a>
                     </div>
                 </div>

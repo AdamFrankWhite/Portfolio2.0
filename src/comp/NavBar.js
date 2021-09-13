@@ -38,7 +38,11 @@ export default function NavBar() {
                                     Portfolio
                                 </a>
                             </li>
-
+                            <li className="tab-link">
+                                <a href="/#services" rel="noopener">
+                                    Services
+                                </a>
+                            </li>
                             <li className="tab-link">
                                 <a href="/#hire-me" rel="noopener">
                                     Hire Me
@@ -60,7 +64,11 @@ export default function NavBar() {
                                 Portfolio{" "}
                             </a>
                         </li>
-
+                        <li className="tab-link">
+                            <a href="/#services" rel="noopener">
+                                Services
+                            </a>
+                        </li>
                         <li className="tab-link">
                             {" "}
                             <a href="/#hire-me" rel="noopener">
