@@ -924,9 +924,14 @@ header nav li {
   }
 }
 .contact .frame-content .contact-content {
-  width: 60%;
+  width: 80%;
   margin: auto;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .contact .frame-content .contact-content {
+    width: 60%;
+  }
 }
 .contact .frame-content .contact-content p {
   margin: 1em auto;
@@ -1749,7 +1754,7 @@ header nav li {
   background: #0362be;
   font-size: 1.1em;
   border-radius: 5px;
-  padding: 2em;
+  padding: 2em 1em;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -1764,6 +1769,7 @@ header nav li {
 @media (min-width: 900px) {
   .service-card-cont .service-card {
     width: 45%;
+    padding: 2em;
   }
 }
 @media (min-width: 1400px) {
@@ -1787,19 +1793,24 @@ header nav li {
 }
 .service-card-cont .service-card .service-card-head img {
   padding: 10px 0;
-  width: 10%;
+  width: 20%;
   height: auto;
   transition: width 0.5s;
   filter: invert(62%) sepia(8%) saturate(3718%) hue-rotate(176deg) brightness(104%) contrast(102%);
 }
+@media (min-width: 1024px) {
+  .service-card-cont .service-card .service-card-head img {
+    width: 10%;
+  }
+}
 .service-card-cont .service-card p {
   display: block;
+  line-height: 1.5em;
   width: 90%;
   font-weight: 500 !important;
   margin: 0 auto;
-  color: #9ac9f8;
+  color: #c2dcf6;
   font-size: 0.85em;
-  text-align: justify;
   letter-spacing: 0.035em;
   font-weight: 300;
 }
